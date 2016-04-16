@@ -1,0 +1,170 @@
+#hproductos{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14px;
+	color:#FFF;
+}
+
+#PRODUCTOS
+{
+	background:#003300;
+	height:130px; 
+	margin:3px;
+	width:396px;
+	}
+	
+#PRODUCTOS:HOVER
+{
+	background:#006600;
+	}
+	
+#VALE
+{
+	background:#006633;
+	height:130px; 
+	margin:3px;
+	width:396px;
+	}
+	
+#VALE:HOVER
+{
+	background:#009933;
+	}
+
+#hproveedores{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14px;
+	color:#FFF;
+}
+
+#PROVEEDORES
+{
+	background:#009900;
+	height:130px;
+	margin:3px;
+	width:195px;
+	}
+	
+#PROVEEDORES:HOVER
+{
+	background:#00CC00;
+	}
+
+#Ranking
+{
+	background:#FFC;
+	height:130px;
+	margin:3px;
+	width:195px;
+}
+#Ranking:HOVER
+{
+	background:#FFD;
+	}
+#Ranking1
+{
+	background:#F0F986;
+	height:130px;
+	margin:3px;
+	width:195px;
+}
+#Ranking1:HOVER
+{
+	background:#F1F8C2;
+	}
+
+
+#ORDEN
+{ 
+	background:#33CC33; 
+	height:130px;
+	margin:3px;
+	width:195px;
+	}
+	
+#ORDEN:HOVER
+{
+	background:#00FF00;
+	}
+
+
+
+#LISTADO
+{
+	height:130px; 
+	background:#7CFC00; 
+	margin:3px;
+	width:195px;
+	}
+	
+#LISTADO:HOVER
+{
+	background:#ADFF2F;
+	}
+	
+#INFORME
+{
+	height:130px; 
+	background:#00FF7F; 
+	margin:3px;
+	width:195px;
+	}
+	
+#INFORME:HOVER
+{
+	background:#00FA9A;
+	}
+
+
+	
+#CLIENTE
+{
+	height:130px; 
+	background:#FFBF00; 
+	margin:3px;
+	width:195px;
+	}
+	
+#CLIENTE:HOVER
+{
+	background:#FFFF00;
+	}
+	
+h1{
+font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14px;
+	color:#3D3838;
+	margin-top:58px;
+}
+
+h2
+{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14px;
+	color:#FFF;
+	margin-top:58px;
+	}
+	
+#BACK {
+width : 48px;
+height : 48px;
+margin-left:-607;
+background:url(../Imagenes/back.png);
+}
+
+#BACK:hover {
+background-image : url(../Imagenes/back22.png);
+} 
+
+	
+#LISTADO_VALE_E
+{
+	height:130px; 
+	background:#CC3; 
+	margin:3px;
+	width:195px;
+	}
+	
+#LISTADO_VALE_E:HOVER
+{
+	background:#CC6;
+	}

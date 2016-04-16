@@ -1,0 +1,98 @@
+#hmodificar{
+	font-family: Gotham, "Helvetica Neue", Helvetica, 		    Arial, sans-serif;
+	font-size:28px;
+	color:#686868;
+}
+
+
+#hcodigo{
+	font-family: Gotham, "Helvetica Neue", Helvetica, 		    Arial, sans-serif;
+	font-size:14px;
+	color:#686868;
+}
+
+#hnuevo{
+	font-family: Gotham, "Helvetica Neue", Helvetica, 		    Arial, sans-serif;
+	font-size:14px;
+	color:#686868;
+}
+
+#hdescripcion{
+	font-family: Gotham, "Helvetica Neue", Helvetica, 		    Arial, sans-serif;
+	font-size:14px;
+	color:#686868;
+}
+
+#hformato{
+	font-family: Gotham, "Helvetica Neue", Helvetica, 		    Arial, sans-serif;
+	font-size:14px;
+	color:#686868;
+}
+
+#hrelacion{
+	font-family: Gotham, "Helvetica Neue", Helvetica, 		    Arial, sans-serif;
+	font-size:14px;
+	color:#686868;
+}
+
+#hunidad{
+	font-family: Gotham, "Helvetica Neue", Helvetica, 		    Arial, sans-serif;
+	font-size:14px;
+	color:#686868;
+}
+
+#hstock{
+	font-family: Gotham, "Helvetica Neue", Helvetica, 		    Arial, sans-serif;
+	font-size:14px;
+	color:#686868;
+}
+
+#hprecio{
+	font-family: Gotham, "Helvetica Neue", Helvetica, 		    Arial, sans-serif;
+	font-size:14px;
+	color:#686868;
+}
+
+#hgestion{
+	font-family: Gotham, "Helvetica Neue", Helvetica, 		    Arial, sans-serif;
+	font-size:14px;
+	color:#686868;
+}
+
+#hstockmi{
+	font-family: Gotham, "Helvetica Neue", Helvetica, 		    Arial, sans-serif;
+	font-size:14px;
+	color:#686868;
+}
+
+#hcategoria{
+	font-family: Gotham, "Helvetica Neue", Helvetica, 		    Arial, sans-serif;
+	font-size:14px;
+	color:#686868;
+}
+
+#MARCO
+{
+	background:#C0C0C0;
+	height:550px;
+	}
+
+#MARCO:HOVER
+{
+	background:#B8B8B8;
+	}
+	
+#BACK {
+width : 48px;
+height : 48px;
+margin-top:550px;
+margin-left:198px;
+background:url(../Imagenes/back.png)
+}
+
+#BACK:hover {
+background-image : url(../Imagenes/back22.png);
+} 
+
+	
+

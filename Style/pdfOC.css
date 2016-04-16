@@ -1,0 +1,46 @@
+#tabla_producto th
+{
+	color:#FFF;
+	background:#000;
+	font-size:12px
+}
+
+
+td
+{
+	font-size:10px;
+}
+
+#tabla_proveedor
+{
+	border:groove;
+}
+
+#tabla_despachar
+{
+	border:groove;
+}
+
+th
+{
+	text-align:center;
+}
+
+#impreso1 td
+{
+	border-right:groove #000 1px;
+	text-align:center;
+}
+
+#impreso1 th
+{
+	border-right:groove #000 1px;
+}
+#tabla1
+{
+border:inset #000 1px; 
+height:650px;
+width:699;
+}
+
+

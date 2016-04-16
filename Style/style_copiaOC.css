@@ -1,0 +1,210 @@
+html
+{ height: 100%;}
+
+*
+*
+{ margin: 0;
+  padding: 0;}
+
+body
+{ font: normal .90em arial, sans-serif;
+  color: #1D1D1D;
+}
+
+
+h1, h2, h3, h4, h5, h6 
+{ 
+  color: #259EDA;
+  letter-spacing: -1px;
+  text-shadow: 1px 1px #BBB;
+  padding: 5px 0 10px 0;}
+
+h2
+{ font: bold 165% 'Anaheim', sans-serif;
+  color: #1D1D1D;}
+
+h3
+{ font: bold 125% 'Paprika', cursive;
+  padding: 0 0 5px 0;
+  color: #1D1D1D;}
+
+h4, h5, h6
+{ margin: 0;
+  padding: 0 0 5px 0;
+  color: #1D1D1D;
+  line-height: 1.5em;}
+
+a, a:hover
+{ background: transparent;
+  outline: none;
+  text-decoration: underline;
+  color: #259EDA;}
+
+a:hover
+{ text-decoration: none;
+  color: #259EDA;}
+  
+
+#main, #header, #banner, #menubar, #site_content, #footer, #contact, #footer_content, #banner_image
+{ margin-left: auto; 
+  margin-right: auto;}
+ 
+
+
+.content_item
+{ width:100%; }
+
+
+#proveedor
+{
+	width:143px;
+	
+}
+#rut_prove
+{
+	width:143px;	
+}
+#despachar
+{
+	width:144px;
+}
+
+.form1
+{
+	width:95%;
+	background:#fff;
+	border:#fff 1px solid;
+}
+.form2
+{
+	width:95%;
+	border:#fff 1px solid;
+}
+.form3
+{
+	width:95%;
+	border:#fff 1px solid;
+}
+.form4
+{
+	width:95%;
+	background:#CCC;
+	border:#ccc 1px solid;
+}
+.form10
+{
+	background:#CCC;
+	border:#ccc 1px solid;
+}
+
+.form11
+{
+	width:95%;
+	border:#fff 1px solid;
+}
+.form5
+{
+	width:95%;
+	border:#fff 1px solid;
+}
+
+.form6
+{
+	width:95%;
+	background:#CCC;
+	border:#ccc 1px solid;
+}
+.form7
+{
+	width:95%;
+	background:#CCC;
+	border:#ccc 1px solid;
+}
+.forma
+{
+	width:95%;
+	border:#fff 1px solid;
+}
+.form8
+{
+	width:95%;
+	border:#fff 1px solid;
+}
+.form9
+{
+	width:95%;
+	border:#fff 1px solid;
+}
+#fechaE
+{
+	width:130px;
+}
+#condicion
+{
+	width:130px;
+}
+#con
+{
+	ooverflow-x: scroll;
+  overflow-y: scroll;
+	height:310px;
+}
+th
+{
+	color:#FFF;
+	background:#000;
+}
+.form10
+{
+  width:95%;;
+}
+#cond
+{
+	width:135px;
+}
+#ivaf
+{
+	width:85px;
+}
+
+#despachar1
+{
+	width:215px;
+}
+
+#despachar_nombre
+{
+	width:215px;
+}
+#despachar_direccion
+{
+	width:215px;
+}
+#despachar_comuna
+{
+	width:215px;
+}
+
+#despachar_telefono
+{
+	width:215px;
+}
+
+#popup {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+}
+
+.content-popup {
+    margin:0px auto;
+    margin-top:50px;
+    padding:10px;
+    width:610px;
+    min-height:250px;
+    border-radius:4px;
+    background-color:#FFFFFF;
+    box-shadow: 0 2px 5px #666666;
+}

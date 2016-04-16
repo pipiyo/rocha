@@ -1,0 +1,83 @@
+
+
+#SISTEMA
+{
+	background:#878787;
+	height:130px; 
+	margin:3px;
+	width:396px;
+	}
+	
+#SISTEMA:HOVER
+{
+	background:#AFAFAF;
+	}
+
+#USUARIO
+{
+	background:#878787;
+	height:130px; 
+	margin:3px;
+	width:396px;
+	}
+	
+#USUARIO:HOVER
+{
+	background:#AFAFAF;
+	}
+
+#EMPLEADO
+{
+	background:#B0B0B0; 
+	height:130px;
+	margin:3px;
+	width:195px;
+	}
+	
+#EMPLEADO:HOVER
+{
+	background:#C4C4C4;
+	}
+
+
+
+
+#GRUPOS
+{
+	background:#D0D0D0; 
+	height:130px;
+	margin:3px;
+	width:195px;
+	}
+	
+#GRUPOS:HOVER
+{
+	background:#E0E0E0;
+	}
+	
+h1
+{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14px;
+	color:#3D3838;
+	}
+	
+	
+h2
+{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14px;
+	color:#FFF;
+	}
+	
+#BACK {
+width : 48px;
+height : 48px;
+margin-left:-0;
+background:url(../Imagenes/back.png);
+}
+
+#BACK:hover {
+background-image : url(../Imagenes/back22.png);
+} 
+

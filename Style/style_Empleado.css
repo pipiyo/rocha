@@ -1,0 +1,138 @@
+html
+{ height: 100%;}
+*
+*
+{ margin: 0;
+  padding: 0;}
+  body
+  {
+	  background-color:#F4F4F4;
+  }
+
+a
+{
+	color:#000;
+	}
+
+a:hover
+{ 
+	text-decoration: none;
+  	color: #7CFC00;
+  }
+  
+ul
+{ margin: 0px 0 22px 0px;}
+
+ul li
+{ margin: 2px 0 15px 17px;}
+
+#main, #header, #banner, #menubar, #site_content, #footer, #contact, #footer_content, #banner_image
+{ margin-left: auto; 
+  margin-right: auto;
+  }
+ 
+#site_content
+{ 
+	width: 100%;
+ 	overflow: hidden;
+    background: #F4F4F4;
+}
+  
+#title th
+{
+    background: black;
+	 border-bottom-color:#7CFC00;
+
+	}
+#title
+{
+ width: 100%;
+}
+
+/*-----------------------*/
+
+.datagrid table 
+{ 
+border-top-color:#000; 
+border-collapse: collapse; 
+text-align: left; 
+width:100%;
+background-color:#000; 
+} 
+
+.datagrid1 table 
+{ 
+border-top-color:#FFF; 
+border-collapse: collapse; 
+text-align: left; 
+width:100%;
+border-bottom-color:#000;
+} 
+
+.datagrid1 
+{ 
+font: normal 10px/150% Arial; 
+background: #F4F4F4; 
+border: 1px solid #F4F4F4; 
+height:100%;
+width:100%;
+}
+
+.datagrid1 table td, .datagrid1 table th 
+{ 
+padding: 3px 10px;
+}
+
+.datagrid1 table thead th 
+{
+background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );
+background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');
+background-color:#006699;
+color:#F4F4F4; 
+font-size: 12px; 
+font-weight:bold; 
+border-left: 1px solid #0070A8; 
+} 
+
+.datagrid1 table tbody td 
+{ 
+color: #000;
+border-left: 1px solid #E1EEF4;
+border-top: 1px solid #E1EEF4;
+font-size: 12px; /*Tamaño de la letra*/
+font-weight: normal; 
+}
+
+.datagrid1 table tbody .alt td 
+{ 
+background: #F4F4F4;
+}
+
+h1
+{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:30px;
+	color:#000;
+	}
+
+td
+{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14px;
+	color:#000;	
+	}
+	
+h2
+{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:18px;
+	color:#000;
+	}
+
+th
+{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14px;
+	color:#FFF;
+	}

@@ -1,0 +1,465 @@
+/*General*/
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix { 
+    display: inline-table; 
+}
+* html .clearfix { 
+    height: 1%; 
+}
+
+h1{
+	font-size:22px;
+    font-family: "arial", serif;
+    padding:0 0 40px 0; 
+}
+#verde{
+	background: #80DB88;
+}
+#azul{
+	background: #678894;
+}
+#rojo{
+	background: #DD7E75;
+}
+#amarillo{
+	background: #FDF590;
+}
+.enviado{
+	background:#EACFCF;
+}
+.table-form{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.table-form input[type=text] , .table-form select,.table-form input[type=number]{
+	background: transparent;
+	border: transparent;
+	width: 100%;
+}
+.table-info{
+	border-collapse: collapse;
+	width: 100%;
+}
+/*Descripcion producto*/
+
+.descripcion_producto{
+	width: 90%;
+	margin: 0 auto;
+	min-width: 960px;
+	text-align: center;
+}
+
+.descripcion_producto .table-form td, .descripcion_producto .table-form th {
+	border: solid #ccc 1px;
+	padding: 7px 4px;
+	font-size: 13px;
+}
+
+.descripcion_producto input[type=button] , .descripcion_producto input[type=submit]{
+	background: #0489B1;
+	padding: 10px;
+	color: #fff;
+	border: transparent;
+	width: 16%;
+}
+.descripcion_producto input[type=button]:hover, .descripcion_producto input[type=submit]:hover{
+	background: #FE642E;
+	cursor:pointer;
+}
+.descripcion_producto input[type=submit]:disabled{
+	background: #ccc;
+}
+
+
+.descripcion_producto table td{
+	width: 16.6%;
+}
+.azul_pro{
+	background: #024959;
+	color:#fff;
+}
+.cafe_pro{
+	background: #85A690;
+	color:#fff;
+}
+
+/*Descripcion producto detalle*/
+.descripcion_producto_detalle{
+	width: 90%;
+	margin: 0 auto;
+	min-width: 960px;
+}
+.descripcion_producto_detalle h1{
+	text-align: center;
+}
+.descripcion_producto_detalle table .uno{
+	width: 9.09%;
+}
+.descripcion_producto_detalle table .dos {
+	width: 4.545%;
+}
+.descripcion_producto_detalle table .colortd {
+	background: #F2D8A7;
+}
+.descripcion_producto_detalle .table-form .colortd, .descripcion_producto_detalle .table-form .lineastd{
+	border: solid #ccc 1px;
+	padding: 7px 4px;
+	font-size: 13px;
+}
+#stock_kardek{
+	font-size: 30px;
+	padding-top: 30px;
+}
+#stock_kardek_num{
+	font-size: 30px;
+}
+/*Listado OC transito*/
+.listado-oc-transito td, .listado-oc-transito th{
+	border: solid #ccc 1px;
+	padding: 7px 4px;
+	font-size: 13px;
+}
+.listado-oc-transito th{
+	background:#00402A;
+	color: #fff;
+}
+.listado-oc-transito td a{
+	color:#00593C;
+	text-decoration: none;
+}
+.listado-oc-transito td a:hover{
+	color:#FE642E;
+}
+.h-oc-transito{
+	text-align: center;
+}
+/*Listado vale emision producto*/
+.listado-vale-destacado{
+	background: #005A80;
+	color:#fff;
+}
+.listado-vale-emision td, .listado-vale-emision th{
+	border: solid #ccc 1px;
+	padding: 7px 4px;
+	font-size: 13px;
+}
+.listado-vale-emision th{
+	background: #002D40;
+	color:#fff;
+}
+.listado-vale-emision .uno-v{
+	background: #002D40;
+	color:#fff;
+	width: 10%;
+}
+.listado-vale-emision .uno-v1{
+
+	width: 20%;
+}
+
+/*Formulario ingreso egreso*/
+
+.contenedor-formulario{
+  	width: 960px;
+
+  	background: red;
+  	margin: 0px auto;
+  	height: 400px;
+  	background: #323232;
+  	z-index: 0;
+
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+ 
+  	margin-top: -200px;   /* height/2 = 500px / 2 */
+  	margin-left: -480px;  /* width/2 = 500px / 2 */
+}
+
+.contenedor-formulario-tamano{
+	width: 50%;
+	margin: 10px auto 0 auto;
+	text-align: center;
+}
+.contenedor-formulario-tamano table{
+	width: 100%;
+}
+.contenedor-formulario-tamano table td{
+	padding: 7px;
+	color: #fff;
+}
+.contenedor-formulario-tamano h1{
+	color: #fff;
+}
+
+.contenedor-formulario-tamano  .textbox{
+    border: 1px solid #454545;
+    width: 230px;
+    height: 35px;
+    font-size: 11px;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-family: 'arial';
+    font-style: normal;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    background: #454545;
+    color: #B8B8B8;
+    margin-top: 12px;
+  }
+
+.contenedor-formulario-tamano  .textbox-boton{
+    border: 1px solid #454545;
+    width: 400px;
+    height: 35px;
+    font-size: 11px;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-family: 'arial';
+    font-style: normal;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    background: #8A2908;
+    color: #B8B8B8;
+    margin-top: 12px;
+  }
+  .textbox-boton:hover{
+    background: #B43104;
+  }
+  .body-formulario-i-e{
+  	background: #585858;
+  }
+
+  /*ingreso pruducto*/
+  .menu-ingreso-producto{
+  	width: 100%;
+  }
+   .menu-ingreso-producto div{
+  	background: #0B3861;
+  	width: 20%;
+  	margin: 1% auto;
+  	text-align: center;
+  	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+  }
+  .menu-ingreso-producto div:hover{
+  	background: #3B6392;
+  }
+    .menu-ingreso-producto div a{
+  	color:#fff;
+  }
+
+  /*Bodega*/
+
+  .form-bod{
+  	width: 80%;
+  	margin-left: 10%; 
+  	padding: 2% 0;
+  	min-width: 700px;
+  }
+  .form-bod p{
+  	width: 24.7%;
+  	display: block;
+  	float: left;
+  	padding: 1% 0;
+  }
+  .form-bod h1{
+  	font-family: arial serif;
+  	font-size: 21px;
+  	text-align: center;
+  	font-weight: normal;
+  }
+
+  .form-bod .a1{
+  	width: 24.5%;
+  	display: block;
+  	float: left;
+  	padding: 1% 0;
+    text-decoration: none;
+    color: #172F3D;
+  }
+
+  .form-bod .a1:hover{
+    color: #FF8A51;
+  }
+
+  .form-bod button{
+  	width: 25%;
+  	border: transparent;
+  	background: transparent;
+  	text-align: left;
+  	display: block;
+  	float: left;
+  	padding: 1.5% 0;
+  }
+  .textbox-bodega{
+    border: 1px solid #ccc;
+    width: 24.5%;
+    height: 35px;
+    font-size: 11px;
+    font-weight: normal;
+    font-family: 'arial';
+    font-style: normal;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    background: #fff;
+    color: #B8B8B8;
+  }
+  .textbox-bodega1{
+    border: 1px solid #ccc;
+    width: 24.5%;
+    height: 35px;
+    font-size: 11px;
+    font-weight: normal;
+    font-family: 'arial';
+    font-style: normal;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #172F3D;
+    color: #FBF7D7;
+  }
+  .textbox-bodega1:hover{
+  	background:#FF8A51;
+  	cursor: pointer;
+  }
+
+  .caja{
+  	border: solid 2px #51ABB4;
+  	margin-right: 0.4%;
+  	float: left;
+  	width: 24.5%;
+  	display: block;
+  	color:#51ABB4;
+  	text-align: center;
+  	text-decoration: none;
+  }
+  .caja:hover{
+  	border: solid 2px transparent;
+  	background:#FF8A51;
+  	color: #fff;
+  	cursor: pointer;
+  }
+
+  .link-bod{
+  	color: #172F3D;
+  	font-weight: normal;
+  	text-decoration: none;
+  }
+  .link-bod:hover{
+  	color: #FF8A51;
+  	font-weight: normal;
+  	text-decoration: none;
+  	cursor: pointer;
+  }
+  .tabla-bodega{
+  	width: 100%;
+  	border-collapse: collapse;
+  }
+  .tabla-bodega td ,.tabla-bodega th {
+  	border: solid #ccc 1px;
+  	font-size: 12px;
+  	font-family: "arial";
+  		padding: .5%;
+  }
+
+  .tam1{
+  	width: 10%;
+  }
+  .tam2{
+  	width: 30%;
+  }
+  .tam3{
+  	width: 3.8%;
+  }
+  .tabla-bodega th{
+  	background: #172F3D;
+  	color:#FBF7D7;
+  }
+
+   .tabla-bodega td a {
+  	text-decoration: none;
+  	color:#172F3D;
+  }
+  .tabla-bodega td a:hover {
+  	text-decoration: none;
+  	color:#FF8A51;
+  }
+.trgen > td{
+    background-color:#F6E3CE;
+    border: 0,5px solid #000;
+}
+
+.activo{
+  color:#fff;
+  font-family: verdana;
+  font-size:12px;
+  cursor:pointer;
+  background:#6995C2;
+  padding: 5px 10px 2px 10px;
+}
+.activo:hover{
+  color:#fff;
+  text-decoration: none;
+  font-family: verdana;
+  font-size:12px;
+  cursor:pointer;
+  background:#6995C2;
+  padding: 5px 10px 2px 10px;
+}
+.noactivo{
+  color:#fff;
+  font-size:12px;
+  font-family: verdana;
+  cursor:pointer;
+  background:#051C3B;
+  padding: 5px 10px 2px 10px;
+}
+
+.noactivo:hover{
+  text-decoration: none;
+ color:#fff;
+  font-family: verdana;
+  font-size:12px;
+  cursor:pointer;
+  background:#6995C2;
+  padding: 5px 10px 2px 10px;
+}
+
+.pag{
+  text-align: center;
+  margin: auto;
+}

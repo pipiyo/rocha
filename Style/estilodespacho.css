@@ -1,0 +1,170 @@
+#hproductos{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14px;
+	color:#000;
+}
+
+#PRODUCTOS
+{
+	background:#FFD501;
+	height:130px; 
+	margin:3px;
+	width:396px;
+	}
+	
+#PRODUCTOS:HOVER
+{
+	background:#F7DB4A;
+	}
+	
+#VALE
+{
+	background:#FFD501;
+	height:130px; 
+	margin:3px;
+	width:396px;
+	}
+	
+#VALE:HOVER
+{
+	background:#F7DB4A;
+	}
+
+#hproveedores{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14px;
+	color:#FFF;
+}
+
+#PROVEEDORES
+{
+	background:#FFEB00;
+	height:130px;
+	margin:3px;
+	width:195px;
+	}
+	
+#PROVEEDORES:HOVER
+{
+	background:#FAEA73;
+	}
+
+#Ranking
+{
+	background:#FFFC81;
+	height:130px;
+	margin:3px;
+	width:195px;
+}
+#Ranking:HOVER
+{
+	background:#FCFAAE;
+	}
+#Ranking1
+{
+	background:#FBFEAC;
+	height:130px;
+	margin:3px;
+	width:195px;
+}
+#Ranking1:HOVER
+{
+	background:#FBFDB7;
+	}
+
+
+#ORDEN
+{ 
+	background:#FFEB00; 
+	height:130px;
+	margin:3px;
+	width:195px;
+	}
+	
+#ORDEN:HOVER
+{
+	background:#FAEA73;
+	}
+
+
+
+#LISTADO
+{
+	height:130px; 
+	background:#F1EB40;
+	margin:3px;
+	width:195px;
+	}
+	
+#LISTADO:HOVER
+{
+	background:#DEEE80;
+	}
+	
+#INFORME
+{
+	height:130px; 
+	background:#F1EB40;  
+	margin:3px;
+	width:195px;
+	}
+	
+#INFORME:HOVER
+{
+	background:#DEEE80;
+	}
+
+
+	
+#CLIENTE
+{
+	height:130px; 
+	background:#EDE74B; 
+	margin:3px;
+	width:195px;
+	}
+	
+#CLIENTE:HOVER
+{
+	background:#F0EC66;
+	}
+	
+h1{
+font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14px;
+	color:#000;
+	margin-top:58px;
+}
+
+h2
+{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:12px;
+	color:#000;
+	margin-top:58px;
+	}
+	
+#BACK {
+width : 48px;
+height : 48px;
+margin-left:-607;
+background:url(../Imagenes/back.png);
+}
+
+#BACK:hover {
+background-image : url(../Imagenes/back22.png);
+} 
+
+	
+#LISTADO_VALE_E
+{
+	height:130px; 
+	background:#EAEC67;
+	margin:3px;
+	width:195px;
+	}
+	
+#LISTADO_VALE_E:HOVER
+{
+	background:#E7EA51;
+	}

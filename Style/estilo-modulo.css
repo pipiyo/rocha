@@ -1,0 +1,730 @@
+/*nav*/
+body
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*Menu*/
+
+.logo
+{	
+	float: left;
+	margin: 0px 60px 0px 0px;
+}
+.logo img
+{	
+	width: 80%;
+}
+.icons
+{	
+	float: right;
+	margin: 30px 0px 0px 0px;
+}
+.buscador
+{	
+	float: left;
+	margin: 30px 0px 0px 0px;
+}
+.buscador1
+{	
+	float: left;
+	margin: 30px 250px 0px 0px;
+}
+.buscador1 input
+{	
+	width: 110%;
+	
+}
+
+.textbox
+	  {
+	  border: 1px solid #DBE1EB;
+	  width: 400px;
+	   box-sizing: border-box;
+	  font-size: 11px;
+	  font-family: Arial, Verdana;
+	  padding-left: 10px;
+	  padding-right: 10px;
+	  padding-top: 5px;
+	  padding-bottom: 5px;
+	  border-radius: 4px;
+	  -moz-border-radius: 4px;
+	  -webkit-border-radius: 4px;
+	  -o-border-radius: 4px;
+	  background: #FFFFFF;
+	  background: linear-gradient(left, #FFFFFF, #F7F9FA);
+	  background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+	  background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+	  background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+	  color: #2E3133;
+	  }
+
+
+/*content*/
+
+
+.contenedor
+{
+	width: 960px;
+	margin: 10px auto;
+
+}
+
+.column2
+{
+	width: 476px;
+	height: 200px;
+	margin: 2px;
+	float: left;
+	text-align: center;
+}
+
+.column1
+{
+	width: 236px;
+	height: 200px;
+	margin: 2px;
+	float: left;
+	text-align: center;
+}
+.column2 h2, .column1 h2
+{
+	color: #fff;
+	font-weight: normal;
+	font-family: arial;
+	margin-top: 80px;
+	font-size: 16px;
+}
+.column2 h3, .column1 h3
+{
+	color: #000;
+	font-weight: normal;
+	font-family: arial;
+	margin-top: 80px;
+	font-size: 16px;
+}
+
+
+
+/*bloques Sistema*/
+.uno-s
+{
+	background: #0D0D0D;
+}
+.uno-s:hover
+{
+	background: #262626;
+}
+
+.dos-s
+{
+	background: #404040;
+}
+.dos-s:hover
+{
+	background: #5E5E5E;
+}
+.tres-s
+{
+	background: #737373;
+}
+.tres-s:hover
+{
+	background: #9C9C9C;
+}
+.cuatro-s
+{
+	background: #ADA8A8;
+}
+.cuatro-s:hover
+{
+	background: #D9D9D9;
+}
+
+.cinco-s
+{
+	background: #E0D9D9;
+}
+.cinco-s:hover
+{
+	background: #EBE3E3;
+}
+.seis-s
+{
+	background: #C2C2C2;
+}
+.seis-s:hover
+{
+	background: #D9D9D9;
+}
+.siete-s
+{
+	background: #E3E3E3;
+	
+}
+.siete-s:hover
+{
+	background: #D6D6D6;
+}
+/**/
+
+
+/*bloques Despacho*/
+.uno-d
+{
+	background: #7F4900;
+}
+.uno-d:hover
+{
+	background: #9E5B00;
+}
+
+.dos-d
+{
+	background: #FF9200;
+}
+.dos-d:hover
+{
+	background: #FFA800;
+}
+.tres-d
+{
+	background: #FFB34C;
+}
+.tres-d:hover
+{
+	background: #FFB36B;
+}
+.cuatro-d
+{
+	background: #FACA5A;
+}
+.cuatro-d:hover
+{
+	background: #FACA91;
+}
+
+.cinco-d
+{
+	background: #FACA75;
+}
+.cinco-d:hover
+{
+	background: #FAE391;
+}
+/**/
+/*bloques Comercial*/
+.uno-c
+{
+	background: #8B5224;
+}
+.uno-c:hover
+{
+	background: #A15F2A;
+}
+
+.dos-c
+{
+	background: #B29469;
+}
+.dos-c:hover
+{
+	background: #C7A575;
+}
+.tres-c
+{
+	background: #E0B279;
+}
+.tres-c:hover
+{
+	background: #EDBC80;
+}
+.cuatro-c
+{
+	background: #E0BD74;
+}
+.cuatro-c:hover
+{
+	background: #EDC87B;
+}
+
+.cinco-c
+{
+	background: #FCDCA4;
+}
+.cinco-c:hover
+{
+	background: #FFDFB6;
+}
+/**/
+
+
+/*bloques abastecimiento*/
+.uno-a
+{
+	background: #00CC00;
+}
+.uno-a:hover
+{
+	background: #22DC22;
+}
+
+.dos-a
+{
+	background: #4FF518;
+}
+.dos-a:hover
+{
+	background: #62FA2F;
+}
+.tres-a
+{
+	background: #8ED921;
+}
+.tres-a:hover
+{
+	background: #9EE337;
+}
+.cuatro-a
+{
+	background: #E6D417;
+}
+.cuatro-a:hover
+{
+	background: #F2E33E;
+}
+
+.cinco-a
+{
+	background: #E3F018;
+}
+.cinco-a:hover
+{
+	background: #EEFA43;
+}
+
+.seis-a
+{
+	background: #F2F783;
+}
+.seis-a:hover
+{
+	background: #FAE391;
+}
+.siete-a
+{
+	background: #F2F7AE;
+}
+.siete-a:hover
+{
+	background: #F7FBBF;
+}
+.ocho-a
+{
+	background: #ECEFB7;
+}
+.ocho-a:hover
+{
+	background: #F5F7C9;
+}
+.nueve-a
+{
+	background: #F0F2CB;
+}
+.nueve-a:hover
+{
+	background: #FCF7D0;
+}
+/**/
+
+/*bloques produccion*/
+.uno-p
+{
+	background: #0A2141;
+}
+.uno-p:hover
+{
+	background: #01305E;
+}
+
+.dos-p
+{
+	background: #1B3152;
+}
+.dos-p:hover
+{
+	background: #24426E;
+}
+.tres-p
+{
+	background: #27445F;
+}
+.tres-p:hover
+{
+	background: #345B7F;
+}
+.cuatro-p
+{
+	background: #415970;
+}
+.cuatro-p:hover
+{
+	background: #547491;
+}
+
+.cinco-p
+{
+	background: #717D83;
+}
+.cinco-p:hover
+{
+	background: #8B99A1;
+}
+
+.seis-p
+{
+	background: #8F9EA6;
+}
+.seis-p:hover
+{
+	background: #9AAAB2;
+}
+.siete-p
+{
+	background: #BFD4DE;
+}
+.siete-p:hover
+{
+	background: #B0C3CC;
+}
+/**/
+/*bloques Sillas*/
+.uno-si
+{
+	background: #44607F;
+}
+.uno-si:hover
+{
+	background: #4E6F94;
+}
+
+.dos-si
+{
+	background: #6590BF;
+}
+.dos-si:hover
+{
+	background: #6F9DD1;
+}
+
+.tres-si
+{
+	background: #7AACE5;
+}
+.tres-si:hover
+{
+	background: #82B8F5;
+}
+
+.cuatro-si
+{
+	background: #87D7FF;
+}
+.cuatro-si:hover
+{
+	background: #87E5FF;
+}
+
+.cinco-si
+{
+	background: #9ADEFF;
+}
+.cinco-si:hover
+{
+	background: #AFE5FF;
+}
+
+/**/
+
+
+/*bloques desarrollo*/
+.uno-de
+{
+	background: #A63117;
+}
+.uno-de:hover
+{
+	background: #BA371A;
+}
+
+.dos-de
+{
+	background: #D9631E;
+}
+.dos-de:hover
+{
+	background: #ED6C21;
+}
+
+.tres-de
+{
+	background: #D97C2B;
+}
+.tres-de:hover
+{
+	background: #E5832D;
+}
+
+.cuatro-de
+{
+	background: #F2B950;
+}
+.cuatro-de:hover
+{
+	background: #FFC354;
+}
+
+.cinco-de
+{
+	background: #F2CA50;
+}
+.cinco-de:hover
+{
+	background: #FFD554;
+}
+
+/**/
+
+/*bloques gerencia*/
+.uno-g
+{
+	background: #6B8E46;
+}
+.uno-g:hover
+{
+	background: #779E4E;
+}
+
+.dos-g
+{
+	background: #A9D65F;
+}
+.dos-g:hover
+{
+	background: #B3E365;
+}
+
+.tres-g
+{
+	background: #BAF464;
+}
+.tres-g:hover
+{
+	background: #C2FF69;
+}
+.cuatro-g
+{
+	background: #D5FF8B;
+}
+.cuatro-g:hover
+{
+	background: #DDFF8B;
+}
+.cinco-g
+{
+	background: #EEFF8B;
+}
+.cinco-g:hover
+{
+	background: #F3FFAA;
+}
+/**/
+/*bloques instalacion*/
+.uno-i
+{
+	background: #570000;
+}
+.uno-i:hover
+{
+	background: #6D0000;
+}
+
+.dos-i
+{
+	background: #8B0200;
+}
+.dos-i:hover
+{
+	background: #A60200;
+}
+
+.tres-i
+{
+	background: #C00201;
+}
+.tres-i:hover
+{
+	background: #F70201;
+}
+.cuatro-i
+{
+	background: #F20201;
+}
+.cuatro-i:hover
+{
+	background: #F22E10;
+}
+.cinco-i
+{
+	background: #F21E10;
+}
+.cinco-i:hover
+{
+	background: #FF1510;
+}
+/**/
+/*bloques instalacion*/
+.uno-fa
+{
+	background: #466C75;
+}
+.uno-fa:hover
+{
+	background: #527F8A;
+}
+
+.dos-fa
+{
+	background: #5C8591;
+}
+.dos-fa:hover
+{
+	background: #7CB4C4;
+}
+
+.tres-fa
+{
+	background: #6B9BA9;
+}
+.tres-fa:hover
+{
+	background: #81BBCC;
+}
+.cuatro-fa
+{
+	background: #81B0BE;
+}
+.cuatro-fa:hover
+{
+	background: #89B5C3;
+}
+.cinco-fa
+{
+	background: #8EB3BE;
+}
+.cinco-fa:hover
+{
+	background: #81BBCC;
+}
+/**/
+
+
+@media screen and (max-width:640px){
+.contenedor
+{
+	width: 640px;
+	background: red;
+	margin: 10px auto;
+}
+.buscador
+{
+	display: none;
+}
+.buscador1
+{
+	display: none;
+}
+
+
+.column2
+{
+	width: 316px;
+	height: 200px;
+	float: left;
+}
+
+.column1
+{
+	width: 316px;
+	height: 200px;
+	float: left;
+}
+
+
+
+}  
+
+
+@media screen and (max-width:375px){
+.contenedor
+{
+	width: 371px;
+    margin: 10px auto;
+}
+.buscador
+{
+	display: none;
+}
+.buscador1
+{
+	display: none;
+}
+
+.column2
+{
+	width: 371px;
+	height: 200px;
+	float: left;
+}
+
+.column1
+{
+	width: 371px;
+	height: 200px;
+	float: left;
+}
+
+
+
+} 
+
+@media screen and (max-width:320px){
+.contenedor
+{
+	width: 316px;
+    margin: 10px auto;
+}
+.buscador
+{
+	display: none;
+}
+.buscador1
+{
+	display: none;
+}
+.column2
+{
+	width: 316px;
+	height: 200px;
+	float: left;
+}
+
+.column1
+{
+	width: 316px;
+	height: 200px;
+	float: left;
+}
+
+}  

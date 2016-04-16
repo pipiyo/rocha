@@ -1,0 +1,317 @@
+html
+{ height: 100%;}
+
+*
+*
+{ margin: 0;
+  padding: 0;}
+
+
+
+
+
+
+/* Celdas */
+
+.form00
+{
+	width:99%;
+	border:#fff 1px solid;
+}
+.form01
+{
+	width:99%;
+	border:#fff 1px solid;
+}
+.form02
+{
+	width:99%;
+	border:#fff 1px solid;
+}
+
+.form1
+{
+	width:95%;
+	border:#fff 1px solid;
+}
+.form2
+{
+	width:95%;
+	border:#fff 1px solid;
+}
+.form3
+{
+	width:95%;
+	border:#fff 1px solid;
+}
+.form4
+{
+	width:95%;
+	background:#ccc;
+	border:#ccc 1px solid;
+}
+.form10
+{
+	background:#ccc;
+	border:#ccc 1px solid;
+}
+
+.form11
+{
+	width:95%;
+	border:#fff 1px solid;
+}
+.form5
+{
+	width:95%;
+	border:#fff 1px solid;
+}
+
+.form6
+{
+	width:95%;
+	background:#ccc;
+	border:#ccc 1px solid;
+}
+.form7
+{
+	width:95%;
+	background:#ccc;
+	border:#ccc 1px solid;
+}
+.forma
+{
+	width:95%;
+	height: 30px;
+	border:#fff 1px solid;
+}
+.form8
+{
+	width:95%;
+	border:#fff 1px solid;
+}
+.form9
+{
+	width:95%;
+	border:#fff 1px solid;
+}
+.form10
+{
+  width:95%;;
+}
+
+/* */
+#form_oc input,select,textarea
+{
+	margin: 0px 15px;
+}
+
+#titulo_oc
+{
+	font-weight: normal;
+	font-size: 26px;
+	font-family: arial;
+	margin-top: 10px;
+	color: #235562;
+}
+
+#OC
+{
+  font-family: arial;
+  font-size: 13px;
+  margin-top: 15px;
+}
+#OC th
+{
+	color:#FFF;
+	background:#397373;
+}
+#OC td
+{
+	border-color: #76A69D;
+}
+.textbox
+{
+    border: 1px solid #DBE1EB;
+    width: 200px;
+    font-size: 11px;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-family: arial;
+    font-style: normal;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    background: #FFFFFF;
+    background: linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+    color: #2E3133;
+ }
+
+
+#ivaf
+{
+	width:100%;
+	margin: 0px;
+}
+
+
+#cal
+{
+	width: 99%;
+}
+
+
+#popup {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+}
+
+.content-popup {
+    margin:0px auto;
+    margin-top:50px;
+    padding:10px;
+    width:610px;
+    min-height:250px;
+    border-radius:4px;
+    background-color:#FFFFFF;
+    box-shadow: 0 2px 5px #666666;
+}
+.content {
+width: 960px;
+margin: 0 auto;
+text-align: center;
+}
+
+#obsgeneral
+{
+	width:95%; 
+	border:#fff 1px solid;
+}
+
+
+
+#listaproyectos
+{
+position:absolute; 
+ width:10px;
+}
+
+
+
+
+.rochasprimeros
+{
+text-align: left;
+float:left;  
+color: #000; 
+cursor: pointer; 
+background:#fff; 
+height:25px; 
+width: 150px;
+border: #fff solid 1px ;
+}
+.rochasprimeros:hover
+{
+border: #000 solid 1px ;
+}
+
+
+
+
+.rochas
+{
+text-align: left;
+float:left;  
+color: #000; 
+cursor: pointer; 
+background:#fff; 
+height:25px; 
+width: 150px;
+border: #fff solid 1px ;
+}
+.rochas:hover
+{
+border: #000 solid 1px ;
+}
+
+
+
+#listacodigos
+{
+position:absolute; 
+ width:10px;
+}
+.codigopro
+{
+text-align: left;
+float:left;  
+color: #000; 
+cursor: pointer; 
+background:#fff; 
+height:25px; 
+width: 150px;
+border: #fff solid 1px ;
+}
+.codigopro:hover
+{
+border: #000 solid 1px ;
+}
+
+
+
+#listadescripciones
+{
+position:absolute; 
+ width:10px;
+}
+.descripcionpro
+{
+text-align: left;
+float:left;  
+color: #000; 
+cursor: pointer; 
+background:#fff; 
+height:25px; 
+width: auto;
+border: #fff solid 1px ;
+}
+.descripcionpro:hover
+{
+border: #000 solid 1px ;
+}
+
+#cal{
+	background: #006656;
+	width:100%;
+	border: transparent;
+	padding: 3% 3%; 
+	color:#fff;
+}
+#cal:hover{
+	background: orange;
+	width:100%;
+	border: transparent;
+	padding: 3% 3%; 
+	color:#fff;
+	cursor: pointer;
+}
+
+#cal:disabled{
+	background: #666666;
+	width:100%;
+	border: transparent;
+	padding: 3% 3%; 
+	color:#fff;
+	cursor: pointer;
+}

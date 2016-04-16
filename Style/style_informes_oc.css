@@ -1,0 +1,178 @@
+html
+{ height: 100%;}
+
+*
+*
+{ margin: 0;
+  padding: 0;}
+
+body
+{ font: normal .90em arial, sans-serif;
+  color: #1D1D1D;
+ /* background: #FFF url(../Imagenes/pattern.jpg) repeat;*/
+ background:#fff;
+  }
+  
+#main, #header, #banner, #menubar, #site_content, #footer, #contact, #footer_content, #banner_image
+{ margin-left: auto; 
+  margin-right: auto;}
+ 
+#site_content
+{ width: 1250px;
+  overflow: hidden;
+  margin-top: 20px;
+  padding: 20px 0 0 20px;
+  background: #FFF;
+  border: 1px solid #fff;
+ 
+}  
+
+#informe_despacho th
+{
+	background-color:#FC0;
+	color:black;
+}
+#informe_produccion th
+{
+	background-color:blue;
+	color:#FFF;
+}
+
+#informe_oc th
+{
+	background-color:#096;
+	color:#FFF;
+	padding: 5px;
+}
+#informe_oc td
+{
+	padding: 3px;
+}
+
+#informe_instalacion th
+{
+	background-color:#B10F0F;
+	color:#FFF;
+}
+#informe_servicio th
+{
+	background-color:#886A08;
+	color:#FFF;
+}
+#informe_sillas th
+{
+	background-color:#0080FF;
+	color:#FFF;
+}
+.buscar_oc
+{
+	border: 1px solid #DBE1EB;
+    width: 200px;
+    font-size: 11px;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-family: arial;
+    font-style: normal;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    background: #096;
+    color: #fff;
+}
+.buscar_oc:hover
+{
+	border: 1px solid #DBE1EB;
+    width: 200px;
+    font-size: 11px;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-family: arial;
+    font-style: normal;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    background: orange;
+    color: #fff;
+}
+
+
+
+#cod_ser
+{
+	text-decoration:none;
+}
+#tit_ins
+{ 
+color:#900;
+font-size:20px;
+}
+#tit_pro
+{ 
+color:#003;
+font-size:20px;
+}
+#tit_des
+{ 
+color:#C60;
+font-size:20px;
+}
+#tit_ser
+{ 
+color:#960;
+font-size:20px;
+}
+#tit_sil
+{ 
+color:#03C;
+font-size:20px;
+}
+#tit_oc
+{
+	color:#096;
+font-size:20px;
+}
+
+.nueva_tabla_bodega
+{
+	 height: 20px;
+}
+
+.textbox
+    {
+    border: 1px solid #DBE1EB;
+    width: 200px;
+    font-size: 11px;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-family: arial;
+    font-style: normal;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    background: #FFFFFF;
+    background: linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+    color: #2E3133;
+    }  
+	.textbox:focus
+	{
+	color: #2E3133;
+	border-color: #FBFFAD;
+	}

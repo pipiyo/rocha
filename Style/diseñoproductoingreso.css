@@ -1,0 +1,41 @@
+
+#MARCO
+{
+	background:#C0C0C0;
+	height:470px;
+	margin-top:30px;
+	}
+
+#MARCO:HOVER
+{
+	background:#B8B8B8;
+	}
+	
+#BACK {
+width : 48px;
+height : 48px;
+background:url(../Imagenes/back.png)
+}
+
+#BACK:hover {
+background-image : url(../Imagenes/back22.png);
+} 
+
+td
+{
+	font-family: Gotham, "Helvetica Neue", Helvetica, 		    Arial, sans-serif;
+	font-size:18px;
+	color:#686868;
+	text-align:center;
+}
+
+h1{
+   	font-family: Gotham, "Helvetica Neue", Helvetica, 		    Arial, sans-serif;
+	font-size:28px;
+	color:#686868;
+	text-align:center;
+}
+
+tr{
+	height : 38;
+}

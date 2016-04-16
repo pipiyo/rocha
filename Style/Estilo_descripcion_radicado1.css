@@ -1,0 +1,182 @@
+html
+{ height: 100%;}
+
+*
+*
+{ margin: 0;
+  padding: 0;}
+
+body{ 
+	font: normal .90em arial, sans-serif;
+  	color: #1D1D1D;
+  	background:#ccc;
+}
+
+#site_content{ 
+	width: 960px;
+  	overflow: hidden;
+  	margin: auto;
+  	margin-top: 20px;
+  	padding: 20px 0 0 20px;
+  	background: #FFF;
+}
+#tabla_descripcion_radicado,#tabla_actividades,#tabla_actividades_lista{
+	border-collapse: collapse;
+	width: 935px;
+}
+#tabla_actividades_lista td, #tabla_actividades_lista th{
+	padding: 2px;
+	font-size: 10px;
+	font-weight: normal;
+}
+.des-actividad{
+	border:solid 1px #ccc;
+}
+#tabla_descripcion_radicado td, #tabla_descripcion_radicado th,#tabla_actividades td, #tabla_actividades th{
+	border:solid 1px #ccc;
+	padding: 2px;
+	font-size: 12px;
+}
+.txt_text{
+	background: transparent;
+	border: transparent;
+	font-size: 11px;
+	width: 100%;
+}
+.txt_texta{
+	border:#fff 1px solid;
+	margin:3px; 
+	width:99%;
+    height:95px;
+}
+.txt_derecha{
+	text-align: right;
+}
+.txt_center{
+	text-align: center;
+}
+.txt_impuesto{
+	width: 70px;
+	background: transparent;
+	border: transparent;
+	font-size: 11px;
+}
+
+.color_radicado_a{
+	background-color:#EBEACB;
+}
+.color_radicado_b{
+	background:#DFEECC;
+}
+.color_radicado_c{
+	background:#576B9C;
+}
+.nube{
+    position: absolute;
+    background: #6699FF;
+    color: #ffffff;
+    border-radius:5px;
+	font-family: arial, sans-serif;
+	padding: 10px;
+	margin-top: -10px;
+	margin-left: 10px;
+    z-index: 3;
+    display: none;
+	background-color: #6699FF;
+}
+
+.nube2{
+    position: absolute;
+    border: solid 1px #000;
+    color: #000;
+	font-family: arial, sans-serif;
+	margin-top: 0px;
+	margin-left: 0px;
+    z-index: 3;
+    display: none;
+	background-color: #fff;
+}
+
+ .nube2{
+ 	background: #000;
+    -webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.boton{
+	float:right;
+	width: 200px; 
+	height: 30px; 
+	background: #6699FF; 
+	color: #ffffff; 
+	cursor: pointer; 
+	border: 0px;
+}
+.boton1{
+	width: 200px; 
+	height: 30px; 
+	background: #6699FF; 
+	color: #ffffff; 
+	cursor: pointer; 
+	border: 0px;
+}
+.boton2{
+	width: 100%; 
+	background: #E69A9A;
+	border:transparent solid;
+	color: #fff;
+}
+.boton1a{
+	width: 120px; 
+	height: 30px; 
+	background: #6699FF; 
+	color: #ffffff; 
+	cursor: pointer; 
+	border: 0px;
+}
+.boton:hover,.boton1:hover,.boton2:hover,.boton1a:hover{
+	background: orange; 
+}
+
+.botones{
+	width: 935px;
+	padding: 10px 0;
+}
+.botones a{
+	text-decoration: none;
+}
+
+.visita{
+	background:#C93;
+	border:solid 1px #ccc;
+}
+.reunion{
+	background: #906;
+	border:solid 1px #ccc;
+	color:#fff;
+}
+.planimetria{
+	background:#C9CEB3;
+	border:solid 1px #ccc;
+}
+.cotizacion{
+	background:#060; 
+	color:#fff;
+	border:solid 1px #ccc;
+}
+.presentacion{
+	background:#39F; 
+	border:solid 1px #ccc;
+}
+.ti{
+	background:#F79F81;
+	border:solid 1px #ccc;
+}
+.visita a, .planimetria a , .presentacion a, .ti a{
+	text-decoration: none;
+	color:#000;
+}
+.reunion a, .cotizacion a{
+	text-decoration: none;
+	color:#fff;
+}

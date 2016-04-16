@@ -1,0 +1,68 @@
+#INFORME
+{
+	background:#F60;
+	height:130px; 
+	margin:3px;
+	width:396px;
+	}
+	
+#INFORME:HOVER
+{
+	background:#F96;
+	}
+#INFORME1
+{
+	background:#F63;
+	height:130px; 
+	margin:3px;
+	width:396px;
+	}
+	
+#INFORME1:HOVER
+{
+	background:#CC0;
+	}	
+	#INFORME2
+{
+	background:#FC6;
+	height:130px; 
+	margin:3px;
+	width:396px;
+	}
+	
+#INFORME2:HOVER
+{
+	background:#F90;
+	}
+	#INFORME3
+{
+	background:#F90;
+	height:130px; 
+	margin:3px;
+	width:396px;
+	}
+	
+#INFORME3:HOVER
+{
+	background:#FC3;
+	}
+	
+h2
+{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14px;
+	color:#FFF;
+	margin-top:58px;
+	}
+	
+#BACK {
+width : 48px;
+height : 48px;
+margin-left: 0px;
+
+background:url(../Imagenes/back.png);
+}
+
+#BACK:hover {
+background-image : url(../Imagenes/back22.png);
+} 
