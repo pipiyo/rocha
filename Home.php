@@ -1,6 +1,6 @@
 <?php require_once('Conexion/Conexion.php');  ?>
 <?php
-//Hola chicos
+//Holssss chicos
 session_start();
 if (!$_SESSION)
 {
