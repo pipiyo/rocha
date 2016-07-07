@@ -30,9 +30,26 @@ mysql_select_db($database_conn, $conn);
 	$txt_desde = "";	
 	$txt_hasta = "";
 	$contador1 = 0;
-	if (isset($_GET["buscar"])) 
-	{
-	$ES = $_GET['estado1'];
+	if (isset($_GET["buscar"])) {
+		$BUSCAR_CODIGO = $_GET['buscar_codigo'];
+		$BUSCAR_DESCRIPCION = $_GET['buscar_usuario'];
+		$ES = $_GET['estado1'];
+
+		if (isset($_GET["rocha_buscar"]))
+		{
+		$BUSCAR_ROCHA = $_GET['rocha_buscar'];
+		}
+
+		if($_GET["txt_desde"] != "" && $_GET["txt_hasta"] != "" )
+		{
+		$txt_desde = $_GET["txt_desde"];	
+		$txt_hasta = $_GET["txt_hasta"];
+		}
+		else
+		{
+		$txt_desde = "";	
+		$txt_hasta = "";	
+		}		
 	}
 ?>
 
@@ -123,7 +140,8 @@ mysql_select_db($database_conn, $conn);
 <tr>
   <td> <input placeholder="Desde"  type="text" class = 'textbox' autocomplete="off" id="txt_desde" name="txt_desde" /> </td>
   <td> <input placeholder="Hasta" type="text" class = 'textbox' autocomplete="off" id="txt_hasta" name="txt_hasta" /> </td>
-  <td align="center"><a href="ExelListadoDeCompra.php?estado=<?php echo $ES;?>&CODIGO_USUARIO=<?php echo $CODIGO_USUARIO;?>" target="_blank">
+  <td align="center">
+  <a href="ExelListadoDeCompra.php?estado=<?php echo $ES;?>&CODIGO_USUARIO=<?php echo $CODIGO_USUARIO;?>&txt_desde=<?php echo $txt_desde;?>&txt_hasta=<?php echo $txt_hasta; ?>&buscar_usuario=<?php echo $BUSCAR_DESCRIPCION; ?>&buscar_codigo=<?php echo $BUSCAR_CODIGO; ?>&rocha_buscar=<?php echo $BUSCAR_ROCHA; ?>" target="_blank">
   <img src="Imagenes/Excel.png" style = "border:0px;" alt="Exportar a Excel" class="right">
   </a></td>
   <td><input type="submit" name = "buscar" id='buscar' value="Buscar"/> </td>
@@ -168,28 +186,6 @@ $fecha7 = dameFecha2(date('d/m/Y'),7);
 
 if (isset($_GET["buscar"])) 
 {
-$BUSCAR_CODIGO = $_GET['buscar_codigo'];
-$BUSCAR_DESCRIPCION = $_GET['buscar_usuario'];
-
-
-if (isset($_GET["rocha_buscar"]))
-{
-$BUSCAR_ROCHA = $_GET['rocha_buscar'];
-}
-
-if($_GET["txt_desde"] != "" && $_GET["txt_hasta"] != "" )
-{
-$txt_desde = $_GET["txt_desde"];	
-$txt_hasta = $_GET["txt_hasta"];
-}
-else
-{
-$txt_desde = "";	
-$txt_hasta = "";	
-}
-
-	
-$ES = $_GET['estado1'];
 mysql_select_db($database_conn, $conn);
 
 $query_registro = "SELECT orden_de_compra.VERSION_HIJO,orden_de_compra.VERSION,orden_de_compra.NETO,orden_de_compra.FACTURAS, orden_de_compra.ROCHA_PROYECTO, orden_de_compra.ENVIADO, orden_de_compra.FECHA_CONFIRMACION, orden_de_compra.FECHA_ENVIO_VALIJA, orden_de_compra.CODIGO_OC, usuario.NOMBRE_USUARIO,orden_de_compra.FECHA_REALIZACION,orden_de_compra.FECHA_ENTREGA,orden_de_compra.DESPACHAR_DIRECCION,orden_de_compra.TOTAL,orden_de_compra.ESTADO,orden_de_compra.NOMBRE_PROVEEDOR,orden_de_compra.COMENTARIO FROM orden_de_compra, usuario where orden_de_compra.codigo_usuario = usuario.codigo_usuario ";
@@ -314,7 +310,22 @@ $numero = 0;
 	($FECHA_REALIZACION) . "</center></td>";
     echo "<td style= 'background:#EACFCF;'><center>" . 
 	$FECHA_ENTREGA . "</center></td>";
-	if($ESTADO == "OK")
+
+
+	if($CODIGO_USUARIO  !=  3 && $CODIGO_USUARIO  !=  2) {
+		if($FECHA_CONFIRMACION > $fecha7){
+			$color_celda = "style= 'background:#3ADF00; color:#fff;'";
+    	}
+		else if($FECHA_CONFIRMACION < date('Y-m-d')){
+			$color_celda = "style= 'background:#DF0101; color:#fff;'";
+		}
+    	else if($FECHA_CONFIRMACION >= date('Y-m-d')  and $FECHA_CONFIRMACION <= $fecha7){	
+    		$color_celda = "style= 'background:#FFFF00; color:#fff;'";	
+		}
+
+		echo "<td ".$color_celda." align='center'>".$CODIGO_USUARIO."</td>";	
+	} 
+	else if($ESTADO == "OK")
     {
 	echo "<td style= 'background:#0000FF;'><center><input style= 'background:#0000FF; color: white;' onchange='enviar(".$CODIGO_OC.",value,name);' id = 'fechac".$numero."' name='fechac".$numero."' type='text' value='".$FECHA_CONFIRMACION."' class='textf'/></center></td>";	
     }
@@ -336,6 +347,7 @@ $numero = 0;
     {
 	echo "<td style= 'background:#FFFF00;'><center><input style= 'background:#FFFF00;' onchange='enviar(".$CODIGO_OC.",value,name);' id = 'fechac".$numero."' name='fechac".$numero."' type='text' value='".$FECHA_CONFIRMACION."' class='textf'/></center></td>";			
 	}
+
 	}
 	echo "<td style= 'background:#EACFCF;'><center>" . 
 	$CODIGO_USUARIO1. "</center></td>";
@@ -343,6 +355,7 @@ $numero = 0;
 	number_format($NETO , 0, ",", ".").   "</td>"; 
 	echo "<td align='right' style= 'background:#EACFCF;'>" . $FACTURAS.   "</td>";
 	echo "<td align='center' title='".$row["COMENTARIO"]."' style= 'background:#EACFCF;'><svg  height='20' width='20'><circle cx='10' cy='10' r='8' stroke='#CCC' stroke-width='1' fill='".$fill."' /></svg> </td>";
+
 	echo "<td style= 'background:#EACFCF;'><center><input style= 'background:#EACFCF;' onchange='enviar(".$CODIGO_OC.",value,name);' id = 'fechav".$numero."' name='fechav".$numero."' type='text' value='".$FECHA_ENVIOV."' class='textf'/></center></td>";	
 	echo "<td align='right' style= 'background:#EACFCF;'><a href=RecibirOC.php?CODIGO_OC=" .$CODIGO_OC. ">Recibir</a></td>"; 	
     echo "<td style= 'background:#EACFCF;'><center>" . 
@@ -362,8 +375,21 @@ $numero = 0;
 	($FECHA_REALIZACION) . "</center></td>";
     echo "<td><center>" . 
 	$FECHA_ENTREGA . "</center></td>";
-		
-    if($ESTADO == "OK")
+
+	if($CODIGO_USUARIO  !=  3 && $CODIGO_USUARIO  !=  2) {
+		if($FECHA_CONFIRMACION > $fecha7){
+			$color_celda = "style= 'background:#3ADF00; color:#fff;'";
+    	}
+		else if($FECHA_CONFIRMACION < date('Y-m-d')){
+			$color_celda = "style= 'background:#DF0101; color:#fff;'";
+		}
+    	else if($FECHA_CONFIRMACION >= date('Y-m-d')  and $FECHA_CONFIRMACION <= $fecha7){	
+    		$color_celda = "style= 'background:#FFFF00; color:#fff;'";	
+		}
+
+		echo "<td ".$color_celda." align='center'>".$FECHA_CONFIRMACION."</td>";	
+	} 
+    else if($ESTADO == "OK")
     {
 	echo "<td style= 'background:#0000FF;'><center><input style= 'background:#0000FF; color: white;' onchange='enviar(".$CODIGO_OC.",value,name);' id = 'fechac".$numero."' name='fechac".$numero."' type='text' value='".$FECHA_CONFIRMACION."' class='textf'/></center></td>";	
     }

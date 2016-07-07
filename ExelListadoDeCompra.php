@@ -6,7 +6,7 @@ header("Pragma: no-cache");
 header("Expires: 0");
 ?>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="<?php print $language->language; ?>" xml:lang="<?php print $language->language; ?>">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>  
 <title> </title>
 
@@ -130,14 +130,64 @@ function dameFecha2($fecha,$dia)
 
 $fecha7 = dameFecha2(date('d/m/Y'),7);
 
-if($ESTADO == "")
+$BUSCAR_CODIGO = $_GET['buscar_codigo'];
+$BUSCAR_DESCRIPCION = $_GET['buscar_usuario'];
+$ES = $_GET['estado'];
+
+if (isset($_GET["rocha_buscar"]))
 {
-$query_registro = "SELECT  orden_de_compra.CODIGO_USUARIO , orden_de_compra.FACTURAS ,orden_de_compra.NETO,orden_de_compra.ROCHA_PROYECTO, orden_de_compra.ENVIADO, orden_de_compra.FECHA_CONFIRMACION, orden_de_compra.FECHA_ENVIO_VALIJA, orden_de_compra.CODIGO_OC,orden_de_compra.FECHA_REALIZACION,orden_de_compra.FECHA_ENTREGA,orden_de_compra.DESPACHAR_DIRECCION,orden_de_compra.TOTAL,orden_de_compra.ESTADO,orden_de_compra.NOMBRE_PROVEEDOR FROM orden_de_compra   ORDER BY orden_de_compra.CODIGO_OC desc ";
+$BUSCAR_ROCHA = $_GET['rocha_buscar'];
+}
+
+if($_GET["txt_desde"] != "" && $_GET["txt_hasta"] != "" )
+{
+$txt_desde = $_GET["txt_desde"];	
+$txt_hasta = $_GET["txt_hasta"];
 }
 else
 {
-$query_registro = "SELECT  orden_de_compra.CODIGO_USUARIO , orden_de_compra.FACTURAS ,orden_de_compra.NETO,orden_de_compra.ROCHA_PROYECTO, orden_de_compra.ENVIADO, orden_de_compra.FECHA_CONFIRMACION, orden_de_compra.FECHA_ENVIO_VALIJA, orden_de_compra.CODIGO_OC, orden_de_compra.FECHA_REALIZACION,orden_de_compra.FECHA_ENTREGA,orden_de_compra.DESPACHAR_DIRECCION,orden_de_compra.TOTAL,orden_de_compra.ESTADO,orden_de_compra.NOMBRE_PROVEEDOR FROM orden_de_compra where estado = '".$ESTADO."'  ORDER BY orden_de_compra.CODIGO_OC desc";	
+$txt_desde = "";	
+$txt_hasta = "";	
+}	
+
+$query_registro = "SELECT orden_de_compra.VERSION_HIJO,orden_de_compra.VERSION,orden_de_compra.NETO,orden_de_compra.FACTURAS, orden_de_compra.ROCHA_PROYECTO, orden_de_compra.ENVIADO, orden_de_compra.FECHA_CONFIRMACION, orden_de_compra.FECHA_ENVIO_VALIJA, orden_de_compra.CODIGO_OC, usuario.NOMBRE_USUARIO,orden_de_compra.FECHA_REALIZACION,orden_de_compra.FECHA_ENTREGA,orden_de_compra.DESPACHAR_DIRECCION,orden_de_compra.TOTAL,orden_de_compra.ESTADO,orden_de_compra.NOMBRE_PROVEEDOR,orden_de_compra.COMENTARIO FROM orden_de_compra, usuario where orden_de_compra.codigo_usuario = usuario.codigo_usuario ";
+
+
+
+if($ES  == "" && $BUSCAR_DESCRIPCION  == "" && $BUSCAR_ROCHA == "" && $BUSCAR_CODIGO == "")
+{
+$query_registro .=" and not orden_de_compra.ESTADO = 'Nulo' and not orden_de_compra.ESTADO = 'OK' ";
 }
+
+if($ES  != "" && $ES  != "Todo")
+{
+$query_registro .= " and orden_de_compra.ESTADO = '".$ES."'";
+}
+
+
+if($txt_desde != "" && $txt_hasta != "" )
+{
+$query_registro .= "  and FECHA_CONFIRMACION between '".$txt_desde."' and '".$txt_hasta."'";
+}
+
+
+
+
+if($BUSCAR_DESCRIPCION  != "")
+{
+$query_registro .= " and orden_de_compra.NOMBRE_PROVEEDOR ='".$BUSCAR_DESCRIPCION."'";
+}
+if($BUSCAR_CODIGO != "" )
+{
+$query_registro .= " and orden_de_compra.CODIGO_OC = '".$BUSCAR_CODIGO."'";
+}
+
+else if($BUSCAR_ROCHA != "")
+{
+$query_registro .= " and orden_de_compra.ROCHA_PROYECTO ='".($BUSCAR_ROCHA)."'";
+
+}	
+
 $result = mysql_query($query_registro, $conn) or die(mysql_error());
 $trd = '';
 $cont = 1;
@@ -156,17 +206,7 @@ $cont = 1;
 	$FECHA_CONFIRMACION = $row["FECHA_CONFIRMACION"];
 	$FECHA_ENVIOV = $row["FECHA_ENVIO_VALIJA"];
     $FACTURAS = $row["FACTURAS"];
-	$COD_USER = $row["CODIGO_USUARIO"];						
-					
-					
-$query_registroS = "SELECT NOMBRE_USUARIO FROM usuario where CODIGO_USUARIO = '".$COD_USER."'";
-$resultS = mysql_query($query_registroS, $conn) or die(mysql_error());
-
-
- while($row = mysql_fetch_array($resultS))					
-	{
-		$nom_user = $row["NOMBRE_USUARIO"];	
-	}			
+	$nom_user = $row["NOMBRE_USUARIO"];								
 	
   if($ESTADO == "OK")
     {
