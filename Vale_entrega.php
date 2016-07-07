@@ -10,6 +10,7 @@ self.location = "index.php"
 
 $CODIGO_VALE = $_GET['CODIGO_VALE'];
 $TIPO_USUARIO= $_SESSION['TIPO_USUARIO'];
+$CODIGO_USUARIO = $_SESSION['CODIGO_USUARIO'];
 
 mysql_select_db($database_conn, $conn);
 $query_registro = "SELECT * FROM vale_emision where COD_VALE = '".$CODIGO_VALE."'";
@@ -375,8 +376,12 @@ echo "<td   id = 'cel11'><center><input style='font-size:10px;' class='form8' na
 
 <tr>
 <td>
-<input class='ingreso-servicio' style="width:188px;" type = 'submit' id="editar" name ="editar" value = "Editar"  /> 
-<input style="display:none;"  type = 'text' id="CODIGO_VALE" name ="CODIGO_VALE" value = "<?php echo $CODIGO_VALE?>" /></form> <?php } else { ?>
+<?php if($CODIGO_USUARIO  ==  3 || $CODIGO_USUARIO  ==  2) { ?>
+<input class='ingreso-servicio' style="width:188px;" type = 'submit' id="editar" name ="editar" value = "Editar"  />
+<?php } ?>
+<input type='hidden' id="CODIGO_VALE" name ="CODIGO_VALE" value = "<?php echo $CODIGO_VALE?>" />
+</form> 
+<?php } else { ?>
 </td>
 </tr>
 </table>
