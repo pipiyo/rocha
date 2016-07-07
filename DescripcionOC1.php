@@ -320,7 +320,7 @@ $fila=1;
 </tr>
 <?php } ?>
 <tr>
-<?php if($NOMBRE_USUARIO == 'enc' || $NOMBRE_USUARIO == 'pbo' && $TOTAL <= 350000 )
+<?php if($NOMBRE_USUARIO == 'enc' || $NOMBRE_USUARIO == 'pbo' || $NOMBRE_USUARIO == 'cma')
 {?>
 <td>
 <select id = "estados" name = "estados">
@@ -355,33 +355,7 @@ $fila=1;
 <tr>
 <td><input value = "Aceptar" class = "boton_descripcion" type="submit" id = "ok" name="ok"/>
 <input style = "display:none;" type = "text"  name = "a" id = "a" value="<?php echo $CODIGO_OC; ?>"/></td>
-<?php } else if($NOMBRE_USUARIO == 'enc' || $NOMBRE_USUARIO == 'pbo' && $RUT_PROVEEDOR == '76.038.442-9' || $RUT_PROVEEDOR == '99.543.470-9')
-{?>
-<td>
-<select id = "estados" name = "estados">
-<option> <?php echo $ESTADO; ?> </option>
-<option> Pendiente </option>
-<option> Modificacion </option>
-<option> En Proceso</option>
-<option> Nulo </option>
-<option> OK </option>
-</select>
-</td>
-</tr>
-
-<tr>
-<td><input value = "Aceptar" class = "boton_descripcion"type="submit" id = "ok" name="ok"/>
-<input style = "display:none;" type = "text"  name = "a" id = "a" value="<?php echo $CODIGO_OC; ?>"/></td>
-<?php }?>
-<?php if($TIPO_USUARIO != 'administrador' && $ESTADO == 'En Proceso')
-{ ?>
-<td>
-
-</td>
-<tr>
-<td>
-<input style = "display:none;" type = "text"  name = "a" id = "a" value="<?php echo $CODIGO_OC; ?>"/></td>
-<?php }?>
+<?php } ?>
 </form>
 </tr>
 <form  action="copia_OC.php" method="get">
