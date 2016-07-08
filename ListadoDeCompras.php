@@ -314,13 +314,13 @@ $numero = 0;
 
 	if($CODIGO_USUARIO  !=  3 && $CODIGO_USUARIO  !=  2) {
 		if($FECHA_CONFIRMACION > $fecha7){
-			$color_celda = "style= 'background:#3ADF00; color:#fff;'";
+			$color_celda = "style= 'background:#3ADF00; color:#000;'";
     	}
 		else if($FECHA_CONFIRMACION < date('Y-m-d')){
-			$color_celda = "style= 'background:#DF0101; color:#fff;'";
+			$color_celda = "style= 'background:#DF0101; color:#000;'";
 		}
     	else if($FECHA_CONFIRMACION >= date('Y-m-d')  and $FECHA_CONFIRMACION <= $fecha7){	
-    		$color_celda = "style= 'background:#FFFF00; color:#fff;'";	
+    		$color_celda = "style= 'background:#FFFF00; color:#000;'";	
 		}
 
 		echo "<td ".$color_celda." align='center'>".$FECHA_CONFIRMACION."</td>";	
@@ -378,13 +378,13 @@ $numero = 0;
 
 	if($CODIGO_USUARIO  !=  3 && $CODIGO_USUARIO  !=  2) {
 		if($FECHA_CONFIRMACION > $fecha7){
-			$color_celda = "style= 'background:#3ADF00; color:#fff;'";
+			$color_celda = "style= 'background:#3ADF00; color:#000;'";
     	}
 		else if($FECHA_CONFIRMACION < date('Y-m-d')){
-			$color_celda = "style= 'background:#DF0101; color:#fff;'";
+			$color_celda = "style= 'background:#DF0101; color:#000;'";
 		}
     	else if($FECHA_CONFIRMACION >= date('Y-m-d')  and $FECHA_CONFIRMACION <= $fecha7){	
-    		$color_celda = "style= 'background:#FFFF00; color:#fff;'";	
+    		$color_celda = "style= 'background:#FFFF00; color:#000;'";	
 		}
 
 		echo "<td ".$color_celda." align='center'>".$FECHA_CONFIRMACION."</td>";	
