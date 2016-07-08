@@ -323,7 +323,7 @@ $numero = 0;
     		$color_celda = "style= 'background:#FFFF00; color:#fff;'";	
 		}
 
-		echo "<td ".$color_celda." align='center'>".$CODIGO_USUARIO."</td>";	
+		echo "<td ".$color_celda." align='center'>".$FECHA_CONFIRMACION."</td>";	
 	} 
 	else if($ESTADO == "OK")
     {
