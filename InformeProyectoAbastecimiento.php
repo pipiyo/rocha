@@ -205,7 +205,10 @@ $result1 = mysql_query($query_registro, $conn) or die(mysql_error());
 <option>Solicitud</option>
 </select>
 </td>
-<td colspan="2"></td>
+<td>
+<a href="ExcelInformeAbastecimiento.php?txt_desde=<?php echo $txt_desde;?>&txt_hasta=<?php echo $txt_hasta;?>&ESTADO=<?php echo urlencode($ESTADOV);?>&buscarfe=<?php echo urlencode($buscaf);?>&buscar_codigo=<?php echo urlencode($BUSCAR_CODIGO);?>&buscar_vendedor=<?php echo urlencode($BUSCAR_VENDEDOR);?>&categoria=<?php echo urlencode($CATEGORIA);?>&PROCESO=<?php echo urlencode($PROCESO);?>" target="_blank">
+<img src="Imagenes/Excel.png" style = "border:0px;" alt="Exportar a Excel"></a></td>
+<td></td>
 <td> <input type="submit" id="buscar" class='boton' name = "buscar" value = "Buscar" /> </td>
 </tr>
 </table>
