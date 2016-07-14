@@ -862,6 +862,13 @@ $FECHA_VARIABLE ="";
 	$RAZON_RECL =  $row["RAZON"];
 	$NOMBRE_SERVICIO = $row["NOMBRE_SERVICIO"];
 	$FECHA_REALIZACION = $row["FECHA_REALIZACION"];
+
+//CAMBIO DIA
+$qq = "select DATEDIFF(max(servicio.`FECHA_ENTREGA`), min(servicio.`FECHA_INICIO`)) AS n FROM servicio where servicio.CODIGO_PROYECTO = '$CODIGO_PROYECTO' AND servicio.NOMBRE_SERVICIO IN('Adquisiciones', 'Despacho')";
+
+$result_qq = mysql_query($qq, $conn) or die(mysql_error());
+$row_qq = mysql_fetch_array($result_qq);
+
 /*	if($FECHA_VARIABLE == $FECHA_INICIO)
 	{
 		$numero=1;
@@ -987,7 +994,7 @@ $FECHA_VARIABLE ="";
 		{
 	echo  "<td align='center' id='amarillo'>".substr($FECHA_CONFIRMACION,0,11)."</td>";		
 		}
-	echo  "<td id='hoy'align='center'>".($DIAS)."</td>";
+	echo  "<td id='hoy'align='center'>".($row_qq[n])."</td>";
 	echo  "<td id='hoy'>".$ESTADO."</td></tr>";
 	$numero--;
   }
@@ -1018,7 +1025,7 @@ $FECHA_VARIABLE ="";
 		{
 	echo  "<td align='center' id='amarillo'>".substr($FECHA_CONFIRMACION,0,11)."</td>";		
 		}
-	echo  "<td align='center' >".($DIAS)."</td>";
+	echo  "<td align='center' >".($row_qq[n])."</td>";
 	echo  "<td>".$ESTADO."</td></tr>";
 	$numero--;
   }
