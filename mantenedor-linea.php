@@ -75,7 +75,7 @@ while($row = mysql_fetch_array($result2))
 <table class='tabla-linea' rules='all' border='1'>
 <?php
 
-if ($_POST['inhabilitar-submit']) {
+if (isset($_POST['inhabilitar-submit'])) {
 
 	$query_in = "UPDATE linea SET inhabilitar = '1' where CODIGO_LINEA = '".$_POST['cod-pro']."' ";
 
