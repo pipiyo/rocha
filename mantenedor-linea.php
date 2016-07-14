@@ -50,7 +50,7 @@ $numero = 0;
 <option>Linea</option>
 <?php 
 $query_registro = 
-"select * from linea WHERE INHABILITAR = '0' ORDER BY NOMBRE_LINEA ASC";
+"select * from linea ORDER BY NOMBRE_LINEA ASC";
 $result2 = mysql_query($query_registro, $conn) or die(mysql_error());
 while($row = mysql_fetch_array($result2))
 {
@@ -77,9 +77,18 @@ while($row = mysql_fetch_array($result2))
 
 if (isset($_POST['inhabilitar-submit'])) {
 
-	$query_in = "UPDATE linea SET inhabilitar = '1' where CODIGO_LINEA = '".$_POST['cod-pro']."' ";
-
+ if ($_POST['inhabilitar-submit'] == 'habilitar') {
+ 	
+	$query_in = "UPDATE linea SET inhabilitar = '0' where CODIGO_LINEA = '".$_POST['cod-pro']."' ";
 	$result_in = mysql_query($query_in, $conn) or die(mysql_error());
+
+
+ }else  if ($_POST['inhabilitar-submit'] == 'inhabilitar') {
+
+	$query_in = "UPDATE linea SET inhabilitar = '1' where CODIGO_LINEA = '".$_POST['cod-pro']."' ";
+	$result_in = mysql_query($query_in, $conn) or die(mysql_error());
+
+ }
 
 
 }
@@ -95,11 +104,11 @@ if (isset($_GET["buscarl"]))
 
 $codigo = $_GET["codigol"];
 $linea = $_GET["nombrel"];
-$query_registro = "select * FROM Linea where INHABILITAR = '0' ";
+$query_registro = "select * FROM Linea  ";
 
 	if($codigo != "")
 	{
-	$query_registro .= " and CODIGO_LINEA = '".$codigo."'";	
+	$query_registro .= " where CODIGO_LINEA = '".$codigo."'";	
 	}
 	if($linea != "Linea")
 	{
@@ -109,14 +118,14 @@ $query_registro = "select * FROM Linea where INHABILITAR = '0' ";
 	}
 	else
 	{
-	$query_registro .= " and NOMBRE_LINEA = '".$linea."'";
+	$query_registro .= " where NOMBRE_LINEA = '".$linea."'";
 	}
 	}
 
 }
 else
 {
-$query_registro = "select * FROM Linea where INHABILITAR = '0'";	
+$query_registro = "select * FROM Linea";	
 }
 
 $result = mysql_query($query_registro, $conn) or die(mysql_error());
@@ -126,6 +135,7 @@ $fila = 0;
   {  
   	$NOMBRE_LINEA = $row["NOMBRE_LINEA"];
 	$CODIGO_LINEA = $row["CODIGO_LINEA"];
+	$INHABILITAR = $row["INHABILITAR"];
 	if($numero == 0)
 	{	
 	echo"<tr>
@@ -149,9 +159,17 @@ else
 echo  "<tr class=".$color_fila."><td align='center'><a href='descripcion-linea.php?CODIGO_LINEA=".$CODIGO_LINEA."'>".$CODIGO_LINEA ."</a></td>";
 echo  "<td align='center'>".$NOMBRE_LINEA."</td><td>
     	<form action='' method='POST'>
-    	 <input type='hidden' name='cod-pro' value='".$CODIGO_LINEA."'>
-    	 <input type='submit' value='inhabilitar'  name='inhabilitar-submit'>
-    	</form>
+    	 <input type='hidden' name='cod-pro' value='".$CODIGO_LINEA."'>";
+
+    	 if ($INHABILITAR == 0) {
+    	 	echo "<input style='color: #fff; background: red;' type='submit' value='inhabilitar'  name='inhabilitar-submit'>";
+    	 }else{
+    	 	echo " <input style='color: #fff; background: green;' type='submit' value='habilitar'  name='inhabilitar-submit'>";
+    	 }
+
+
+    	
+ echo "</form>
 	  </td></tr>";
 	$fila++;
 	$numero--;
