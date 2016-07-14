@@ -512,12 +512,9 @@ $result1 = mysql_query($query_registro, $conn) or die(mysql_error());
 <td align="center"><select class="textbox txti" id = "txt_procesos" name="txt_procesoi">
 <option><?php echo ($PROCESO); ?></option>
 <option>Revisión de proyecto</option>
-<option>Rectificacón de medidas</option>
-<option>Recepción de mercaderia</option>
 <option>Instalación</option>
-<option>Refaccion</option>
-<option>Acta de Recepción</option>
 <option>Servicio Técnico</option>
+<option>Otros</option>
 </select></td>
 </tr>
 <?php } ?>

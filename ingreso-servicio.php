@@ -240,13 +240,9 @@ mysql_free_result($result);
 <td>
 <select class='formulario_ingreso_servicio' disabled  id = "txt_procesoi" name="txt_procesoi" >
 <option value="">Proceso</option>
-<option>Revisión de proyecto</option>
-<option>Rectificacón de medidas</option>
-<option>Recepción de mercaderia</option>
 <option>Instalación</option>
-<option>Refaccion</option>
-<option>Acta de Recepción</option>
 <option>Servicio Técnico</option>
+<option>Otros</option>
 </select> </td>
 <td width='140' class='color_ti'></td>
 <td>

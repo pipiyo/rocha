@@ -1753,11 +1753,14 @@ else
 {
 $sql555 = "select * FROM servicio where CODIGO_PROYECTO = '".$CODIGO_PROYECTO."' AND ESTADO  = '".$ESTADOV."' AND  not NOMBRE_SERVICIO='OC' ORDER BY ORDEN_SERVICIO, FECHA_INICIO asc ";
 }
+
+$tp_corte = substr($CODIGO_PROYECTO,0,2);
+
 $result555 = mysql_query($sql555, $conn) or die(mysql_error());
  while($row = mysql_fetch_array($result555))
   {
 	$NOMBRE_SERVICIO1 = $row["NOMBRE_SERVICIO"];
-		$PROGRESO = $row["PROGRESO"];
+	$PROGRESO = $row["PROGRESO"];
 	$CODIGO_SERVICIO1 = $row["CODIGO_SERVICIO"];
 	$FECHA_I1 = $row["FECHA_INICIO"];
 	$FECHA_E1 = $row["FECHA_ENTREGA"];
@@ -1775,6 +1778,9 @@ $result555 = mysql_query($sql555, $conn) or die(mysql_error());
 	$VALE = $row["VALE"];
 	$FACTURA = $row["FACTURA"];
 	$FI  = $row["FI"];
+
+	
+
 	if($NOMBRE_SERVICIO1 == "Produccion")
 	{
 		echo "<tr><td align='center' style='background:blue;color:#fff;border-bottom:#999' rowspan='2' colspan='10'> <a style='color:#fff;
@@ -1830,7 +1836,11 @@ $result555 = mysql_query($sql555, $conn) or die(mysql_error());
 	$NOMBRE_SERVICIO1 . "</a></td>";
 	echo "<td style='background:#FFFF00'><center>N°</center></td>";	
 	echo "<td style='background:#FFFF00;'><center>Descripcion</center></td>";
-	echo "<td style='background:#FFFF00;'><center>Reclamo</center></td>";
+	if($tp_corte == "TP"){
+		echo "<td style='background:#FFFF00;'><center>Servicio</center></td>";
+	}else{
+		echo "<td style='background:#FFFF00;'><center>Reclamo</center></td>";
+	}
 	echo "<td width='70' style='background:#FFFF00;'><center>Fecha Inicio</center></td>";	
 	echo "<td width='70' style='background:#FFFF00;'><center>Fecha Entrega</center></td>";	
 	echo "<td width='70' style='background:#FFFF00;color:#000;'><center>Confirmacion</center></td>";	
@@ -2036,6 +2046,12 @@ $result555 = mysql_query($sql555, $conn) or die(mysql_error());
 	echo"<tr><td> &nbsp; </td></tr>";
   }
 ?>
+<tr>
+	<td>
+		<a href="ExcelActividad.php?estado=<?php echo $ESTADOV;?>&codigo=<?php echo $CODIGO_PROYECTO;?>" target="_blank">
+		<img src="Imagenes/Excel.png" style = "border:0px;" alt="Exportar a Excel"></a>
+	</td>
+</tr>
 </table>
 </div>
 
