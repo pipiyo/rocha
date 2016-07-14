@@ -150,7 +150,7 @@ echo  "<tr class=".$color_fila."><td align='center'><a href='descripcion-linea.p
 echo  "<td align='center'>".$NOMBRE_LINEA."</td><td>
     	<form action='' method='POST'>
     	 <input type='hidden' name='cod-pro' value='".$CODIGO_LINEA."'>
-    	 <input type='submit' value='buscar'  name='inhabilitar-submit'>
+    	 <input type='submit' value='inhabilitar'  name='inhabilitar-submit'>
     	</form>
 	  </td></tr>";
 	$fila++;
