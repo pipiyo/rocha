@@ -1425,7 +1425,7 @@ $result1 = mysql_query($query_registro, $conn) or die(mysql_error());
 <option><?php echo $DEPARTAMENTO_CREDITO?></option>
 <?php 
 $query_registro = 
-"select * from linea ORDER BY NOMBRE_LINEA ASC";
+"select * from linea WHERE INHABILITAR = '0' ORDER BY NOMBRE_LINEA ASC";
 $result2 = mysql_query($query_registro, $conn) or die(mysql_error());
 while($row = mysql_fetch_array($result2))
 {
