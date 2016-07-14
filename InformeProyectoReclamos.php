@@ -994,7 +994,7 @@ $row_qq = mysql_fetch_array($result_qq);
 		{
 	echo  "<td align='center' id='amarillo'>".substr($FECHA_CONFIRMACION,0,11)."</td>";		
 		}
-	echo  "<td id='hoy'align='center'>".($row_qq[n])."</td>";
+	echo  "<td id='hoy'align='center'>".($row_qq['n'])."</td>";
 	echo  "<td id='hoy'>".$ESTADO."</td></tr>";
 	$numero--;
   }
@@ -1025,7 +1025,7 @@ $row_qq = mysql_fetch_array($result_qq);
 		{
 	echo  "<td align='center' id='amarillo'>".substr($FECHA_CONFIRMACION,0,11)."</td>";		
 		}
-	echo  "<td align='center' >".($row_qq[n])."</td>";
+	echo  "<td align='center' >".($row_qq['n'])."</td>";
 	echo  "<td>".$ESTADO."</td></tr>";
 	$numero--;
   }
