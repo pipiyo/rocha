@@ -34,56 +34,56 @@ while($row = mysql_fetch_array($result3))
 </tr>
 <tr>
 <td><input type="text" class="input-reclamo" value="<?php echo $RECLAMOS + 1; ?>" id="cod_rcla" name ="cod_rcla" /></td>
-<td><select id="area" name ="area" />
-<option value="">Area</option>
-<option>COMERCIAL</option>
-<option>DAM</option>
-<option>ADQUISICIONES</option>
-<option>PRODUCCION</option>
-<option>DESPACHO</option>
-<option>TRANSPORTE</option>
-<option>INSTALACION</option>
-<option>CLIENTE</option>
-<option>SILLAS</option>
-<option>PROVEEDOR</option>
-  
-</select></td>
-<td><select  id="razon" name ="razon" />
-  <option value="">Razon</option>
-  <option>Faltante Material</option>
-  <option>Acabado Diferente</option>
-  <option>Dimension Diferente</option>
-  <option>Defecto De Frabica</option>
-  <option>Diseño De Producto</option>
-  <option>Error Medidas Obra</option>
-  <option>Otro</option>
-</select></td>
-<td><select  id="area1" name ="area1" />
-<option value="">Area</option>
-<option>COMERCIAL</option>
-  <option>DAM</option>
-  <option>ADQUISICIONES</option>
-  <option>PRODUCCION</option>
-  <option>DESPACHO</option>
-  <option>TRANSPORTE</option>
-  <option>INSTALACION</option>
-  <option>CLIENTE</option>
-   <option>SILLAS</option>
-  <option>PROVEEDOR</option>
-</select></td>
-<td><select id="area2" name ="area2" />
- <option value="">Area</option>
- <option>COMERCIAL</option>
-  <option>DAM</option>
-  <option>ADQUISICIONES</option>
-  <option>PRODUCCION</option>
-  <option>DESPACHO</option>
-  <option>TRANSPORTE</option>
-  <option>INSTALACION</option>
-  <option>CLIENTE</option>
-   <option>SILLAS</option>
-  <option>PROVEEDOR</option>
-</select></td>
+<td>
+  <select id="area" name ="area" />
+    <option value="">Area</option>
+    <option>AREA TECNICA</option>
+    <option>COMERCIAL</option>
+    <option>DAM</option>
+    <option>PRODUCCION</option>
+    <option>DESPACHO</option>
+    <option>INSTALACION</option>
+    <option>CLIENTE</option>
+    <option>PROVEEDOR</option>
+  </select>
+</td>
+<td>
+  <select  id="razon" name ="razon" />
+    <option value="">Razon</option>
+    <option>Faltante Material</option>
+    <option>Acabado Diferente</option>
+    <option>Dimension Diferente</option>
+    <option>Defecto De Frabica</option>
+    <option>Diseño De Producto</option>
+    <option>Daños Otros</option>
+  </select>
+</td>
+<td>
+  <select  id="area1" name ="area1" />
+    <option value="">Area</option>
+    <option>AREA TECNICA</option>
+    <option>COMERCIAL</option>
+    <option>DAM</option>
+    <option>PRODUCCION</option>
+    <option>DESPACHO</option>
+    <option>INSTALACION</option>
+    <option>CLIENTE</option>
+    <option>PROVEEDOR</option>
+  </select>
+</td>
+<td>
+  <select id="area2" name ="area2" />
+    <option value="">Area</option>
+    <option>AREA TECNICA</option>
+    <option>COMERCIAL</option>
+    <option>DAM</option>
+    <option>PRODUCCION</option>
+    <option>DESPACHO</option>
+    <option>INSTALACION</option>
+    <option>CLIENTE</option>
+    <option>PROVEEDOR</option>
+  </select>
+</td>
 </tr>
 <tr>
 <td><input onClick="validar();" type="checkbox" id="actis" name="actis" > </td>
