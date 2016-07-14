@@ -74,31 +74,51 @@ while($row = mysql_fetch_array($result2))
 <div class='section'>
 <table class='tabla-linea' rules='all' border='1'>
 <?php
+
+if ($_POST['inhabilitar-submit']) {
+
+	$query_in = "UPDATE linea SET inhabilitar = '1' where CODIGO_LINEA = '".$_POST['cod-pro']."' ";
+
+	$result_in = mysql_query($query_in, $conn) or die(mysql_error());
+
+
+}
+
+
+
+
+
+
+
 if (isset($_GET["buscarl"]))
 {
+
 $codigo = $_GET["codigol"];
 $linea = $_GET["nombrel"];
-$query_registro = "select * FROM Linea";
-if($codigo != "")
-{
-$query_registro .= " where CODIGO_LINEA = '".$codigo."'";	
-}
-if($linea != "Linea")
-{
-if($codigo != "")
-{	
-$query_registro .= " and NOMBRE_LINEA = '".$linea."'";	
+$query_registro = "select * FROM Linea where INHABILITAR = '0' ";
+
+	if($codigo != "")
+	{
+	$query_registro .= " and CODIGO_LINEA = '".$codigo."'";	
+	}
+	if($linea != "Linea")
+	{
+	if($codigo != "")
+	{	
+	$query_registro .= " and NOMBRE_LINEA = '".$linea."'";	
+	}
+	else
+	{
+	$query_registro .= " and NOMBRE_LINEA = '".$linea."'";
+	}
+	}
+
 }
 else
 {
-$query_registro .= " where NOMBRE_LINEA = '".$linea."'";		
+$query_registro = "select * FROM Linea where INHABILITAR = '0'";	
 }
-}
-}
-else
-{
-$query_registro = "select * FROM Linea";	
-}
+
 $result = mysql_query($query_registro, $conn) or die(mysql_error());
 $numero = 0;
 $fila = 0;
@@ -111,6 +131,7 @@ $fila = 0;
 	echo"<tr>
 	     <th>N°</th> 
 		 <th>Linea</th>
+		 <th>inhabilitar</th>
 	     </tr>
 		 ";
  	$numero = 20;
@@ -126,18 +147,18 @@ else
   $fila = -1;
 }
 echo  "<tr class=".$color_fila."><td align='center'><a href='descripcion-linea.php?CODIGO_LINEA=".$CODIGO_LINEA."'>".$CODIGO_LINEA ."</a></td>";
-echo  "<td align='center'>".$NOMBRE_LINEA."</td></tr>";
+echo  "<td align='center'>".$NOMBRE_LINEA."</td><td>
+    	<form action='' method='POST'>
+    	 <input type='hidden' name='cod-pro' value='".$CODIGO_LINEA."'>
+    	 <input type='submit' value='buscar'  name='inhabilitar-submit'>
+    	</form>
+	  </td></tr>";
 	$fila++;
 	$numero--;
   }
 ?>
 </table>
 <div>
-
-
-
-
-
 
 </body>
 </html>
