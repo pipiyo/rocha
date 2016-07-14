@@ -25,6 +25,9 @@ self.location = "index.php"
             $fin=0;
             $ESTADOV = $_GET["estado"];
             $CODIGO_PROYECTO = $_GET["codigo"];
+            if($ESTADOV == ""){
+                $ESTADOV = "TODOS";
+            }
 
             if($ESTADOV == "TODOS")
             {
