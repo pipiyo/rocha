@@ -135,6 +135,7 @@ $SERVICIO = $_POST['txt_servicio'];
 $DOCUMENTO = $_POST['txt_documento'];
 $TECNICO1= $_POST['tec1'];
 $TECNICO2 = $_POST['tec2'];
+$COMUNA = $_POST['comuna'];
 
 $CODIGO_PROYECTO = $_POST['rochar'];
 
@@ -193,7 +194,7 @@ while($row = mysql_fetch_array($result5))
   }
 if($CUENTA > 0)
 {
-$sql = "INSERT INTO servicio (DOCUMENTO_SERVICIO_TECNICO,TIPO_SERVICIO,TECNICO_1,TECNICO_2,PROCESO,EJECUTOR,PUESTOS,PREDECESOR,DIAS,LIDER,INSTALADOR_1,INSTALADOR_2,INSTALADOR_3,INSTALADOR_4,DESCRIPCION,NOMBRE_SERVICIO,FECHA_INICIO,FECHA_ENTREGA,REALIZADOR,SUPERVISOR,OBSERVACIONES,ESTADO,CODIGO_USUARIO,CODIGO_PROYECTO,DIRECCION,TPTMFI,GUIA_DESPACHO,FECHA_REALIZACION,RECLAMOS,FECHA_PRIMERA_ENTREGA,OC,CATEGORIA) values ('".($DOCUMENTO)."','".($SERVICIO)."','".($TECNICO1)."','".($TECNICO2)."','".($PROCESO)."','".($EJECUTOR)."','".($PUESTOS1)."','".($PREDECESOR)."','".($CANTIDAD_DIAS)."','".($LIDER)."','".($INS1)."','".($INS2)."','".($INS3)."','".($INS4)."','".($DESCRIPCIONS)."','".($NOMBRE_SERVICIO)."','".($FECHAIS)."','".($FECHAES)."','".($REALIZADOR)."','".($SUPERVISOR)."','".($OBSERVACIONESS)."','EN PROCESO','".($CODIGO_USUARIO)."','".($CODIGO_PROYECTO)."','".($DIRECCION2)."','".($TTF)."','".($GUIA)."','".$FECHA_REALIZACION."','".$RECLAMOS."','".($FECHAES)."','SIN OC','".$CATEGORIA."')";
+$sql = "INSERT INTO servicio (DOCUMENTO_SERVICIO_TECNICO,TIPO_SERVICIO,TECNICO_1,TECNICO_2,PROCESO,EJECUTOR,PUESTOS,PREDECESOR,DIAS,LIDER,INSTALADOR_1,INSTALADOR_2,INSTALADOR_3,INSTALADOR_4,DESCRIPCION,NOMBRE_SERVICIO,FECHA_INICIO,FECHA_ENTREGA,REALIZADOR,SUPERVISOR,OBSERVACIONES,ESTADO,CODIGO_USUARIO,CODIGO_PROYECTO,DIRECCION,TPTMFI,GUIA_DESPACHO,FECHA_REALIZACION,RECLAMOS,FECHA_PRIMERA_ENTREGA,OC,CATEGORIA,CODIGO_COMUNA) values ('".($DOCUMENTO)."','".($SERVICIO)."','".($TECNICO1)."','".($TECNICO2)."','".($PROCESO)."','".($EJECUTOR)."','".($PUESTOS1)."','".($PREDECESOR)."','".($CANTIDAD_DIAS)."','".($LIDER)."','".($INS1)."','".($INS2)."','".($INS3)."','".($INS4)."','".($DESCRIPCIONS)."','".($NOMBRE_SERVICIO)."','".($FECHAIS)."','".($FECHAES)."','".($REALIZADOR)."','".($SUPERVISOR)."','".($OBSERVACIONESS)."','EN PROCESO','".($CODIGO_USUARIO)."','".($CODIGO_PROYECTO)."','".($DIRECCION2)."','".($TTF)."','".($GUIA)."','".$FECHA_REALIZACION."','".$RECLAMOS."','".($FECHAES)."','SIN OC','".$CATEGORIA."','".$COMUNA."')";
 $result = mysql_query($sql, $conn) or die(mysql_error());
 header("Location: InformeProyectoReclamos.php?ESTADO=EN PROCESO");
 }
@@ -297,16 +298,9 @@ $GRP3 = "";
                  });
 				    });
 
-        $(function(){
-                $('#rochar').autocomplete({
-                   source : 'ajaxProyecto.php',
-                   select : 
-				   function(event, ui)
-				   {
-      
-                   }
-                 });
-				    });
+
+
+
   
   $(function() 
   {
@@ -618,8 +612,11 @@ else
                        
                    }
                  });
+
                
   }
+
+
   
   </script>
 

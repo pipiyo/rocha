@@ -23,6 +23,7 @@ while($row = mysql_fetch_array($result3))
 <td></td>
 <td></td>
 <td><input placeholder="Rocha" class="input-reclamo" onBlur="vacio();" type="text" value="" id="rochar" name ="rochar" /></center></td>
+
 <td></td>
 <td> </td>
 </tr>
@@ -141,6 +142,32 @@ while($row = mysql_fetch_array($result3))
 <tr>
 <td><input placeholder="Dirección" type="text" class="input-reclamo" id= "txt_direccions" name = "txt_direccions" value="" /> </td>
 <td><input  placeholder="TP/TM/FI"  type="text" class="input-reclamo"  id= "txt_ttf" name = "txt_ttf" value="" /> </td>
+
+
+<td>
+<select name="comuna" id="comuna" type ="text" class="input-reclamo" >
+<option value="">comuna</option>
+<?php 
+$query_comuna = 
+"SELECT CODIGO_COMUNA,NOMBRE_COMUNA FROM comunas ORDER BY NOMBRE_COMUNA";
+$result_comuna = mysql_query($query_comuna, $conn) or die(mysql_error());
+
+ while($row = mysql_fetch_array($result_comuna))
+ {
+?>
+<option value = "<?php echo $row['CODIGO_COMUNA']; ?>" > <?php echo $row['NOMBRE_COMUNA']; ?> </option>
+ <?php 
+ } mysql_free_result($result_comuna);
+ ?> 
+ <option> </option>
+</select>
+</td>
+
+
+
+
+
+
 <td>&nbsp;  </td>
 <td>&nbsp;  </td>
 <td>&nbsp;  </td>
