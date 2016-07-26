@@ -296,6 +296,17 @@ $GRP3 = "";
                    }
                  });
 				    });
+
+        $(function(){
+                $('#rochar').autocomplete({
+                   source : 'ajaxProyecto.php',
+                   select : 
+				   function(event, ui)
+				   {
+      
+                   }
+                 });
+				    });
   
   $(function() 
   {
