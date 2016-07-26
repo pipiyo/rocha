@@ -864,7 +864,7 @@ $FECHA_VARIABLE ="";
 	$FECHA_REALIZACION = $row["FECHA_REALIZACION"];
 
 //CAMBIO DIA
-$qq = "select DATEDIFF(max(servicio.`FECHA_ENTREGA`), min(servicio.`FECHA_INICIO`)) AS n FROM servicio where servicio.CODIGO_PROYECTO = '$CODIGO_PROYECTO' AND servicio.NOMBRE_SERVICIO IN('Adquisiciones', 'Despacho')";
+$qq = "select DATEDIFF(max(servicio.`FECHA_ENTREGA`), min(servicio.`FECHA_INICIO`)) AS n FROM servicio where servicio.CODIGO_PROYECTO = '$CODIGO_PROYECTO' AND servicio.NOMBRE_SERVICIO IN('Adquisiciones', 'Despacho') AND servicio.RECLAMOS != ''";
 
 $result_qq = mysql_query($qq, $conn) or die(mysql_error());
 $row_qq = mysql_fetch_array($result_qq);
