@@ -18,24 +18,21 @@
 
   <script language = javascript>
 
-  	
-
-
-
-
   </script>  
   
 </head>
 <body>	
  <div class="container">
- 	<div class="row">
- 		
+ 	
+ 	<div class="row">	
+ 	<form action="#" method="POST" >
+
  		<select class="textbox" name="categoria" id="categoria"  >
     		<option></option>
 		 	<?php
 
-		 		foreach ($n = $con->Query('SELECT * FROM categoria_producto') as $key => $value) {
-		 			echo "<option>" . $n[$key]['nombre'] . "</option>";
+		 		foreach ($n = $con->Query_simple('SELECT * FROM categoria_producto') as $key => $value) {
+		 			echo "<option value='" . $n[$key]['id_categoria_producto'] . "' >" . $n[$key]['nombre'] . "</option>";
 		 		};
 
 		 	?>
@@ -43,21 +40,38 @@
 
   		<input type="text" name="codigo" />
   		<input type="text" name="descripcion" />
+  		<input type="submit" name="submit" />
 
+  	</form>
  	</div>
 
+<?php
 
+	if ($_POST) {
+		
+		echo "<div class='row'>
+  			<input type='text' name='' value='".$_POST['categoria']."' />
+  			<input type='text' name='' value='".$_POST['codigo']."' />
+  			<input type='text' name='' value='".$_POST['descripcion']."' />
+ 		</div>";
+
+ 		foreach ($n = $con->Superficies_colores($_POST['categoria'], $_POST['codigo'] ,$_POST['descripcion']) as $key => $value) {
+ 			echo $value['nombre'] . "<br>";
+ 		};
+
+	}
+
+?>
 
  	<div class="row">
  		<pre>
 		 	<?php
-		 		var_dump($con->Query('SELECT * FROM categoria_producto'));
+		 		var_dump($con->Query_simple('SELECT * FROM categoria_producto'));
 		 	?>
  		</pre>
  	</div>
  	
  </div>
-
 
 </body>
 </html>
