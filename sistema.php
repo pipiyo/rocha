@@ -39,6 +39,7 @@
 	<a href="#"><div id="MANTENEDOR SUB CATEGORIA" class="column1 siete-s"><h3>MANTENEDOR SUB CATEGORIA</h3></div></a>
 	<a href="#"><div id="RECETA" class="column1 seis-s"><h3>RECETAS</h3></div></a>
 	<a href="#"><div id="PRODUCTOS GENERICOS" class="column1 siete-s"><h3>NUEVA BODEGA Y PRODUCTO</h3></div></a>
+	<a href="ingreso_producto/ingreso_aglomerado.php"><div class="column1 siete-s"><h3>INGRESO AGLOMERADO :v</h3></div></a>
 </div>	
 
 </body>
