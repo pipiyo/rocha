@@ -56,20 +56,20 @@
  		</div>";
 
  		foreach ($n = $con->Superficies_colores($_POST['categoria'], $_POST['codigo'] ,$_POST['descripcion']) as $key => $value) {
- 			echo $value['nombre'] . "<br>";
+ 			foreach ($n[$key] as $llave => $valor) {
+ 				foreach ($n[$key][$llave] as $k => $v) {
+ 					echo $v['cod'] . "    " .  $v['des']  . "<br>";	
+ 				}
+ 			}
  		};
-
+ 		echo "<pre>";
+		 var_dump($con->Superficies_colores($_POST['categoria'], $_POST['codigo'] ,$_POST['descripcion']));
+		echo "</pre>";
 	}
 
 ?>
 
- 	<div class="row">
- 		<pre>
-		 	<?php
-		 		var_dump($con->Query_simple('SELECT * FROM categoria_producto'));
-		 	?>
- 		</pre>
- 	</div>
+
  	
  </div>
 
