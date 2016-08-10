@@ -55,6 +55,7 @@
   			<input type='text' name='' value='".$_POST['descripcion']."' />
  		</div>";
 
+
  		foreach ($n = $con->Superficies_colores($_POST['categoria'], $_POST['codigo'] ,$_POST['descripcion']) as $key => $value) {
  			foreach ($n[$key] as $llave => $valor) {
  				foreach ($n[$key][$llave] as $k => $v) {
@@ -62,6 +63,7 @@
  				}
  			}
  		};
+
  		echo "<pre>";
 		 var_dump($con->Superficies_colores($_POST['categoria'], $_POST['codigo'] ,$_POST['descripcion']));
 		echo "</pre>";
