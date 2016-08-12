@@ -64,6 +64,7 @@
  			}
  		};
 
+
  		echo "<pre>";
 		 var_dump($con->Superficies_colores($_POST['categoria'], $_POST['codigo'] ,$_POST['descripcion']));
 		echo "</pre>";
