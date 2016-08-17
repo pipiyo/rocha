@@ -1456,6 +1456,10 @@ font-family: "arial", serif;
     font-family: 'quattrocento_sansregular';
  font-size:12px;
 }
+.center{
+	margin: auto;
+	padding: 1em;
+}
 
 #kardex_td
 {

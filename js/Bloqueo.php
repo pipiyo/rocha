@@ -22,6 +22,8 @@ if (caducar.length > 0)
 {
 var lista = <?php echo json_encode($_SESSION['OBJETOS']); ?>;
 var listasub = <?php echo json_encode($_SESSION['SUBOBJETOS']); ?>;
+
+
   for(var i=0;i<lista.length; i++)
 {
 if (lista[i].COD == "CUADRO RADICADO") 
