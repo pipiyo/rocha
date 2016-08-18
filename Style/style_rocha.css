@@ -1524,6 +1524,19 @@ font-family: "arial", serif;
 	width: 100%;
 }
 
+.normal-table{
+	margin: auto;
+	border-collapse: collapse;
+	margin-bottom: 1em;
+	font-family: arial;
+	font-size: 13px;
+}
+.normal-table td{
+	padding: .5em 1em;
+	border: solid 1px #ccc;
+}
+
+
 @media screen and (max-width:960px){  
 
   
