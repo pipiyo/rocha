@@ -179,5 +179,69 @@ if (isset($_GET["buscar"]))
 			</tr>
 		</table>
 		<?php mysql_free_result($result1); ?>
+
+		<table class="normal-table">
+			<tr>
+				<th> Centro de costo</th>
+				<th> Q </th>
+				<th> % </th>
+			</tr>
+		<?php
+			$query_registro1 = "SELECT servicio.CODIGO_PROYECTO, servicio.RECLAMOS FROM servicio where not TRANSPORTE in ('null','') AND FECHA_ENTREGA between '".$txt_desde."' and '".$txt_hasta."' AND not ESTADO in('NULO')";
+			
+			$result1 = mysql_query($query_registro1, $conn) or die(mysql_error());
+			$num = array();
+			$nam = array();
+			while($row = mysql_fetch_array($result1))
+			{  	
+				array_push($num,$row[0]);
+				array_push($nam,$row[1]);
+			}
+
+			$tp = 0;
+			$rh = 0;
+			$rc = 0;
+			$to = 0;
+			for($i=0; $i < count($num); $i++){
+
+				$query_registro2 = "SELECT  CODIGO_RECLAMO FROM RECLAMOS WHERE CODIGO_RECLAMO = '".$nam[$i]."'";
+				$result2 = mysql_query($query_registro2, $conn) or die(mysql_error());
+				$ok = 0;
+				while($row2 = mysql_fetch_array($result2))
+				{
+					$ok = 1;
+				}  	
+				mysql_free_result($result2);
+
+				if(substr($num[$i],0,2) == "TP"){
+					$tp++;
+				}else if($ok == 1){
+					$rc++;
+				}else{
+					$rh++;
+				}
+				$to++;
+			} 
+			$rh_porcentaje = 0;
+			$tp_porcentaje = 0;
+			$rc_porcentaje = 0;
+			$to_porcentaje = 0;
+
+			if($rh > 0){$rh_porcentaje =  $rh * 100 / $to;}
+			if($tp > 0){$tp_porcentaje =  $tp * 100 / $to;}
+			if($rc > 0){$rc_porcentaje =  $rc * 100 / $to;}
+			if($to > 0){$to_porcentaje =  $to * 100 / $to;}
+
+			echo "<tr> <td>Rocha</td> <td align='right'>".$rh."</td> <td align='right'>".number_format($rh_porcentaje,0,",",".")."%</td> </tr>";
+			echo "<tr> <td>TP</td> <td align='right'>".$tp."</td> <td align='right'>".number_format($tp_porcentaje,0,",",".")."%</td> </tr>";
+			echo "<tr> <td>Reclamo</td> <td align='right'>".$rc."</td> <td align='right'>".number_format($rc_porcentaje,0,",",".")."%</td> </tr>";
+		?>
+			<tr>
+				<td>Total</td>
+				<td><?php echo $to;?></td>
+				<td><?php echo number_format($to_porcentaje,0,",",".")?>%</td>
+			</tr>
+		</table>
+		<?php mysql_free_result($result1); ?>
 	</body>
 </html>
