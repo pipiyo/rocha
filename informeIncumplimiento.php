@@ -618,7 +618,7 @@ $suma1= $div19 + $div20 +  $div21 + $div23 + $div24 + $div25 + $div26 + $div27 +
 			    <th id="th_title_azul">Cantidad</th>
 			    <th id="th_title_azul">% Fabrica</th>
 			    <th id="th_title_azul">Monto Neto</th>    
-			    <th id="th_title_azul">Dias Atraso</th>
+			    <th id="th_title_azul">% Cumplimiento</th>
 			</tr>
 
 			<tr>
