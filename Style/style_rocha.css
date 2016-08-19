@@ -1531,7 +1531,7 @@ font-family: "arial", serif;
 	font-family: arial;
 	font-size: 13px;
 }
-.normal-table td{
+.normal-table td , .normal-table th{
 	padding: .5em 1em;
 	border: solid 1px #ccc;
 }
