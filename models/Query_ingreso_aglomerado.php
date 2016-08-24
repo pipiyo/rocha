@@ -59,7 +59,7 @@ require_once('../Conexion/Conexionpoo.php');
 				$CATEGORIA = $generico['categoria'];
 				$CODIGO_GENERICO = ( $v['generico'] == 1 ) ? "" : $generico['codigo'];
 				$TEMPORADA = 2;
-				$FAMILIA = ( $v['generico'] == 1 ) ? "generico" : "" ;
+				$FAMILIA = ( $v['generico'] == 1 ) ? "generico" : $v['familia'] ;
 				$CUERPO = $v['cuerpo'];
 				$FRENTE = $v['frente'];
 				$CANTO = $v['canto'];
@@ -109,7 +109,8 @@ where `categoria_producto`.`id_categoria_producto` = '$cat' AND `superficies_cat
 				$id_sup_cat .= "'".$fila['id_superficies_categoria']."'"; 
 				
 				$codigo_productos[$fila['id_superficies']] = array( "pro" => array( array( "cod" => $cod . "." . $fila['alias'],
-																						   "des" => $fila['nombre'] ) ) );
+																						   "des" => $fila['nombre'],
+																						   "familia" => $fila['alias'] ) ) );
 			}
 
 			$a .= ")";
@@ -180,7 +181,8 @@ AND `cantos`.`id_cantos` = `categoria_producto_colores_superficie_cantos`.`id_ca
 														"frente" => $v3['id'],
 														"canto" => $v4['id_canto'],
 														"espesor" => NULL,
-														"trascara" => NULL );	
+														"trascara" => NULL,
+														"familia" => $codigo_productos[$k]['pro'][0]['familia'] );	
 												}
 											}
 
@@ -297,7 +299,8 @@ AND `cantos`.`id_cantos` = `categoria_producto_colores_superficie_cantos`.`id_ca
 														"frente" => NULL,
 														"canto" => $vvvv['id_canto'],
 														"espesor" => $v5['id_espesor'],
-														"trascara" => $v6['id_trascara'] );
+														"trascara" => $v6['id_trascara'],
+														"familia" => $codigo_productos[$k]['pro'][0]['familia'] );
 
 												}
 
@@ -309,7 +312,8 @@ AND `cantos`.`id_cantos` = `categoria_producto_colores_superficie_cantos`.`id_ca
 														"frente" => NULL,
 														"canto" => $vvvv['id_canto'],
 														"espesor" => $v5['id_espesor'],
-														"trascara" => NULL );
+														"trascara" => NULL,
+														"familia" => $codigo_productos[$k]['pro'][0]['familia'] );
 											}
 											
 
@@ -334,7 +338,8 @@ AND `cantos`.`id_cantos` = `categoria_producto_colores_superficie_cantos`.`id_ca
 														"frente" => NULL,
 														"canto" => $vvvv['id_canto'],
 														"espesor" => NULL,
-														"trascara" => $v6['id_trascara']  );
+														"trascara" => $v6['id_trascara'],
+														"familia" => $codigo_productos[$k]['pro'][0]['familia']  );
 
 												}
 
@@ -346,7 +351,8 @@ AND `cantos`.`id_cantos` = `categoria_producto_colores_superficie_cantos`.`id_ca
 														"frente" => NULL,
 														"canto" => $vvvv['id_canto'],
 														"espesor" => NULL,
-														"trascara" => NULL  );
+														"trascara" => NULL,
+														"familia" => $codigo_productos[$k]['pro'][0]['familia']  );
 											}
 									
 									}

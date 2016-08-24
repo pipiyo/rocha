@@ -47,7 +47,9 @@
 
 <?php
 
-	if (isset($_POST['submit'])) {
+
+
+	if ($_POST['submit']) {
 
   echo "<form action='' method='POST' >";
 
@@ -69,7 +71,8 @@
                   <input name='productos[$i][canto]' type='text' value='$v[canto]'>
                   <input name='productos[$i][espesor]' type='text' value='$v[espesor]'>
                   <input name='productos[$i][trascara]' type='text' value='$v[trascara]'>
-                  <input name='productos[$i][generico]' type='text' value='0'>              
+                  <input name='productos[$i][generico]' type='text' value='0'>   
+                  <input name='productos[$i][familia]' type='text' value='$v[familia]'>           
                  </div>";	
           $i++;
         }
@@ -90,6 +93,8 @@ echo " <input type='submit' name='ok' value='ok' /> </form>";
     echo "</pre>";
 
   }
+
+
 
 ?>
 
