@@ -1,4 +1,4 @@
-<?php require_once('../Conexion/Query_ingreso_aglomerado.php'); 
+<?php require_once('../models/Query_ingreso_aglomerado.php'); 
 
 	$con = new Conexion\Query_ingreso_aglomerado;
 
