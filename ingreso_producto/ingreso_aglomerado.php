@@ -47,28 +47,49 @@
 
 <?php
 
-	if ($_POST) {
-		
+	if ($_POST['submit']) {
+
+  echo "<form action='#' method='POST' >";
+
 		echo "<div class='row'>
-  			<input type='text' name='' value='".$_POST['categoria']."' />
-  			<input type='text' name='' value='".$_POST['codigo']."' />
-  			<input type='text' name='' value='".$_POST['descripcion']."' />
- 		</div>";
+  			   <input type='text' name='generico[categoria]' value='".$_POST['categoria']."' />
+  			   <input type='text' name='generico[codigo]' value='". trim($_POST['codigo']) ."' />
+  			   <input type='text' name='generico[descripcion]' value='". str_replace(" @", "", $_POST['descripcion']) ."' />
+ 		     </div>";
 
-
- 		foreach ($n = $con->Superficies_colores($_POST['categoria'], $_POST['codigo'] ,$_POST['descripcion']) as $key => $value) {
+  $i = 0;
+ 		foreach ($n = $con->Superficies_colores($_POST['categoria'], trim($_POST['codigo']), trim($_POST['descripcion'])) as $key => $value) {
  			foreach ($n[$key] as $llave => $valor) {
  				foreach ($n[$key][$llave] as $k => $v) {
- 					echo $v['cod'] . "    " .  $v['des']  . "<br>";	
- 				}
+ 					echo  "<div> 
+                  <input name='productos[$i][codigo]' type='text' value='$v[cod]'> 
+                  <input name='productos[$i][descripcion]' type='text' value='$v[des]'>
+                  <input name='productos[$i][cuerpo]' type='text' value='$v[cuerpo]'>
+                  <input name='productos[$i][frente]' type='text' value='$v[frente]'>
+                  <input name='productos[$i][canto]' type='text' value='$v[canto]'>
+                  <input name='productos[$i][espesor]' type='text' value='$v[espesor]'>
+                  <input name='productos[$i][trascara]' type='text' value='$v[trascara]'>
+                  <input name='productos[$i][generico]' type='text' value='0'>              
+                 </div>";	
+          $i++;
+        }
  			}
  		};
 
+echo " <input type='submit' name='ok' value='ok' /> </form>";
 
  		echo "<pre>";
 		 var_dump($con->Superficies_colores($_POST['categoria'], $_POST['codigo'] ,$_POST['descripcion']));
 		echo "</pre>";
 	}
+
+  if ($_POST['ok']) {
+
+    echo "<pre>";
+      var_dump($con->Ingreso_productos($_POST['productos'] ,$_POST['generico']));
+    echo "</pre>";
+
+  }
 
 ?>
 
