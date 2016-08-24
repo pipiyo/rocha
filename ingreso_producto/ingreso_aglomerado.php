@@ -14,7 +14,7 @@
   <link rel="shortcut icon" href="Imagenes/rocha.png">
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
 
-  <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+
 
   <script language = javascript>
 
