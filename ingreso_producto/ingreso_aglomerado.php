@@ -25,7 +25,7 @@
  <div class="container">
  	
  	<div class="row">	
- 	<form action="#" method="POST" >
+ 	<form action="" method="POST" >
 
  		<select class="textbox" name="categoria" id="categoria"  >
     		<option></option>
@@ -47,9 +47,9 @@
 
 <?php
 
-	if ($_POST['submit']) {
+	if (isset($_POST['submit'])) {
 
-  echo "<form action='#' method='POST' >";
+  echo "<form action='' method='POST' >";
 
 		echo "<div class='row'>
   			   <input type='text' name='generico[categoria]' value='".$_POST['categoria']."' />
@@ -83,7 +83,7 @@ echo " <input type='submit' name='ok' value='ok' /> </form>";
 		echo "</pre>";
 	}
 
-  if ($_POST['ok']) {
+  if (isset($_POST['ok'])) {
 
     echo "<pre>";
       var_dump($con->Ingreso_productos($_POST['productos'] ,$_POST['generico']));
