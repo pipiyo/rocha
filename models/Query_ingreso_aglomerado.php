@@ -68,8 +68,8 @@ require_once('../Conexion/Conexionpoo.php');
 				$RUTA = $v['codigo'] . "_img.jpg";
 				$RUTA1 = $v['codigo'] . "_img_1.jpg";
 				$RUTA2 = $v['codigo'] . "_img_2.jpg";
-				$CAD_2D = $v['codigo'] . ".scv";
-				$CAD3D = $v['codigo'] . "_1.scv";
+				$CAD_2D = $v['codigo'] . ".dwg";
+				$CAD3D = $v['codigo'] . ".dwg";
  				$this->query->execute();
 			}
 
