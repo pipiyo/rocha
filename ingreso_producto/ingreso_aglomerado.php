@@ -59,7 +59,23 @@
   			   <input type='text' name='generico[descripcion]' value='". str_replace(" @", "", $_POST['descripcion']) ."' />
  		     </div>";
 
-  $i = 0;
+
+
+
+          echo  "<div> 
+                  <input name='productos[0][codigo]' type='text' value='".$_POST['codigo']."'> 
+                  <input name='productos[0][descripcion]' type='text' value='".$_POST['descripcion']."'>
+                  <input name='productos[0][cuerpo]' type='text' value=''>
+                  <input name='productos[0][frente]' type='text' value=''>
+                  <input name='productos[0][canto]' type='text' value=''>
+                  <input name='productos[0][espesor]' type='text' value=''>
+                  <input name='productos[0][trascara]' type='text' value=''>
+                  <input name='productos[0][generico]' type='text' value='1'>   
+                  <input name='productos[0][familia]' type='text' value='generico'>           
+                 </div>"; 
+
+
+  $i = 1;
  		foreach ($n = $con->Superficies_colores($_POST['categoria'], trim($_POST['codigo']), trim($_POST['descripcion'])) as $key => $value) {
  			foreach ($n[$key] as $llave => $valor) {
  				foreach ($n[$key][$llave] as $k => $v) {

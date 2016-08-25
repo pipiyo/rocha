@@ -43,6 +43,7 @@ require_once('../Conexion/Conexionpoo.php');
 			$this->query->bind_param('ssssssssssssssss', $CODIGO_PRODUCTO, $DESCRIPCION, $CATEGORIA, $CODIGO_GENERICO, $TEMPORADA, $FAMILIA, $CUERPO, $FRENTE, $CANTO, $TRASCARA, $ESPESOR, $RUTA, $RUTA1, $RUTA2, $CAD_2D, $CAD3D);
 
 
+/*
 			$productos[] = array(   "codigo" => $generico['codigo'],
 								    "descripcion" => $generico['descripcion'],
 								    "cuerpo" => NULL,
@@ -51,6 +52,27 @@ require_once('../Conexion/Conexionpoo.php');
 								    "espesor" => NULL,
 								    "trascara" => NULL,
 								    "generico" => 1 );
+*/
+
+/*
+				$CODIGO_PRODUCTO = $generico['codigo'];
+				$DESCRIPCION = $generico['descripcion'];
+				$CATEGORIA = $generico['categoria'];
+				$CODIGO_GENERICO = "";
+				$TEMPORADA = 2;
+				$FAMILIA = "generico";
+				$CUERPO = NULL;
+				$FRENTE = NULL;
+				$CANTO = NULL;
+				$TRASCARA = NULL;
+				$ESPESOR = NULL;
+				$RUTA = $generico['codigo'] . "_img.jpg";
+				$RUTA1 = $generico['codigo'] . "_img_1.jpg";
+				$RUTA2 = $generico['codigo'] . "_img_2.jpg";
+				$CAD_2D = $generico['codigo'] . ".dwg";
+				$CAD3D = $generico['codigo'] . ".dwg";
+				$this->query->execute();
+*/
 
 			foreach ($productos as $k => $v) {
 
