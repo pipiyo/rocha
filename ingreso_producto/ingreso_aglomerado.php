@@ -64,7 +64,7 @@
 
           echo  "<div> 
                   <input name='productos[0][codigo]' type='text' value='".$_POST['codigo']."'> 
-                  <input name='productos[0][descripcion]' type='text' value='".$_POST['descripcion']."'>
+                  <input name='productos[0][descripcion]' type='text' value='".str_replace(" @", "", $_POST['descripcion'])."'>
                   <input name='productos[0][cuerpo]' type='text' value=''>
                   <input name='productos[0][frente]' type='text' value=''>
                   <input name='productos[0][canto]' type='text' value=''>
