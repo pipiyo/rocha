@@ -202,6 +202,7 @@ if (isset($_GET["buscar"]))
 			$rh = 0;
 			$rc = 0;
 			$to = 0;
+			$tm = 0;
 			for($i=0; $i < count($num); $i++){
 
 				$query_registro2 = "SELECT  CODIGO_RECLAMO FROM RECLAMOS WHERE CODIGO_RECLAMO = '".$nam[$i]."'";
@@ -215,6 +216,8 @@ if (isset($_GET["buscar"]))
 
 				if(substr($num[$i],0,2) == "TP"){
 					$tp++;
+				}else if(substr($num[$i],0,2) == "TM"){
+					$tm++;
 				}else if($ok == 1){
 					$rc++;
 				}else{
@@ -226,15 +229,19 @@ if (isset($_GET["buscar"]))
 			$tp_porcentaje = 0;
 			$rc_porcentaje = 0;
 			$to_porcentaje = 0;
+			$tm_porcentaje = 0;
 
 			if($rh > 0){$rh_porcentaje =  $rh * 100 / $to;}
 			if($tp > 0){$tp_porcentaje =  $tp * 100 / $to;}
 			if($rc > 0){$rc_porcentaje =  $rc * 100 / $to;}
+			if($tm > 0){$tm_porcentaje =  $tm * 100 / $to;}
 			if($to > 0){$to_porcentaje =  $to * 100 / $to;}
+			
 
 			echo "<tr> <td>Rocha</td> <td align='right'>".$rh."</td> <td align='right'>".number_format($rh_porcentaje,0,",",".")."%</td> </tr>";
 			echo "<tr> <td>TP</td> <td align='right'>".$tp."</td> <td align='right'>".number_format($tp_porcentaje,0,",",".")."%</td> </tr>";
 			echo "<tr> <td>Reclamo</td> <td align='right'>".$rc."</td> <td align='right'>".number_format($rc_porcentaje,0,",",".")."%</td> </tr>";
+			echo "<tr> <td>TM</td> <td align='right'>".$tm."</td> <td align='right'>".number_format($tm_porcentaje,0,",",".")."%</td> </tr>";
 		?>
 			<tr>
 				<td>Total</td>
