@@ -202,9 +202,9 @@ $su1 = $COMERCIAL3 + $DAM3  + $PROVEEDOR3 + $IMPORTACION3+$ADQUISICIONES3 + $DES
 
 $su2 = $COMERCIAL4 + $DAM4  + $PROVEEDOR4 + $IMPORTACION4+$ADQUISICIONES4 + $DESPACHO4 + $PRODUCCION4 + $INSTALACION4 + $SILLAS4 + $PLANIFICACION4 ;
 
-$su3 =  $ADQUISICIONES3 + $DESPACHO3 + $PRODUCCION3 + $INSTALACION3 + $SILLAS3 + $PROVEEDOR3 ;
+$su3 =  $ADQUISICIONES3 + $DESPACHO3 + $PRODUCCION3 + $INSTALACION3 + $SILLAS3;
 
-$su4 =    $ADQUISICIONES4 + $DESPACHO4 + $PRODUCCION4 + $INSTALACION4 + $SILLAS4 + $PROVEEDOR4 ;
+$su4 =  $ADQUISICIONES4 + $DESPACHO4 + $PRODUCCION4 + $INSTALACION4 + $SILLAS4;
 
 $cumpfin = $CUMPLIDOS - $ADELANTADOS;
 
@@ -460,7 +460,7 @@ else
 	$div33 = $div33 * 100;
 }
 	
-$suma= $div13 + $div14 +  $div15 + $div16 + $div17 + $div18;	
+$suma= $div13 + $div14 +  $div15 + $div16 + $div17;	
 $suma1= $div19 + $div20 +  $div21 + $div23 + $div24 + $div25 + $div26 + $div27 + $div28  + $div29;
 ?>
 
@@ -527,7 +527,7 @@ $suma1= $div19 + $div20 +  $div21 + $div23 + $div24 + $div25 + $div26 + $div27 +
 			    <td id="td_title2" align="right"><?php echo $ADQUISICIONES3 ?></td>
 			    <td id="td_title2" align="center"><?php echo number_format($div19,2, ",", "."); ?>%</td>
 			    <td id="td_title2" align="right"><?php echo number_format($ADQUISICIONES4,0, ",", "."); ?></td>
-			    <td id="td_title2_last" align="center"><?php echo number_format( 100 - $div19,2, ",", "."); ?>%</td>
+			    <td id="td_title2_last" align="center"><?php echo ($div19 > 0) ? number_format( 100 - $div19,2, ",", ".") : 0; ?>%</td>
 			</tr>
 
 			<tr>
@@ -535,7 +535,7 @@ $suma1= $div19 + $div20 +  $div21 + $div23 + $div24 + $div25 + $div26 + $div27 +
 			    <td id="td_title2" align="right"><?php echo $DESPACHO3 ?></td>
 			    <td id="td_title2" align="center"><?php echo number_format($div20,2, ",", "."); ?>%</td>
 			    <td id="td_title2" align="right"><?php echo number_format($DESPACHO4,0, ",", ".") ?></td>
-			    <td id="td_title2_last" align="center"><?php echo number_format( 100 - $div20,2, ",", "."); ?>%</td>
+			    <td id="td_title2_last" align="center"><?php echo ($div20 > 0) ? number_format( 100 - $div20,2, ",", ".") : 0; ?>%</td>
 			</tr>
 
 			<tr>
@@ -543,7 +543,7 @@ $suma1= $div19 + $div20 +  $div21 + $div23 + $div24 + $div25 + $div26 + $div27 +
 			    <td id="td_title2" align="right"><?php echo $INSTALACION3;?></td>
 			    <td id="td_title2" align="center"><?php echo number_format($div23,2, ",", "."); ?>%</td>
 			    <td id="td_title2" align="right"><?php echo number_format($INSTALACION4,0, ",", ".") ?></td>
-			    <td id="td_title2_last" align="center"><?php echo number_format( 100 - $div23,2, ",", "."); ?>%</td>  
+			    <td id="td_title2_last" align="center"><?php echo ($div23 > 0) ? number_format( 100 - $div23,2, ",", ".") : 0; ?>%</td>  
 			</tr>
 
 			<tr>
@@ -551,7 +551,7 @@ $suma1= $div19 + $div20 +  $div21 + $div23 + $div24 + $div25 + $div26 + $div27 +
 			    <td id="td_title2" align="right"><?php echo $PLANIFICACION3;?></td>
 			    <td id="td_title2" align="center"><?php echo number_format($div25,2, ",", "."); ?>%</td>
 			    <td id="td_title2" align="right"><?php echo number_format($PLANIFICACION4,0, ",", ".") ?></td>
-			    <td id="td_title2_last" align="center"><?php echo number_format( 100 - $div25,2, ",", "."); ?>%</td>   
+			    <td id="td_title2_last" align="center"><?php echo ($div25 > 0) ? number_format( 100 - $div25,2, ",", ".") : 0; ?>%</td>   
 			</tr>
 
 			<tr>
@@ -559,7 +559,7 @@ $suma1= $div19 + $div20 +  $div21 + $div23 + $div24 + $div25 + $div26 + $div27 +
 			    <td id="td_title2" align="right"><?php echo $PRODUCCION3; ?></td>
 			    <td id="td_title2" align="center"><?php echo number_format($div21,2, ",", "."); ?>%</td>
 			    <td id="td_title2" align="right"><?php echo number_format($PRODUCCION4,0, ",", ".") ?></td>
-			    <td id="td_title2_last" align="center"><?php echo number_format( 100 - $div21,2, ",", "."); ?>%</td>
+			    <td id="td_title2_last" align="center"><?php echo ($div21 > 0) ? number_format( 100 - $div21,2, ",", ".") : 0; ?>%</td>
 			</tr>
 
 			<tr>
@@ -567,7 +567,7 @@ $suma1= $div19 + $div20 +  $div21 + $div23 + $div24 + $div25 + $div26 + $div27 +
 			    <td id="td_title2" align="right"><?php echo $SILLAS3;?></td>
 			    <td id="td_title2" align="center"><?php echo number_format($div24,2, ",", "."); ?>%</td>
 			    <td id="td_title2" align="right"><?php echo number_format($SILLAS4,0, ",", ".") ?></td>
-			    <td id="td_title2_last" align="center"><?php echo number_format( 100 - $div24,2, ",", "."); ?>%</td>
+			    <td id="td_title2_last" align="center"><?php echo ($div24 > 0) ? number_format( 100 - $div24,2, ",", ".") : 0; ?>%</td>
 			</tr>
 
 			<tr>
@@ -575,7 +575,7 @@ $suma1= $div19 + $div20 +  $div21 + $div23 + $div24 + $div25 + $div26 + $div27 +
 			    <td id="td_title2" align="right"><?php echo $COMERCIAL3;?></td>
 			    <td id="td_title2" align="center"><?php echo number_format($div26,2, ",", "."); ?>%</td>
 			    <td id="td_title2" align="right"><?php echo number_format($COMERCIAL4,0, ",", ".") ?></td>
-			    <td id="td_title2_last" align="center"><?php echo number_format( 100 - $div26,2, ",", "."); ?>%</td>
+			    <td id="td_title2_last" align="center"><?php echo ($div26 > 0) ? number_format( 100 - $div26,2, ",", ".") : 0; ?>%</td>
 			</tr>
 
 			<tr>
@@ -583,7 +583,7 @@ $suma1= $div19 + $div20 +  $div21 + $div23 + $div24 + $div25 + $div26 + $div27 +
 			    <td id="td_title2" align="right"><?php echo $DAM3;?></td>
 			    <td id="td_title2" align="center"><?php echo number_format($div27,2, ",", "."); ?>%</td>
 			    <td id="td_title2" align="right"><?php echo number_format($DAM4,0, ",", ".") ?></td>
-			    <td id="td_title2_last" align="center"><?php echo number_format( 100 - $div27,2, ",", "."); ?>%</td> 
+			    <td id="td_title2_last" align="center"><?php echo ($div27 > 0) ? number_format( 100 - $div27,2, ",", ".") : 0; ?>%</td> 
 			</tr>
 
 			<tr>
@@ -591,7 +591,7 @@ $suma1= $div19 + $div20 +  $div21 + $div23 + $div24 + $div25 + $div26 + $div27 +
 			    <td id="td_title2" align="right"><?php echo $IMPORTACION3;?></td>
 			    <td id="td_title2" align="center"><?php echo number_format($div29,2, ",", "."); ?>%</td>
 			    <td id="td_title2" align="right"><?php echo number_format($IMPORTACION4,0, ",", ".") ?></td>
-			    <td id="td_title2_last" align="center"><?php echo number_format( 100 - $div29,2, ",", "."); ?>%</td>
+			    <td id="td_title2_last" align="center"><?php echo ($div29 > 0) ? number_format( 100 - $div29,2, ",", ".") : 0; ?>%</td>
 			       
 			</tr>
 			<tr>
@@ -599,7 +599,7 @@ $suma1= $div19 + $div20 +  $div21 + $div23 + $div24 + $div25 + $div26 + $div27 +
 			    <td id="td_title2" align="right"><?php echo $PROVEEDOR3;?></td>
 			    <td id="td_title2" align="center"><?php echo number_format($div28,2, ",", "."); ?>%</td>
 			    <td id="td_title2" align="right"><?php echo number_format($PROVEEDOR4,0, ",", ".") ?></td>
-			    <td id="td_title2_last" align="center"><?php echo number_format( 100 - $div28,2, ",", "."); ?>%</td>  
+			    <td id="td_title2_last" align="center"><?php echo ($div28 > 0) ? number_format( 100 - $div28,2, ",", ".") : 0; ?>%</td>  
 			</tr>
 
 			<tr>
@@ -607,7 +607,7 @@ $suma1= $div19 + $div20 +  $div21 + $div23 + $div24 + $div25 + $div26 + $div27 +
 			    <th id="th_title_azul2" align="right"><?php echo $su1;?></th>
 			    <th id="th_title_azul2"><?php echo number_format($suma1,2, ",", "."); ?>%</th>
 			    <th id="th_title_azul2" align="right"><?php echo number_format($su2,0, ",", ".");?></th>
-			    <th id="th_title_azul2"><?php echo number_format( 100 - $suma1,2, ",", "."); ?>%</th>     
+			    <th id="th_title_azul2"><?php echo ($suma1 > 0) ? number_format( 100 - $suma1,2, ",", ".") : 0; ?>%</th>     
 			</tr>
 
 			<tr height="20">
@@ -626,7 +626,7 @@ $suma1= $div19 + $div20 +  $div21 + $div23 + $div24 + $div25 + $div26 + $div27 +
 			    <td id="td_title2" align="right"><?php echo $ADQUISICIONES3 ?></td>
 			    <td id="td_title2" align="center"><?php echo number_format($div13,2, ",", "."); ?>%</td>
 			    <td id="td_title2" align="right"><?php echo number_format($ADQUISICIONES4,0, ",", ".") ?></td>
-			    <td id="td_title2_last" align="center"><?php echo number_format( 100 - $div13,2, ",", "."); ?>%</td>       
+			    <td id="td_title2_last" align="center"><?php echo ($div13 > 0) ? number_format( 100 - $div13,2, ",", ".") : 0; ?>%</td>       
 			</tr>
 
 			<tr>
@@ -634,7 +634,7 @@ $suma1= $div19 + $div20 +  $div21 + $div23 + $div24 + $div25 + $div26 + $div27 +
 			    <td id="td_title2" align="right"><?php echo $DESPACHO3 ?></td>
 			    <td id="td_title2" align="center"><?php echo number_format($div14,2, ",", "."); ?>%</td>
 			    <td id="td_title2" align="right"><?php echo number_format($DESPACHO4,0, ",", ".") ?></td>
-			    <td id="td_title2_last" align="center"><?php echo number_format( 100 - $div14,2, ",", "."); ?>%</td>
+			    <td id="td_title2_last" align="center"><?php echo ($div14 > 0) ? number_format( 100 - $div14,2, ",", ".") : 0; ?>%</td>
 			</tr>
 
 			<tr>
@@ -642,21 +642,15 @@ $suma1= $div19 + $div20 +  $div21 + $div23 + $div24 + $div25 + $div26 + $div27 +
 			    <td id="td_title2" align="right"><?php echo $INSTALACION3;?></td>
 			    <td id="td_title2" align="center"><?php echo number_format($div16,2, ",", "."); ?>%</td>
 			    <td id="td_title2" align="right"><?php echo number_format($INSTALACION4,0, ",", ".");?></td>
-			    <td id="td_title2_last" align="center"><?php echo number_format( 100 - $div16,2, ",", "."); ?>%</td>
+			    <td id="td_title2_last" align="center"><?php echo ($div16 > 0) ? number_format( 100 - $div16,2, ",", ".") : 0; ?>%</td>
 			</tr>
-			<tr>
-				<td colspan="2" id="td_title2">Proveedor</td>
-			    <td id="td_title2" align="right"><?php echo $PROVEEDOR3;?></td>
-			    <td id="td_title2" align="center"><?php echo number_format($div18,2, ",", "."); ?>%</td>
-			    <td id="td_title2" align="right"><?php echo number_format($PROVEEDOR4,0, ",", ".") ?></td>
-			    <td id="td_title2_last" align="center"><?php echo number_format( 100 - $div18,2, ",", "."); ?>%</td>  
-			</tr>
+
 			<tr>
 				<td colspan="2" id="td_title2">Produccion</td>
 			    <td id="td_title2" align="right"><?php echo $PRODUCCION3; ?></td>
 			    <td id="td_title2" align="center"><?php echo number_format($div15,2, ",", "."); ?>%</td>
 			    <td id="td_title2" align="right"><?php echo number_format($PRODUCCION4,0, ",", "."); ?></td>
-			    <td id="td_title2_last" align="center"><?php echo number_format( 100 - $div15,2, ",", "."); ?>%</td>
+			    <td id="td_title2_last" align="center"><?php echo ($div15 > 0) ? number_format( 100 - $div15,2, ",", ".") : 0; ?>%</td>
 			</tr>
 
 			<tr>
@@ -664,7 +658,7 @@ $suma1= $div19 + $div20 +  $div21 + $div23 + $div24 + $div25 + $div26 + $div27 +
 			    <td id="td_title2" align="right"><?php echo $SILLAS3;?></td>
 			    <td id="td_title2" align="center"><?php echo number_format($div17,2, ",", "."); ?>%</td>
 			    <td id="td_title2" align="right"><?php echo number_format($SILLAS4,0, ",", ".");?></td>
-			    <td id="td_title2_last" align="center"><?php echo number_format( 100 - $div17,2, ",", "."); ?>%</td>
+			    <td id="td_title2_last" align="center"><?php echo ($div17 > 0) ? number_format( 100 - $div17,2, ",", ".") : 0; ?>%</td>
 			</tr>
 
 			<tr>
@@ -672,8 +666,8 @@ $suma1= $div19 + $div20 +  $div21 + $div23 + $div24 + $div25 + $div26 + $div27 +
     			<th id="th_title_azul2" align="right"><?php echo $su3 ?></th>
     			<th id="th_title_azul2"><?php echo number_format($suma,2, ",", "."); ?>%</th>
     			<th id="th_title_azul2" align="right"><?php echo number_format($su4,0, ",", ".");?></th>
-     			<th id="th_title_azul2"><?php echo number_format( 100 - $suma,2, ",", "."); ?>%</th> 
-			</tr>
+     			<th id="th_title_azul2"><?php echo ($suma > 0) ? number_format( 100 - $suma,2, ",", ".") : 0; ?>%</th> 
+			</tr> 
 		</table>
 
 	</body>
