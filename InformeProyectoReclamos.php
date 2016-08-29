@@ -154,7 +154,7 @@ $FECHA = date('Y/m/d');
 $DESCRIPCIONS = $_POST['txt_descripcion_s'];
 $FECHA_REALIZACION = date("Y-m-d");
 
-$sql3 = "SELECT COUNT(CODIGO_PROYECTO) AS CODIGO_PROYECTO1 FROM proyecto WHERE CODIGO_PROYECTO = '".$CODIGO_PROYECTO."'";
+$sql3 = "SELECT COUNT(CODIGO_PROYECTO) AS CODIGO_PROYECTO1 FROM proyecto WHERE CODIGO_PROYECTO = '".$CODIGO_PROYECTO."' AND ESTADO = 'EN PROCESO'";
 $result3 = mysql_query($sql3, $conn) or die(mysql_error());
 while($row = mysql_fetch_array($result3))
   {
@@ -209,7 +209,7 @@ self.location = "InformeProyectoReclamos.php?ESTADO=EN PROCESO"
 else
 {
 	echo '<script language = javascript>
-alert("El rocha que ingreso no existe")
+alert("El rocha que ingreso no existe o tiene estado NULO o OK.")
 self.location = "InformeProyectoReclamos.php?ESTADO=EN PROCESO"
 </script>';
 }
@@ -491,7 +491,9 @@ function validar()
 	}
 	else
 	{
+
 		document.getElementById("ingresars").disabled = false;
+
 	}
 }
   
@@ -609,7 +611,7 @@ else
                    select : 
 				   function(event, ui)
 				   {
-                       
+
                    }
                  });
 

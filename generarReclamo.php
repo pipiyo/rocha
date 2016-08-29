@@ -24,7 +24,7 @@ while($row = mysql_fetch_array($result3))
 <td></td>
 <td><input placeholder="Rocha" class="input-reclamo" onBlur="vacio();" type="text" value="" id="rochar" name ="rochar" /></center></td>
 
-<td></td>
+<td>  </td>
 <td> </td>
 </tr>
 </table>
