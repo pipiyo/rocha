@@ -83,8 +83,8 @@ mysql_select_db($database_conn, $conn);
 
   $(function() {
   
-  	  $(".textf").click(function(e) {
-  	  	TINY.box.show({url:'generarFechaConfirmacionOc.php'});
+  	  $(".textff").click(function(e) {
+  	  	TINY.box.show({url:'generarFechaConfirmacionOc.php?codigo_oc=' + this.dataset.codigo_oc + '&codigo_usuario=' + this.dataset.codigo_usuario + '&fecha_antigua=' + this.value });
   	  });	
 
   	//$( ".textf" ).datepicker({dateFormat: 'yy-mm-dd'});	
@@ -119,8 +119,8 @@ mysql_select_db($database_conn, $conn);
 
 function fechaConfirmacionOc() {
  	
-		$( ".fechaconfirmacionoc" ).datepicker({dateFormat: 'yy-mm-dd'});
- 	
+	$( ".fechaconfirmacionoc" ).datepicker({dateFormat: 'yy-mm-dd'});	
+
  };
 
  </script>
@@ -343,25 +343,25 @@ $numero = 0;
 	} 
 	else */ if($ESTADO == "OK")
     {
-	echo "<td style= 'background:#0000FF;'><center><input style= 'background:#0000FF; color: white;' id = 'fechac".$numero."' name='fechac".$numero."' type='text' value='".$FECHA_CONFIRMACION."' class='textf'/></center></td>";	
+	echo "<td style= 'background:#0000FF;'><center><input style= 'background:#0000FF; color: white;' id = 'fechac".$numero."' name='fechac".$numero."' type='text' value='".$FECHA_CONFIRMACION."' data-codigo_usuario='".$CODIGO_USUARIO."' data-codigo_oc='".$CODIGO_OC."' class='textff'/></center></td>";	
     }
     else if($ESTADO == "Nulo")
     {
-	echo "<td style= 'background:#38383B;'><center><input style= 'background:#38383B;color:#fff;'  id = 'fechac".$numero."' name='fechac".$numero."' type='text' value='".$FECHA_CONFIRMACION."' class='textf'/></center></td>";	
+	echo "<td style= 'background:#38383B;'><center><input style= 'background:#38383B;color:#fff;'  id = 'fechac".$numero."' name='fechac".$numero."' type='text' value='".$FECHA_CONFIRMACION."' data-codigo_usuario='".$CODIGO_USUARIO."' data-codigo_oc='".$CODIGO_OC."' class='textff'/></center></td>";	
     }
 	else
 	{	
 	if($FECHA_CONFIRMACION > $fecha7)
 	{
-	echo "<td style= 'background:#3ADF00;'><center><input style= 'background:#3ADF00;'  id = 'fechac".$numero."' name='fechac".$numero."' type='text' value='".$FECHA_CONFIRMACION."' class='textf'/></center></td>";	
+	echo "<td style= 'background:#3ADF00;'><center><input style= 'background:#3ADF00;'  id = 'fechac".$numero."' name='fechac".$numero."' type='text' value='".$FECHA_CONFIRMACION."' data-codigo_usuario='".$CODIGO_USUARIO."' data-codigo_oc='".$CODIGO_OC."' class='textff'/></center></td>";	
     }
 	else if($FECHA_CONFIRMACION < date('Y-m-d'))
 	{
-	echo "<td style= 'background:#DF0101;'><center><input style= 'background:#DF0101;color:#FFF;'  id = 'fechac".$numero."' name='fechac".$numero."' type='text' value='".$FECHA_CONFIRMACION."' class='textf'/>  </center></td>";			
+	echo "<td style= 'background:#DF0101;'><center><input style= 'background:#DF0101;color:#FFF;'  id = 'fechac".$numero."' name='fechac".$numero."' type='text' value='".$FECHA_CONFIRMACION."' data-codigo_usuario='".$CODIGO_USUARIO."' data-codigo_oc='".$CODIGO_OC."' class='textff'/>  </center></td>";			
 	}
     else if($FECHA_CONFIRMACION >= date('Y-m-d')  and $FECHA_CONFIRMACION <= $fecha7)
     {
-	echo "<td style= 'background:#FFFF00;'><center><input style= 'background:#FFFF00;'  id = 'fechac".$numero."' name='fechac".$numero."' type='text' value='".$FECHA_CONFIRMACION."' class='textf'/></center></td>";			
+	echo "<td style= 'background:#FFFF00;'><center><input style= 'background:#FFFF00;'  id = 'fechac".$numero."' name='fechac".$numero."' type='text' value='".$FECHA_CONFIRMACION."' data-codigo_usuario='".$CODIGO_USUARIO."' data-codigo_oc='".$CODIGO_OC."' class='textff'/></center></td>";			
 	}
 
 	}
@@ -407,25 +407,25 @@ $numero = 0;
 	} 
     else */ if($ESTADO == "OK")
     {
-	echo "<td style= 'background:#0000FF;'><center><input style= 'background:#0000FF; color: white;'  id = 'fechac".$numero."' name='fechac".$numero."' type='text' value='".$FECHA_CONFIRMACION."' class='textf'/></center></td>";	
+	echo "<td style= 'background:#0000FF;'><center><input style= 'background:#0000FF; color: white;'  id = 'fechac".$numero."' name='fechac".$numero."' type='text' value='".$FECHA_CONFIRMACION."' data-codigo_usuario='".$CODIGO_USUARIO."' data-codigo_oc='".$CODIGO_OC."' class='textff'/></center></td>";	
     }
     else if($ESTADO == "Nulo")
     {
-	echo "<td style= 'background:#38383B;'><center><input style= 'background:#38383B;color:#fff;'  id = 'fechac".$numero."' name='fechac".$numero."' type='text' value='".$FECHA_CONFIRMACION."' class='textf'/></center></td>";	
+	echo "<td style= 'background:#38383B;'><center><input style= 'background:#38383B;color:#fff;'  id = 'fechac".$numero."' name='fechac".$numero."' type='text' value='".$FECHA_CONFIRMACION."' data-codigo_usuario='".$CODIGO_USUARIO."' data-codigo_oc='".$CODIGO_OC."' class='textff'/></center></td>";	
     }
     else
 	{	
 	if($FECHA_CONFIRMACION > $fecha7)
 	{
-	echo "<td style= 'background:#3ADF00;'><center><input style= 'background:#3ADF00;'  id = 'fechac".$numero."' name='fechac".$numero."' type='text' value='".$FECHA_CONFIRMACION."' class='textf'/></center></td>";	
+	echo "<td style= 'background:#3ADF00;'><center><input style= 'background:#3ADF00;'  id = 'fechac".$numero."' name='fechac".$numero."' type='text' value='".$FECHA_CONFIRMACION."' data-codigo_usuario='".$CODIGO_USUARIO."' data-codigo_oc='".$CODIGO_OC."' class='textff'/></center></td>";	
 	}
     else if($FECHA_CONFIRMACION < date('Y-m-d'))
     {
-	echo "<td style= 'background:#DF0101;'><center><input style= 'background:#DF0101;color:#FFF;' id = 'fechac".$numero."' name='fechac".$numero."' type='text' value='".$FECHA_CONFIRMACION."' class='textf'/>  </center></td>";			
+	echo "<td style= 'background:#DF0101;'><center><input style= 'background:#DF0101;color:#FFF;' id = 'fechac".$numero."' name='fechac".$numero."' type='text' value='".$FECHA_CONFIRMACION."' data-codigo_usuario='".$CODIGO_USUARIO."' data-codigo_oc='".$CODIGO_OC."' class='textff'/>  </center></td>";			
 	}
     else if($FECHA_CONFIRMACION >= date('Y-m-d')  and $FECHA_CONFIRMACION <= $fecha7)
 	{
-	echo "<td style= 'background:#FFFF00;'><center><input style= 'background:#FFFF00;'  id = 'fechac".$numero."' name='fechac".$numero."' type='text' value='".$FECHA_CONFIRMACION."' class='textf'/></center></td>";			
+	echo "<td style= 'background:#FFFF00;'><center><input style= 'background:#FFFF00;'  id = 'fechac".$numero."' name='fechac".$numero."' type='text' value='".$FECHA_CONFIRMACION."' data-codigo_usuario='".$CODIGO_USUARIO."' data-codigo_oc='".$CODIGO_OC."' class='textff'/></center></td>";			
     }
 	}
 	echo "<td><center>" . 
