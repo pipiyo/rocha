@@ -13,7 +13,7 @@ mysql_select_db($database_conn, $conn);
 
 ?>
 
-<div style="background: #fff; border:#000 solid 1px;" onMouseMove="fechaConfirmacionOc()" >
+<div onMouseMove="fechaConfirmacionOc()" >
   <form action = 'scriptActualizarFechaConfirmacionOc.php' method='POST'> 
   <input type="hidden" name="detalle[codigo_oc]" value="<?php echo $_GET['codigo_oc']; ?>" />
   <input type="hidden" name="detalle[codigo_usuario]" value="<?php echo $_GET['codigo_usuario']; ?>" />

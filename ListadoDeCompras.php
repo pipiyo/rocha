@@ -70,6 +70,7 @@ mysql_select_db($database_conn, $conn);
   <script type="text/javascript" src="js/jquery-ui-1.8.4.custom.min.js"></script>
   <link type="text/css" rel="stylesheet" href="Style/jquery-ui-1.8.4.custom.css" />
   <script src='js/breadcrumbs.php'></script>
+    <link rel="stylesheet" href="style/estilopopup.css" />
     <script type="text/javascript" src="js/tinybox.js"></script>
   <link rel="styleSheet" href="style/bread.css" type="text/css" >
   <script language = javascript> 
@@ -91,7 +92,7 @@ mysql_select_db($database_conn, $conn);
   
   });
   
- /*
+ 
   function enviar(cod,fecha,nombre)
   {
   nombre = nombre.substring(0, 6);
@@ -109,7 +110,7 @@ mysql_select_db($database_conn, $conn);
   }
   });
   }
-*/
+
   $(function() 
   {
 	$( "#txt_desde" ).datepicker({dateFormat: 'yy-mm-dd'});
