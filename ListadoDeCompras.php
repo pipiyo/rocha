@@ -328,8 +328,8 @@ $numero = 0;
     echo "<td style= 'background:#EACFCF;'><center>" . 
 	$FECHA_ENTREGA . "</center></td>";
 
-/*
-	if($CODIGO_USUARIO  !=  3 && $CODIGO_USUARIO  !=  2) {
+
+/*	if($CODIGO_USUARIO  !=  3 && $CODIGO_USUARIO  !=  2) {
 		if($FECHA_CONFIRMACION > $fecha7){
 			$color_celda = "style= 'background:#3ADF00; color:#000;'";
     	}
