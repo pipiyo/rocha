@@ -31,7 +31,7 @@
     		<option></option>
 		 	<?php
 
-		 		foreach ($n = $con->Query_simple("SELECT * FROM categoria_producto WHERE id_categoria_producto IN('12','13','14')") as $key => $value) {
+		 		foreach ($n = $con->Query_simple("SELECT * FROM categoria_producto WHERE id_categoria_producto IN('15','16','17')") as $key => $value) {
 		 			echo "<option value='" . $n[$key]['id_categoria_producto'] . "' >" . $n[$key]['nombre'] . "</option>";
 		 		};
 

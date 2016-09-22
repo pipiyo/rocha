@@ -96,7 +96,6 @@ require_once('../Conexion/Conexionpoo.php');
 
  				$this->query->close();
 
-
 			return $this->query;
 		}
 
