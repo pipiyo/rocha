@@ -74,13 +74,14 @@ require_once('../Conexion/Conexionpoo.php');
 
 			foreach ($productos as $k => $v) {
 
+				$v['familia'] = ($generico['categoria'] == 19) ? "panaleria" : $v['familia'] ;
 				$CODIGO_PRODUCTO = $v['codigo'];
 				$DESCRIPCION = $v['descripcion'];
 				$CATEGORIA = $generico['categoria'];
 				$CODIGO_GENERICO = ( $v['generico'] == 1 ) ? "" : $generico['codigo'];
 				$TEMPORADA = 2;
 				$FAMILIA = ( $v['generico'] == 1 ) ? "generico" : $v['familia'] ;
-				$CUERPO = "";
+				$CUERPO = $v['id_color'];
 				$FRENTE = "";
 				$CANTO = "";
 				$TRASCARA = "";
@@ -109,13 +110,14 @@ require_once('../Conexion/Conexionpoo.php');
 		{
 
 
-			$superficies = $this->con->query("SELECT `nombre`, `codigo_color` FROM `colores_proveedor` WHERE `CODIGO_PROVEEDOR` = '".$prov."'");
+			$superficies = $this->con->query("SELECT `nombre`, `codigo_color`, `id_colores_proveedor` FROM `colores_proveedor` WHERE `CODIGO_PROVEEDOR` = '".$prov."'");
 
 			while($fila = $superficies->fetch_assoc()){
 
 				$codigo_productos_final[] = array( "cod" => $cod . "." . $fila['codigo_color'],
 												   "des" => str_replace("@", $fila['nombre'], $des),
-												   "categoria" => $cat );
+												   "categoria" => $cat,
+												   "id_color" =>  $fila['id_colores_proveedor']);
 			}
 
 			$superficies->free();

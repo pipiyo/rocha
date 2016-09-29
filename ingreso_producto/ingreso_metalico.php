@@ -31,7 +31,7 @@
     		<option></option>
 		 	<?php
 
-		 		foreach ($n = $con->Query_simple("SELECT * FROM categoria_producto WHERE id_categoria_producto IN('15','16','17')") as $key => $value) {
+		 		foreach ($n = $con->Query_simple("SELECT * FROM categoria_producto WHERE id_categoria_producto IN('15','16','17','19')") as $key => $value) {
 		 			echo "<option value='" . $n[$key]['id_categoria_producto'] . "' >" . $n[$key]['nombre'] . "</option>";
 		 		};
 
@@ -90,6 +90,7 @@
                   <input name='productos[0][descripcion]' type='text' value='".str_replace(" @", "", $_POST['descripcion'])."'>     
                   <input name='productos[0][generico]' type='text' value='1'> 
                   <input name='productos[0][familia]' type='text' value='generico'>  
+                  <input name='productos[0][id_color]' type='text' value=''>  
                  </div>"; 
 
 
@@ -99,7 +100,8 @@
                   <input name='productos[$i][codigo]' type='text' value='$value[cod]'> 
                   <input name='productos[$i][descripcion]' type='text' value='$value[des]'>  
                   <input name='productos[$i][generico]' type='text' value='0'> 
-                  <input name='productos[$i][familia]' type='text' value='metalico'>  
+                  <input name='productos[$i][familia]' type='text' value='metalico'>
+                  <input name='productos[$i][id_color]' type='text' value='$value[id_color]'>  
                  </div>"; 
     $i++;
     };
