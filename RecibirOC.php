@@ -228,7 +228,7 @@ $fin3 = $fin1 - $fin2;
     		<th>Fecha Recibo</th>
     		<th>User</th>
 	   <?php
-	   	$query_registro3 = "select * from oc_recibo where codigo_oc = '".$CODIGO_OC."'";
+	   	$query_registro3 = "select * from oc_recibo where codigo_oc = '".$CODIGO_OC."' order by id desc";
 		$result3 = mysql_query($query_registro3, $conn) or die(mysql_error());
 
 		while($row = mysql_fetch_array($result3)){
