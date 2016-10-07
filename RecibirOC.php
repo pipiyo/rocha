@@ -233,7 +233,7 @@ $fin3 = $fin1 - $fin2;
 
 		while($row = mysql_fetch_array($result3)){
 			echo "<tr>";
-			echo "<td>".$row[5]."</td>". "<td>".$row[2]."</td>". "<td>".$row[3]."</td>". "<td>".substr($row[4],0,11)."</td>". "<td>".$row[5]."</td>";
+			echo "<td>".$row[5]."</td>". "<td>".$row[2]."</td>". "<td>".$row[3]."</td>". "<td>".substr($row[4],0,11)."</td>". "<td>".$row[6]."</td>";
 			echo "</tr>";
 		}
 		mysql_free_result($result3);
