@@ -267,7 +267,7 @@ mysql_close($conn);
     </table>
     </form> 
 
-    <?php  if (in_array("INF", $grupo)|| in_array("BOD", $grupo) || in_array("ADQ", $grupo)) {
+    <?php  if (in_array("INF", $grupo)|| in_array("BOD", $grupo) || in_array("ADQ", $grupo) || in_array("PRO", $grupo)) {
            if ($ESTADO != "ENTREGADO"){ ?>
     <form id = 'formulariocerrar'  name = 'formulariocerrar' method="POST" action="script-forzar-cerrado-vale.php"/>
       <input type="hidden" id="id_vale" name="id_vale" value="<?php echo $CODIGO_VALE ?> ">
