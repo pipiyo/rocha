@@ -196,6 +196,19 @@ width:95%;
 {
 	width:64px;
 }
+.recibo{
+	border-collapse: collapse;
+}
+.recibo th {
+	background: #084B8A;
+	color: #fff;
+}
+.recibo td, .recibo th {
+	border: solid 1px #ccc;
+	padding: 1em;
+}
+
+
 
 #aceptar
 {

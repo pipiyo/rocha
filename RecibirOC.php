@@ -202,7 +202,6 @@ mysql_free_result($result2);
 	
   }
   mysql_free_result($result3);
-  mysql_close($conn);
 $fin3 = $fin1 - $fin2;
 ?>
 	</table>
@@ -221,16 +220,37 @@ $fin3 = $fin1 - $fin2;
 
 	</form>
 
-	<?php  if (in_array("INF", $grupo)|| in_array("BOD", $grupo) || in_array("ADQ", $grupo)) {?>
+    <table class="recibo">
+    	<tr>
+    		<th>Código</th>
+    		<th>total</th>
+    		<th>Recibido</th>
+    		<th>Fecha Recibo</th>
+    		<th>User</th>
+	   <?php
+	   	$query_registro3 = "select * from oc_recibo where codigo_oc = '".$CODIGO_OC."'";
+		$result3 = mysql_query($query_registro3, $conn) or die(mysql_error());
+
+		while($row = mysql_fetch_array($result3)){
+			echo "<tr>";
+			echo "<td>".$row[5]."</td>". "<td>".$row[2]."</td>". "<td>".$row[3]."</td>". "<td>".substr($row[4],0,11)."</td>". "<td>".$row[5]."</td>";
+			echo "</tr>";
+		}
+		mysql_free_result($result3);
+	  	mysql_close($conn);
+	   ?>
+   </table>
+
+   <?php  if (in_array("INF", $grupo)|| in_array("BOD", $grupo) || in_array("ADQ", $grupo)) {?>
     <form id = 'formulariocerrar'  name = 'formulariocerrar' method="POST" action="script-forzar-cerrado-oc.php"/>
       <input type="hidden" id="id_oc" name="id_oc" value="<?php echo $CODIGO_OC; ?> ">
       <table style="float:right;">
         <tr>
+        	<td>Solo usar si se requiere forzar el cerrado</td>
          	<td> <input onClick="enviar_oc_cerrado();" type="button" value="Cerrar OC"> </td>
         </tr>
       </table>
     </form> 
-   <?php } ?>
-
+     <?php } ?>
 	<body>
 </html>

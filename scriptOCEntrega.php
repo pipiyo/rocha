@@ -9,7 +9,7 @@ self.location = "index.php"
 </script>';
 }
 $contador = 1;
-
+mysql_select_db($database_conn, $conn);
 $NVALE = $_POST['folio'];
 $DIFTOTAL = $_POST['diftot'];
 $NOMBRE_USUARIO= $_SESSION['NOMBRE_USUARIO'];
@@ -58,11 +58,11 @@ if($CODIGO_PRODUCTO != "")
 {
 
 $sql01="update oc_producto set CANTIDAD_RECIBIDA = '".$SUMACA."',DIFERENCIA='".$DIF."',OBSERVACION='".($OBS)."',GUIA_DESPACHO='".$GUIA."' where ID = '".$ID."'";
-
-	/*
-$sql01="INSERT INTO oc_producto(CODIGO_PRODUCTO,DESCUENTO,ROCHA,TOTAL,CODIGO_OC,CANTIDAD,PRECIO_BODEGA,PRECIO_LISTA,OBSERVACION, PRECIO_UNITARIO,DIFERENCIA,CANTIDAD_RECIBIDA,GUIA_DESPACHO) VALUES('".$CODIGO_PRODUCTO."','".$DESCUENTO."','".$ROCH."','".$TOTALP."','".$NVALE."',".$CANTIDAD.",".$PRECIO_BODEGA.",".$PRECIO_LISTA.",'".($OBS)."','".$PRECIO_UNITARIO."','".$DIF."','".$SUMACA."','".$GUIA."')"; */
 $result01 = mysql_query($sql01, $conn) or die(mysql_error());
-
+if($SUMACA > 0 && $CANE > 0){
+$sql02="insert into oc_recibo (codigo_oc, total, recibido,fecha_recibido,codigo_producto,user) values ('".$NVALE."','".$CANTIDAD."','".$SUMACA."','".date('Y-m-d')."','".$CODIGO_PRODUCTO."','".$NOMBRE_USUARIO."')";
+$result02 = mysql_query($sql02, $conn) or die(mysql_error());
+}
 $sql1 = "SELECT * from producto  where CODIGO_PRODUCTO = '".$CODIGO_PRODUCTO ."'";
 $result2 = mysql_query($sql1, $conn) or die(mysql_error());
 while($row = mysql_fetch_array($result2))
@@ -77,7 +77,7 @@ while($row = mysql_fetch_array($result2))
 $result01 = mysql_query($sql01, $conn) or die(mysql_error());
 
 
-mysql_select_db($database_conn, $conn);
+
 $FECHA = date('Y/m/d');
 $sql1 = "INSERT INTO actualizaciones (VALOR_ANTIGUO,ROCHA,INGRESO,FECHA,USUARIO,NOMBRE_USUARIO,OC) values ('".($STOCK)."','".($ROCH)."','".($CANE)."','".($FECHA)."','".($CODIGO_USUARIO)."','".($NOMBRE_USUARIO)."','".($NVALE)."')";
 $result1 = mysql_query($sql1, $conn) or die(mysql_error());
