@@ -257,7 +257,7 @@ mysql_close($conn);
 
       <tr>
         <td>
-        <?php if($CODIGO_USUARIO  ==  3 || $CODIGO_USUARIO  ==  2) { ?>
+        <?php if($CODIGO_USUARIO  ==  3 || $CODIGO_USUARIO  ==  2 || in_array("BOD", $grupo)) { ?>
           <input class='ingreso-servicio' style="width:188px;" type = 'submit' id="editar" name ="editar" value = "Editar"  />
         <?php } ?>
           <input type='hidden' id="CODIGO_VALE" name ="CODIGO_VALE" value = "<?php echo $CODIGO_VALE?>" />
@@ -273,12 +273,31 @@ mysql_close($conn);
       <input type="hidden" id="id_vale" name="id_vale" value="<?php echo $CODIGO_VALE ?> ">
       <table>
         <tr>
-          <td> <input onClick="enviar_vale_cerrado();" class='ingreso-servicio' style="width:188px;" type="button" value="Cerrar Vale"> <td>
+          <td> <input onClick="enviar_vale_cerrado();" class='ingreso-servicio' style="width:188px;" type="button" value="Cerrar Vale"> </td>
         </tr>
       </table>
     </form> 
    <?php } 
-         } ?>     
+         } ?> 
+    <?php  if (in_array("INF", $grupo)|| in_array("PRO", $grupo) || in_array("SIL", $grupo) || in_array("DES", $grupo)) {
+           if ($ESTADO != "ENTREGADO"){ ?>
+    <form method="POST" action="script-vale-fecha.php"/>
+      <input type="hidden" id="id_vale" name="id_vale" value="<?php echo $CODIGO_VALE ?> ">
+      <table>
+        <tr>
+          <td>
+            <label>Nueva Fecha</label> 
+            <br><input type="text" required class="fecha-vale" id="fecha-vale" name="fecha-vale"> 
+                <input type="hidden" class="codigo-f-vale" id="codigo-f-vale" name="codigo-f-vale" value="<?php echo $CODIGO_VALE?>">
+          </td>
+        </tr>
+        <tr>
+          <td> <input  class='ingreso-servicio' style="width:188px;" type="submit" value="Editar Fecha"> </td>
+        </tr>
+      </table>
+    </form> 
+   <?php  } 
+          }  ?>    
     <form id = 'formularionulo'  name = 'formularionulo' method="GET" action="scriptActualizarNuloValeEntrega.php"/>
       <input style="display:none;" type="text" id="codigo_va" name="codigo_va" value="<?php echo $CODIGO_VALE ?> ">
       <table>

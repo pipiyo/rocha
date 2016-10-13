@@ -107,4 +107,6 @@ $(document).ready(function(){
     }
   });
 
+  $( "#fecha-vale" ).datepicker({dateFormat: 'yy-mm-dd'});
+
 });
