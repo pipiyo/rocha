@@ -116,7 +116,8 @@ width:95%;
 .form4
 {
 	width:99%;
-	background:#CCC;
+	border: solid 1px #ccc;
+	background:#fff;
 }
 .form10
 {
@@ -199,24 +200,116 @@ width:95%;
 .recibo{
 	border-collapse: collapse;
 }
-.recibo th {
+.uno th {
 	background: #084B8A;
+	color: #fff;
+}
+.dos th {
+	background: #DB9E36;
+	color: #fff;
+}
+.tres th {
+	background: #E74C3C;
 	color: #fff;
 }
 .recibo td, .recibo th {
 	border: solid 1px #ccc;
-	padding: 1em;
+	padding: .5em;
 }
 
+.box{
+	width: 100%;
+	border: none;
+	overflow: hidden;
 
-
-#aceptar
-{
-	background:#FFF;
-	color:#000;
 }
 
 .codigop:hover
 {
 	color:#0000FF;
-	}
+}
+.btn-button{
+	margin: 1em 0;
+	width: 100%;
+	border: 0;
+	color: #fff;
+	background: tomato;
+	padding: 1em;
+}
+.btn-button:hover{
+	background: orange;
+	cursor: pointer;
+}
+.right{
+	float: right;
+}
+
+.title-recepcion{
+	color: #084B8A;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 14px;
+}
+
+.subtitle-recepcion-uno{
+	color: #DB9E36;
+	margin: 1em 0 0 1em;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.subtitle-recepcion-dos{
+	color: #E74C3C;
+	margin: 2em 0 1em 1em;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+.box-form{
+	padding: 1em;
+}
+.box-form input{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: none;
+    border-radius: 0px;
+    line-height: 1;
+    border: 1px solid #ccc;
+    outline: 0px;
+    padding: .5em;
+    margin-right:1em;
+}
+.box-form label{
+	font-size: 12px;
+}
+
+.box-form select{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    background-color: #fff;
+    appearance: none;
+    width: 150px;
+    border-radius: 0px;
+    line-height: 1;
+    border: 1px solid #ccc;
+    outline: 0px;
+    padding: .5em;
+    margin-right:1em;
+    background-image: url(../imagenes/down-arrow.svg);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: 98% center;
+
+}
+.box-form .btn-dev{
+	background: tomato;
+	width: 150px;
+	border: 0;
+	padding: .9em 1em;
+	color: #fff;
+}
+.box-form .btn-dev:hover{
+	background: orange;
+}

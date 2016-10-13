@@ -112,7 +112,7 @@ mysql_free_result($result2);
 
 	<form action = "scriptOCEntrega.php" method="post" id='formulario'>
 	
-	<div style="background:#fff; width:1000px; margin: auto;"><h1 style="color:#006;text-align: center;">Recepción OC - <?php echo $ESTADO ?></h1>
+	<div><h1 class="title-recepcion">Recepción OC - <?php echo $ESTADO ?></h1>
 		<br />
 		<table style="margin: auto;">
 			<tr>
@@ -129,16 +129,17 @@ mysql_free_result($result2);
 	</div>
 
 	<br />
-	<table rules="all" frame="box" id = "tabla_producto" cellspacing=0 cellpadding=0 style="font-size: 9pt; width:100%;">
+	<table class="recibo uno">
 		<thead>
 			<tr>
-				<th width="50" >Codigo</th>
+				<th width="50" >Ver </th>
+				<th width="50" >Código</th>
 				<th width="50">Rocha</th>
-				<th>Descripcion</th>
-				<th width="200">Observaciome enes</th>
+				<th>Descripción</th>
+				<th width="200">Observaciones</th>
 				<th width="80">Cantidad</th>
-				<th width="90">Cant Recibida</th>
-				<th width="90">Cant Entrega</th>
+				<th width="90">Recibida</th>
+				<th width="90">Entrega</th>
 				<th width="80">Diferencia</th>
 				<th width="140">Guia Despacho</th>
 			</tr>
@@ -168,8 +169,16 @@ mysql_free_result($result2);
 		$GUIA_DESPACHO = $row["GUIA_DESPACHO"];
 		$CATEGORIA = $row["CATEGORIA"];
 
-     echo "<tr><td> <a href=Producto.php?&buscar_codigo=" .urlencode($COD_PRODUCTO). "&buscar_usuario=&familias=&buscar=Buscar&valor=0> <input class='codigop' style='border:#fff 1px solid;'  name =cod".$contador." id =cod".$contador." type = 'text' value = '" . 
-		$COD_PRODUCTO . "' /> </a> </td>";
+	echo "<tr><td align='center'> 
+			<a href=Producto.php?&buscar_codigo=" .urlencode($COD_PRODUCTO). "&buscar_usuario=&familias=&buscar=Buscar&valor=0>Ver</a> 
+			
+		</td>";	
+
+    echo "<td> 
+			<p>$COD_PRODUCTO</p>
+     		<input class='codigop'name =cod".$contador." id =cod".$contador." type = 'hidden' value = '" . 
+			$COD_PRODUCTO . "' /> 
+		</td>";
 	   
 	if($ROCHA != ''){
 	   
@@ -188,7 +197,7 @@ mysql_free_result($result2);
 	    ($OBSERVACION1)."' /></td>";
 	echo "<td id = 'cel6'><input style='border:#fff 1px solid;' class='form3' id =cans".$contador." name =cans".$contador." type = 'text' value = '" . 
 	    $CANTIDAD . "' /></td>";
-    echo "<td id = 'cel7'><input style='border:#CCC 1px solid;' onfocus='suma();' onkeydown='suma();' onchange='suma();' class='form4' name =cane".$contador." id =cane".$contador." type = 'text' value = '' /></td>"; 
+    echo "<td id = 'cel7'><input onfocus='suma();' onkeydown='suma();' onchange='suma();' class='form4' name =cane".$contador." id =cane".$contador." type = 'text' value = '' /></td>"; 
 	 
 	echo "<td id = ''><input style='border:#fff 1px solid;' class='form2' name =entr".$contador." id =entr".$contador." type = 'text' value = '".$CANTIDAD_RECIBIDA."' /></td>";  
 
@@ -206,42 +215,95 @@ $fin3 = $fin1 - $fin2;
 ?>
 	</table>
 
-		<table id = "tabla3" border="0" style="margin:auto;">
-			<tr>
-				<td width="80" height="30"><?php if($fin3 < 0){?>
-					<input value = "Realizar" disabled="disabled"  type="submit" id = "aceptar" name="aceptar"/><?php }  ?> 
-				</td>
-
-				<td width="80" height="30"> Diferencia Total <input  type = 'text' id="diftot" name ="diftot" value = "<?php echo $DIFERENCIA_TOTAL ?>"  /></td>
-			</tr>
-		</table>
+		<div class="box">
+			<table id = "tabla3" border="0" class="right">
+				<tr>
+					<td width="80" height="30"><?php if($fin3 < 0){?>
+						<input value = "Realizar" disabled="disabled" class="btn-button"  type="submit" id = "aceptar" name="aceptar"/><?php }  ?> 
+					</td>
+				</tr>
+				<tr>
+					<td width="80" height="30"> Diferencia Total <input  type = 'text' id="diftot" name ="diftot" value = "<?php echo $DIFERENCIA_TOTAL ?>"  /></td>
+				</tr>
+			</table>
+		</div>
 
 		<input style="display:none" type = "text" id="codiguito" name="codiguito" value="<?php echo $CODIGO_USUARIO; ?>" />
 
 	</form>
+	
 
-    <table class="recibo">
-    	<tr>
-    		<th>Código</th>
-    		<th>total</th>
-    		<th>Recibido</th>
-    		<th>Fecha Recibo</th>
-    		<th>User</th>
-	   <?php
-	   	$query_registro3 = "select * from oc_recibo where codigo_oc = '".$CODIGO_OC."' order by id desc";
-		$result3 = mysql_query($query_registro3, $conn) or die(mysql_error());
+   <div class="box">
+		<h1 class="subtitle-recepcion-uno">Registro devolución</h1>
+		<form method="post" action="script-oc-devolucion.php">
+			<div class="box-form">
+				<label>Código</label>
+				<input required type="text" class="txt-dev" id="dev-codigo" name="dev-codigo">
 
-		while($row = mysql_fetch_array($result3)){
-			echo "<tr>";
-			echo "<td>".$row[5]."</td>". "<td>".$row[2]."</td>". "<td>".$row[3]."</td>". "<td>".substr($row[4],0,11)."</td>". "<td>".$row[6]."</td>";
-			echo "</tr>";
-		}
-		mysql_free_result($result3);
-	  	mysql_close($conn);
-	   ?>
-   </table>
+
+				<input type="hidden" id="dev-oc" name="dev-oc" value="<?php echo $CODIGO_OC1; ?>">
+
+				<label>Cantidad</label>
+				<input required type="number" class="txt-dev" id="dev-cantidad" name="dev-cantidad">
+
+				<label>Motivo</label>
+				<select id="dev-motivo" name="dev-motivo" class="sel-dev">
+					<option>Calidad</option>
+					<option>Diferencia solicitado oc</option>
+				</select>
+				<input type="submit" class="btn-dev" name="btn-dev">
+			</div>
+		</form>
+
+	    <table class="recibo dos">
+	    	<tr>
+	    		<th>Código</th>
+	    		<th>Cantidad</th>
+	    		<th>Motivo</th>
+	    		<th>Fecha Devolución</th>
+	    		<th>User</th>
+	    	</tr>
+		   <?php
+		   	$query_registro3 = "select * from oc_devolucion where codigo_oc = '".$CODIGO_OC."' order by id desc";
+			$result3 = mysql_query($query_registro3, $conn) or die(mysql_error());
+
+			while($row = mysql_fetch_array($result3)){
+				echo "<tr>";
+				echo "<td>".$row[6]."</td>". "<td>".$row[2]."</td>". "<td>".$row[3]."</td>". "<td>".$row[4]."</td>". "<td>".$row[5]."</td>";
+				echo "</tr>";
+			}
+			mysql_free_result($result3);
+		   ?>
+	   </table>
+   </div>
+
+   <div class="box">
+		<h1 class="subtitle-recepcion-dos">Registro recibo oc</h1>
+	    <table class="recibo tres">
+	    	<tr>
+	    		<th>Código</th>
+	    		<th>total</th>
+	    		<th>Recibido</th>
+	    		<th>Fecha Recibo</th>
+	    		<th>User</th>
+	    	</tr>
+		   <?php
+		   	$query_registro3 = "select * from oc_recibo where codigo_oc = '".$CODIGO_OC."' order by id desc";
+			$result3 = mysql_query($query_registro3, $conn) or die(mysql_error());
+
+			while($row = mysql_fetch_array($result3)){
+				echo "<tr>";
+				echo "<td>".$row[5]."</td>". "<td>".$row[2]."</td>". "<td>".$row[3]."</td>". "<td>".substr($row[4],0,11)."</td>". "<td>".$row[6]."</td>";
+				echo "</tr>";
+			}
+			mysql_free_result($result3);
+		  	
+		   ?>
+	   </table>
+   </div>
 
    <?php  if (in_array("INF", $grupo)|| in_array("BOD", $grupo) || in_array("ADQ", $grupo)) {?>
+   <div class="box">
     <form id = 'formulariocerrar'  name = 'formulariocerrar' method="POST" action="script-forzar-cerrado-oc.php"/>
       <input type="hidden" id="id_oc" name="id_oc" value="<?php echo $CODIGO_OC; ?> ">
       <table style="float:right;">
@@ -251,6 +313,7 @@ $fin3 = $fin1 - $fin2;
         </tr>
       </table>
     </form> 
-     <?php } ?>
+    </div>
+     <?php } mysql_close($conn);?>
 	<body>
 </html>
