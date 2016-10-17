@@ -1,7 +1,4 @@
 <?php
-
-echo "Hola Mundo";
-
 ?><?php require_once('Conexion/Conexion.php'); ?>
 <?php
 session_start();
