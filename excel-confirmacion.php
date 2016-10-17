@@ -186,6 +186,10 @@ $trd ="";
 	$CODIGO_PRODUCTO = $row["codigo_producto"];
 	$RECIBIDO = $row["recibido"];
 	$numero ++;
+	$valor = "";
+	if($FECHA_CONFIRMACION > $FECHA_RECIBO){
+		$valor = "-";
+	}
 
 	$datetime1 = date_create($FECHA_CONFIRMACION);
 	$datetime2 = date_create($FECHA_RECIBO);
@@ -212,7 +216,7 @@ $trd ="";
 					" .$FECHA_RECIBO. "
 					</td>
 					<td align='center'>
-					" .$interval->format('%a días'). "
+					".$valor. " " .$interval->format('%a días'). "
 					</td>
 					<td>
 					" .$CODIGO_PRODUCTO. "
