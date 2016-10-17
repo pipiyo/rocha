@@ -239,7 +239,7 @@ $trd ="";
 							<th>Proveedor</th>
 							<th>Fecha realizacion</th>
 							<th>Fecha confirmacion</th>
-							<th>Fecha Devolución</th>
+							<th>Fecha Recibo</th>
 							<th>Días</th>
 							<th>Producto</th>
 							<th>Cantidad</th>
