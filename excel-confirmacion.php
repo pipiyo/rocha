@@ -1,7 +1,7 @@
 <?php require_once('Conexion/Conexion.php');?>
 <?php
 header('Content-type: application/vnd.ms-excel');
-header("Content-Disposition: attachment; filename=informe-emision.xls");
+header("Content-Disposition: attachment; filename=informe-confirmacion.xls");
 header("Pragma: no-cache");
 header("Expires: 0");
 ?>
@@ -187,7 +187,7 @@ $trd ="";
 	$RECIBIDO = $row["recibido"];
 	$numero ++;
 
-	$datetime1 = date_create($FECHA_REALIZACION);
+	$datetime1 = date_create($FECHA_CONFIRMACION);
 	$datetime2 = date_create($FECHA_RECIBO);
 	$interval = date_diff($datetime1, $datetime2);					
 
