@@ -190,7 +190,6 @@ $numero = 0;
 	$ESTADO = $row["ESTADO"];
 	$ROCHA_PROYECTO = $row["ROCHA_PROYECTO"];
 	$FECHA_CONFIRMACION = $row["FECHA_CONFIRMACION"];
-	$MOTIVO = $row["MOTIVO"];
 	$FECHA_RECIBO = $row["fecha"];
 	$CODIGO_PRODUCTO = $row["codigo_producto"];
 	$RECIBIDO = $row["recibido"];
