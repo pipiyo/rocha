@@ -129,7 +129,7 @@ mysql_free_result($result2);
 	</div>
 
 	<br />
-	<table class="recibo uno">
+	<table class="recibo uno" width="100%">
 		<thead>
 			<tr>
 				<th width="50" >Ver </th>
