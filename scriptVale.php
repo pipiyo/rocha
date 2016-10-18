@@ -39,10 +39,14 @@ $DESCRIPCION1 = $_POST['des'.$contador];
 
 $CODIGO_PRODUCTO= $_POST['cod'.$contador];
 $CANTIDAD = $_POST['cant'.$contador];
+$PRECIO = $_POST['prec'.$contador];
 $OBS = $_POST['obs'.$contador];
+
+$TOTAL = $PRECIO * $CANTIDAD;
+
 if($CODIGO_PRODUCTO != "")
 {
-$sql01="INSERT INTO producto_vale_emision(CODIGO_VALE,CODIGO_PRODUCTO,CANTIDAD_SOLICITADA,OBSERVACIONES) VALUES('".($NVALE)."','".$CODIGO_PRODUCTO."','".$CANTIDAD."','".($OBS)."')";
+$sql01="INSERT INTO producto_vale_emision(CODIGO_VALE,CODIGO_PRODUCTO,CANTIDAD_SOLICITADA,OBSERVACIONES,PRECIO) VALUES('".($NVALE)."','".$CODIGO_PRODUCTO."','".$CANTIDAD."','".$OBS."','".$TOTAL."')";
 $result01 = mysql_query($sql01, $conn) or die(mysql_error());
 ///////////////////////////////
 

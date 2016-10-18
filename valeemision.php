@@ -96,6 +96,7 @@ while($row = mysql_fetch_array($result2))
         <th class='fil4'>STOCK</th>
         <th class='fil5'>CANT SOLICITADA</th>
         <th class='fil6'>U/M</th>
+        <th class='fil6'>Precio</th>
         <th class='fil7'>OBSERVACIONES</th>
 	</tr>
   <tbody id="editor">
@@ -104,16 +105,17 @@ $contador = 1;
  while($contador < 26)
   {
 
- 	  echo "<tr>";
+ 	echo "<tr>";
     echo "<td> <input onblur='final();' class='txt_invisible codigoproducto' name =cod".$contador." id =cod".$contador." type = 'text' value = '' /> </td>";			
     echo "<td> <input onblur='final();' class='txt_invisible descripcion' name =des".$contador." id =des".$contador." type = 'text' value = ''/> </td>";	
     echo "<td id =exs".$contador."> </td>";	
     echo "<td> <input  class='txt_invisible'  name =stock".$contador."  id =stock".$contador." type = 'text' value = '' /> </td>";
     echo "<td> <input onblur='resta();' class='txt_invisible'  name =cant".$contador."  id =cant".$contador." type = 'text' value = '' /> </td>";
-  	echo "<td> <input class='txt_invisible' onblur='final();' class='form1' name =ud".$contador." id =ud".$contador." type = 'text' value = '' /> </td>";	
+  	echo "<td> <input class='txt_invisible' onblur='final();' class='form1' name =ud".$contador." id =ud".$contador." type = 'text' value = '' /> </td>";
+    echo "<td> <input  class='txt_invisible'  name=prec".$contador."  id=prec".$contador." type = 'text' value = '' /> </td>";	
     echo "<td> <input class='txt_invisible' class='form4' id =obs".$contador." name =obs".$contador." type = 'text' value = '' /> </td>"; 
     echo "</tr>";
-	  $contador++; 
+	$contador++; 
   }
 ?>
   </tbody>
