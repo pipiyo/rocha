@@ -223,7 +223,7 @@ $fin3 = $fin1 - $fin2;
 					</td>
 				</tr>
 				<tr>
-					<td width="80" height="30"> Diferencia Total <input  type = 'text' id="diftot" name ="diftot" value = "<?php echo $DIFERENCIA_TOTAL ?>"  /></td>
+					<td width="80" height="30"> Diferencia Total <input readonly type='text' id="diftot" name ="diftot" value = "<?php echo $DIFERENCIA_TOTAL ?>"  /></td>
 				</tr>
 			</table>
 		</div>
