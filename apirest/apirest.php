@@ -6,7 +6,7 @@ $PASSBD = "";
 
 			$con = new mysqli("localhost",
 							  "root",
-							  "",
+							  "root",
 							  "mueblesydise");
 			$con->set_charset("utf8");
 
