@@ -1,6 +1,7 @@
 <?php
 include("../Conexion/Conexionpoo.php");
 
+
 $user = array();
 $PASSBD = "";
 
