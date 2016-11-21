@@ -50,6 +50,11 @@ mysql_select_db($database_conn, $conn);
 	$TIEMPO_ESPECIAL= "";
 	$CONVENIR= "";
 
+	$ENCARGADO= "";
+	$NOMBRE_PROYECTO= "";
+
+
+
 
 if (isset($_GET["ROCHACOPIA"])) 
 {
@@ -94,6 +99,9 @@ $result1 = mysql_query($contador,$conn) or die(mysql_error());
 	$REPROGRAMACION= $row["REPROGRAMACION"];
 	$TIEMPO_ESPECIAL= $row["TIEMPO_ESPECIAL"];
 	$CONVENIR= $row["CONVENIR"];
+
+	$ENCARGADO= $row["ENCARGADO"];
+	$NOMBRE_PROYECTO= $row["NOMBRE_PROYECTO"];
 
 }
 
@@ -172,6 +180,9 @@ $DESCUENTO2 = $_POST['descuento2'];
 $NETO2 = $_POST['neto2'];
 $IVA = $_POST['iva'];
 $TOTAL = $_POST['total'];
+
+$ENCARGADO = $_POST['txt_encargado'];
+$NOMBRE_PROYECTO = $_POST['txt_nombre_proyecto'];
 	
 //////	
 
@@ -216,7 +227,7 @@ $caracteres = Array(".",",");
 //////
 	
 	
-$sql = "INSERT INTO proyecto (CODIGO_PROYECTO, NOMBRE_CLIENTE,OBRA,MONTO,EJECUTIVO,FECHA_INGRESO, FECHA_ENTREGA,DIAS,CODIGO_USUARIO,CONTACTO,FONO,ORDEN_CC,CONDICION_PAGO,VALIDEZ_COTIZACION,DEPARTAMENTO_CREDITO,DIRECCION_DESPACHO,DIRECCION_FACTURACION,RUT_CLIENTE,ESTADO,PUESTOS,FECHA_CONFIRMACION,SUB_TOTAL,FECHA_REALIZACION,DISENADOR,MAIL,FECHA_ACTA,TIEMPO_ESPECIAL,CONVENIR,DESCUENTO,DESCUENTO2,IVA,TOTAL) values ('".($CODIGO_PROYECTO)."','".($NOMBRE_CLIENTE)."','".($OBRA)."','".($NETO)."','".($EJECUTIVO)."','".($FECHA_INGRESO)."','".($FECHA_ENTREGA)."','".($DIAS)."','".($CODIGO_USUARIO)."','".($CONTACTO)."','".($TELEFONO)."','".($ORDEN)."','".($CONDICION_PAGO)."','".($VALIDEZ)."','".($DEPARTAMENTO_CREDITO)."','".($DIRECCION_DESPACHO)."','".($DIRECCION_FACTURACION)."','".($RUT_CLIENTE)."','".($ENPROCESO)."','".($PUESTOS)."','".($FECHA_ENTREGA)."','".($SUB_TOTAL)."','".date('Y/m/d')."','".($DISEÑADOR)."','".($MAIL)."','".($FECHA_ACTA)."','".($TIEMPO_ESPECIAL)."','".($CONVENIR)."','".($DESCUENTO)."','".($DESCUENTO2)."','".($IVA)."','".($TOTAL)."')";
+$sql = "INSERT INTO proyecto (CODIGO_PROYECTO, NOMBRE_CLIENTE,OBRA,MONTO,EJECUTIVO,FECHA_INGRESO, FECHA_ENTREGA,DIAS,CODIGO_USUARIO,CONTACTO,FONO,ORDEN_CC,CONDICION_PAGO,VALIDEZ_COTIZACION,DEPARTAMENTO_CREDITO,DIRECCION_DESPACHO,DIRECCION_FACTURACION,RUT_CLIENTE,ESTADO,PUESTOS,FECHA_CONFIRMACION,SUB_TOTAL,FECHA_REALIZACION,DISENADOR,MAIL,FECHA_ACTA,TIEMPO_ESPECIAL,CONVENIR,DESCUENTO,DESCUENTO2,IVA,TOTAL,	ENCARGADO,NOMBRE_PROYECTO) values ('".($CODIGO_PROYECTO)."','".($NOMBRE_CLIENTE)."','".($OBRA)."','".($NETO)."','".($EJECUTIVO)."','".($FECHA_INGRESO)."','".($FECHA_ENTREGA)."','".($DIAS)."','".($CODIGO_USUARIO)."','".($CONTACTO)."','".($TELEFONO)."','".($ORDEN)."','".($CONDICION_PAGO)."','".($VALIDEZ)."','".($DEPARTAMENTO_CREDITO)."','".($DIRECCION_DESPACHO)."','".($DIRECCION_FACTURACION)."','".($RUT_CLIENTE)."','".($ENPROCESO)."','".($PUESTOS)."','".($FECHA_ENTREGA)."','".($SUB_TOTAL)."','".date('Y/m/d')."','".($DISEÑADOR)."','".($MAIL)."','".($FECHA_ACTA)."','".($TIEMPO_ESPECIAL)."','".($CONVENIR)."','".($DESCUENTO)."','".($DESCUENTO2)."','".($IVA)."','".($TOTAL)."','".($ENCARGADO)."','".($NOMBRE_PROYECTO)."')";
 
 $result = mysql_query($sql, $conn) or die(mysql_error());
 /*
@@ -724,7 +735,7 @@ function especiala()
 
 
     <tr>
-      <td class="r"  rowspan="7" aling="center" ><input  placeholder="M&D 1234"  required="required" name = "txt_codigo_proyecto"  type="text" id = "txt_codigo_proyecto" value="" /></td>
+      <td class="r"  rowspan="8" aling="center" ><input  placeholder="M&D 1234"  required="required" name = "txt_codigo_proyecto"  type="text" id = "txt_codigo_proyecto" value="" /></td>
       <td>&nbsp;Cliente *</td>
       <td> <input    placeholder="Rocha S.A." required="required" name="txt_nombre_cliente" id="txt_nombre_cliente" type ="text"  value="<?php echo $CLIENTE ?>" ><div id="resultado" class="nube"></div></td>
       <td>&nbsp;Director *</td>
@@ -830,13 +841,25 @@ while($row = mysql_fetch_array($result2))
       <td><input readonly="readonly"  type="text" id="txt_convenir"  name="txt_convenir" value="" /></td>
     </tr>
     <tr>
+    <td>&nbsp;Encargado</td>
+    <td>
+    	<select name="txt_encargado" id="txt_encargado">
+    		<option><?php echo $ENCARGADO ?></option>
+    		<option>Cesar Gajardo Cardenas</option>
+    		<option>Raul Gonzalez Marquez</option>
+    	</select>
+    </td>
+    <td>&nbsp;Nombre Proyecto</td>
+    <td><input name="txt_nombre_proyecto" id="txt_nombre_proyecto" type ="text"  value="<?php echo $NOMBRE_PROYECTO ?>" /></td>
+    <td></td>
+    <td></td>
+    </tr>
+    <tr>
     
     
       <td rowspan="8" class="ra">
       
-     
-      
-      
+
       
       </td>
 
