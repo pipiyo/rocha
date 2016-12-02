@@ -975,7 +975,11 @@ function fecha()
             });
 			
 
-
+$(function(){
+    $('#nombre_proyecto').autocomplete({
+       source : 'ajaxNombreProyecto.php',
+     });
+});
 
 
 $(document).ready(function(){
@@ -1465,6 +1469,7 @@ while($row = mysql_fetch_array($result2))
     		<option><?php echo $ENCARGADO ?></option>
     		<option>Cesar Gajardo Cardenas</option>
     		<option>Raul Gonzalez Marquez</option>
+    		<option>Constanza Jhonson Jhonson</option>
     	</select></td>
     	<td style=" background-color:#B7DBFF">Nombre Proyecto</td>
     	<td><input name="nombre_proyecto" id="nombre_proyecto" type ="text" style="border:#fff 1px solid;height:14px; font-size:10px;width:95%;" value="<?php echo $NOMBRE_PROYECTO;?>" /></td>

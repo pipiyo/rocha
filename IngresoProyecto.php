@@ -182,7 +182,7 @@ $IVA = $_POST['iva'];
 $TOTAL = $_POST['total'];
 
 $ENCARGADO = $_POST['txt_encargado'];
-$NOMBRE_PROYECTO = $_POST['txt_nombre_proyecto'];
+$NOMBRE_PROYECTO = trim(strtolower($_POST['txt_nombre_proyecto']));
 	
 //////	
 
@@ -411,7 +411,13 @@ $("#content > ul").tabs();
 				   {                      
                    }
                  });
-            });						
+            });
+
+$(function(){
+    $('#txt_nombre_proyecto').autocomplete({
+       source : 'ajaxNombreProyecto.php',
+     });
+});								
    	
 	function totalw()
 {
@@ -847,6 +853,7 @@ while($row = mysql_fetch_array($result2))
     		<option><?php echo $ENCARGADO ?></option>
     		<option>Cesar Gajardo Cardenas</option>
     		<option>Raul Gonzalez Marquez</option>
+    		<option>Constanza Jhonson Jhonson</option>
     	</select>
     </td>
     <td>&nbsp;Nombre Proyecto</td>

@@ -91,7 +91,7 @@ $ESPECIAL= $_POST['txt_especial'];
 $CONVENIR= $_POST['txt_convenir'];
 
 $ENCARGADO= $_POST["encargado"];
-$NOMBRE_PROYECTO= $_POST["nombre_proyecto"];
+$NOMBRE_PROYECTO= trim(strtolower($_POST["nombre_proyecto"]));
 
  
  
