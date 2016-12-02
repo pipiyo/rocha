@@ -4,7 +4,7 @@ mysql_select_db($database_conn, $conn);
 
  $datos = array();
 
-        $sql = "SELECT NOMBRE_PROYECTO FROM proyecto
+        $sql = "SELECT DISTINCT NOMBRE_PROYECTO FROM proyecto
                 WHERE NOMBRE_PROYECTO LIKE '%".($_GET['term'])."%' and estado = 'EN PROCESO' ";
 
         $resultado = mysql_query($sql);
