@@ -216,6 +216,22 @@ $frase = ($NOMBRE_FANTASIA)."\n".($RUT_PROVEEDOR)."\n".($DIRECCION)."\n".($COMUN
 
     <td><input placeholder="Empleado" class='textbox' type='text'  onchange="" id = "empleado" name="empleado" /></td>
 </tr>
+<tr>
+<td><select class='textbox' id="subservicio" class="subservicio" name="subservicio">
+<option>Sub Actividad </option>
+<?php 
+$query_registro = 
+"select servicio.CODIGO_PROYECTO, sub_servicio.CODIGO_SUBSERVICIO, sub_servicio.SUB_DESCRIPCION from sub_servicio, servicio where sub_servicio.SUB_CODIGO_SERVICIO =  servicio.CODIGO_SERVICIO and sub_servicio.SUB_ESTADO = 'En Proceso' and sub_servicio.SUB_NOMBRE_SERVICIO  = 'Adquisiciones'";
+$result1 = mysql_query($query_registro, $conn) or die(mysql_error());
+ while($row = mysql_fetch_array($result1))
+ {
+?>
+<option value = "<?php echo ($row['CODIGO_SUBSERVICIO']); ?>" > <?php echo ($row['CODIGO_PROYECTO']); ?> - <?php echo ($row['SUB_DESCRIPCION']); ?> </option>
+ <?php 
+ } mysql_free_result($result1);
+ ?> 
+</select></td>
+</tr>
 </table>
 </div>
 
