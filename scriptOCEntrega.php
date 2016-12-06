@@ -30,6 +30,7 @@ $result2 = mysql_query($sql1, $conn) or die(mysql_error());
 while($row = mysql_fetch_array($result2))
   {
 	$ESTAD = $row["ESTADO"];
+  $SUB = $row["CODIGO_SUBSERVICIO"];
   }
 mysql_free_result($result2);
 /*
@@ -105,6 +106,9 @@ $result9 = mysql_query($sql9, $conn) or die(mysql_error());
 
 $sql6="UPDATE servicio set ESTADO = 'OK' where CODIGO_OC ='".$NVALE."' and nombre_servicio = 'OC'"; 
 $result6 = mysql_query($sql6, $conn) or die(mysql_error());
+
+$sqlSub="UPDATE sub_servicio SET SUB_ESTADO = 'OK' WHERE CODIGO_SUBSERVICIO = '".$SUB ."'"; 
+$result = mysql_query($sqlSub, $conn) or die(mysql_error());
 }
 else
 {

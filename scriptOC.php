@@ -216,10 +216,12 @@ $contador++;
 asort($pila);
 foreach (array_unique($pila) as $key => $val) 
 {
-$sql = "INSERT INTO vale_emision (EMPLEADO,DEPARTAMENTO,FECHA,CODIGO_PROYECTO,CODIGO_USUARIO,ESTADO,FECHA_REALIZACION,FECHA_TERMINO) VALUES ('".$empleado."','".$departamento."','".$FECHA."','".$val."','".$CODIGO_USUARIO_FINAL."','PENDIENTE','".$FECHA_REALIZACION."','".$FECHAE."')";
+$sql = "INSERT INTO vale_emision (CODIGO_SUBSERVICIO,EMPLEADO,DEPARTAMENTO,FECHA,CODIGO_PROYECTO,CODIGO_USUARIO,ESTADO,FECHA_REALIZACION,FECHA_TERMINO) VALUES ('".$CODIGO_SUBSERVICIO."','".$empleado."','".$departamento."','".$FECHA."','".$val."','".$CODIGO_USUARIO_FINAL."','PENDIENTE','".$FECHA_REALIZACION."','".$FECHAE."')";
 $result = mysql_query($sql, $conn) or die(mysql_error());
 }
 
+$sqlSub="UPDATE sub_servicio SET SUB_ESTADO = 'Emitido' WHERE CODIGO_SUBSERVICIO = '".$CODIGO_SUBSERVICIO."'"; 
+$result = mysql_query($sqlSub, $conn) or die(mysql_error());
 
 
 $contador = 1;
