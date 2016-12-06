@@ -47,9 +47,12 @@ switch ($GG) {
     case "3":
         echo"<option> Sillas </option>
         <option> Tornillos </option>
+        <option> Embalaje </option>
         <option> Baldosas Tapizadas </option>
         <option> Baldosas Laminadas </option>
-        <option> Embalaje </option>
+        <option> Laminados </option>
+        <option> Maderas </option>
+        <option> Tapacantos </option>
         <option> Tela </option>";
         $ini = "sillas";
         break;

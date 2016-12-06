@@ -377,6 +377,9 @@ switch ($GG) {
         <option> Embalaje </option>
         <option> Baldosas Tapizadas </option>
         <option> Baldosas Laminadas </option>
+        <option> Laminados </option>
+        <option> Maderas </option>
+        <option> Tapacantos </option>
         <option> Tela </option>";
         $ini = "sillas";
         break;
@@ -457,7 +460,6 @@ echo"<option> Accesorios </option>
 
 
 ?>
-
 
 
 
@@ -695,11 +697,10 @@ $query_TODOS .= " and CATEGORIA = '".$familias."' ";
 
 }else{
 
-$query_registro .= " and CATEGORIA IN('Embalaje','sillas','Tornillos','Baldosas Tapizadas','Baldosas Laminadas','Tela') ";
-$query_TODOS .= " and CATEGORIA IN('Embalaje','sillas','Tornillos','Baldosas Tapizadas','Baldosas Laminadas','Tela') ";
+$query_registro .= " and CATEGORIA IN('Embalaje','sillas','Tornillos','Baldosas Tapizadas','Baldosas Laminadas','Tela','Laminados','Maderas','Tapacantos') ";
+$query_TODOS .= " and CATEGORIA IN('Embalaje','sillas','Tornillos','Baldosas Tapizadas','Baldosas Laminadas','Tela','Laminados','Maderas','Tapacantos') ";
 
 }
-
 
   
         break;
@@ -852,8 +853,8 @@ $query_registro .= " and CATEGORIA = '".$familias."' ";
 $query_TODOS .= " and CATEGORIA = '".$familias."' ";
 
 }else{
-$query_registro .= " and CATEGORIA IN('Embalaje','sillas','Tornillos','Baldosas Tapizadas','Baldosas Laminadas','Tela') ";
-$query_TODOS .= " and CATEGORIA IN('Embalaje','sillas','Tornillos','Baldosas Tapizadas','Baldosas Laminadas','Tela') ";
+$query_registro .= " and CATEGORIA IN('Embalaje','sillas','Tornillos','Baldosas Tapizadas','Baldosas Laminadas','Tela','Laminados','Maderas','Tapacantos') ";
+$query_TODOS .= " and CATEGORIA IN('Embalaje','sillas','Tornillos','Baldosas Tapizadas','Baldosas Laminadas','Tela','Laminados','Maderas','Tapacantos') ";
 
 }
 
@@ -998,8 +999,8 @@ $query_TODOS .= " and CATEGORIA = '".$familias."' ";
 
 }else{
 
-$query_registro .= "and CATEGORIA IN('Embalaje','sillas','Tornillos','Baldosas Tapizadas','Baldosas Laminadas','Tela') ";
-$query_TODOS .= " and CATEGORIA IN('Embalaje','sillas','Tornillos','Baldosas Tapizadas','Baldosas Laminadas','Tela') ";
+$query_registro .= "and CATEGORIA IN('Embalaje','sillas','Tornillos','Baldosas Tapizadas','Baldosas Laminadas','Tela','Laminados','Maderas','Tapacantos') ";
+$query_TODOS .= " and CATEGORIA IN('Embalaje','sillas','Tornillos','Baldosas Tapizadas','Baldosas Laminadas','Tela','Laminados','Maderas','Tapacantos') ";
 
 }
 
