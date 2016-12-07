@@ -17,11 +17,15 @@ $FECHA= $_POST['fecha'];
 $FECHA_T= $_POST['fecha_t'];
 $CODIGO_PROYECTO = $_POST['rocha'];
 $FECHA_REALIZACION = date("Y-m-d");
+$CODIGO_SUBSERVICIO = $_POST['subservicio'];
 
 
 mysql_select_db($database_conn, $conn);
-$sql = "INSERT INTO vale_emision (EMPLEADO,DEPARTAMENTO,FECHA,CODIGO_PROYECTO,CODIGO_USUARIO,ESTADO,FECHA_REALIZACION,FECHA_TERMINO) VALUES ('".$EMPLEADO."','".$DEPARTAMENTO."','".$FECHA."','".$CODIGO_PROYECTO."','".$CODIGO_USUARIO."','PENDIENTE','".$FECHA_REALIZACION."','".$FECHA_T."')";
+$sql = "INSERT INTO vale_emision (CODIGO_SUBSERVICIO,EMPLEADO,DEPARTAMENTO,FECHA,CODIGO_PROYECTO,CODIGO_USUARIO,ESTADO,FECHA_REALIZACION,FECHA_TERMINO) VALUES ('".$CODIGO_SUBSERVICIO."','".$EMPLEADO."','".$DEPARTAMENTO."','".$FECHA."','".$CODIGO_PROYECTO."','".$CODIGO_USUARIO."','PENDIENTE','".$FECHA_REALIZACION."','".$FECHA_T."')";
 $result = mysql_query($sql, $conn) or die(mysql_error());
+
+$sqlSub="UPDATE sub_servicio SET SUB_ESTADO = 'Emitido' WHERE CODIGO_SUBSERVICIO = '".$CODIGO_SUBSERVICIO."'"; 
+$result = mysql_query($sqlSub, $conn) or die(mysql_error());
 
 $sql1 = "SELECT * FROM vale_emision ORDER BY COD_VALE DESC LIMIT 1";
 $result2 = mysql_query($sql1, $conn) or die(mysql_error());

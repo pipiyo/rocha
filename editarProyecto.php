@@ -89,6 +89,8 @@ $cuenta = 0;
 	$REPROGRAMACION= $row["REPROGRAMACION"];
 	$TIEMPO_ESPECIAL= $row["TIEMPO_ESPECIAL"];
 	$CONVENIR= $row["CONVENIR"];
+	$ENCARGADO= $row["ENCARGADO"];
+	$NOMBRE_PROYECTO= $row["NOMBRE_PROYECTO"];
 	  }
   mysql_free_result($result1);
   
@@ -973,7 +975,11 @@ function fecha()
             });
 			
 
-
+$(function(){
+    $('#nombre_proyecto').autocomplete({
+       source : 'ajaxNombreProyecto.php',
+     });
+});
 
 
 $(document).ready(function(){
@@ -1322,7 +1328,7 @@ else
 
   <table id="tabla_rocha" bordercolor="#ccc" width="935" rules="all" border="1">
     <tr>
-      <td style="font:bold 12px;background:#B7DBFF;" width="108" rowspan="7" align="center" ><h3><?php echo $CODIGO_PROYECTO ?></h3><input name = "codigo_radicado" style="display:none;" type="text" id = "codigo_radicado" value="<?php echo $CODIGO_PROYECTO ?>" /></td>
+      <td style="font:bold 12px;background:#B7DBFF;" width="108" rowspan="9" align="center" ><h3><?php echo $CODIGO_PROYECTO ?></h3><input name = "codigo_radicado" style="display:none;" type="text" id = "codigo_radicado" value="<?php echo $CODIGO_PROYECTO ?>" /></td>
       <td width="125" style=" background-color:#B7DBFF">Cliente</td>
       <td width="139"> <input name="cliente" id="cliente" type ="text" style="border:#fff 1px solid;height:14px; font-size:10px;width:95%;" value="<?php echo $CLIENTE ?>"></td>
       <td width="117" style=" background-color:#B7DBFF">Director</td>
@@ -1457,7 +1463,19 @@ while($row = mysql_fetch_array($result2))
     </tr>
     <tr>
     
-    
+    <tr>
+    	<td style=" border: solid 1px #fff; background-color:#B7DBFF">Encargado</td>
+    	<td><select style="border:#fff 1px solid;height:14px; font-size:10px;width:95%;" name="encargado" id="encargado">
+    		<option><?php echo $ENCARGADO ?></option>
+    		<option>Cesar Gajardo Cardenas</option>
+    		<option>Raul Gonzalez Marquez</option>
+    		<option>Constanza Jhonson Jhonson</option>
+    	</select></td>
+    	<td style=" background-color:#B7DBFF">Nombre Proyecto</td>
+    	<td><input name="nombre_proyecto" id="nombre_proyecto" type ="text" style="border:#fff 1px solid;height:14px; font-size:10px;width:95%;" value="<?php echo $NOMBRE_PROYECTO;?>" /></td>
+    	<td style=" background-color:#B7DBFF"></td>
+    	<td style=" background-color:#B7DBFF"></td>
+    </tr>
     
     
     

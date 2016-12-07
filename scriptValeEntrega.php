@@ -21,6 +21,7 @@ mysql_select_db($database_conn, $conn);
   while($row = mysql_fetch_array($result21))
   {
    $COD = $row["CODIGO_PROYECTO"];
+   $SUB = $row["CODIGO_SUBSERVICIO"];
   }
 
   $numero = $_POST['ciclos'];
@@ -92,6 +93,9 @@ mysql_select_db($database_conn, $conn);
   {
     $sql9="UPDATE vale_emision SET ESTADO = 'ENTREGADO',DIFERENCIA_TOTAL ='".$DIFTOTAL."' WHERE COD_VALE = '".$NVALE."'";
     $result9 = mysql_query($sql9, $conn) or die(mysql_error());
+
+    $sqlSub="UPDATE sub_servicio SET SUB_ESTADO = 'OK' WHERE CODIGO_SUBSERVICIO = '".$SUB ."'"; 
+    $result = mysql_query($sqlSub, $conn) or die(mysql_error());
   }
   else
   {
