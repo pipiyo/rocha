@@ -7,10 +7,6 @@ html
   padding: 0;}
 
 
-
-
-
-
 /* Celdas */
 
 .form00
@@ -314,4 +310,20 @@ border: #000 solid 1px ;
 	padding: 3% 3%; 
 	color:#fff;
 	cursor: pointer;
+}
+.btn-sub-actividad{
+	display: block;
+	width: 100px;
+	margin: 10px auto 0 auto;
+	font-size: 12px;
+	text-decoration: none;
+	padding: .5em;
+	border: 0;
+	border-radius: 0;
+	background: #006656;
+	color: #fff;
+}
+
+.btn-sub-actividad:hover{
+	background: orange;
 }

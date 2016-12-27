@@ -118,7 +118,31 @@ while($row = mysql_fetch_array($result2))
   <script src='js/breadcrumbs.php'></script>
   <link rel="styleSheet" href="style/bread.css" type="text/css" >
 
+  <script language = javascript>
 
+$(document).ready(function() {
+  $(".btn-sub-actividad").click(function() {
+    $.ajax({
+      type: "POST",
+      url: 'ajax_sub_actividad.php',
+      dataType:'json',
+      error: function(xhr, status, error) {
+      console.log(xhr.responseText);
+    },
+      success: function(data) {
+      var option = "";
+      for(var i=0;i<data.length; i++)
+      {
+       option += "<option value='"+data[i].codigo+"''> "+data[i].proyecto+ " - "+data[i].sub+"</option>"
+      }
+        $(".btn-sub-actividad").before("<select name='subservicio[]' class='subservicio textbox'><option value=''>Sub Actividad </option>"+option+"</select>");
+      }
+    });
+
+  });  
+});
+
+</script>
 
 
 </head>
@@ -217,7 +241,7 @@ $frase = ($NOMBRE_FANTASIA)."\n".($RUT_PROVEEDOR)."\n".($DIRECCION)."\n".($COMUN
     <td><input placeholder="Empleado" class='textbox' type='text'  onchange="" id = "empleado" name="empleado" /></td>
 </tr>
 <tr>
-<td><select class='textbox' id="subservicio" class="subservicio" name="subservicio">
+<td><select name="subservicio[]" class="subservicio textbox">
 <option>Sub Actividad </option>
 <?php 
 $query_registro = 
@@ -230,7 +254,9 @@ $result1 = mysql_query($query_registro, $conn) or die(mysql_error());
  <?php 
  } mysql_free_result($result1);
  ?> 
-</select></td>
+</select>
+<a class="btn-sub-actividad" id="b1">+ Sub Actividad</a>
+</td>
 </tr>
 </table>
 </div>

@@ -83,8 +83,13 @@ while($row = mysql_fetch_array($resultA))
   }
 mysql_free_result($resultA);
 
-$sqlSub="UPDATE sub_servicio SET SUB_ESTADO = 'Emitido' WHERE CODIGO_SUBSERVICIO = '".$CODIGO_SUBSERVICIO."'"; 
-$result = mysql_query($sqlSub, $conn) or die(mysql_error());
+
+foreach( $CODIGO_SUBSERVICIO as $key => $n ) {
+	if($n != ""){	
+  	$sqlSub="UPDATE sub_servicio SET SUB_ESTADO = 'Emitido', SUB_TIPO_SERVICIO = 'oc' WHERE CODIGO_SUBSERVICIO = '".$n."'"; 
+  	$result = mysql_query($sqlSub, $conn) or die(mysql_error());
+	}
+}
 
 $sql2="INSERT INTO oc_proveedor(CODIGO_PROVEEDOR,CODIGO_OC) VALUES ('".($CODIGO_PROVEEDOR)."','".($CODIGO_OCA)."')"; 
 $result = mysql_query($sql2, $conn) or die(mysql_error());
@@ -220,8 +225,12 @@ $sql = "INSERT INTO vale_emision (CODIGO_SUBSERVICIO,EMPLEADO,DEPARTAMENTO,FECHA
 $result = mysql_query($sql, $conn) or die(mysql_error());
 }
 
-$sqlSub="UPDATE sub_servicio SET SUB_ESTADO = 'Emitido' WHERE CODIGO_SUBSERVICIO = '".$CODIGO_SUBSERVICIO."'"; 
-$result = mysql_query($sqlSub, $conn) or die(mysql_error());
+foreach( $CODIGO_SUBSERVICIO as $key => $n ) {
+	if($n != ""){
+  $sqlSub="UPDATE sub_servicio SET SUB_ESTADO = 'Emitido', SUB_TIPO_SERVICIO = 'vale' WHERE CODIGO_SUBSERVICIO = '".$n."'"; 
+  $result = mysql_query($sqlSub, $conn) or die(mysql_error());
+	}
+}
 
 
 $contador = 1;
