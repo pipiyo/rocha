@@ -239,18 +239,17 @@ $.ajax({
 });
 
 
-$(function(){
-                $('#rocha').autocomplete({
-                   source : 'ajaxProyecto.php',
-                   select : 
-                   function(event, ui)
-                   {
+// $(function(){
+//                 $('#rocha').autocomplete({
+//                    source : 'ajaxProyecto.php',
+//                    select : 
+//                    function(event, ui)
+//                    {
                        
-                       }
-                       });
+//                     }
+//                     });
                            
-});
-
+// });
 
 function es_vacio()
 {
@@ -275,42 +274,42 @@ function enviar()
 }   
 
 
-  /////////////////////////////////////////////////
- $(document).ready(function(){
+//   /////////////////////////////////////////////////
+//  $(document).ready(function(){
                          
-      var consulta;
+//       var consulta;
              
-      //hacemos focus
+//       //hacemos focus
  
                                                  
-      //comprobamos si se pulsa una tecla
-      $("#rocha").blur(function(e){
-             //obtenemos el texto introducido en el campo
-             consulta = $("#rocha").val();
+//       //comprobamos si se pulsa una tecla
+//       $("#rocha").blur(function(e){
+//              //obtenemos el texto introducido en el campo
+//              consulta = $("#rocha").val();
                                       
-             //hace la búsqueda
-             $("#res").delay(1000).queue(function(n) {      
+//              //hace la búsqueda
+//              $("#res").delay(1000).queue(function(n) {      
                                            
-                  $("#res").html('<img src="Imagenes/ajax-loader.gif" />');
+//                   $("#res").html('<img src="Imagenes/ajax-loader.gif" />');
                                            
-                        $.ajax({
-                              type: "POST",
-                              url: "comprobarProductoValeRocha.php",
-                              data: "b="+escape(consulta),
-                              dataType: "html",
-                              error: function(){
-                                    alert("error petición ajax");
-                              },
-                              success: function(data){                                                      
-                                    $("#res").html(data);
-                                    n();
-                              }
-                  });
+//                         $.ajax({
+//                               type: "POST",
+//                               url: "comprobarProductoValeRocha.php",
+//                               data: "b="+escape(consulta),
+//                               dataType: "html",
+//                               error: function(){
+//                                     alert("error petición ajax");
+//                               },
+//                               success: function(data){                                                      
+//                                     $("#res").html(data);
+//                                     n();
+//                               }
+//                   });
                                            
-             });
+//              });
                                 
-      });                    
-}); 
+//       });                    
+// }); 
 
 
  $(function(){
