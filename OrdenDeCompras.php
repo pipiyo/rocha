@@ -102,6 +102,27 @@ switch (date("m")) {
 
 $(document).ready(function() {
 
+$(".btn-sub-actividad").click(function() {
+
+  $.ajax({
+    type: "POST",
+    url: 'ajax_sub_actividad.php',
+    dataType:'json',
+    error: function(xhr, status, error) {
+    console.log(xhr.responseText);
+  },
+    success: function(data) {
+    var option = "";
+    for(var i=0;i<data.length; i++)
+    {
+     option += "<option value='"+data[i].codigo+"''> "+data[i].proyecto+ " - "+data[i].sub+"</option>"
+    }
+      $(".btn-sub-actividad").before("<select name='subservicio[]' class='subservicio textbox'><option value=''>Sub Actividad </option>"+option+"</select>");
+    }
+  });
+
+});  
+
 var listaproOC = new Array();
 
 $(".codigoproducto").each( function(){
@@ -120,26 +141,21 @@ $.ajax({
 },
     success: function(data) {
   for(var i=0;i<data.length; i++)
-  {
-    $("td[id='exss"+data[i].LUGAR+"']").children().val(data[i].EX);
-    $("td[id='precc"+data[i].LUGAR+"']").children().val(data[i].PRECIO);
-    $("td[id='cantt"+data[i].LUGAR+"']").children().val(data[i].CANT);
-    $("td[id='tott"+data[i].LUGAR+"']").children().val(data[i].PSD);
-    $("td[id='descc"+data[i].LUGAR+"']").children().val(data[i].DESCUENTO);
-    $("td[id='dess"+data[i].LUGAR+"']").children().val(data[i].DES);
-    $("td[id='stockk"+data[i].LUGAR+"']").children().val(data[i].STOCK);
-    $("td[id='precll"+data[i].LUGAR+"']").children().val(data[i].PSD);
-    $("td[id='ivaa"+data[i].LUGAR+"']").children().val(data[i].PRECIO);
-    $("td[id='umm"+data[i].LUGAR+"']").children().val(data[i].UM);
+    {
+      $("td[id='exss"+data[i].LUGAR+"']").children().val(data[i].EX);
+      $("td[id='precc"+data[i].LUGAR+"']").children().val(data[i].PRECIO);
+      $("td[id='cantt"+data[i].LUGAR+"']").children().val(data[i].CANT);
+      $("td[id='tott"+data[i].LUGAR+"']").children().val(data[i].PSD);
+      $("td[id='descc"+data[i].LUGAR+"']").children().val(data[i].DESCUENTO);
+      $("td[id='dess"+data[i].LUGAR+"']").children().val(data[i].DES);
+      $("td[id='stockk"+data[i].LUGAR+"']").children().val(data[i].STOCK);
+      $("td[id='precll"+data[i].LUGAR+"']").children().val(data[i].PSD);
+      $("td[id='ivaa"+data[i].LUGAR+"']").children().val(data[i].PRECIO);
+      $("td[id='umm"+data[i].LUGAR+"']").children().val(data[i].UM);
 
-
-total();
-final();
-
-
-
-};
-
+      total();
+      final();
+    }
 }
 });
 
@@ -240,8 +256,8 @@ final();
 <td><input placeholder="Empleado" class='textbox' type='text'  onchange="" id = "empleado" name="empleado" /></td>
 </tr>
 <tr>
-<td><select name="subservicio" class='textbox' id="subservicio" class="subservicio">
-<option>Sub Actividad </option>
+<td><select name="subservicio[]" class="subservicio textbox">
+<option value="">Sub Actividad </option>
 <?php 
 $query_registro = 
 "select servicio.CODIGO_PROYECTO, sub_servicio.CODIGO_SUBSERVICIO, sub_servicio.SUB_DESCRIPCION from sub_servicio, servicio where sub_servicio.SUB_CODIGO_SERVICIO =  servicio.CODIGO_SERVICIO and sub_servicio.SUB_ESTADO = 'En Proceso' and sub_servicio.SUB_NOMBRE_SERVICIO  = 'Adquisiciones'";
@@ -253,7 +269,9 @@ $result1 = mysql_query($query_registro, $conn) or die(mysql_error());
  <?php 
  } mysql_free_result($result1);
  ?> 
-</select></td>
+</select>
+<a class="btn-sub-actividad" id="b1">+ Sub Actividad</a>
+</td>
 </tr>
 </table>
 </div>

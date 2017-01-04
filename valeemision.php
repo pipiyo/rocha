@@ -46,6 +46,83 @@ while($row = mysql_fetch_array($result2))
     <script src='js/Bloqueo.php'></script>
     <script src='js/breadcrumbs.php'></script>
 
+    <script language = javascript>
+    $(document).ready(function() {
+
+        $(".btn-sub-actividad").click(function() {
+            var num = $(".count-rocha").size();
+            $(".td_rocha").append("<input class='textbox proyecto count-rocha' placeholder='Rocha' type='text' id = 'rocha"+num+"' name = 'rocha"+num+"'/>");
+        }); 
+
+        $(document).ready(function(){
+            $(".proyecto").live("keyup", function(){
+                $("#listaproyectos").empty().hide();
+                var trayectoria = $(this).offset();
+                if (this.value.length != 0) {
+                    $.ajax({
+                        type: "POST",
+                        url: 'ajax_rocha.php',
+                        data: { 'consulta': $(this).val(), 'nombre': $(this).attr("name")  },
+                        dataType:'json',
+                        error: function(xhr, status, error) {
+                        alert(xhr.responseText);
+                    },
+                    success: function(data) {
+                        if (data.length != 0) {
+                            for(var i=0;i<data.length; i++){
+                                $("#listaproyectos").append("<input  class='rochas'  type = 'button' name='"+data[i].NOMBRE+"' value = '"+data[i].COD+"' />  ");
+                            }
+                        }else{
+                            $("#listaproyectos").empty().hide();
+                        };
+                    }
+                    });
+                    $("#listaproyectos").fadeIn("fast").css({
+                        left: trayectoria.left,
+                        top: trayectoria.top  + $(this).outerHeight(),
+                    });
+                };
+            });
+        });
+        $(document).ready(function(){
+            $(".rochas").live( "click",  function(e){
+                $("#"+$(this).attr("name")+"").empty();
+                console.log($(this).attr("name")+"")
+                $("#"+$(this).attr("name")+"").val(this.value);
+                var $row = $("#"+$(this).attr("name")+"").attr("name").substring(4, 7);
+                
+                if ($("#"+$(this).attr("name")+"").val().length != 0) {
+                    $.ajax({
+                        type: "POST",
+                        url: 'ajax_comprovar_rocha.php',
+                        data: { 'consulta': $("#"+$(this).attr("name")+"").val() },
+                        dataType:'html',
+                        error: function(xhr, status, error) {
+                        alert(xhr.responseText);
+                    },
+                    success: function(data) {
+                        $("#resultador"+$row+"").empty();
+                        $("#resultador"+$row+"").val(data);
+                    }
+                    });
+                };
+                $("#listaproyectos").empty().hide();
+            });
+        });
+
+        $(document).ready(function(){
+            $(document).click(function (e){
+                var contenedor = $("#listaproyectos");
+                if (!contenedor.is(e.target) && contenedor.has(e.target).length === 0){
+                    contenedor.empty().hide();
+                };
+            });
+        });
+                        
+    });   
+
+    </script>
+
 </head>
 
 <body>
@@ -58,7 +135,7 @@ while($row = mysql_fetch_array($result2))
   
     <table class="table-vale-form">
 	    <tr>
-        <td><input class='textbox' placeholder="Rocha" onblur="es_vacio()" onkeyup="" type="text" id = "rocha" name = "rocha"/></td>
+        <td><input class='textbox proyecto count-rocha' placeholder="Rocha"  type="text" id = "rocha" name = "rocha"/></td>
         <td><select class='textbox'   onchange="" id = "departamento" name="departamento">
             <option value="">Departamento</option>
             <option>PRODUCCION</option>
@@ -87,20 +164,10 @@ while($row = mysql_fetch_array($result2))
         <td><input placeholder="N Vale" class='textbox'  readonly type="text"   id= "n_vale" name = "n_vale" value="<?php echo $NVALE?>"/></td>
         <tr>
         <td>
-            <select name="subservicio" class='textbox' id="subservicio" class="subservicio">
-            <option>Sub Actividad </option>
-            <?php 
-            $query_registro = 
-            "select servicio.CODIGO_PROYECTO, sub_servicio.CODIGO_SUBSERVICIO, sub_servicio.SUB_DESCRIPCION from sub_servicio, servicio where sub_servicio.SUB_CODIGO_SERVICIO =  servicio.CODIGO_SERVICIO and sub_servicio.SUB_ESTADO = 'En Proceso' and sub_servicio.SUB_NOMBRE_SERVICIO  = 'Adquisiciones'";
-            $result1 = mysql_query($query_registro, $conn) or die(mysql_error());
-             while($row = mysql_fetch_array($result1))
-             {
-            ?>
-            <option value = "<?php echo ($row['CODIGO_SUBSERVICIO']); ?>" > <?php echo ($row['CODIGO_PROYECTO']); ?> - <?php echo ($row['SUB_DESCRIPCION']); ?> </option>
-             <?php 
-             } mysql_free_result($result1);
-             ?> 
-            </select>
+            <a class="btn-sub-actividad" id="b1">+ Rocha</a>
+        </td>
+        <td class="td_rocha">
+            
         </td>
         </tr>
 	   </tr>
@@ -142,7 +209,7 @@ $contador = 1;
 </table>
 
 <div align="right">
-    <input  disabled="disabled" type = 'button' id="ingresar" name ="ingresar" value = "EMITIR"  onclick="enviar();" />
+    <input type="button" id="ingresar" name="ingresar" value="EMITIR" onclick="enviar();">
 </div>
 
 <div  id="listaproyectos"></div>
