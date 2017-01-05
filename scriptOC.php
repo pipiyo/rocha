@@ -86,7 +86,7 @@ mysql_free_result($resultA);
 
 foreach( $CODIGO_SUBSERVICIO as $key => $n ) {
 	if($n != ""){	
-  	$sqlSub="UPDATE sub_servicio SET SUB_ESTADO = 'Emitido', SUB_TIPO_SERVICIO = 'oc' WHERE CODIGO_SUBSERVICIO = '".$n."'"; 
+  	$sqlSub="UPDATE sub_servicio SET SUB_ESTADO = 'Emitido', SUB_TIPO_SERVICIO = 'oc', SUB_OC = '".$CODIGO_OCA."' WHERE CODIGO_SUBSERVICIO = '".$n."'"; 
   	$result = mysql_query($sqlSub, $conn) or die(mysql_error());
 	}
 }
