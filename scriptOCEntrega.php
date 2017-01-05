@@ -107,8 +107,13 @@ $result9 = mysql_query($sql9, $conn) or die(mysql_error());
 $sql6="UPDATE servicio set ESTADO = 'OK' where CODIGO_OC ='".$NVALE."' and nombre_servicio = 'OC'"; 
 $result6 = mysql_query($sql6, $conn) or die(mysql_error());
 
-$sqlSub="UPDATE sub_servicio SET SUB_ESTADO = 'OK' WHERE CODIGO_SUBSERVICIO = '".$SUB ."'"; 
-$result = mysql_query($sqlSub, $conn) or die(mysql_error());
+$sql1 = "SELECT CODIGO_SUBSERVICIO from sub_servicio  where SUB_OC = '".$NVALE ."'";
+$result2 = mysql_query($sql1, $conn) or die(mysql_error());
+while($row = mysql_fetch_array($result2))
+  {
+    $sqlSub="UPDATE sub_servicio SET SUB_ESTADO = 'OK' WHERE CODIGO_SUBSERVICIO = '".$row["CODIGO_SUBSERVICIO"] ."'"; 
+    $result = mysql_query($sqlSub, $conn) or die(mysql_error());
+  }
 }
 else
 {
@@ -116,13 +121,18 @@ $sql9="UPDATE orden_de_compra SET ESTADO = 'En Proceso',DIFERENCIA_TOTAL ='".$DI
 $result9 = mysql_query($sql9, $conn) or die(mysql_error());
 $sql6="UPDATE servicio set ESTADO = 'EN PROCESO' where CODIGO_OC ='".$NVALE."' and nombre_servicio = 'OC'"; 
 $result6 = mysql_query($sql6, $conn) or die(mysql_error());
-$sqlSub="UPDATE sub_servicio SET SUB_ESTADO = 'PARCIAL' WHERE CODIGO_SUBSERVICIO = '".$SUB ."'"; 
-$result = mysql_query($sqlSub, $conn) or die(mysql_error());
+$sql1 = "SELECT CODIGO_SUBSERVICIO from sub_servicio  where SUB_OC = '".$NVALE ."'";
+$result2 = mysql_query($sql1, $conn) or die(mysql_error());
+while($row = mysql_fetch_array($result2))
+  {
+    $sqlSub="UPDATE sub_servicio SET SUB_ESTADO = 'Parcial' WHERE CODIGO_SUBSERVICIO = '".$row["CODIGO_SUBSERVICIO"] ."'"; 
+    $result = mysql_query($sqlSub, $conn) or die(mysql_error());
+  }
 }
 }
 
 echo '<script language = javascript>
-alert("Vale enviado")
+alert("Recibido Ok ")
 self.location = "ListadoDeCompras.php"
 </script>';
 
