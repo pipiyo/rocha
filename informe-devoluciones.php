@@ -142,15 +142,13 @@ mysql_select_db($database_conn, $conn);
 <?php
 
 
-mysql_select_db($database_conn, $conn);
-
 $query_registro = "
-	SELECT orden_de_compra.CODIGO_OC, oc_devolucion.CODIGO_PRODUCTO,oc_devolucion.CANTIDAD, oc_devolucion.FECHA, oc_devolucion.MOTIVO , orden_de_compra.ROCHA_PROYECTO, orden_de_compra.FECHA_CONFIRMACION, usuario.NOMBRE_USUARIO,orden_de_compra.FECHA_REALIZACION,orden_de_compra.FECHA_ENTREGA,orden_de_compra.DESPACHAR_DIRECCION,orden_de_compra.TOTAL,orden_de_compra.ESTADO,orden_de_compra.NOMBRE_PROVEEDOR,orden_de_compra.COMENTARIO 
-	FROM orden_de_compra, usuario , oc_devolucion
-	WHERE orden_de_compra.codigo_usuario = usuario.codigo_usuario AND orden_de_compra.CODIGO_OC = oc_devolucion.codigo_oc ";
+	SELECT orden_de_compra.CODIGO_OC, oc_devolucion.CODIGO_PRODUCTO,oc_devolucion.CANTIDAD, oc_devolucion.FECHA, oc_devolucion.MOTIVO , orden_de_compra.ROCHA_PROYECTO, orden_de_compra.FECHA_CONFIRMACION, orden_de_compra.FECHA_REALIZACION,orden_de_compra.FECHA_ENTREGA,orden_de_compra.DESPACHAR_DIRECCION,orden_de_compra.TOTAL,orden_de_compra.ESTADO,orden_de_compra.NOMBRE_PROVEEDOR,orden_de_compra.COMENTARIO 
+	FROM orden_de_compra, oc_devolucion
+	WHERE orden_de_compra.CODIGO_OC = oc_devolucion.codigo_oc ";
 
 	if($ES  == "" && $BUSCAR_DESCRIPCION  == "" && $BUSCAR_ROCHA == "" && $BUSCAR_CODIGO == ""){
-		$query_registro .=" and not orden_de_compra.ESTADO = 'Nulo' and not orden_de_compra.ESTADO = 'OK' ";
+		$query_registro .=" and not orden_de_compra.ESTADO = 'Nulo'";
 	}
 
 	if($ES  != "" && $ES  != "Todo"){
@@ -169,7 +167,7 @@ $query_registro = "
 		$query_registro .= " and orden_de_compra.CODIGO_OC = '".$BUSCAR_CODIGO."'";
 	}
 	else if($BUSCAR_ROCHA != ""){
-		$query_registro .= " and orden_de_compra.ROCHA_PROYECTO ='".($BUSCAR_ROCHA)."'";
+		$query_registro .= " and orden_de_compra.ROCHA_PROYECTO ='".$BUSCAR_ROCHA."'";
 	}
 
 $query_registro .= " ORDER BY orden_de_compra.CODIGO_OC desc";
@@ -186,7 +184,6 @@ $numero = 0;
 	$FECHA_ENTREGA = $row["FECHA_ENTREGA"];
 	$TOTAL = $row["TOTAL"];
 	$NOMBRE_PROVEEDOR = $row["NOMBRE_PROVEEDOR"];
-	$CODIGO_USUARIO1 = $row["NOMBRE_USUARIO"];
 	$ESTADO = $row["ESTADO"];
 	$ROCHA_PROYECTO = $row["ROCHA_PROYECTO"];
 	$FECHA_CONFIRMACION = $row["FECHA_CONFIRMACION"];
