@@ -7,6 +7,10 @@ alert("usuario no autenticado")
 self.location = "index.php"
 </script>';
 }
+
+$TIPO_USUARIO= $_SESSION['TIPO_USUARIO'];
+$NOMBRE_USUARIO= $_SESSION['NOMBRE_USUARIO'];
+
 require_once('script-descripcion-oc.php');
 include('convertToPDF.php');
 

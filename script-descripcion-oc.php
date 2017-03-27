@@ -22,8 +22,6 @@ function format($num)
 
 
 $CODIGO_OC1 = $_GET['CODIGO_OC'];
-$TIPO_USUARIO= $_SESSION['TIPO_USUARIO'];
-$NOMBRE_USUARIO= $_SESSION['NOMBRE_USUARIO'];
 
 mysql_select_db($database_conn, $conn);
 $query_registro = "SELECT orden_de_compra.FECHA_CONFIRMACION,orden_de_compra.AUTORIZADA,orden_de_compra.VERSION,orden_de_compra.ENVIADO,orden_de_compra.EMPRESA,orden_de_compra.DESCUENTO_2,orden_de_compra.OBSERVACION_FACTURAS,orden_de_compra.FACTURAS, orden_de_compra.ENVIADO, orden_de_compra.DESPACHAR_TELEFONO, orden_de_compra.CODIGO_OC,orden_de_compra.CODIGO_USUARIO,orden_de_compra.FECHA_REALIZACION,orden_de_compra.FECHA_ENTREGA,orden_de_compra.DESPACHAR_DIRECCION,orden_de_compra.DESPACHAR_RUT,orden_de_compra.DESPACHAR_COMUNA,orden_de_compra.TOTAL,orden_de_compra.ESTADO,orden_de_compra.NOMBRE_PROVEEDOR, orden_de_compra.CONDICION_PAGO, orden_de_compra.DESCUENTO_OC,orden_de_compra.SUB_TOTAL, orden_de_compra.TIPO_IVA, orden_de_compra.IVA, orden_de_compra.NETO, orden_de_compra.OBSERVACION FROM orden_de_compra where orden_de_compra.CODIGO_OC ='".($CODIGO_OC1)."'";
