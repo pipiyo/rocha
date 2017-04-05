@@ -225,7 +225,21 @@ $caracteres = Array(".",",");
   $caracteres10 = Array(","); 
   $IVA = str_replace($caracteres10,".",$IVA); 	
 //////
-	
+$total_pro = "";
+$query_registro_pr = "SELECT count(*) as total FROM proyecto WHERE NOMBRE_PROYECTO = '".$NOMBRE_PROYECTO."'";
+$result1_pro = mysql_query($query_registro_pr, $conn) or die(mysql_error());
+$numero = 0;
+
+ while($row = mysql_fetch_array($result1_pro))
+  {
+	$total_pro = $row["total"];
+  }
+mysql_free_result($result1_pro);
+
+if($total_pro == 0){
+    $sql_pro = "INSERT INTO madre(NOMBRE, ESTADO) VALUES ('".$NOMBRE_PROYECTO."','EN PROCESO')";
+    $result = mysql_query($sql_pro, $conn) or die(mysql_error());
+}	
 	
 $sql = "INSERT INTO proyecto (CODIGO_PROYECTO, NOMBRE_CLIENTE,OBRA,MONTO,EJECUTIVO,FECHA_INGRESO, FECHA_ENTREGA,DIAS,CODIGO_USUARIO,CONTACTO,FONO,ORDEN_CC,CONDICION_PAGO,VALIDEZ_COTIZACION,DEPARTAMENTO_CREDITO,DIRECCION_DESPACHO,DIRECCION_FACTURACION,RUT_CLIENTE,ESTADO,PUESTOS,FECHA_CONFIRMACION,SUB_TOTAL,FECHA_REALIZACION,DISENADOR,MAIL,FECHA_ACTA,TIEMPO_ESPECIAL,CONVENIR,DESCUENTO,DESCUENTO2,IVA,TOTAL,	ENCARGADO,NOMBRE_PROYECTO) values ('".($CODIGO_PROYECTO)."','".($NOMBRE_CLIENTE)."','".($OBRA)."','".($NETO)."','".($EJECUTIVO)."','".($FECHA_INGRESO)."','".($FECHA_ENTREGA)."','".($DIAS)."','".($CODIGO_USUARIO)."','".($CONTACTO)."','".($TELEFONO)."','".($ORDEN)."','".($CONDICION_PAGO)."','".($VALIDEZ)."','".($DEPARTAMENTO_CREDITO)."','".($DIRECCION_DESPACHO)."','".($DIRECCION_FACTURACION)."','".($RUT_CLIENTE)."','".($ENPROCESO)."','".($PUESTOS)."','".($FECHA_ENTREGA)."','".($SUB_TOTAL)."','".date('Y/m/d')."','".($DISEÑADOR)."','".($MAIL)."','".($FECHA_ACTA)."','".($TIEMPO_ESPECIAL)."','".($CONVENIR)."','".($DESCUENTO)."','".($DESCUENTO2)."','".($IVA)."','".($TOTAL)."','".($ENCARGADO)."','".($NOMBRE_PROYECTO)."')";
 
