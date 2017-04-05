@@ -716,6 +716,26 @@ $CODIGO_CLIENTE = $row["CODIGO_CLIENTE"];
 $sql6="UPDATE proyecto SET NOMBRE_CLIENTE='".$CLIENTE."',RUT_CLIENTE='".$RUT."',CODIGO_CLIENTE ='".$CODIGO_CLIENTE."',OBRA='".$OBRA."',DIRECCION_FACTURACION='".$DIRECCION_OBRA."', ORDEN_CC='".$OC."',CONDICION_PAGO='".$CONDICION_PAGO."',DEPARTAMENTO_CREDITO='".$DEPARTAMENTO_CREDITO."', EJECUTIVO='".($DIRECTOR)."',DISENADOR='".($DISENADOR)."', CONTACTO='".$CONTACTO."',FONO='".$FONO."', MAIL='".$MAIL."',VALIDEZ_COTIZACION='".$VALIDEZ."', PUESTOS='".$PUESTOS."',SUB_TOTAL='".$SUB_TOTAL1."',DESCUENTO='".$DESCUENTO1."',FECHA_INGRESO='".$FECHA_INGRESO."', DIAS='".$DIAS_RADICADO."',FECHA_ENTREGA='".$FECHA_ENTREGA."',ESTADO='".$ESTADO."',TOTAL='".$TOTAL."',IVA='".$IVA."',TIPO_IVA ='".$TIPO_IVA."',FECHA_ACTA='".$FECHA_ACTA."',DESCUENTO2='".$DESCUENTO3."', MONTO2='".$NETOB."', MONTO='".$NETOA."',TIEMPO_ESPECIAL='".$ESPECIAL."',CONVENIR='".$CONVENIR."' ,ENCARGADO='".$ENCARGADO."' ,NOMBRE_PROYECTO='".$NOMBRE_PROYECTO."' WHERE CODIGO_PROYECTO = '".$CODIGO_RADICADO."'"; 
 $result6 = mysql_query($sql6, $conn) or die(mysql_error());
 
+
+$total_pro = "";
+$query_registro_pr = "SELECT count(*) as total FROM proyecto WHERE NOMBRE_PROYECTO = '".$NOMBRE_PROYECTO."' and ESTADO = 'EN PROCESO'";
+$result1_pro = mysql_query($query_registro_pr, $conn) or die(mysql_error());
+$numero = 0;
+
+ while($row = mysql_fetch_array($result1_pro))
+  {
+	$total_pro = $row["total"];
+  }
+mysql_free_result($result1_pro);
+
+if($total_pro == 0){
+    $sql_pro = "UPDATE madre SET ESTADO = 'OK' WHERE NOMBRE = '".$NOMBRE_PROYECTO."'";
+    $result = mysql_query($sql_pro, $conn) or die(mysql_error());
+}else{
+	$sql_pro = "UPDATE madre SET ESTADO = 'EN PROCESO' WHERE NOMBRE = '".$NOMBRE_PROYECTO."'";
+    $result = mysql_query($sql_pro, $conn) or die(mysql_error());
+}	
+
 ///// VERSIONAR PROYECTO
 
 if($ESTADO == 'VERSIONAR')
