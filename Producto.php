@@ -1114,7 +1114,7 @@ echo"
 <th><center>Formato</center></th>
 <th><center>Minimo</center></th>
 <th><center>Maximo</center></th>";
-	if($CODIGO_USUARIO == '1' ||$CODIGO_USUARIO == '19' || $CODIGO_USUARIO == '20' || $CODIGO_USUARIO == '14'|| $CODIGO_USUARIO == '32' || $CODIGO_USUARIO == '24'|| $CODIGO_USUARIO == '126'|| $CODIGO_USUARIO == '143')  {
+	if($CODIGO_USUARIO == '1' ||$CODIGO_USUARIO == '19' || $CODIGO_USUARIO == '20' || $CODIGO_USUARIO == '14'|| $CODIGO_USUARIO == '32' || $CODIGO_USUARIO == '24'|| $CODIGO_USUARIO == '126'|| $CODIGO_USUARIO == '143' || $CODIGO_USUARIO == '12' || $CODIGO_USUARIO == '214')  {
 		echo" 
 <th><center>Ingreso</center></th>
 <th><center>Egreso</center></th>";
@@ -1172,7 +1172,7 @@ else
 	    $STOCK_MINIMO. "<input style='display:none;' class='form4'  id =prec".$numero." type = 'text' value = '".$PRECIO."' /></center></center></td>"; 
 		 echo "<td><center>" . 
 	    $STOCK_MAXIMO.   "</center></td>";
-	if($CODIGO_USUARIO == '19' || $CODIGO_USUARIO == '1' || $CODIGO_USUARIO == '20' || $CODIGO_USUARIO == '14'|| $CODIGO_USUARIO == '32' || $CODIGO_USUARIO == '24'|| $CODIGO_USUARIO == '126'|| $CODIGO_USUARIO == '143')  { 
+	if($CODIGO_USUARIO == '19' || $CODIGO_USUARIO == '1' || $CODIGO_USUARIO == '20' || $CODIGO_USUARIO == '14'|| $CODIGO_USUARIO == '32' || $CODIGO_USUARIO == '24'|| $CODIGO_USUARIO == '126'|| $CODIGO_USUARIO == '143' || $CODIGO_USUARIO == '12' || $CODIGO_USUARIO == '214')  { 
 		 
 	echo "<td><center><a target='_blank' id = 'ingreso' href = 'FormularioProductosIngreso.php?CODIGO_PRODUCTO=$CODIGO_PRODUCTO&MENSAJE=$MENSAJE' id = 'stockpositivo'>
 	      <h1> + </h1>      </a><input style='display:none;' class='form6'  id =precl".$numero." type = 'text' value = '".$PRECIO_SIN_DESCUENTO ."' /></center></td>"; 
