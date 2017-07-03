@@ -320,13 +320,15 @@ $chek= "";
 <td> Vehiculo: </td>
 <td  align="center"><select class="textbox" id = "txt_transporte" name="txt_transporte">
 <option><?php echo $VEHICULO ?></option>
-<option>CBWT-96 (Camion 1)</option>
-<option>CRBC-30 (Camion 2)</option>
-<option>FXVD-65 (Camion 3)</option>
-<option>CFDL-32 (Furgon 1)</option>
-<option>FYYC-66 (Furgon 2)</option>
-<option>GPBX-40 (Camioneta 2)</option>
-<option>Externo</option>
+<option value="HWRD-20">HWRD-20 (Camion 1)</option>
+<option value="JPCG-78">JPCG-78 (Camion 2)</option>
+<option value="FXVD-65">FXVD-65 (Camion 3)</option>
+<option value="CFDL-32">CFDL-32 (Furgon 1)</option>
+<option value="FYYC-66">FYYC-66 (Furgon 2)</option>
+<option value="GPBX-40">GPBX-40 (Camioneta 2)</option>
+<option value="DDVG-61">DDVG-61</option>
+<option value="Retiro Cliente">Retiro Cliente</option>
+<option value="Externo">Externo</option>
 <option></option>
 </select> </td>
 </tr>

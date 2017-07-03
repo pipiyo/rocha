@@ -294,7 +294,7 @@ if ( isset($_POST['PDF_1']) )
     <td rowspan="2"><select class="form-ruta"  onchange="selecciona();"  id = "vehiculo" name = "vehiculo">
       <option><?php echo $PATENTE ?></option>
       <?php 
-		$query_registro = "select * from VEHICULO order by PATENTE ASC";
+		$query_registro = "select * from VEHICULO WHERE ACTIVO = 1 order by PATENTE ASC";
 		$result1 = mysql_query($query_registro, $conn) or die(mysql_error());
 		 while($row = mysql_fetch_array($result1))
  		{
