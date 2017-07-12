@@ -27,6 +27,7 @@ mysql_select_db($database_conn, $conn);
 	$BUSCAR_DESCRIPCION = "";	
 	$BUSCAR_ROCHA = "";	
 	$ES = "";
+	$FACTURA_TXT="";
 	$txt_desde = "";	
 	$txt_hasta = "";
 	$contador1 = 0;
@@ -34,6 +35,7 @@ mysql_select_db($database_conn, $conn);
 		$BUSCAR_CODIGO = $_GET['buscar_codigo'];
 		$BUSCAR_DESCRIPCION = $_GET['buscar_usuario'];
 		$ES = $_GET['estado1'];
+		$FACTURA_TXT = $_GET['factura'];
 
 		if (isset($_GET["rocha_buscar"]))
 		{
@@ -155,15 +157,17 @@ function fechaConfirmacionOc() {
   <td><input placeholder="Rocha" class = 'textbox' type="text" name="rocha_buscar" id = "rocha_buscar" value="" /></td>
 </tr>
 <tr>
+  <td> <input placeholder="Factura"  type="text" class = 'textbox' autocomplete="off" id="factura" name="factura" /> </td>
   <td> <input placeholder="Desde"  type="text" class = 'textbox' autocomplete="off" id="txt_desde" name="txt_desde" /> </td>
   <td> <input placeholder="Hasta" type="text" class = 'textbox' autocomplete="off" id="txt_hasta" name="txt_hasta" /> </td>
-  <td align="center">
+  <td><input type="submit" name = "buscar" id='buscar' value="Buscar"/> </td>
+  </tr>
+  <tr>
+  	<td colspan="3"></td>
+  	<td align="center">
   <a href="ExelListadoDeCompra.php?estado=<?php echo $ES;?>&CODIGO_USUARIO=<?php echo $CODIGO_USUARIO;?>&txt_desde=<?php echo $txt_desde;?>&txt_hasta=<?php echo $txt_hasta; ?>&buscar_usuario=<?php echo $BUSCAR_DESCRIPCION; ?>&buscar_codigo=<?php echo $BUSCAR_CODIGO; ?>&rocha_buscar=<?php echo $BUSCAR_ROCHA; ?>" target="_blank">
   <img src="Imagenes/Excel.png" style = "border:0px;" alt="Exportar a Excel" class="right">
   </a></td>
-  <td><input type="submit" name = "buscar" id='buscar' value="Buscar"/> </td>
-
-
   </tr>
   </table>	
  </form>  
@@ -225,6 +229,10 @@ if($txt_desde != "" && $txt_hasta != "" )
 $query_registro .= "  and FECHA_CONFIRMACION between '".$txt_desde."' and '".$txt_hasta."'";
 }
 
+if($FACTURA_TXT  != "")
+{
+$query_registro .= " and orden_de_compra.FACTURAS like '%".$FACTURA_TXT."%'";
+}
 
 
 
@@ -247,7 +255,7 @@ $result = mysql_query($query_registro, $conn) or die(mysql_error());
 $numero = 0;
 }
 
- if($BUSCAR_CODIGO == "" && $BUSCAR_DESCRIPCION  == "" && $ES  == "" && $BUSCAR_ROCHA == "" && $txt_desde == "" && $txt_hasta == "" )
+ if($FACTURA_TXT == "" && $BUSCAR_CODIGO == "" && $BUSCAR_DESCRIPCION  == "" && $ES  == "" && $BUSCAR_ROCHA == "" && $txt_desde == "" && $txt_hasta == "" )
 {                   
 
 mysql_select_db($database_conn, $conn);
