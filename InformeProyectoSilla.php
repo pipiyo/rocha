@@ -397,7 +397,7 @@ $FECHA_VARIABLE ="";
     echo  "<td align='center' id='amarillo'>".substr($FECHA_ENTREGA,0,11)."</td>";		
 	}
     }
-    echo  "<td>".$NCOMUNA."</td>";
+    echo  "<td  id='hoy'>".$NCOMUNA."</td>";
 	echo  "<td  id='hoy' align='center' >".$DIAS."</td>";
     echo  "<td  id='hoy' align='right' >".$OC."</td>";
     echo  "<td  id='hoy' align='right' >".$RECLAMOS."</td>";
