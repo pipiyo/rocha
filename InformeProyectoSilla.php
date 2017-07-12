@@ -28,6 +28,7 @@ $PROCESO='';
 $OK='';
 $NULO='';
 $PROGRAMADOS='';
+$BUSCAR_COMUNA='';
 $TODOS='';
 $BUSCAR_CODIGO ='';
 $BUSCAR_LIDER ='';
@@ -52,6 +53,7 @@ if (isset($_GET["buscar"]) || isset($_GET["buscarfe"]))
 $BUSCAR_CODIGO = $_GET["buscar_codigo"];
 $VENDEDOR = $_GET["buscar_vendedor"];
 $PROCESO = $_GET["txt_procesoi"];
+$BUSCAR_COMUNA = $_GET["buscar_comuna"];
 $CATEGORIA = $_GET["categoria"];
 if($_GET["txt_desde"] != "" and $_GET["txt_hasta"] != "" )  
 {
@@ -60,6 +62,7 @@ $txt_hasta = $_GET["txt_hasta"];
 $DESDE = $_GET["txt_desde"];
 $HASTA = $_GET["txt_hasta"];
 }
+
 
 
 if ($_GET["buscarfe"] == "INICIO" ) 
@@ -151,6 +154,14 @@ else if($ESTADOV == "OK")
                    }
                  });
    });
+  $(function(){
+	$('#buscar_comuna').autocomplete({
+	source : 'ajaxComuna.php',
+	select : function(event, ui)
+	{
+	}
+	});	
+	});
   </script>
   </head>
 <body>
@@ -159,7 +170,7 @@ else if($ESTADOV == "OK")
 <div id = 'header-radicado-rocha'>	
   <div id='bread'><div id="menu1"></div></div> 
 <div id = 'header-sistema'>  
-<h1>Informe Sillas </h1>
+<h1 style="margin:0">Informe Sillas </h1>
 <table class="form-sistema">
 <tr>
 <td ><input placeholder="Desde" class="textbox" name="txt_desde" id="txt_desde" type="text" value="<?php echo $DESDE;?>" /></td>
@@ -217,10 +228,15 @@ $result1 = mysql_query($query_registro, $conn) or die(mysql_error());
 <option>Servicio Técnico</option>
 <option></option>
 </select></td>	
+<td><input  placeholder="Comuna"  class="textbox"  type="text" id="buscar_comuna" name="buscar_comuna" value="<?php echo $BUSCAR_COMUNA;?>"  ></td>
+<td> <input type="submit" id="buscar" class='boton' name = "buscar" value = "Buscar" /> </td>
+</tr>
+<tr>
+<td colspan="4"></td>
 <td>
 <a href="ExcelInformeSillas.php?txt_desde=<?php echo $txt_desde;?>&txt_hasta=<?php echo $txt_hasta;?>&ESTADO=<?php echo urlencode($ESTADOV);?>&buscarfe=<?php echo urlencode($buscaf);?>&buscar_codigo=<?php echo urlencode($BUSCAR_CODIGO);?>&buscar_vendedor=<?php echo urlencode($BUSCAR_VENDEDOR);?>&categoria=<?php echo urlencode($CATEGORIA);?>&PROCESO=<?php echo urlencode($PROCESO);?>" target="_blank">
 <img src="Imagenes/Excel.png" style = "border:0px;" alt="Exportar a Excel"></a></td>
-<td> <input type="submit" id="buscar" class='boton' name = "buscar" value = "Buscar" /> </td>
+
 </tr>
 </table>
 </div>
@@ -240,9 +256,16 @@ mysql_select_db($database_conn, $conn);
 
 ////Comienzo
 
-	
-$query_registro = "select DISTINCT 'servicio.CODIGO_SERVICIO',servicio.OC,servicio.CANTIDAD,servicio.FECHA_PRIMERA_ENTREGA,servicio.FECHA_REALIZACION, servicio.DIAS, servicio.RECLAMOS,servicio.CODIGO_SERVICIO,servicio.PREDECESOR, servicio.EJECUTOR, servicio.PROCESO,servicio.FECHA_ENTREGA, proyecto.NOMBRE_CLIENTE, servicio.CODIGO_SERVICIO,servicio.TPTMFI, servicio.DIRECCION, servicio.ESTADO, servicio.SUPERVISOR, servicio.REALIZADOR,servicio.OBSERVACIONES, servicio.DESCRIPCION, proyecto.CODIGO_PROYECTO,servicio.FECHA_INICIO  from  servicio, proyecto where proyecto.CODIGO_PROYECTO = servicio.CODIGO_PROYECTO and servicio.NOMBRE_SERVICIO = 'Sillas' ";	
 
+if($BUSCAR_COMUNA != '') 
+{ 
+$query_registro = "select DISTINCT 'servicio.CODIGO_SERVICIO',servicio.CODIGO_COMUNA,servicio.OC,servicio.CANTIDAD,servicio.FECHA_PRIMERA_ENTREGA,servicio.FECHA_REALIZACION, servicio.DIAS, servicio.RECLAMOS,servicio.CODIGO_SERVICIO,servicio.PREDECESOR, servicio.EJECUTOR, servicio.PROCESO,servicio.FECHA_ENTREGA, proyecto.NOMBRE_CLIENTE, servicio.CODIGO_SERVICIO,servicio.TPTMFI, servicio.DIRECCION, servicio.ESTADO, servicio.SUPERVISOR, servicio.REALIZADOR,servicio.OBSERVACIONES, servicio.DESCRIPCION, proyecto.CODIGO_PROYECTO,servicio.FECHA_INICIO  
+	from servicio, proyecto, comunas where proyecto.CODIGO_PROYECTO = servicio.CODIGO_PROYECTO and servicio.NOMBRE_SERVICIO = 'Sillas' and  comunas.CODIGO_COMUNA  = servicio.CODIGO_COMUNA  and comunas.NOMBRE_COMUNA = '".$BUSCAR_COMUNA."'  ";
+}
+else
+{
+$query_registro = "select DISTINCT 'servicio.CODIGO_SERVICIO',servicio.OC,servicio.CODIGO_COMUNA,servicio.CANTIDAD,servicio.FECHA_PRIMERA_ENTREGA,servicio.FECHA_REALIZACION, servicio.DIAS, servicio.RECLAMOS,servicio.CODIGO_SERVICIO,servicio.PREDECESOR, servicio.EJECUTOR, servicio.PROCESO,servicio.FECHA_ENTREGA, proyecto.NOMBRE_CLIENTE, servicio.CODIGO_SERVICIO,servicio.TPTMFI, servicio.DIRECCION, servicio.ESTADO, servicio.SUPERVISOR, servicio.REALIZADOR,servicio.OBSERVACIONES, servicio.DESCRIPCION, proyecto.CODIGO_PROYECTO,servicio.FECHA_INICIO  from  servicio, proyecto where proyecto.CODIGO_PROYECTO = servicio.CODIGO_PROYECTO and servicio.NOMBRE_SERVICIO = 'Sillas' ";
+}
 
 if($BUSCAR_CODIGO != '') 
 { 
@@ -293,6 +316,7 @@ echo"<thead><tr class='cheader'>
        <th width='80'><a id='fechai' href='InformeProyectoInstalacion.php?buscarfe=INICIO&ESTADO=".$ESTADOV."&buscari=".$buscaf."&txt_desde=".$DESDE."&txt_hasta=".$HASTA."&buscar_codigo=".$BUSCAR_CODIGO."'>FechaI</a></th>
        <th>Fecha E</th>
        <th width='80'><a id='fechae' href='InformeProyectoInstalacion.php?buscarfe=ENTREGA&ESTADO=".$ESTADOV."&buscari=".$buscaf."&txt_desde=".$DESDE."&txt_hasta=".$HASTA."&buscar_codigo=".$BUSCAR_CODIGO."'>FechaC</a></th>
+       	<th>Comuna</th>
        <th>Dias</th>
        <th>OC</th>
        <th>Reclamos</th>
@@ -314,6 +338,7 @@ $FECHA_VARIABLE ="";
 	$FECHA_INICIO = $row["FECHA_INICIO"];
 	$FECHA_ENTREGA = $row["FECHA_ENTREGA"];
 	$DESCRIPCION = $row["DESCRIPCION"];
+	$CODIGO_COMUNA = $row["CODIGO_COMUNA"];
 	$OBSERVACIONES = $row["OBSERVACIONES"];
 	$REALIZADOR = $row["REALIZADOR"];
 	$SUPERVISOR = $row["SUPERVISOR"];
@@ -327,6 +352,18 @@ $FECHA_VARIABLE ="";
 	$CANTIDAD = $row["CANTIDAD"];
  	$FECHA_PRIMERA_ENTREGA = $row["FECHA_PRIMERA_ENTREGA"];
 	$FECHA_REALIZACION = $row["FECHA_REALIZACION"];
+
+	$query_registro1 = "SELECT comunas.NOMBRE_COMUNA,region_1.NOMBRE,region_1.ZONA  FROM comunas,region_1 WHERE region_1.CODIGO = comunas.CODIGO_REGION1 and comunas.CODIGO_COMUNA  ='".$CODIGO_COMUNA."'";
+	$result1 = mysql_query($query_registro1, $conn) or die(mysql_error());
+ 	$NCOMUNA= $row["NOMBRE_COMUNA"];
+    	$NREGIONE= $row["NOMBRE"];
+    	$ZONA_A= $row["ZONA"];
+ 	while($row = mysql_fetch_array($result1))
+  	{
+    	$NCOMUNA= $row["NOMBRE_COMUNA"];
+    	$NREGIONE= $row["NOMBRE"];
+    	$ZONA_A= $row["ZONA"];
+  	}
 
 
   if($FECHA_REALIZACION  == date("Y-m-d"))
@@ -398,6 +435,7 @@ $FECHA_VARIABLE ="";
     echo  "<td align='center' id='amarillo' >".substr($FECHA_ENTREGA,0,11)."</td>";		
 	}
 	}
+	echo  "<td>".$NCOMUNA."</td>";
 	echo  "<td align='center'>".$DIAS."</td>";
 	echo  "<td align='right' >".$OC."</td>";
 	echo  "<td align='right' >".$RECLAMOS."</td>";

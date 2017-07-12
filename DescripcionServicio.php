@@ -534,6 +534,10 @@ $result1 = mysql_query($query_registro, $conn) or die(mysql_error());
 </select></td>
 </tr>
 <tr>
+<tr>
+<td >Comuna</td>
+<td align="center"><input class="textbox" type="text" id ='txt_comuna' name ="txt_comuna"  value="<?php echo $NCOMUNA;?>"><br></td>
+</tr>
 <td >Ejecutor:</td>
 <td align="center"><input class="textbox" type="text"  id= "txt_ejecutors" name = "txt_ejecutors" value="<?php echo ($EJECUTOR); ?>" /> </td>
 </tr>
