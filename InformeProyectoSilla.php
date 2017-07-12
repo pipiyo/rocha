@@ -236,7 +236,6 @@ $result1 = mysql_query($query_registro, $conn) or die(mysql_error());
 <td>
 <a href="ExcelInformeSillas.php?txt_desde=<?php echo $txt_desde;?>&txt_hasta=<?php echo $txt_hasta;?>&ESTADO=<?php echo urlencode($ESTADOV);?>&buscarfe=<?php echo urlencode($buscaf);?>&buscar_codigo=<?php echo urlencode($BUSCAR_CODIGO);?>&buscar_vendedor=<?php echo urlencode($BUSCAR_VENDEDOR);?>&categoria=<?php echo urlencode($CATEGORIA);?>&PROCESO=<?php echo urlencode($PROCESO);?>" target="_blank">
 <img src="Imagenes/Excel.png" style = "border:0px;" alt="Exportar a Excel"></a></td>
-
 </tr>
 </table>
 </div>
@@ -355,9 +354,10 @@ $FECHA_VARIABLE ="";
 
 	$query_registro1 = "SELECT comunas.NOMBRE_COMUNA,region_1.NOMBRE,region_1.ZONA  FROM comunas,region_1 WHERE region_1.CODIGO = comunas.CODIGO_REGION1 and comunas.CODIGO_COMUNA  ='".$CODIGO_COMUNA."'";
 	$result1 = mysql_query($query_registro1, $conn) or die(mysql_error());
- 	$NCOMUNA= $row["NOMBRE_COMUNA"];
-    	$NREGIONE= $row["NOMBRE"];
-    	$ZONA_A= $row["ZONA"];
+ 	$NCOMUNA= "";
+    $NREGIONE= "";
+    $ZONA_A= "";
+
  	while($row = mysql_fetch_array($result1))
   	{
     	$NCOMUNA= $row["NOMBRE_COMUNA"];
