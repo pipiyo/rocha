@@ -27,7 +27,9 @@ self.location = "index.php"
 	<script type="text/javascript" src="js/tinybox.js"></script>
 
 	<script src='js/Bloqueo.php'></script>
+	<script src="https://use.fontawesome.com/faef682d4d.js"></script>
 	<link rel="styleSheet" href="style/bread.css" type="text/css" >
+
 	<script type="text/javascript">
 
 $(document).ready(function(){
@@ -72,26 +74,26 @@ $('#form_filtro_proyecto').submit();
 
 
 <div class="contenedor">
-	<div class="column2 radicados" id="CUADRO RADICADO"  ><h2> RADICADOS</h2></div>
-	<div class="column2 rocha" id="CUADRO ROCHA" ><h2> ROCHAS :)</h2></div>
+	<div class="column2 radicados" id="CUADRO RADICADO"  ><h2> RADICADOS <i class="fa fa-frown-o" aria-hidden="true"></i></h2></div>
+	<div class="column2 rocha" id="CUADRO ROCHA" ><h2> ROCHAS <i class="fa fa-sign-language" aria-hidden="true"></i></h2></div>
 
-	<a href="#"><div class="column1 abastecimiento"  id="MODULO ABASTECIMIENTO" ><h2> ABASTECIMIENTO</h2></div></a>
-	<a href="#"><div class="column1 produccion"  id="MODULO PRODUCCION"  ><h2> PRODUCCIÓN</h2></div></a>
-	<a href="#"><div class="column1 despacho" id="MODULO DESPACHO" ><h3> DESPACHO</h3></div></a>
-	<a href="#"><div class="column1 instalaciones" id="MODULO INSTALACION" ><h2> INSTALACIONES</h2></div></a>
+	<a href="#"><div class="column1 abastecimiento"  id="MODULO ABASTECIMIENTO" ><h2> ABASTECIMIENTO <i class="fa fa-hand-peace-o" aria-hidden="true"></i></h2></div></a>
+	<a href="#"><div class="column1 produccion"  id="MODULO PRODUCCION"  ><h2> PRODUCCIÓN <i class="fa fa-bug" aria-hidden="true"></i></h2></div></a>
+	<a href="#"><div class="column1 despacho" id="MODULO DESPACHO" ><h3> DESPACHO <i class="fa fa-truck" aria-hidden="true"></i></h3></div></a>
+	<a href="#"><div class="column1 instalaciones" id="MODULO INSTALACION" ><h2> INSTALACIONES <i class="fa fa-telegram" aria-hidden="true"></i></h2></div></a>
 
 	<a href="#"><div class="column1 mantencion" id="INFORME MANTENCION" ><h2> MANTECION</h2></div></a>
-	<a href="#"><div class="column1 reclamo" id="INFORME RECLAMOS" ><h2> RECLAMOS</h2></div></a>
+	<a href="#"><div class="column1 reclamo" id="INFORME RECLAMOS" ><h2> RECLAMOS <i class="fa fa-coffee" aria-hidden="true"></i></h2></div></a>
 	<a href="#"><div class="column1 rrhh" id="" ><h2> RRHH</h2></div></a>
 	<a href="#"><div class="column1 st" id="INFORME SERVICIO TECNICO" ><h2> SERVICIO TECNICO</h2></div></a>
 
-	<a href="#"><div class="column1 comercial" id="MODULO COMERCIAL" ><h2> COMERCIAL</h2></div></a>
-	<a href="#"><div class="column1 desarrollo" id="MODULO DESARROLLO" ><h2> DESARROLLO</h2></div></a>
-	<a href="#"><div class="column1 sillas" id="MODULO SILLAS"  ><h2> SILLAS</h2></div></a>
+	<a href="#"><div class="column1 comercial" id="MODULO COMERCIAL" ><h2> COMERCIAL <i class="fa fa-thumbs-up" aria-hidden="true"></i></h2></div></a>
+	<a href="#"><div class="column1 desarrollo" id="MODULO DESARROLLO" ><h2> DESARROLLO <i class="fa fa-paw" aria-hidden="true"></i> </h2></div></a>
+	<a href="#"><div class="column1 sillas" id="MODULO SILLAS"  ><h2> SILLAS <i class="fa fa-music" aria-hidden="true"></i></h2></div></a>
 	<a href="#"><div class="column1 gerencia" id="MODULO GERENCIA" ><h3> GERENCIA</h3></div></a>
 
-	<a href="#"><div class="column1 sistema" id="MODULO SISTEMA" ><h2> SISTEMA</h2></div></a>
-	<a href="#"><div class="column1 prevencion" id="INFORME PREVENCION" ><h2> PREVENCIÓN</h2></div></a>
+	<a href="#"><div class="column1 sistema" id="MODULO SISTEMA" ><h2> SISTEMA <i class="fa fa-futbol-o" aria-hidden="true"></i></h2></div></a>
+	<a href="#"><div class="column1 prevencion" id="INFORME PREVENCION" ><h2> PREVENCIÓN <i class="fa fa-rocket" aria-hidden="true"></i></h2></div></a>
 	<a href="#"><div class="column1 dam" id="" ><h2>DAM</h2></div></a>
 	<a href="#"><div class="column1 radicados" id="MODULO FACTURACION" ><h2>ADMINISTRACIÓN</h2></div></a>
 

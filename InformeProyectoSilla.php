@@ -310,6 +310,8 @@ echo"<thead><tr class='cheader'>
        <th>N°</th>
        <th>Proceso</th>
        <th>Cliente</th>     
+       <th>Reclamos</th>
+       <th>Cantidad</th>
        <th>Descripcion</th>
        <th>Observaciones</th>
        <th width='80'><a id='fechai' href='InformeProyectoInstalacion.php?buscarfe=INICIO&ESTADO=".$ESTADOV."&buscari=".$buscaf."&txt_desde=".$DESDE."&txt_hasta=".$HASTA."&buscar_codigo=".$BUSCAR_CODIGO."'>FechaI</a></th>
@@ -318,8 +320,6 @@ echo"<thead><tr class='cheader'>
        	<th>Comuna</th>
        <th>Dias</th>
        <th>OC</th>
-       <th>Reclamos</th>
-       <th>Cantidad</th>
        <th>Estado</th></tr></thead>";
 
 
@@ -374,7 +374,8 @@ $FECHA_VARIABLE ="";
     echo  "<td  id='hoy'>".($PROCESO)."</td>";
 	echo  "<td  id='hoy'>".($NOMBRE_CLIENTE)."</td>";
 	echo  "<td  id='hoy'>".($DESCRIPCION)."</td>";
-
+	echo  "<td  id='hoy' align='right' >".$RECLAMOS."</td>";
+    echo  "<td  id='hoy' align='right' >".number_format($CANTIDAD,0)."</td>";
 	echo  "<td  id='hoy'>".($OBSERVACIONES)."</td>";
 	echo  "<td  id='hoy' align='center' >".substr($FECHA_INICIO,0,11)."</td>";
 	echo  "<td  id='hoy' align='center' >".substr($FECHA_PRIMERA_ENTREGA,0,11)."</td>";
@@ -400,8 +401,6 @@ $FECHA_VARIABLE ="";
     echo  "<td  id='hoy'>".$NCOMUNA."</td>";
 	echo  "<td  id='hoy' align='center' >".$DIAS."</td>";
     echo  "<td  id='hoy' align='right' >".$OC."</td>";
-    echo  "<td  id='hoy' align='right' >".$RECLAMOS."</td>";
-    echo  "<td  id='hoy' align='right' >".number_format($CANTIDAD,0)."</td>";
 	echo  "<td  id='hoy'>".$ESTADO."</td></tr>";
 	$numero--;
 	}
@@ -413,6 +412,8 @@ $FECHA_VARIABLE ="";
           </td>";
     echo  "<td>".($PROCESO)."</td>";      
 	echo  "<td>".$NOMBRE_CLIENTE."</td>";
+	echo  "<td align='right' >".$RECLAMOS."</td>";
+	echo  "<td align='right' >".number_format($CANTIDAD,0)."</td>";
 	echo  "<td>".$DESCRIPCION."</td>";
 	echo  "<td>".$OBSERVACIONES."</td>";
 	echo  "<td align='center' >".substr($FECHA_INICIO,0,11)."</td>";
@@ -439,8 +440,6 @@ $FECHA_VARIABLE ="";
 	echo  "<td>".$NCOMUNA."</td>";
 	echo  "<td align='center'>".$DIAS."</td>";
 	echo  "<td align='right' >".$OC."</td>";
-	echo  "<td align='right' >".$RECLAMOS."</td>";
-	echo  "<td align='right' >".number_format($CANTIDAD,0)."</td>";
 	echo  "<td>".$ESTADO."</td></tr>";
 	$numero--;
 	}
