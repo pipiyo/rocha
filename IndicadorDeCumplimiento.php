@@ -7,7 +7,7 @@ alert("usuario no autenticado")
 self.location = "index.php"
 </script>';
 }
-ini_set('max_execution_time', 500);
+ini_set('max_execution_time', 1000);
 $CODIGO_USUARIO= $_SESSION['CODIGO_USUARIO'];
 mysql_select_db($database_conn, $conn);
 $query_registro = "select empleado.nombres, empleado.apellido_paterno from empleado, usuario where empleado.rut = usuario.rut and usuario.codigo_usuario = '".$CODIGO_USUARIO."'";
