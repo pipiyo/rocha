@@ -7,7 +7,7 @@
 
 $RESPUESTA = array();
 
-$sqla = (isset($_POST['des'])) ?  "SELECT * FROM producto WHERE DESCRIPCION LIKE '".$_POST['des']."' and TEMPORADA != '2'  LIMIT 50 " : "SELECT * FROM producto WHERE CODIGO_PRODUCTO = '".$CONSULTA."' and TEMPORADA != '2' LIMIT 25 ";
+$sqla = (isset($_POST['des'])) ?  "SELECT * FROM producto WHERE DESCRIPCION LIKE '".$_POST['des']."' and TEMPORADA != '2' and DESHABILITAR = '0'  LIMIT 50 " : "SELECT * FROM producto WHERE CODIGO_PRODUCTO = '".$CONSULTA."' and TEMPORADA != '2' and DESHABILITAR = '0' LIMIT 25 ";
 
 $resulta = mysql_query($sqla, $conn) or die(mysql_error());
 
