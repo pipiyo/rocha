@@ -258,12 +258,12 @@ mysql_select_db($database_conn, $conn);
 
 if($BUSCAR_COMUNA != '') 
 { 
-$query_registro = "select DISTINCT 'servicio.CODIGO_SERVICIO',servicio.CODIGO_COMUNA,servicio.OC,servicio.CANTIDAD,servicio.FECHA_PRIMERA_ENTREGA,servicio.FECHA_REALIZACION, servicio.DIAS, servicio.RECLAMOS,servicio.CODIGO_SERVICIO,servicio.PREDECESOR, servicio.EJECUTOR, servicio.PROCESO,servicio.FECHA_ENTREGA, proyecto.NOMBRE_CLIENTE, servicio.CODIGO_SERVICIO,servicio.TPTMFI, servicio.DIRECCION, servicio.ESTADO, servicio.SUPERVISOR, servicio.REALIZADOR,servicio.OBSERVACIONES, servicio.DESCRIPCION, proyecto.CODIGO_PROYECTO,servicio.FECHA_INICIO  
+$query_registro = "select DISTINCT 'servicio.CODIGO_SERVICIO',servicio.FI,servicio.CODIGO_COMUNA,servicio.OC,servicio.CANTIDAD,servicio.FECHA_PRIMERA_ENTREGA,servicio.FECHA_REALIZACION, servicio.DIAS, servicio.RECLAMOS,servicio.CODIGO_SERVICIO,servicio.PREDECESOR, servicio.EJECUTOR, servicio.PROCESO,servicio.FECHA_ENTREGA, proyecto.NOMBRE_CLIENTE, servicio.CODIGO_SERVICIO,servicio.TPTMFI, servicio.DIRECCION, servicio.ESTADO, servicio.SUPERVISOR, servicio.REALIZADOR,servicio.OBSERVACIONES, servicio.DESCRIPCION, proyecto.CODIGO_PROYECTO,servicio.FECHA_INICIO  
 	from servicio, proyecto, comunas where proyecto.CODIGO_PROYECTO = servicio.CODIGO_PROYECTO and servicio.NOMBRE_SERVICIO = 'Sillas' and  comunas.CODIGO_COMUNA  = servicio.CODIGO_COMUNA  and comunas.NOMBRE_COMUNA = '".$BUSCAR_COMUNA."'  ";
 }
 else
 {
-$query_registro = "select DISTINCT 'servicio.CODIGO_SERVICIO',servicio.OC,servicio.CODIGO_COMUNA,servicio.CANTIDAD,servicio.FECHA_PRIMERA_ENTREGA,servicio.FECHA_REALIZACION, servicio.DIAS, servicio.RECLAMOS,servicio.CODIGO_SERVICIO,servicio.PREDECESOR, servicio.EJECUTOR, servicio.PROCESO,servicio.FECHA_ENTREGA, proyecto.NOMBRE_CLIENTE, servicio.CODIGO_SERVICIO,servicio.TPTMFI, servicio.DIRECCION, servicio.ESTADO, servicio.SUPERVISOR, servicio.REALIZADOR,servicio.OBSERVACIONES, servicio.DESCRIPCION, proyecto.CODIGO_PROYECTO,servicio.FECHA_INICIO  from  servicio, proyecto where proyecto.CODIGO_PROYECTO = servicio.CODIGO_PROYECTO and servicio.NOMBRE_SERVICIO = 'Sillas' ";
+$query_registro = "select DISTINCT 'servicio.CODIGO_SERVICIO',servicio.FI,servicio.OC,servicio.CODIGO_COMUNA,servicio.CANTIDAD,servicio.FECHA_PRIMERA_ENTREGA,servicio.FECHA_REALIZACION, servicio.DIAS, servicio.RECLAMOS,servicio.CODIGO_SERVICIO,servicio.PREDECESOR, servicio.EJECUTOR, servicio.PROCESO,servicio.FECHA_ENTREGA, proyecto.NOMBRE_CLIENTE, servicio.CODIGO_SERVICIO,servicio.TPTMFI, servicio.DIRECCION, servicio.ESTADO, servicio.SUPERVISOR, servicio.REALIZADOR,servicio.OBSERVACIONES, servicio.DESCRIPCION, proyecto.CODIGO_PROYECTO,servicio.FECHA_INICIO  from  servicio, proyecto where proyecto.CODIGO_PROYECTO = servicio.CODIGO_PROYECTO and servicio.NOMBRE_SERVICIO = 'Sillas' ";
 }
 
 if($BUSCAR_CODIGO != '') 
@@ -320,6 +320,7 @@ echo"<thead><tr class='cheader'>
        	<th>Comuna</th>
        <th>Dias</th>
        <th>OC</th>
+       <th>FI</th>
        <th>Estado</th></tr></thead>";
 
 
@@ -332,6 +333,7 @@ $FECHA_VARIABLE ="";
 	$CODIGO_PROYECTO = $row["CODIGO_PROYECTO"];
 	$CODIGO_SERVICIO = $row["CODIGO_SERVICIO"];
 	$TPTMFI = $row["TPTMFI"];
+	$FI = $row["FI"];
 	$DIRECCION = $row["DIRECCION"];
 	$NOMBRE_CLIENTE = ($row["NOMBRE_CLIENTE"]);
 	$FECHA_INICIO = $row["FECHA_INICIO"];
@@ -401,6 +403,7 @@ $FECHA_VARIABLE ="";
     echo  "<td  id='hoy'>".$NCOMUNA."</td>";
 	echo  "<td  id='hoy' align='center' >".$DIAS."</td>";
     echo  "<td  id='hoy' align='right' >".$OC."</td>";
+    echo  "<td  id='hoy' align='right' >".$FI."</td>";
 	echo  "<td  id='hoy'>".$ESTADO."</td></tr>";
 	$numero--;
 	}
@@ -440,6 +443,7 @@ $FECHA_VARIABLE ="";
 	echo  "<td>".$NCOMUNA."</td>";
 	echo  "<td align='center'>".$DIAS."</td>";
 	echo  "<td align='right' >".$OC."</td>";
+	echo  "<td align='right' >".$FI."</td>";
 	echo  "<td>".$ESTADO."</td></tr>";
 	$numero--;
 	}
