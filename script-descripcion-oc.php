@@ -602,7 +602,7 @@ if($contador_oficial <= 15 )
     <td style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.number_format($SUB_TOTAL,0, ",", ".").'</td>
   </tr>
   <tr>
-    <td>HORARIO RECEPCION DE MERCADERIA: 09:00 A 12:45 Y 14:30 A 17:15 HRS</td>
+    <td>HORARIO RECEPCION DE MERCADERIA 08:30 A 12:45 Y 14:00 A 16:45 HRS</td>
     <td width="61">Descuento %</td>
     <td width="50" style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.$DESCUENTO_OC.'</td>
   </tr>
@@ -615,12 +615,12 @@ if($contador_oficial <= 15 )
   </tr>
   
   <tr>
-    <td>ENTREGAR FACTURAS EN SANTA ROSA 5721, SAN MIGUEL O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
+    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN N° 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
     <td>Neto</td>
     <td style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.number_format($NETO,0, ",", ".").'</td>
   </tr>
   <tr>
-    <td>Jhon Jairo Gómez C Gerente General</td>
+    <td>Jhon Jairo Gomez C Gerente General</td>
     <td>Iva</td>
     <td style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.number_format($IVA,0, ",", ".").'</td>
   </tr>
@@ -639,12 +639,12 @@ else
     <td width="50"></td>
   </tr>
   <tr>
-    <td>HORARIO RECEPCION DE MERCADERIA: 09:00 A 12:45 Y 14:30 A 17:15 HRS</td>
+    <td>HORARIO RECEPCION DE MERCADERIA 08:30 A 12:45 Y 14:00 A 16:45 HRS</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>ENTREGAR FACTURAS EN SANTA ROSA 5721, SAN MIGUEL O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
+    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN N° 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
     <td></td>
     <td></td>
   </tr>
@@ -664,7 +664,7 @@ else
     <td></td>
     </tr>
   <tr>
-    <td>Jhon Jairo Gómez C Gerente General</td>
+    <td>Jhon Jairo Gomez C Gerente General</td>
     <td></td>
     <td></td>
     </tr>';
@@ -677,7 +677,7 @@ if($contador_oficial <= 30 )
     <td style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.number_format($SUB_TOTAL,0, ",", ".").'</td>
   </tr>
  <tr>
-    <td>HORARIO RECEPCION DE MERCADERIA: 09:00 A 12:45 Y 14:30 A 17:15 HRS</td>
+    <td>HORARIO RECEPCION DE MERCADERIA 08:30 A 12:45 Y 14:00 A 16:45 HRS</td>
     <td width="61">Descuento %</td>
     <td width="50" style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.$DESCUENTO_OC.'</td>
   </tr>
@@ -689,12 +689,12 @@ if($contador_oficial <= 30 )
     <td width="50" style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.$DESCUENTO_2.'</td>
   </tr>
   <tr>
-    <td>ENTREGAR FACTURAS EN SANTA ROSA 5721, SAN MIGUEL O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
+    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN N° 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
     <td>Neto</td>
     <td style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.number_format($NETO,0, ",", ".").'</td>
   </tr>
   <tr>
-    <td>Jhon Jairo Gómez C Gerente General</td>
+    <td>Jhon Jairo Gomez C Gerente General</td>
     <td>Iva</td>
     <td style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.number_format($IVA,0, ",", ".").'</td>
   </tr>
@@ -713,12 +713,12 @@ else
     <td width="50"></td>
   </tr>
   <tr>
-    <td>HORARIO RECEPCION DE MERCADERIA: 09:00 A 12:45 Y 14:30 A 17:15 HRS</td>
+    <td>HORARIO RECEPCION DE MERCADERIA 08:30 A 12:45 Y 14:00 A 16:45 HRS</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>ENTREGAR FACTURAS EN SANTA ROSA 5721, SAN MIGUEL O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
+    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN N° 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
     <td></td>
     <td></td>
   </tr>
@@ -738,7 +738,7 @@ else
     <td></td>
     </tr>
   <tr>
-    <td>Jhon Jairo Gómez C Gerente General</td>
+    <td>Jhon Jairo Gomez C Gerente General</td>
     <td></td>
     <td></td>
     </tr>';
@@ -751,7 +751,7 @@ if($contador_oficial <= 45 )
     <td style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.number_format($SUB_TOTAL,0, ",", ".").'</td>
   </tr>
   <tr>
-    <td>HORARIO RECEPCION DE MERCADERIA: 09:00 A 12:45 Y 14:30 A 17:15 HRS</td>
+    <td>HORARIO RECEPCION DE MERCADERIA 08:30 A 12:45 Y 14:00 A 16:45 HRS</td>
     <td width="61">Descuento %</td>
     <td width="50" style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.$DESCUENTO_OC.'</td>
   </tr>
@@ -763,12 +763,12 @@ if($contador_oficial <= 45 )
     <td width="50" style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.$DESCUENTO_2.'</td>
   </tr>
   <tr>
-    <td>ENTREGAR FACTURAS EN SANTA ROSA 5721, SAN MIGUEL O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
+    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN N° 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
     <td>Neto</td>
     <td style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.number_format($NETO,0, ",", ".").'</td>
   </tr>
   <tr>
-    <td>Jhon Jairo Gómez C Gerente General</td>
+    <td>Jhon Jairo Gomez C Gerente General</td>
     <td>Iva</td>
     <td style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.number_format($IVA,0, ",", ".").'</td>
   </tr>
@@ -787,12 +787,12 @@ else
     <td width="50"></td>
   </tr>
   <tr>
-    <td>HORARIO RECEPCION DE MERCADERIA: 09:00 A 12:45 Y 14:30 A 17:15 HRS</td>
+    <td>HORARIO RECEPCION DE MERCADERIA 08:30 A 12:45 Y 14:00 A 16:45 HRS</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>ENTREGAR FACTURAS EN SANTA ROSA 5721, SAN MIGUEL O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
+    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN N° 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
     <td></td>
     <td></td>
   </tr>
@@ -812,7 +812,7 @@ else
     <td></td>
     </tr>
   <tr>
-    <td>Jhon Jairo Gómez C Gerente General</td>
+    <td>Jhon Jairo Gomez C Gerente General</td>
     <td></td>
     <td></td>
     </tr>';
@@ -825,7 +825,7 @@ if($contador_oficial <= 60 )
     <td style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.number_format($SUB_TOTAL,0, ",", ".").'</td>
   </tr>
  <tr>
-    <td>HORARIO RECEPCION DE MERCADERIA: 09:00 A 12:45 Y 14:30 A 17:15 HRS</td>
+    <td>HORARIO RECEPCION DE MERCADERIA 08:30 A 12:45 Y 14:00 A 16:45 HRS</td>
     <td width="61">Descuento %</td>
     <td width="50" style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.$DESCUENTO_OC.'</td>
   </tr>
@@ -837,12 +837,12 @@ if($contador_oficial <= 60 )
     <td width="50" style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.$DESCUENTO_2.'</td>
   </tr>
   <tr>
-    <td>ENTREGAR FACTURAS EN SANTA ROSA 5721, SAN MIGUEL O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
+    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN N° 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
     <td>Neto</td>
     <td style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.number_format($NETO,0, ",", ".").'</td>
   </tr>
   <tr>
-    <td>Jhon Jairo Gómez C Gerente General</td>
+    <td>Jhon Jairo Gomez C Gerente General</td>
     <td>Iva</td>
     <td style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.number_format($IVA,0, ",", ".").'</td>
   </tr>
@@ -861,12 +861,12 @@ else
     <td width="50"></td>
   </tr>
   <tr>
-    <td>HORARIO RECEPCION DE MERCADERIA: 09:00 A 12:45 Y 14:30 A 17:15 HRS</td>
+    <td>HORARIO RECEPCION DE MERCADERIA 08:30 A 12:45 Y 14:00 A 16:45 HRS</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>ENTREGAR FACTURAS EN SANTA ROSA 5721, SAN MIGUEL O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
+    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN N° 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
     <td></td>
     <td></td>
   </tr>
@@ -886,7 +886,7 @@ else
     <td></td>
     </tr>
   <tr>
-    <td>Jhon Jairo Gómez C Gerente General</td>
+    <td>Jhon Jairo Gomez C Gerente General</td>
     <td></td>
     <td></td>
     </tr>';
@@ -899,7 +899,7 @@ if($contador_oficial <= 75 )
     <td style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.number_format($SUB_TOTAL,0, ",", ".").'</td>
   </tr>
   <tr>
-    <td>HORARIO RECEPCION DE MERCADERIA: 09:00 A 12:45 Y 14:30 A 17:15 HRS</td>
+    <td>HORARIO RECEPCION DE MERCADERIA 08:30 A 12:45 Y 14:00 A 16:45 HRS</td>
     <td width="61">Descuento %</td>
     <td width="50" style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.$DESCUENTO_OC.'</td>
   </tr>
@@ -911,12 +911,12 @@ if($contador_oficial <= 75 )
     <td width="50" style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.$DESCUENTO_2.'</td>
   </tr>
   <tr>
-    <td>ENTREGAR FACTURAS EN SANTA ROSA 5721, SAN MIGUEL O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
+    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN N° 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
     <td>Neto</td>
     <td style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.number_format($NETO,0, ",", ".").'</td>
   </tr>
   <tr>
-    <td>Jhon Jairo Gómez C Gerente General</td>
+    <td>Jhon Jairo Gomez C Gerente General</td>
     <td>Iva</td>
     <td style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.number_format($IVA,0, ",", ".").'</td>
   </tr>
@@ -935,12 +935,12 @@ else
     <td width="50"></td>
   </tr>
   <tr>
-    <td>HORARIO RECEPCION DE MERCADERIA: 09:00 A 12:45 Y 14:30 A 17:15 HRS</td>
+    <td>HORARIO RECEPCION DE MERCADERIA 08:30 A 12:45 Y 14:00 A 16:45 HRS</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>ENTREGAR FACTURAS EN SANTA ROSA 5721, SAN MIGUEL O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
+    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN N° 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
     <td></td>
     <td></td>
   </tr>
@@ -960,7 +960,7 @@ else
     <td></td>
     </tr>
   <tr>
-    <td>Jhon Jairo Gómez C Gerente General</td>
+    <td>Jhon Jairo Gomez C Gerente General</td>
     <td></td>
     <td></td>
     </tr>';
@@ -1671,12 +1671,12 @@ $html2='
     <td width="50"></td>
   </tr>
   <tr>
-    <td>HORARIO RECEPCION DE MERCADERIA: 09:00 A 12:45 Y 14:30 A 17:15 HRS</td>
+    <td>HORARIO RECEPCION DE MERCADERIA 08:30 A 12:45 Y 14:00 A 16:45 HRS</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>ENTREGAR FACTURAS EN SANTA ROSA 5721, SAN MIGUEL O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
+    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN N° 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
     <td></td>
     <td></td>
   </tr>
@@ -1691,7 +1691,7 @@ $html2='
     <td></td>
   </tr>
     <tr>
-    <td>Jhon Jairo Gómez C Gerente General</td>
+    <td>Jhon Jairo Gomez C Gerente General</td>
     <td></td>
     <td></td>
     </tr>
@@ -1864,12 +1864,12 @@ $html3='
     <td width="50"></td>
   </tr>
   <tr>
-    <td>HORARIO RECEPCION DE MERCADERIA: 09:00 A 12:45 Y 14:30 A 17:15 HRS</td>
+    <td>HORARIO RECEPCION DE MERCADERIA 08:30 A 12:45 Y 14:00 A 16:45 HRS</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>ENTREGAR FACTURAS EN SANTA ROSA 5721, SAN MIGUEL O FACTURA ELECTRONICA A pbeltran@multioficina.cl</td>
+    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN N° 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl</td>
     <td></td>
     <td></td>
   </tr>
@@ -1889,7 +1889,7 @@ $html3='
     <td></td>
     </tr>
   <tr>
-    <td>Jhon Jairo Gómez C Gerente General</td>
+    <td>Jhon Jairo Gomez C Gerente General</td>
     <td></td>
     <td></td>
     </tr>
@@ -2062,12 +2062,12 @@ $htmlaa='
     <td width="50"></td>
   </tr>
   <tr>
-    <td>HORARIO RECEPCION DE MERCADERIA: 09:00 A 12:45 Y 14:30 A 17:15 HRS</td>
+    <td>HORARIO RECEPCION DE MERCADERIA 08:30 A 12:45 Y 14:00 A 16:45 HRS</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>ENTREGAR FACTURAS EN SANTA ROSA 5721, SAN MIGUEL O FACTURA ELECTRONICA A pbeltran@multioficina.cl</td>
+    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN N° 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl</td>
     <td></td>
     <td></td>
   </tr>
@@ -2087,7 +2087,7 @@ $htmlaa='
     <td></td>
     </tr>
   <tr>
-    <td>Jhon Jairo Gómez C Gerente General</td>
+    <td>Jhon Jairo Gomez C Gerente General</td>
     <td></td>
     <td></td>
     </tr>
@@ -2259,12 +2259,12 @@ $htmlbb='
     <td width="50"></td>
   </tr>
   <tr>
-    <td>HORARIO RECEPCION DE MERCADERIA: 09:00 A 12:45 Y 14:30 A 17:15 HRS</td>
+    <td>HORARIO RECEPCION DE MERCADERIA 08:30 A 12:45 Y 14:00 A 16:45 HRS</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>ENTREGAR FACTURAS EN SANTA ROSA 5721, SAN MIGUEL O FACTURA ELECTRONICA A pbeltran@multioficina.cl</td>
+    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN N° 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl</td>
     <td></td>
     <td></td>
   </tr>
@@ -2284,7 +2284,7 @@ $htmlbb='
     <td></td>
     </tr>
   <tr>
-    <td>Jhon Jairo Gómez C Gerente General</td>
+    <td>Jhon Jairo Gomez C Gerente General</td>
     <td></td>
     <td></td>
     </tr>
@@ -2456,12 +2456,12 @@ $htmlcc='
     <td width="50"></td>
   </tr>
   <tr>
-    <td>HORARIO RECEPCION DE MERCADERIA: 09:00 A 12:45 Y 14:30 A 17:15 HRS</td>
+    <td>HORARIO RECEPCION DE MERCADERIA 08:30 A 12:45 Y 14:00 A 16:45 HRS</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>ENTREGAR FACTURAS EN SANTA ROSA 5721, SAN MIGUEL O FACTURA ELECTRONICA A pbeltran@multioficina.cl</td>
+    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN N° 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl</td>
     <td></td>
     <td></td>
   </tr>
@@ -2481,7 +2481,7 @@ $htmlcc='
     <td></td>
     </tr>
   <tr>
-    <td>Jhon Jairo Gómez C Gerente General</td>
+    <td>Jhon Jairo Gomez C Gerente General</td>
     <td></td>
     <td></td>
     </tr>

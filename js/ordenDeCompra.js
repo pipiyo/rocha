@@ -615,6 +615,7 @@ var cat = $("[id='"+($(this).val())+"']").attr("name");
 
 function seleccion()
 {
+console.log("hola");
 var despachar = document.getElementById('despachar').selectedIndex;
 
 if(despachar == '1')
@@ -622,8 +623,8 @@ if(despachar == '1')
 
 	document.getElementById('despachar1').value = "77.003.680-1";
 	document.getElementById('despachar_nombre').value = 'Muebles y Disenos S.A.';
-	document.getElementById('despachar_direccion').value = 'Av. Santa Rosa 5721';
-	document.getElementById('despachar_comuna').value = 'San Miguel';
+	document.getElementById('despachar_direccion').value = 'Camino Lonquén N° 10765, Maipú';
+	document.getElementById('despachar_comuna').value = 'Maipu';
 	document.getElementById('despachar_telefono').value = '920 71 75';
 	document.getElementById('despachar1').readOnly = 'readonly';
 	
