@@ -868,6 +868,7 @@ while($row = mysql_fetch_array($result2))
     		<option>Cesar Gajardo Cardenas</option>
     		<option>Raul Gonzalez Marquez</option>
     		<option>Constanza Jhonson Jhonson</option>
+    		<option>Eliana Cornejo</option>
     	</select>
     </td>
     <td>&nbsp;Nombre Proyecto</td>
