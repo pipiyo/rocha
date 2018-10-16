@@ -88,7 +88,7 @@ $('#form_filtro_proyecto').submit();
 	<a href="#"><div class="column1 st" id="INFORME SERVICIO TECNICO" ><h2> SERVICIO TECNICO</h2></div></a>
 
 	<a href="#"><div class="column1 comercial" id="MODULO COMERCIAL" ><h2> COMERCIAL <i class="fa fa-thumbs-up" aria-hidden="true"></i></h2></div></a>
-	<a href="#"><div class="column1 desarrollo" id="MODULO DESARROLLO" ><h2> DESARROLLO <i class="fa fa-paw" aria-hidden="true"></i> </h2></div></a>
+	<a href="#"><div class="column1 desarrollo" id="MODULO DESARROLLO" ><h2>  INNOVACIÓN Y DESARROLLO  <i class="fa fa-paw" aria-hidden="true"></i> </h2></div></a>
 	<a href="#"><div class="column1 sillas" id="MODULO SILLAS"  ><h2> SILLAS <i class="fa fa-music" aria-hidden="true"></i></h2></div></a>
 	<a href="#"><div class="column1 gerencia" id="MODULO GERENCIA" ><h3> GERENCIA</h3></div></a>
 
