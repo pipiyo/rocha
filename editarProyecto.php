@@ -59,6 +59,10 @@ $cuenta = 0;
  while($row = mysql_fetch_array($result1))
   {
 	$CLIENTE = $row["NOMBRE_CLIENTE"];
+	$CODIGO_MADRE = $row["CODIGO_MADRE"];
+	$EMPRESA = $row["EMPRESA"];
+	$MERCADO = $row["MERCADO"];
+	$TIPO_PROYECTO = $row["TIPO_PROYECTO"];
 	$RUT_CLIENTE = $row["RUT_CLIENTE"];
 	$OBRA = $row["OBRA"];
 	$DIRECCION_OBRA = $row["DIRECCION_FACTURACION"];
@@ -91,6 +95,7 @@ $cuenta = 0;
 	$CONVENIR= $row["CONVENIR"];
 	$ENCARGADO= $row["ENCARGADO"];
 	$NOMBRE_PROYECTO= $row["NOMBRE_PROYECTO"];
+
 	  }
   mysql_free_result($result1);
   
@@ -1328,7 +1333,10 @@ else
 
   <table id="tabla_rocha" bordercolor="#ccc" width="935" rules="all" border="1">
     <tr>
-      <td style="font:bold 12px;background:#B7DBFF;" width="108" rowspan="9" align="center" ><h3><?php echo $CODIGO_PROYECTO ?></h3><input name = "codigo_radicado" style="display:none;" type="text" id = "codigo_radicado" value="<?php echo $CODIGO_PROYECTO ?>" /></td>
+      <td style="font:bold 12px;background:#B7DBFF;" width="108" rowspan="10" align="center" >
+      	<h3><?php echo $CODIGO_MADRE ?></h3>
+      	<h3><?php echo $CODIGO_PROYECTO ?></h3>
+      <input name = "codigo_radicado" style="display:none;" type="text" id = "codigo_radicado" value="<?php echo $CODIGO_PROYECTO ?>" /></td>
       <td width="125" style=" background-color:#B7DBFF">Cliente</td>
       <td width="139"> <input name="cliente" id="cliente" type ="text" style="border:#fff 1px solid;height:14px; font-size:10px;width:95%;" value="<?php echo $CLIENTE ?>"></td>
       <td width="117" style=" background-color:#B7DBFF">Director</td>
@@ -1477,6 +1485,30 @@ while($row = mysql_fetch_array($result2))
     	<td style=" background-color:#B7DBFF"></td>
     	<td style=" background-color:#B7DBFF"></td>
     </tr>
+    <tr>
+    	<td style=" background-color:#B7DBFF">Empresa</td>
+    	<td><select style="border:#fff 1px solid;height:14px; font-size:10px;width:95%;" name="txt_empresa" id="txt_empresa">
+    		<option><?php echo $EMPRESA ?></option>
+    		<option>Rocha S.A</option>
+    		<option>S&S S.A</option>
+    		<option>M&D S.A</option>
+    	</select></td>
+    	<td style=" background-color:#B7DBFF">Mercado</td>
+    	<td><select style="border:#fff 1px solid;height:14px; font-size:10px;width:95%;" name="txt_mercado" id="txt_mercado">
+    		<option><?php echo $MERCADO ?></option>
+    		<option>Privado</option>
+    		<option>CM</option>
+    	</select></td>
+    	<td style=" background-color:#B7DBFF">Tipo poryecto</td>
+    	<td><select style="border:#fff 1px solid;height:14px; font-size:10px;width:95%;" name="txt_tipoproyecto" id="txt_tipoproyecto">
+    		<option><?php echo $TIPO_PROYECTO ?></option>
+    		<option>Mobiliario Importado</option>
+    		<option>Mobiliario Nacional Especial</option>
+    		<option>Sillas</option>
+    		<option>Servicios</option>
+    	</select></td>
+    </tr>
+
     
     
     

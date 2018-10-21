@@ -464,6 +464,7 @@ $fin=0;
 echo "<table class='datagrid' border='1' cellspacing='0' cellpadding='0'>
 <thead>
  <tr>
+      <th width='100' id='rocha' rowspan='3'><center>Código Madre</center></th>
       <th width='100' id='rocha' rowspan='3'><center>Rocha</center></th>
       <th width='200'id='cliente'rowspan='3'><center>Cliente</center></th>
       <th width='150' rowspan='3'><center>Obra</center></th>
@@ -672,6 +673,7 @@ $IN = " IN(";
 
       $LISTA["".$row["CODIGO_PROYECTO"].""] = array( "CODPRO" =>  $row["CODIGO_PROYECTO"],
                           "CLIENTE" =>  $row["NOMBRE_CLIENTE"],
+                          "CODIGO_MADRE" =>  $row["CODIGO_MADRE"],
                           "OBRA" =>  $row["OBRA"], 
                           "MONTO" =>  $row["MONTO"],
                           "EJECUTIVO" =>  $row["EJECUTIVO"],
@@ -802,6 +804,7 @@ foreach ($LISTA as $key => $value)
 
  echo "<thead>
  <tr>
+      <th width='100' id='rocha' rowspan='3'><center>Código Madre</center></th>
       <th id='rocha' rowspan='3'><center>Rocha</center></th>
       <th id='cliente'rowspan='3'><center>Cliente</center></th>
       <th rowspan='3'><center>Obra</center></th>
@@ -944,7 +947,10 @@ $contador6 = 0;
   if($LISTA[$key]["FECHA_REALIZACION"]  == date("Y-m-d"))
   {
   
-     echo "<tr><td rowspan='".$controw."' id='hola' style='background:#9FF;' ><center> <a target='_blank' href=editarProyecto.php?CODIGO_PROYECTO=". urlencode($LISTA[$key]["CODPRO"]).">" . 
+     echo "<tr>
+     <td rowspan='".$controw."'><center>" . 
+      ($LISTA[$key]["CODIGO_MADRE"]) ."</center></td> 
+     <td rowspan='".$controw."' id='hola' style='background:#9FF;' ><center> <a target='_blank' href=editarProyecto.php?CODIGO_PROYECTO=". urlencode($LISTA[$key]["CODPRO"]).">" . 
       $LISTA[$key]["CODPRO"] . "</a><input style='display:none' name='rocha".$numero."' id = 'rocha".$numero."' type='text' value='".$LISTA[$key]["CODPRO"]."'/> </center></td>
     
    <td style='background:#9FF;' rowspan='".$controw."'><center>" . 
@@ -963,7 +969,10 @@ $contador6 = 0;
   }
   else
   {
-     echo "<tr><td rowspan='".$controw."' id='hola' ><center> <a target='_blank' href=editarProyecto.php?CODIGO_PROYECTO=". urlencode($LISTA[$key]["CODPRO"]).">" . 
+     echo "<tr>
+     <td rowspan='".$controw."'><center>" . 
+      ($LISTA[$key]["CODIGO_MADRE"]) ."</center></td> 
+     <td rowspan='".$controw."' id='hola' ><center> <a target='_blank' href=editarProyecto.php?CODIGO_PROYECTO=". urlencode($LISTA[$key]["CODPRO"]).">" . 
       $LISTA[$key]["CODPRO"] . "</a><input style='display:none' name='rocha".$numero."' id = 'rocha".$numero."' type='text' value='".$LISTA[$key]["CODPRO"]."'/> </center></td>
 
    <td rowspan='".$controw."'><center>" . 

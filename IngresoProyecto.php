@@ -929,8 +929,8 @@ while($row = mysql_fetch_array($result2))
     		<option>Eliana Cornejo</option>
     	</select>
     </td>
-    <td>&nbsp;Nombre Proyecto</td>
-    <td><input name="txt_nombre_proyecto" id="txt_nombre_proyecto" type ="text"  value="<?php echo $NOMBRE_PROYECTO ?>" /></td>
+    <td></td>
+    <td></td>
     <td></td>
     <td></td>
     </tr>
