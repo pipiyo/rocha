@@ -1,0 +1,32 @@
+#INFORME
+{
+	background:#003300;
+	height:130px; 
+	margin:3px;
+	width:396px;
+	}
+	
+#INFORME:HOVER
+{
+	background:#006600;
+	}
+	
+h2
+{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14px;
+	color:#FFF;
+	margin-top:58px;
+	}
+	
+#BACK {
+width : 48px;
+height : 48px;
+margin-left: 0px;
+
+background:url(../Imagenes/back.png);
+}
+
+#BACK:hover {
+background-image : url(../Imagenes/back22.png);
+} 

@@ -1,0 +1,27 @@
+#tabla2{
+	border-collapse: collapse;
+	width: 100%;
+}
+#tabla2 td{
+	border:solid 1px #ccc;
+	padding: 8px 0;
+	width: 25%;
+	font-size: 10px;
+}
+.encabezado{
+	background: #BDBDBD;
+}
+#trans{
+	border:transparent;
+}
+
+#tabla1{
+	border-collapse: collapse;
+	width: 100%;
+}
+#tabla1 td{
+	border:solid 1px #ccc;
+	padding: 8px 0;
+	width: 10%;
+	font-size: 10px;
+}

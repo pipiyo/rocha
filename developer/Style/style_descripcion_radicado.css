@@ -1,0 +1,40 @@
+html
+{ height: 100%;}
+
+*
+*
+{ margin: 0;
+  padding: 0;}
+
+body
+{ font: normal .90em arial, sans-serif;
+  color: #1D1D1D;
+  background:#999;
+}
+
+p
+{ padding: 0 0 10px 0;
+  line-height: 1.7em;}
+  
+
+#main, #header, #banner, #menubar, #site_content, #footer, #contact, #footer_content, #banner_image
+{ margin-left: auto; 
+  margin-right: auto;}
+ 
+#site_content
+{ width: 700px;
+  overflow: hidden;
+  margin-top: 20px;
+  padding: 20px 0 0 20px;
+  background: #FFF;
+  border: 1px solid #DDD;
+}
+td
+{
+	font-size:12px;
+}
+input, select
+{
+	font-size:12px;
+}
+ 

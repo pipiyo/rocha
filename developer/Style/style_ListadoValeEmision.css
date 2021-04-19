@@ -1,0 +1,301 @@
+﻿
+@font-face {
+    font-family: 'quattrocento_sansregular';
+    src: url('../font/quattrocentosans-regular-webfont.eot');
+    src: url('../font/quattrocentosans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/quattrocentosans-regular-webfont.woff2') format('woff2'),
+         url('../font/quattrocentosans-regular-webfont.woff') format('woff'),
+         url('../font/quattrocentosans-regular-webfont.ttf') format('truetype'),
+         url('../font/quattrocentosans-regular-webfont.svg#quattrocento_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+html
+{ height: 100%;}
+
+*
+*
+{ margin: 0;
+  padding: 0;}
+
+body
+{ font: normal .90em arial, sans-serif;
+  color: #1D1D1D;
+}
+
+p
+{ padding: 0 0 10px 0;
+  line-height: 1.7em;}
+  
+img
+{ border: 0;}
+
+h1, h2, h3, h4, h5, h6 
+{ 
+  color: #0A9C9C;
+  font-size:21px;
+}
+
+h2
+{ 
+  color: #D84646;
+  font-size:11px;}
+
+a, a:hover
+{ background: transparent;
+  outline: none;
+  text-decoration: underline;
+  color: #259EDA;}
+
+a:hover
+{ text-decoration: none;
+  color: #259EDA;}
+  
+ul
+{ margin: 0px 0 22px 0px;}
+
+ul li
+{ margin: 2px 0 15px 17px;}
+
+#main, #header, #banner, #menubar, #site_content, #footer, #contact, #footer_content, #banner_image
+{ margin-left: auto; 
+  margin-right: auto;}
+ 
+
+  
+#header
+{ height: 40px;}  
+ 
+
+#content
+{ text-align: left;
+  
+  margin: 5px 0 20px 0;
+  padding: 20px 20px 0 0;
+  float: left;}
+  
+
+
+.datagrid23
+{
+	border-left:1px solid #0A9C9C; 
+}
+
+.datagrid  thead th 
+{
+background-color:#0A9C9C;
+color:#FFFFFF; 
+font-size: 12px; 
+font-weight:bold; 
+border-left: 1px solid #0A9C9C; 
+} 
+
+.datagrid  thead th:first-child 
+{ 
+border: none;
+}
+
+/*-----------------------*/
+
+#des
+{
+	font-size:11px;
+}
+
+#egreso, #ingreso
+{
+	text-decoration:none;
+}
+
+
+#buscar
+{
+	width:100px;
+	height:23px;
+}
+
+#busqueda{
+    margin: 50px 0px 20px 50px;
+}
+#resultados{
+    -moz-border-radius: 15px;
+    -moz-box-shadow: 5px 5px 6px #888;
+    border: 1px solid #EDF6F8;
+    width: 340px;
+    background: -moz-linear-gradient(0% 75% 90deg,#FFFFFF, #A7D4DF);
+    margin: 0px 0px 20px 50px;
+    padding: 10px 10px 30px 10px;
+}
+#resultados h2{
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 10px;
+}
+#resultados img{
+    float: left;
+    margin-right: 10px;
+    border: 1px solid #dddddd;
+    padding: 5px;
+}
+#clear{
+    clear: both;
+}
+a{
+    text-decoration: none;
+	color:#1F7A9C;
+}
+a:hover{
+    text-decoration: none;
+}
+
+.textf
+{
+	width:100px;
+	border:#FFF;
+	font-size:12px;
+	color:#1F7A9C;
+}
+.textbox
+    {
+    border: 1px solid #DBE1EB;
+    width: 200px;
+    font-size: 11px;
+      font-weight: normal;
+      font-family: 'quattrocento_sansregular';
+      font-style: normal;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    background: #FFFFFF;
+    background: linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+    color: #2E3133;
+    }
+     .textboxs
+    {
+    border: 1px solid #DBE1EB;
+    width: 123px;
+    font-size: 11px;
+    font-family: Arial, Verdana;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    background: #FFFFFF;
+    background: linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+    color: #2E3133;
+    }
+
+    table td
+    {
+       font-weight: normal;
+      font-family: 'quattrocento_sansregular';
+      font-style: normal;
+      font-size: 12px;
+
+    }
+     table th
+    {
+       font-weight: normal;
+      font-family: 'quattrocento_sansregular';
+      font-style: normal;
+      font-size: 12px;
+      height: 25px;
+    }
+    #buscar
+{
+  width: 106px;
+    height: 30px; 
+    background: #0A9C9C; 
+    color: #ffffff; 
+    cursor: pointer; 
+    border: 0px;
+    cursor:pointer;
+      -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+    #buscar:hover
+{
+  width: 106px;
+    height: 30px; 
+    background: orange; 
+    color: #ffffff; 
+    cursor: pointer; 
+    border: 0px;
+    cursor:pointer;
+      -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+#tabla_observachiones_rocha 
+{
+  width: 100%;
+  border-color: #ccc;
+  font-family: arial;
+  margin-top: 10px;
+}
+
+#tabla_observachiones_rocha th
+{
+  border-color: #D9D3C7;
+  background: #225959;
+  color: #F2EEE9;
+  height: 25px;
+
+}
+
+#tabla_observachiones_rocha td
+{
+  border-color: #D9D3C7;
+  height: 25px;
+}
+
+
+#tabla_observachiones_rocha .uno
+{
+  background: #428C8C;
+  color: #F2EEE9;
+}
+
+#tabla_observachiones_rocha .dos
+{
+  background: #6A8C8C;
+  color: #F2EEE9;
+}
+
+#tabla_observachiones_rocha a
+{
+  color: #262626;
+}
+#tabla_observachiones_rocha a:hover
+{
+  color: #F2EEE9;
+}
+
+#titulo_informes
+{
+  font-weight: normal;
+  color: #262626;
+  margin-top:10px; 
+}
+
+

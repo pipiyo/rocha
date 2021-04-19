@@ -1,0 +1,371 @@
+/*nav*/
+body
+{
+	margin: 0px;
+	padding: 0px;
+}
+.nav
+{	
+	width: 100%;
+	height: 90px;
+	background: #fff;
+	border: solid #A9E2F3 1px;
+	position: fixed;
+	top: 0px;
+
+}
+#chat
+{	
+
+	width : 38px;
+	height : 36px;
+	border:none;
+	background:url(../Imagenes/mens.jpg);
+}
+#user
+{	
+
+	width : 38px;
+	height : 36px;
+	border:none;
+	background:url(../Imagenes/user.jpg);
+}
+#notificaciones
+{	
+
+	width : 38px;
+	height : 36px;
+	border:none;
+	background:url(../Imagenes/notifica.jpg);
+}
+
+.desplegables
+{	
+   font: normal .90em arial, sans-serif;
+   color: #1D1D1D;
+   border:grey 1px solid;
+   width: 100%;
+   background-color: #fff;
+}
+/*Menu*/
+.menu
+{	
+	width: 960px;
+	margin: 0 auto;
+}
+.logo
+{	
+	float: left;
+	margin: 0px 60px 0px 0px;
+}
+.logo img
+{	
+	width: 80%;
+}
+.icons
+{	
+	float: right;
+	margin: 30px 0px 0px 0px;
+}
+.buscador
+{	
+	float: left;
+	margin: 30px 0px 0px 0px;
+}
+.buscador1
+{	
+	float: left;
+	margin: 30px 250px 0px 0px;
+}
+.buscador1 input
+{	
+	width: 110%;
+	
+}
+
+.textbox
+	  {
+	  border: 1px solid #DBE1EB;
+	  width: 400px;
+	   box-sizing: border-box;
+	  font-size: 11px;
+	  font-family: Arial, Verdana;
+	  padding-left: 10px;
+	  padding-right: 10px;
+	  padding-top: 5px;
+	  padding-bottom: 5px;
+	  border-radius: 4px;
+	  -moz-border-radius: 4px;
+	  -webkit-border-radius: 4px;
+	  -o-border-radius: 4px;
+	  background: #FFFFFF;
+	  background: linear-gradient(left, #FFFFFF, #F7F9FA);
+	  background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+	  background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+	  background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+	  color: #2E3133;
+	  }
+
+
+/*content*/
+
+
+.contenedor
+{
+	width: 960px;
+	margin: 0 auto;
+
+}
+
+.column2
+{
+	width: 476px;
+	height: 200px;
+	margin: 2px;
+	float: left;
+	text-align: center;
+}
+
+.column1
+{
+	width: 236px;
+	height: 200px;
+	margin: 2px;
+	float: left;
+	text-align: center;
+}
+h2
+{
+	color: #fff;
+	font-weight: normal;
+	font-family: arial;
+	margin-top: 80px;
+	font-size: 16px;
+}
+h3
+{
+	color: #000;
+	font-weight: normal;
+	font-family: arial;
+	margin-top: 80px;
+	font-size: 16px;
+}
+
+
+
+/*bloques*/
+.radicados
+{
+	background: #569AE8;
+}
+.radicados:hover
+{
+	background: #7DB5FF;
+}
+
+.rocha
+{
+	background: #2F70C4;
+}
+.rocha:hover
+{
+	background: #0A4E73;
+}
+.abastecimiento
+{
+	background: #33CC33;
+}
+.abastecimiento:hover
+{
+	background: #53E67A;
+}
+.produccion
+{
+	background: #0065E8;
+}
+.produccion:hover
+{
+	background: #55A7FA;
+}
+
+.despacho
+{
+	background: #FFFF99;
+}
+.despacho:hover
+{
+	background: #ffffC9;
+}
+.instalaciones
+{
+	background: #FF2E2E;
+}
+.instalaciones:hover
+{
+	background: #990000;
+}
+.mantencion
+{
+	background: #999999;
+}
+.mantencion:hover
+{
+	background: #D8D8D8;
+}
+.reclamo
+{
+	background: #CC66FF;
+}
+.reclamo:hover
+{
+	background: #F097EA;
+}
+.rrhh
+{
+	background: #821FC4;
+}
+.st
+{
+	background: #CC9900;
+}
+.comercial
+{
+	background: #FFCC99;
+}
+.desarrollo
+{
+	background: #FF9933;
+}
+.sillas
+{
+	background: #0080FF;
+}
+.gerencia
+{
+	background: #99FF00;
+}
+.sistema
+{
+	background: #000;
+}
+.prevencion
+{
+	background: #BCA9F5;
+}
+.dam
+{
+	background: #F5A9A9;
+}
+/**/
+
+@media screen and (max-width:640px){
+.contenedor
+{
+	width: 640px;
+	background: red;
+	margin: 0 auto;
+}
+.buscador
+{
+	display: none;
+}
+.buscador1
+{
+	display: none;
+}
+.menu
+{	
+	width: 640px;
+	margin: 0 auto;
+}
+
+.column2
+{
+	width: 316px;
+	height: 200px;
+	float: left;
+}
+
+.column1
+{
+	width: 316px;
+	height: 200px;
+	float: left;
+}
+
+
+
+}  
+
+
+@media screen and (max-width:375px){
+.contenedor
+{
+	width: 371px;
+    margin: 0 auto;
+}
+.buscador
+{
+	display: none;
+}
+.buscador1
+{
+	display: none;
+}
+
+.column2
+{
+	width: 371px;
+	height: 200px;
+	float: left;
+}
+.menu
+{	
+	width: 375px;
+	margin: 0 auto;
+}
+.column1
+{
+	width: 371px;
+	height: 200px;
+	float: left;
+}
+
+
+
+} 
+
+@media screen and (max-width:320px){
+.contenedor
+{
+	width: 316px;
+    margin: 0 auto;
+}
+.buscador
+{
+	display: none;
+}
+.buscador1
+{
+	display: none;
+}
+.menu
+{	
+	width: 375px;
+	margin: 0 auto;
+}
+.column2
+{
+	width: 316px;
+	height: 200px;
+	float: left;
+}
+
+.column1
+{
+	width: 316px;
+	height: 200px;
+	float: left;
+}
+
+}  

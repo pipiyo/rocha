@@ -1,0 +1,121 @@
+#MARCO
+{
+background:#C0C0C0;
+margin-left:185px;	
+}
+
+#MARCO:HOVER
+{
+	background:#B8B8B8;
+	}
+	
+
+a
+{
+	font-family: Gotham, "Helvetica Neue", Helvetica, 		    Arial, sans-serif;
+	font-size:18px;
+	color:#FFF;
+	}
+	
+td{
+	font-family: Gotham, "Helvetica Neue", Helvetica, 		    Arial, sans-serif;
+	font-size:18px;
+	color:#686868;
+	text-align:center;
+}
+
+h1{
+   	font-family: Gotham, "Helvetica Neue", Helvetica, 		    Arial, sans-serif;
+	font-size:28px;
+	color:#686868;
+	text-align:center;
+}
+
+tr{
+	height : 38;
+}
+
+#BACK {
+width : 48px;
+height : 48px;
+margin-left:170px;
+background:url(../Imagenes/back.png)
+}
+
+#BACK:hover {
+background-image : url(../Imagenes/back22.png);
+} 
+
+#IINGRESAR
+{
+	background:#0000CC;
+	margin:-1px;
+	margin-left:175px;
+	width:137px;
+	}
+	
+#IINGRESAR:HOVER
+{
+	background:#0000FF;
+	}
+	
+	
+#MMODIFICAR
+{
+	background:#0033CC;
+	margin:-1px;
+	width:134px;
+	}
+	
+#MMODIFICAR:HOVER
+{
+	background:#0033FF;
+	}
+	
+	
+#EELIMINAR
+{
+	background:#0066CC;
+	margin:-1px;
+	width:136px;
+	}
+	
+#EELIMINAR:HOVER
+{
+	background:#0066FF;
+	}
+	
+	
+#BBYR
+{
+	background:#0099CC;
+	margin:-1px;
+	width:140px;
+	}
+	
+#BBYR:HOVER
+{
+	background:#0099FF;
+	}
+	
+#ingresar
+{
+	width:200px;
+}
+
+#eliminar
+{
+	width:200px;
+}
+	
+
+
+
+	
+
+
+
+
+
+
+

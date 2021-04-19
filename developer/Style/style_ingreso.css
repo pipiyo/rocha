@@ -1,0 +1,126 @@
+body
+{
+  background: #585858;
+}
+
+.contenedor
+{
+  width: 960px;
+  margin: 0px auto;
+  height: 400px;
+  background: #323232;
+  z-index: 0;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+ 
+  margin-top: -200px;   /* height/2 = 500px / 2 */
+  margin-left: -480px;  /* width/2 = 500px / 2 */
+}
+
+.formulario 
+{
+  width: 960px;
+  z-index: 1;
+  position: absolute;
+}
+
+.titulo
+{
+  position: relative;
+  top:40px;
+  left:120px;
+  width: 200px;
+  z-index: 3;
+}
+
+.titulo h1
+{
+ color:#B8B8B8;
+ font-family: 'arial';
+ font-weight: normal;
+ font-size: 21px;
+}
+
+.in1
+{
+  position: relative;
+  top:70px;
+  left:120px;
+  width: 200px;
+  z-index: 3;
+}
+.in1a
+{
+  position: relative;
+  top:90px;
+  left:120px;
+  width: 200px;
+  z-index: 3;
+}
+
+.in2
+{
+  position: relative;
+  top:140px;
+  left:620px;
+  width: 200px;
+  z-index: 3;
+}
+
+.textbox
+  {
+    border: 1px solid #454545;
+    width: 700px;
+    height: 35px;
+    font-size: 11px;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-family: 'arial';
+    font-style: normal;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    background: #454545;
+    color: #B8B8B8;
+    margin-top: 12px;
+  }
+
+  .textbox-boton
+  {
+    border: 1px solid #454545;
+    width: 200px;
+    height: 35px;
+    font-size: 11px;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-family: 'arial';
+    font-style: normal;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    background: #8A2908;
+    color: #B8B8B8;
+    margin-top: 12px;
+  }
+ 
+
+   .textbox-boton:hover
+  {
+ 
+    background: #B43104;
+  
+  }
+
+  

@@ -1,0 +1,85 @@
+
+/*contenedor*/
+body
+{
+background: #63b6db; /* Old browsers */
+background: -moz-linear-gradient(top, #63b6db 0%, #309dcf 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#63b6db), color-stop(100%,#309dcf)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #63b6db 0%,#309dcf 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #63b6db 0%,#309dcf 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #63b6db 0%,#309dcf 100%); /* IE10+ */
+background: linear-gradient(to bottom, #63b6db 0%,#309dcf 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63b6db', endColorstr='#309dcf',GradientType=0 ); /* IE6-9 */
+}
+#contenedor
+{
+  border: 1px solid #006699;
+  height:915px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color:#FFF;
+}
+
+#loggin
+{
+width:960px; 
+height:400px;	
+}
+
+#imagen
+{
+position:relative; 
+width:150px; 
+height:100px;
+left:200px;	
+}
+
+#frase
+{
+position:relative; 
+width:500px; 
+height:100px;
+left:330px;	
+top:-100px;
+font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+color:#CCC;
+font-size:13px;
+}
+
+#formularioIncio
+{
+position:relative; 
+width:450px; 
+height:300px;
+left:350px;	
+top: -140px;	
+}
+
+#frase1
+{
+	color:#909;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:12px;	
+}
+
+#nombreUsuario
+{
+	font-size:12px;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#999;
+}
+
+#Contrasena
+{
+	font-size:12px;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#999;
+}
+
+#ingresar
+{
+	background-color:#906;
+	color:#FFF;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	width:130px;
+}

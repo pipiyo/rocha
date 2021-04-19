@@ -1,0 +1,104 @@
+
+.tbox {position:absolute; display:none; z-index:900;background: #fff;}
+.tinner {background:#fff url(../Imagenes/preload.gif) no-repeat 50% 50%; border-right:1px solid #333; border-bottom:1px solid #333}
+.tmask {position:absolute; display:none; top:0px; left:0px; height:100%; width:100%; background:#000; z-index:800}
+.tclose {position:absolute; top:0px; right:0px; width:30px; height:30px; cursor:pointer; background:url(../Imagenes/close.png) no-repeat}
+.tclose:hover {background-position:0 -30px}
+ 
+
+ #popup {
+ background: #222222;
+ height: 600px;
+ text-align: center;
+  overflow-y: auto;
+ overflow-x: hidden;
+ }
+
+ #popup textarea {
+ background: #383838;
+ border: transparent;
+ color: #E3E3E3;
+ }
+
+ #popup h2 {
+  color: #E3E3E3;
+  font-weight: normal;
+  font-size: 22px;
+  font-family: arial;
+  padding:  20px;
+ }
+  #popup h5 {
+  color: #E3E3E3;
+  font-weight: normal;
+  font-size: 22px;
+  padding-top: 5px;
+  font-family: arial;
+  padding: ;
+ }
+ #popup input[type="button"]
+ {
+ background: #E35C2D;
+ padding: 10px;
+ border: transparent;
+ color: #E3E3E3;
+
+   width: 120px;
+   box-sizing: border-box;
+ }
+  #popup input[type="submit"]
+ {
+ background: #E35C2D;
+ padding: 9px;
+ border: transparent;
+ color: #E3E3E3;
+  width: 120px;
+ box-sizing: border-box;
+ }
+ #popup input[type="text"],input[type="password"]
+ {
+ background: #383838;
+ border: transparent;
+ color: #E3E3E3;
+ width: 120px;
+ box-sizing: border-box;
+ }
+ #popup select
+ {
+ background: #383838;
+ border: transparent;
+ padding: 9px;
+ color:#fff;
+ width: 120px;
+ box-sizing: border-box;
+ }
+
+ #popup input[type="button"]:hover
+ {
+ background: #E37735;
+ }
+
+  #popup input[type="submit"]:hover
+ {
+ background: #E37735;
+ }
+   #popup input[type="submit"]:disabled
+ {
+ background: #ccc;
+ color:#000;
+ }
+ #popup table td
+ {
+  color: #E3E3E3;
+  font-weight: normal;
+  padding: 9px;
+
+ }
+
+
+  #popup table th
+ {
+    font-size: 18px;
+  color: #E3E3E3;
+  font-weight: normal;
+  padding: 9px;
+ }

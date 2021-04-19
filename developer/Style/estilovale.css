@@ -1,0 +1,229 @@
+body{ 
+  font-weight: normal;
+  font-style: normal;
+  font-size: 12px;
+  font-family: Arial, Verdana;
+}
+.form-vale{
+	width: 80%;
+	margin: auto;
+	text-align: center;	
+	margin-bottom: 20px;
+}	
+.table-vale-form{
+	width: 100%;
+}
+.table-vale-form td{
+	width: 33%;
+}
+
+.form-vale h1{
+	font-size: 21px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+#tabla_producto{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#tabla_producto td, #tabla_producto th {
+	border: solid 1px #ccc;
+}
+#tabla_producto th {
+	padding: 10px 0;
+	background: #336F86;
+	color: #fff;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.txt_invisible{
+	background: transparent;
+	border:transparent;
+	width: 100%;
+	padding: 5px;
+}
+
+.textbox{
+	border: 1px solid #DBE1EB;
+	width: 100%;
+	font-size: 11px;
+	box-sizing: border-box;
+	font-family: Arial, Verdana;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-o-border-radius: 4px;
+	background: #FFFFFF;
+	background: linear-gradient(left, #FFFFFF, #F7F9FA);
+	background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+	background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+	background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+	color: #2E3133;
+}
+	   
+#ingresar:disabled{
+	width: 25%;
+	padding: 10px;
+	border: transparent;
+	margin:10px 0px 0px 0px;
+    color: #848484;
+	font-weight: normal;
+    font-style: normal;
+}
+	  
+#ingresar:enabled{
+	width: 25%;
+	padding: 10px;
+	margin:10px 0px 0px 0px;
+    color: #fff;
+    background: #2E9AFE;
+    border-color: transparent;
+	font-weight: normal;
+    font-style: normal;
+}
+
+#ingresar:hover:enabled{
+	width: 25%;
+	padding: 10px;
+	margin:10px 0px 0px 0px;
+	border-color: transparent;
+	background:orange; 
+	font-weight: normal;
+    font-style: normal;
+	color:#000;
+	cursor: pointer;
+}
+
+.fil1{
+	width: 10%;
+}
+.fil2{
+	width: 35%;
+}
+.fil3{
+	width: 10%;
+}
+.fil4{
+	width: 5%;
+}
+.fil5{
+	width: 10%;
+}
+.fil6{
+	width: 5%;
+}
+.fil7{
+	width: 25%;
+}
+
+
+
+#listacodigos
+{
+position:absolute; 
+ width:10px;
+}
+.codigopro
+{
+text-align: left;
+float:left;  
+color: #000; 
+cursor: pointer; 
+background:#fff; 
+height:25px; 
+width: 150px;
+border: #fff solid 1px ;
+}
+.codigopro:hover
+{
+border: #000 solid 1px ;
+}
+
+
+
+#listadescripciones
+{
+position:absolute; 
+ width:10px;
+}
+.descripcionpro
+{
+text-align: left;
+float:left;  
+color: #000; 
+cursor: pointer; 
+background:#fff; 
+height:25px; 
+width: auto;
+border: #fff solid 1px ;
+}
+.descripcionpro:hover
+{
+border: #000 solid 1px ;
+}
+
+.btn-sub-actividad{
+	display: block;
+	width: 100px;
+	margin: 10px;
+	font-size: 12px;
+	text-decoration: none;
+	padding: .5em;
+	border: 0;
+	border-radius: 0;
+	background: #006656;
+	color: #fff;
+}
+
+.btn-sub-actividad:hover{
+	background: orange;
+}
+
+
+#listaproyectos
+{
+position:absolute; 
+ width:10px;
+}
+
+.rochasprimeros
+{
+text-align: left;
+float:left;  
+color: #000; 
+cursor: pointer; 
+background:#fff; 
+height:25px; 
+width: 150px;
+border: #fff solid 1px ;
+}
+.rochasprimeros:hover
+{
+border: #000 solid 1px ;
+}
+
+
+
+
+.rochas
+{
+text-align: left;
+float:left;  
+color: #000; 
+cursor: pointer; 
+background:#fff; 
+height:25px; 
+width: 150px;
+border: #fff solid 1px ;
+}
+.rochas:hover
+{
+border: #000 solid 1px ;
+}
+

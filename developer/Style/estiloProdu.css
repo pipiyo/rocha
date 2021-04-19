@@ -1,0 +1,170 @@
+#hproductos{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14px;
+	color:#FFF;
+}
+
+#PRODUCTOS
+{
+	background:#006;
+	height:130px; 
+	margin:3px;
+	width:396px;
+	}
+	
+#PRODUCTOS:HOVER
+{
+	background:#069;
+	}
+	
+#VALE
+{
+	background:#006;
+	height:130px; 
+	margin:3px;
+	width:396px;
+	}
+	
+#VALE:HOVER
+{
+	background:#069;
+	}
+
+#hproveedores{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14px;
+	color:#FFF;
+}
+
+#PROVEEDORES
+{
+	background:#036;
+	height:130px;
+	margin:3px;
+	width:195px;
+	}
+	
+#PROVEEDORES:HOVER
+{
+	background:#09F;
+	}
+
+#Ranking
+{
+	background:#09F;
+	height:130px;
+	margin:3px;
+	width:195px;
+}
+#Ranking:HOVER
+{
+	background:#6CF;
+	}
+#Ranking1
+{
+	background:#39C;
+	height:130px;
+	margin:3px;
+	width:195px;
+}
+#Ranking1:HOVER
+{
+	background:#69C;
+	}
+
+
+#ORDEN
+{ 
+	background:#036; 
+	height:130px;
+	margin:3px;
+	width:195px;
+	}
+	
+#ORDEN:HOVER
+{
+	background:#09F;
+	}
+
+
+
+#LISTADO
+{
+	height:130px; 
+	background:#039; 
+	margin:3px;
+	width:195px;
+	}
+	
+#LISTADO:HOVER
+{
+	background:#06F;
+	}
+	
+#INFORME
+{
+	height:130px; 
+	background:#039;  
+	margin:3px;
+	width:195px;
+	}
+	
+#INFORME:HOVER
+{
+	background:#06F;
+	}
+
+
+	
+#CLIENTE
+{
+	height:130px; 
+	background:#069; 
+	margin:3px;
+	width:195px;
+	}
+	
+#CLIENTE:HOVER
+{
+	background:#09C;
+	}
+	
+h1{
+font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14px;
+	color:#FFF;
+	margin-top:58px;
+}
+
+h2
+{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:13px;
+	color:#FFF;
+	margin-top:58px;
+	}
+	
+#BACK {
+width : 48px;
+height : 48px;
+margin-left:-607;
+background:url(../Imagenes/back.png);
+}
+
+#BACK:hover {
+background-image : url(../Imagenes/back22.png);
+} 
+
+	
+#LISTADO_VALE_E
+{
+	height:130px; 
+	background:#256FE9;
+	margin:3px;
+	width:195px;
+	}
+	
+#LISTADO_VALE_E:HOVER
+{
+	background:#09F;
+	}

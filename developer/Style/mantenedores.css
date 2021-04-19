@@ -1,0 +1,87 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing:border-box;
+	font-family: arial;
+}
+
+h1{
+	font-family: 21px;
+	font-weight: normal;
+	text-align: center;
+	margin: 1% 0;
+}	
+
+#tabla_ingreso_cli{
+	width:90%;
+	border-collapse: collapse;
+	margin: auto;
+	min-width: 700px;
+
+}
+
+#tabla_ingreso_cli td{
+	font-size:11px;
+	padding: 2px;
+	border: #CCC 1px solid;
+}
+
+.td_rosa{
+	width:12.5%;
+	background-color:#FDE9D9;
+	height:25px;	
+}
+
+.txt{
+	 width:100%;
+	 border:none;
+	 height:100%;
+}
+.BotonSeleste{
+	 
+	 float:right;
+	 width: 12.5%;
+	 height: 30px; 
+	 background: #6699FF; 
+	 color: #ffffff; 
+	 cursor: pointer;
+	 border: 0px;
+}
+.BotonRojo{
+	 
+	 float:left;
+	 width: 12.5%;
+	 height: 30px; 
+	 background: #F00; 
+	 color: #ffffff; 
+	 cursor: pointer;
+	 border: 0px;
+}
+.izq{
+	margin: 1% 0 0 5%;
+}
+.der{
+	margin: 1% 5% 0 0;
+}
+
+.BotonVerde{
+	 float:left;
+	 width: 12.5%;
+	 height: 30px; 
+	 background: #0F0; 
+	 color: #000; 
+	 cursor: pointer;
+	 border: 0px;
+}
+
+.BotonGris{
+	 float:left;
+	 width: 14%;
+	 height: 30px; 
+	 background: #CCC; 
+	 color: #000; 
+	 cursor: pointer;
+	 border: 0px;
+}
+
+

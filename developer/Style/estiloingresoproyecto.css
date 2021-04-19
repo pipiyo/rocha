@@ -1,0 +1,44 @@
+#MARCO
+{
+	margin-top:30px;
+	background:#0A4E73;
+	height:400px;
+	}
+	
+#MARCO:HOVER
+{
+	background:#0A4E90;
+	}
+
+
+
+
+
+#rocha td
+{
+	font-family: Gotham, "Helvetica Neue", Helvetica, 		    Arial, sans-serif;
+	font-size:18px;
+	color:#FFF;
+	margin:10;
+	
+}
+
+h1
+{
+   	font-family: Gotham, "Helvetica Neue", Helvetica, 		    Arial, sans-serif;
+	font-size:28px;
+	color:#FFF;
+	text-align:center;
+}
+
+#BACK {
+width : 48px;
+height : 48px;
+margin-top:30px;
+background:url(../Imagenes/back.png)
+}
+
+#BACK:hover {
+background-image : url(../Imagenes/back22.png);
+} 
+

@@ -1,0 +1,1547 @@
+/*General*/
+
+@font-face {
+    font-family: 'quattrocento_sansregular';
+    src: url('../font/quattrocentosans-regular-webfont.eot');
+    src: url('../font/quattrocentosans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/quattrocentosans-regular-webfont.woff2') format('woff2'),
+         url('../font/quattrocentosans-regular-webfont.woff') format('woff'),
+         url('../font/quattrocentosans-regular-webfont.ttf') format('truetype'),
+         url('../font/quattrocentosans-regular-webfont.svg#quattrocento_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body
+{
+
+
+}
+/*
+Ultimo descripcion producto
+*/
+.descripcion_producto
+{
+	width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}
+.descripcion_producto h1
+{
+	font-family: arial;
+	font-weight: normal;
+	font-size: 21px;
+	margin-bottom: 20px;
+}
+.descripcion_producto table
+{
+	width: 100%;
+}
+.descripcion_producto table td
+{
+	width: 16.6%;
+	height: 40px;
+	border-color: #848484;
+	font-size: 13px;
+	font-family: arial;
+}
+
+
+.azul_pro
+{
+	background: #024959;
+	color:#fff;
+}
+.cafe_pro
+{
+	background: #85A690;
+	color:#fff;
+}
+.boton_produc
+{
+	width: 100%;
+	height: 100%;
+	background: #0A1B2A;
+	color: #fff;
+	border: transparent;
+}
+.boton_produc:hover
+{
+	background: #0B243B;
+}
+
+
+
+.tabla_descripcion_radicado
+{
+	font-size:11px;
+	 font-family: "arial","verdana","helvetica"; 
+	   border: #CCC;
+	   width: 960px;
+
+}
+.formulario_ingreso_servicio
+{
+	border:#fff 1px solid;
+	height:14px; 
+	font-size:10px; 
+	width:98%;
+
+}
+.formulario_ingreso_serviciot
+{
+	border:#fff 1px solid;
+	font-size:11px; 
+	width:98%;
+}
+.color_ti
+{
+	background-color:#FDE9D9; 
+	height:25px;
+	width:140;
+	padding-left: 5px;
+}
+
+
+h1
+{
+	font-size:22px;
+    font-family: "arial", serif; 
+}
+
+
+h2
+{
+	font-size:16px;
+    font-family: "arial", serif; 
+}
+
+
+.grupo_invisi
+{
+	display:none;
+}
+
+
+.casillaTexto
+{
+	border:grey 1px solid;
+	border-radius:8px;
+	 width:150px;
+	}
+
+.selecion_multiple
+{
+	   font: normal .90em arial, sans-serif;
+	   	border:grey 1px solid;
+  color:#000;  
+  font-size:14px; 
+    border-radius: 8px;
+	width:99%;
+	}
+
+
+
+
+
+/*DescripcionServicio.php------------------------------------------------------------------*/
+#body_descripcionServicio
+{
+		background:#ccc;
+		text-align:center;
+		font-family: 'quattrocento_sansregular';
+}
+#container_descripcionServicio
+{
+	width:960px;
+	background:#FFF;
+	margin:0px;
+	margin:0 auto;
+    text-align:left;
+    /*border:#CCC 1px solid;*/
+}
+#volverDescripcionserv
+{
+	cursor: pointer;
+	text-align:left;
+	padding-left:50px;
+}
+#header_descripcionServicio
+{
+	width:800px;
+	text-align:center;
+	position: relative;
+}
+#title_descripcionServicio
+{
+	
+	padding-top:13px;
+	    font-family: 'quattrocento_sansregular';
+}
+
+#formulario_descripcionServicio
+{
+	font-size:13px;
+	 font-weight: normal;
+    font-style: normal;
+	    font-family: 'quattrocento_sansregular';}
+.grupo_input_descripcionServicio
+{
+	 font-family: 'quattrocento_sansregular';
+	 font-weight: normal;
+    font-style: normal; 
+	border:grey 1px solid;
+	border-radius: 8px;
+	font-size:13px;
+	width:300px
+}
+#contenido_descripcionServicio
+{
+}
+#footer_descripcionServicio
+{
+
+}
+#tabla_registroactividades_descripcionServicio 
+{
+	width:100%;
+	border: #CCC 1px solid;
+	font-family: 'quattrocento_sansregular';
+	 font-weight: normal;
+    font-style: normal; 
+	
+}
+#tabla_registroactividades_descripcionServicio td
+{
+	border: #CCC 1px solid;
+	font-size:13px;
+}
+
+.input_buttobdescripcionServicio
+{
+	background: #006656;
+	width:200px;
+	border: transparent;
+	padding: 3% 3%; 
+	color:#fff;
+}
+
+.input_buttobdescripcionServicio:hover
+{
+	background: orange;
+	color:#fff;
+	cursor: pointer;
+}
+.input_buttobdescripcionServicio:disabled
+{
+	background: #666666;
+	border: transparent;
+	color:#fff;
+}
+.mensaje-m3{
+	width: 50%;
+}
+
+/*DescripcionProducto.php?------------------------------------------------------------------*/
+#header_descripcion_producto
+{
+	width:960px;
+
+}
+
+#footer_descripcionServicio 
+{
+	width:960px;
+	text-align:center;	
+}
+#contenedor_descripcion_producto
+{
+	width:960px;
+}
+#boton_modificar_descripcionServicio
+{
+	float: right;
+}
+#formulario_descripcion_producto
+{
+	width:960px;
+}
+#formulario_descripcion_producto td, th
+{
+	font-family: "arial", serif; 
+	font-size:13px;
+	border: #CCC 1px solid;
+}
+.grupo_input_descripcion_producto
+{
+	font-family: "arial", serif; 
+	border: #FFF 1px solid;
+	font-size:13px;
+	width:99%;
+	height: 99%;
+	color:#000;
+	background: #FFF;
+
+}
+.grupo_input_descripcion_productos
+{
+	font-family: "arial", serif; 
+	border: #ffffff 1px solid;
+	font-size:13px;
+	width:99%;
+	height: 99%;
+	color:#000;
+	background: #ffffff;
+}
+.grupo_input_descripcion_producto2
+{
+	font-family: "arial", serif; 
+	border: #FFF 1px solid;
+	font-size:13px;
+	width:99%;
+	height: 99%;
+    text-align: center;
+    background:  #FFF;
+    color:#000;
+}
+#formulario_descripcion_productotd
+{
+	background:#E0E0E0;
+	width:160px;
+	padding: 7px;
+}
+
+.input_buttobdescripcionProducto
+{
+	font-family: "arial", serif; 
+	border:grey 1px solid;
+	border-radius: 8px;
+	font-size:13px;
+	width:300px;
+	cursor:pointer;
+}
+
+.input_buttobdescripcionProducto:hover
+{
+	font-family: "arial", serif; 
+	border:grey 1px solid;
+	border-radius: 8px;
+	background:#FC0;
+	font-size:13px;
+	width:300px;
+	cursor:pointer;
+}
+
+
+/*InformeRankingProductos.php------------------------------------------------------------------*/
+
+.boton_ranking_producto
+{
+  font: normal .90em arial, sans-serif;
+  color: #1D1D1D; 
+  cursor:pointer; 
+  color:#FFF;
+  background-color: #000; 
+  height:25px;
+  border-radius: 10px; 
+  border:#fff 1px solid;
+  font-size:13px;
+}
+#rproduh1
+{
+	font-family: 'quattrocento_sansregular';
+}
+#tabla_ranking_producto th
+{
+  font-family: 'quattrocento_sansregular';
+  color:#FFF;
+  background-color: #000; 
+  font-size:13px;
+  padding:5px;
+	}
+
+#tabla_ranking_producto td
+{ 
+	font-family: 'quattrocento_sansregular'; 
+	font-size:10px;
+	padding:5px;
+	border:#E4E4E7 1px solid;
+	}
+	#tabla_ranking_producto td a
+{ 
+	text-decoration: none;
+	}
+
+#tabla_ranking_producto_form td
+{
+  font-family: "arial", serif; 
+  color:#000;
+  font-size:13px;
+	}
+
+#tabla_ranking_proveedor_form 
+{
+  font-family: "arial", serif; 
+  color:#000;
+  font-size:13px;
+  margin:-14px;
+	}
+
+
+/*Requerimeinto.php?------------------------------------------------------------------*/
+
+
+
+#wrap_requerimiento
+{
+	text-align: center;
+	width:400px;
+	margin: 0 auto;
+	background: rgba(0, 0, 0, .2); 
+}
+#wrap_requerimiento h1
+{
+	color:#fff; 
+	font-weight: normal;
+	padding-top: 10px;
+}
+.solicitud_requerimiento
+{
+	margin: 4px;
+}
+#body_requerimiento
+{
+	background:#fff;
+}
+.textbox-requerimiento
+    {
+    border: 1px solid #DBE1EB;
+    width: 300px;
+    font-size: 11px;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-style: normal;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    background: #FFFFFF;
+    background: linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+    color: #2E3133;
+    }
+    .textbox-requerimiento-boton
+    {
+    border: 1px solid #DBE1EB;
+    width: 300px;
+    font-size: 11px;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-style: normal;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    background: #2E9AFE;
+    color: #fff;
+    margin-bottom: 10px;
+    }
+     .textbox-requerimiento-boton:hover
+    {
+    border: 1px solid #DBE1EB;
+    width: 300px;
+    font-size: 11px;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-style: normal;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    background: orange;
+    color: #fff;
+    margin-bottom: 10px;
+    }
+#h1_requerimiento
+{
+	font-weight: normal;
+	text-align: center;
+}
+
+#tabla_servicio_requerimiento 
+{
+	width:100%;
+
+	font-family: "arial", serif; 
+	
+}
+#tabla_servicio_requerimiento td
+{
+	font-size:12px;
+	padding: 7px;
+}
+#tabla_servicio_requerimiento th
+{
+	background:#CCC;
+	color:#FFF;
+	padding:1px;
+}
+
+#actividad_requerimiento
+{
+	text-align:center;
+}
+/*DescripcionCliente.php?------------------------------------------------------------------*/
+#descripcionCliente-content
+{
+	text-align:center;
+	background-color:#CCC;
+	width:400px;
+}
+
+#descripcionCliente_formulario
+{
+	
+}
+.grupoinput_descripcionClient
+{
+	font-family: "arial", serif; 
+	border: #fff 1px solid;
+	font-size:13px;
+	width:98%;
+    border-radius: 8px;
+    text-align: center;
+	width:240px;
+}
+
+.grupoinput_descripcionClientMod
+{
+	font-family: "arial", serif; 
+	border:grey 1px solid;
+	border-radius: 8px;
+	font-size:13px;
+	width:240px;
+	cursor:pointer;
+}
+
+.grupoinput_descripcionClientMod:hover
+{
+	font-family: "arial", serif; 
+	border:grey 1px solid;
+	border-radius: 8px;
+	background:#FC0;
+	font-size:13px;
+	width:240px;
+	cursor:pointer;
+}
+
+/*DescripcionProveedor.php?------------------------------------------------------------------*/
+#descripcionProvee-content
+{
+	text-align:center;
+	background-color:#CCC;
+	width:400px;
+}
+
+#descripcionCliente_formulario
+{
+	
+}
+.grupoinput_descripcionProv
+{
+	font-family: "arial", serif; 
+	border: #fff 1px solid;
+	font-size:13px;
+	width:98%;
+    border-radius: 8px;
+    text-align: center;
+	width:240px;
+}
+
+.grupoinput_descripcionClientProv
+{
+	font-family: "arial", serif; 
+	border:grey 1px solid;
+	border-radius: 8px;
+	font-size:13px;
+	width:240px;
+	cursor:pointer;
+}
+
+.grupoinput_descripcionClientProv:hover
+{
+	font-family: "arial", serif; 
+	border:grey 1px solid;
+	border-radius: 8px;
+	background:#FC0;
+	font-size:13px;
+	width:240px;
+	cursor:pointer;
+}
+/*DescripcionProductoDetalle.php?------------------------------------------------------------------*/
+
+.tablas_Producto_Detalle td
+{
+	 width: 75px;
+	 height: 20px;
+	 font-size:15px;
+font-family: "arial", serif; 	
+
+	}
+	
+.tablas_Producto_Detalle th
+{
+	 width: 75px;
+	 height: 20px;
+	 background-color: #D8D6B7 ;
+	 border: solid #CCC 1px;
+	 font-family: "arial", serif; 	 
+	}	
+	
+	.tablas_Producto_Detalle2 th
+{
+	 width: 75px;
+	 height: 20px;
+	 background-color: #D8D6B7 ;
+	 border: solid #CCC 1px;
+	 font-family: "arial", serif; 	 
+	}	
+	
+	.tablas_Producto_Detalle2 td
+{
+	 width: 75px;
+	 height: 20px;
+ font-size:15px;
+	 border: solid #CCC 1px;
+	 border-top: none;
+	 border-right: none;
+	 font-family: "arial", serif; 	 
+	}	
+	
+
+
+#txt_descripcion
+{
+	border: #FFF 1px;
+	font-family: "arial", serif; 
+	}
+	
+#td_blanco
+{
+	border:none;
+	}
+	
+	#td_borde_derecho
+{
+	border-right: solid #CCC 1px;
+	}
+	
+	#td_stock_grande
+{
+	border: solid #CCC 1px;
+	font-family: "arial black", serif; 
+	font-size:22px;
+	}
+	
+	#td_title
+{
+	font-family: "arial negrita", serif;
+	border-left: none;
+	border-bottom: none;
+	}
+
+
+
+
+
+  label {
+    display: inline-block;
+    width: 5em;
+  }
+  
+  
+  
+  /*InformeUnidadesProduccion.php?------------------------------------------------------------------*/
+  
+  #DivInformeUnidadesProduccion
+  {
+	  width:960px;
+	  background-color:#FFF;
+  }
+  #BodyInformeUnidadesProduccion
+  {
+	  background:#fff;
+  }
+  #prod_oc
+  {
+  	font-family: 'quattrocento_sansregular';
+	  font-size:30px;
+	  font-weight: normal;
+  }
+  #tabla_unidades_produccion th
+  {
+	  background:#006699;
+	  color:#fff;  
+	  font-family: 'quattrocento_sansregular';
+	  font-size:12px;
+
+  }
+    #tabla_unidades_produccion 
+  {
+	  font-family: 'quattrocento_sansregular';
+	    font-size:12px;
+
+  }
+  
+  #boton
+{
+	
+
+	font: normal .90em arial, sans-serif;
+  color: #1D1D1D;
+   cursor:pointer;
+    color:#FFF;
+    background-color:#006699; 
+    height:25px;
+    border-radius: 4px; 
+    border:#fff 1px solid;
+	width:135px;
+	
+}
+ 
+  #boton:hover
+{
+
+	font: normal .90em arial, sans-serif;
+  color: #1D1D1D;
+   cursor:pointer;
+    color:#fff;
+    background-color:orange;
+    height:25px;
+    border-radius: 4px; 
+    border:#fff 1px solid;
+	width:135px;
+	
+}
+  
+  #espacio 
+  {
+	  color:#fff;
+	   border: #fff 1px solid;  
+  } /*InformeProductosEspecial.php?------------------------------------------------------------------*/
+  
+  #tabla_unidades_producto_especial th
+  {
+	  background:#F90;
+	  color:#fff; 
+	    font-family: 'quattrocento_sansregular';
+	  font-size: 15px;
+  }
+  #tabla_unidades_producto_especial td
+  {
+        font-family: 'quattrocento_sansregular'; 
+	  font-size: 14px;
+  }
+  
+  /*InformeProductosEspecial.php?------------------------------------------------------------------*/
+  
+  
+  .tablas_Indicador_cumplimiento td
+{
+	 width: 75px;
+	 height: 20px;
+	 font-size:12px;
+	font-weight: normal;
+    font-style: normal;
+    font-family: 'quattrocento_sansregular';
+
+	}
+	
+.tablas_Indicador_cumplimiento th
+{
+	 width: 75px;
+	 font-size:12px;
+	 background-color: #B9D8A2;
+	 border: solid #CCC 1px;
+	 border-right: none;
+	 border-bottom: none;
+	 	font-weight: bold;
+    font-style: normal;
+    font-family: 'quattrocento_sansregular';
+	 	 
+	}	
+  
+  
+    #th_title_azul
+{
+	width: 75px;
+	 font-size:12px;
+	 background-color: #7DB4E4;
+	 border: solid #CCC 1px;
+	 border-right: none;
+	 border-bottom: none;
+	 font-family: "arial negrita", serif; 
+	}
+	
+	#th_title_fecha
+{
+	width: 140px;
+	 font-size:12px;
+	 background-color: #B9D8A2;
+	 border: solid #CCC 1px;
+	 border-right: none;
+	 border-bottom: none;
+	 font-family: "arial negrita", serif;  
+	}
+	
+	    #th_title_azul2
+{
+	width: 75px;
+	 font-size:12px;
+	 background-color: #ABCAE5;
+	 border: solid #CCC 1px;
+	 border-right: none;
+	 border-top: none;
+	 border-bottom: none;
+	 font-family: "arial negrita", serif; 
+	}
+  
+  
+  #th_title_rojo
+{
+	width: 75px;
+	 font-size:12px;
+	 background-color: #FF9191;
+	 border: solid #CCC 1px;
+	 border-right: none;
+	 border-bottom: none;
+	 font-family: "arial negrita", serif; 
+	}
+	
+	    #th_title_rojo2
+{
+	width: 75px;
+	 font-size:12px;
+	 background-color: #FFBBBB;
+	 border: solid #CCC 1px;
+	 border-right: none;
+	 border-top: none;
+	 border-bottom: none;
+	 font-family: "arial negrita", serif; 
+	}
+  
+  
+  
+  
+  
+  
+  #td_title2
+{
+	font-family: "arial", serif;
+   border: solid #CCC 1px;
+	border-top: none;
+	border-right: none;
+	}
+	
+	  #td_title3
+{
+	font-family: "arial", serif;
+   border: solid #CCC 1px;
+	border-top: none;
+	border-right: none;
+	
+	}
+	
+	 #td_title4
+{
+	font-family: "arial cursiva", serif;
+   border: solid #CCC 1px;
+	border-top: none;
+	border-right: none;
+    font-size: 40px;
+	}
+	
+	
+	
+	 #td_title4_last
+{
+	font-family: "arial cursiva", serif;
+   border: solid #CCC 1px;
+	border-top: none;
+	
+    font-size: 40px;
+	}
+	
+	
+	
+	 #td_title2_last
+{
+	font-family: "arial", serif;
+   border: solid #CCC 1px;
+	border-top: none;
+	
+	}
+  
+  
+  
+  /*//////////// PRODUCTO ESCIAL /////////////*/
+  
+
+  .tablas_Producto_Especial td
+{
+	 width: 75px;
+	 height: 20px;
+	 font-size:13px;
+ font-weight: normal;
+    font-style: normal;
+    font-family: 'quattrocento_sansregular';	
+
+	}
+	
+.tablas_Producto_Especial th
+{
+	 width: 75px;
+	 height: 20px;
+	 background-color: #D8D6B7 ;
+	 border: solid #CCC 1px;
+	 font-family: "arial", serif; 	 
+	}	
+
+
+.tablas_Producto_Especial2 
+	{
+	margin-top: 20px;
+	font-weight: normal;
+      font-family: 'quattrocento_sansregular';
+      font-style: normal;
+	}	
+	
+	.tablas_Producto_Especial2 th
+{
+	
+	 height: 25px;
+	 background-color: #D79C7C ;
+	 border: solid #CCC 1px;
+	 color: #FFF; 
+      font-size: 12px;
+
+	}	
+	
+	.tablas_Producto_Especial2 td
+{
+	
+	 height: 20px;
+	 font-size: 11px;
+	 border: solid #CCC 1px;
+	 border-top: none;
+	 border-right: none;
+	 	 
+	}	
+		.tablas_Producto_Especial2a th
+{
+	background-color: #D79C7C;
+	 height: 10px;
+	 
+	 border: solid #CCC 1px;
+	 color: #FFF;
+	 font-weight: normal;
+      font-family: 'quattrocento_sansregular';
+      font-style: normal; 
+	 font-size: 11px; 
+	}	
+	
+	.tablas_Producto_Especial2a td
+{
+	
+	 height: 10px;
+ font-size:15px;
+	 border: solid #CCC 1px;
+	 border-top: none;
+	 border-right: none;
+	 font-weight: normal;
+      font-family: 'quattrocento_sansregular';
+      font-style: normal;; 
+	 font-size:10px; 	 
+	}	
+	
+.tablas_Producto_Especial3 
+	{
+	margin-top: 20px;
+	font-weight: normal;
+      font-family: 'quattrocento_sansregular';
+      font-style: normal;
+	}	
+	
+	.tablas_Producto_Especial3 th
+{
+	
+	 height: 25px;
+	 background-color: #C66 ;
+	 border: solid #CCC 1px;
+	 color: #FFF; 
+      font-size: 12px;
+
+	}	
+	
+	.tablas_Producto_Especial3 td
+{
+	
+	 height: 20px;
+	 font-size: 11px;
+	 border: solid #CCC 1px;
+	 border-top: none;
+	 border-right: none;
+	 	 
+	}	
+	.tablas_Producto_Especial3a th
+{
+
+	 height: 10px;
+	 background-color: #C66; ;
+	 border: solid #CCC 1px;
+	 color: #FFF;
+	  font-weight: normal;
+      font-family: 'quattrocento_sansregular';
+      font-style: normal; 
+	 font-size: 11px; 
+	}	
+	
+	.tablas_Producto_Especial3a td
+{
+	
+	 height: 10px;
+ font-size:15px;
+	 border: solid #CCC 1px;
+	 border-top: none;
+	 border-right: none;
+	  font-weight: normal;
+      font-family: 'quattrocento_sansregular';
+      font-style: normal; 
+	 font-size: 11px; 	 
+	}	
+
+	
+	
+
+
+#txt_descripcion
+{
+	border: #FFF 1px;
+	font-family: "arial", serif; 
+	}
+	
+#td_blanco
+{
+	border:none;
+	}
+	
+	#td_borde_derecho
+{
+	border-right: solid #CCC 1px;
+	}
+	
+	#td_stock_grande
+{
+	border: solid #CCC 1px;
+	font-family: "arial black", serif; 
+	font-size:22px;
+	}
+	
+	#td_title
+{
+	font-family: "arial negrita", serif;
+	border-left: none;
+	border-bottom: none;
+	}
+
+
+
+.casillaTextoPS
+{
+	border:grey 1px solid;
+	border-radius:8px;
+	 width:100px;
+	 height:13px;
+	}
+
+.casillaBotonPS
+{
+	border:grey 1px solid;
+	border-radius:2px;
+	 width:120px;
+	 height:20px;
+	  box-sizing: border-box;
+	 background-color: #D79C7C;
+	 color: #fff;
+}
+.casillaBotonPS:hover
+{
+
+	 background-color: orange;
+
+}
+	.casillaBotonPS1
+{
+	border:grey 1px solid;
+	border-radius:4px;
+	 width:120px;
+	 height:20px;
+	 background-color: #C66 ;
+	 color: #fff;
+	 box-sizing: border-box;
+	}
+
+.casillaBotonPS1:hover
+{
+
+	 background-color: orange;
+
+}
+#h1_PS
+{
+		 color: #D79C7C;
+	  font-weight: normal;
+    font-style: normal;
+    font-family: 'quattrocento_sansregular';	
+}
+#h2_PS
+{
+		 color:#C66;
+	 font-family: "arial", serif; 	
+}
+
+
+
+
+.selecion_multiplePS
+{
+	   font: normal .90em arial, sans-serif;
+	   	border:grey 1px solid;
+  color:#000;  
+  font-size:14px; 
+    border-radius: 8px;
+	width:100px;
+	}
+
+
+
+  label {
+    display: inline-block;
+    width: 5em;
+  }
+  
+  
+  /* Control Producción */
+
+  #table_control
+  {
+	  font: normal .90em arial, sans-serif;
+  }
+  #table_control td 
+  {
+	  font: normal .90em arial, sans-serif;
+	  height:20px;
+	  width:30px;
+	  font-size:10px;
+  }
+  #table_control th
+  {
+	  font: normal .90em arial, sans-serif;
+	   width:10px;
+	    font-size:10px;
+	 
+  }
+  
+  #control_feriado
+  {
+	  color:#900;
+	  font-weight:bold;
+	  text-decoration:none;
+  }
+   #control_semana
+  {
+	  color:#006;
+	  font-weight:bold;
+	  text-decoration:none;
+  }
+    #control-azul
+  {
+	  background:#5882FA;
+	  height:29px;
+	  color:#fff;
+	  
+  }
+     #control-azul1
+  {
+	  background:#5882FA;
+	  height:13px;
+	  color:#fff;
+	  
+  }
+      #control-celeste
+  {
+	  background:#099;
+	  height:13px;
+	  color:#fff;
+	  
+  }
+     #control-cafe
+  {
+	  background:#996;
+	  height:13px;
+	  color:#fff;
+	  
+  }
+     #control-rosa
+  {
+	  background:#F9C;
+	  height:13px;
+	  color:#fff;
+	  
+  }
+      #control-naranjo
+  {
+	  background:#F60;
+	  height:13px;
+	  color:#fff;
+	  
+  }
+      #control-celestecl
+  {
+	  background:#09C;
+	  height:13px;
+	  color:#fff;
+	  
+  }
+      #control-verde
+  {
+	  background:#060;
+	  height:13px;
+	  color:#fff;
+	  
+  }
+      #control-lila
+  {
+	  background:#969;
+	  height:13px;
+	  color:#fff;
+	  
+  }
+      #control-crema
+  {
+	  background:#C8C8C8;
+	  height:13px;
+	  color:#fff;
+	  
+  }
+      #control-cafe-claro
+  {
+	  background:#B18904;
+	  height:13px;
+	  color:#fff;
+	  
+  }
+  
+  #control_fer
+  {
+	  background:#FFE1E1;
+  }
+  
+   #table_control3
+  {
+	  font: normal .90em arial, sans-serif;
+	   font-size:10px;
+  }
+  #table_control3 td 
+  {
+	  font: normal .90em arial, sans-serif;
+	  height:20px;
+	   font-size:10px;
+	
+  }
+  #table_control3 th
+  {
+	  font: normal .90em arial, sans-serif;
+	   font-size:10px;
+  }
+  #proyectado
+  {
+	  text-decoration:none;
+	  color:#036;
+  }
+  #proyectado:hover
+  {
+	  text-decoration:none;
+	  color:#C30;
+  }
+  
+  #totalcontrol
+  {
+	  background:#000;
+	  color:#fff;
+  }
+  
+  #footercontrolpro
+  {
+	  background:#EBC1FD;  
+  }
+  .textbox
+	  {
+	  border: 1px solid #DBE1EB;
+	  width: 200px;
+	  font-size: 11px;
+	   box-sizing: border-box;
+      font-weight: normal;
+      font-family: 'arial';
+      font-style: normal;
+	  padding-left: 10px;
+	  padding-right: 10px;
+	  padding-top: 5px;
+	  padding-bottom: 5px;
+	  border-radius: 4px;
+	  -moz-border-radius: 4px;
+	  -webkit-border-radius: 4px;
+	  -o-border-radius: 4px;
+	  background: #FFFFFF;
+	  background: linear-gradient(left, #FFFFFF, #F7F9FA);
+	  background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+	  background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+	  background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+	  color: #2E3133;
+	 }
+	   .textboxpequeno
+	  {
+	  border: 1px solid #DBE1EB;
+	  width: 60px;
+	  font-size: 11px;
+	   box-sizing: border-box;
+      font-weight: normal;
+      font-family: 'arial';
+      font-style: normal;
+	  padding-left: 10px;
+	  padding-right: 0px;
+	  padding-top: 5px;
+	  padding-bottom: 5px;
+	  border-radius: 4px;
+	  -moz-border-radius: 4px;
+	  -webkit-border-radius: 4px;
+	  -o-border-radius: 4px;
+	  background: #FFFFFF;
+	  background: linear-gradient(left, #FFFFFF, #F7F9FA);
+	  background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+	  background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+	  background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+	  color: #2E3133;
+	 }
+
+	  .textbox:disabled
+	  {
+	  border: 1px solid #DBE1EB;
+	  width: 200px;
+	  font-size: 11px;
+	   box-sizing: border-box;
+      font-weight: normal;
+      font-family: 'quattrocento_sansregular';
+      font-style: normal;
+	  padding-left: 10px;
+	  padding-right: 10px;
+	  padding-top: 5px;
+	  padding-bottom: 5px;
+	  border-radius: 4px;
+	  -moz-border-radius: 4px;
+	  -webkit-border-radius: 4px;
+	  -o-border-radius: 4px;
+	  background: #FFFFFF;
+	  background: linear-gradient(left, #FFFFFF, #F7F9FA);
+	  background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+	  background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+	  background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+	  color: #FFFFFF;
+	 }
+	    .textbox2
+	  {
+	  border: 1px solid #DBE1EB;
+	  width: 120px;
+	  font-size: 11px;
+      font-weight: normal;
+      box-sizing: border-box;
+      font-family: 'quattrocento_sansregular';
+      font-style: normal;
+	  padding-left: 10px;
+	  padding-right: 10px;
+	  padding-top: 5px;
+	  padding-bottom: 5px;
+	  border-radius: 4px;
+	  -moz-border-radius: 4px;
+	  -webkit-border-radius: 4px;
+	  -o-border-radius: 4px;
+	  background: #FFFFFF;
+	  background: linear-gradient(left, #FFFFFF, #F7F9FA);
+	  background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+	  background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+	  background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+	  color: #2E3133;
+	  }
+	  .textbox3
+	  {
+	  border: 1px solid #DBE1EB;
+	  width: 120px;
+	  font-size: 11px;
+      font-weight: normal;
+      box-sizing: border-box;
+      font-family: 'arial';
+      font-style: normal;
+	  padding-left: 10px;
+	  padding-right: 10px;
+	  padding-top: 5px;
+	  padding-bottom: 5px;
+	  border-radius: 4px;
+	  -moz-border-radius: 4px;
+	  -webkit-border-radius: 4px;
+	  -o-border-radius: 4px;
+	  background: #000;
+	  color: #fff;
+	  cursor: pointer;
+	  }
+	  .textbox3:hover
+	  {
+	  background: #ccc;
+	  }
+
+
+	  #salida
+	  {
+	  	position: absolute;
+	  	left: -90px;
+	  	top: 10px;
+	  }
+	  #tabla_registroactividades_descripcionServicio th
+{
+	background: #2E9AFE; /* Old browsers */
+	color:#FFF;
+	font-weight: normal;
+    font-style: normal;
+    padding: 7px;
+}
+	  #tabla_registroactividades_descripcionServicio td
+{
+	
+	 font-weight: normal;
+    font-style: normal;
+    font-family: 'quattrocento_sansregular';
+    
+    
+}
+
+#table_kardek
+{
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'quattrocento_sansregular';
+ font-size:12px;
+}
+.center{
+	margin: auto;
+	padding: 1em;
+}
+
+#kardex_td
+{
+	border: #ccc 1px solid;
+
+}
+#color_kardek
+{
+	background:#D8D6B7;
+	border: #ccc 1px solid;
+	text-align:center;
+}
+
+#stock_kardek
+{
+	margin-bottom:35px;
+	font-size:25px;	
+}
+
+#stock_kardek_num
+{
+
+	font-size:20px;	
+}
+
+.tablas_Indicador_cumplimiento
+{
+	font-weight: normal;
+    font-style: normal;
+    font-family: 'quattrocento_sansregular';
+}
+#indi_h2
+{
+	font-weight: normal;
+    font-style: normal;
+    font-family: 'quattrocento_sansregular';
+    font-size: 15px;
+}
+
+#contenedor_indicador
+{
+	position: relative;
+}
+
+#grafico_indic
+{
+	
+	
+	padding: 0px;
+	margin: 0px;
+	z-index: 1;
+}
+.contpa
+{
+	text-decoration: none;
+}
+.contpa:hover
+{
+	color: orange;
+}
+#fleImagen,#fleImagen1,#fleImagen2{
+	width: 100%;
+}
+
+.normal-table{
+	margin: auto;
+	border-collapse: collapse;
+	margin-bottom: 1em;
+	font-family: arial;
+	font-size: 13px;
+}
+.normal-table td , .normal-table th{
+	padding: .5em 1em;
+	border: solid 1px #ccc;
+}
+
+
+@media screen and (max-width:960px){  
+
+  
+#grafico_indic
+{
+	display: none;
+}
+}  

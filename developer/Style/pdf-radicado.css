@@ -1,0 +1,63 @@
+table{
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 12px;
+	font-family: arial,verdana;
+}
+
+.form-cotizacion td{
+	border: solid 1px #ccc;
+	width: 25%;
+	padding: 3px;
+}
+.logo{
+	margin-bottom: 5px;
+}
+.contenido td{
+	border: solid 1px #ccc;
+	padding: 3px;
+}
+.contenido{
+	margin-top: 20px;
+}
+.productito{
+	background: #DBE5EA;
+}
+
+.uno,.tres{
+	width: 15%;
+}
+.dos{
+	width: 40%;
+}
+
+
+.cuatro{
+	width: 5%;
+}
+.cinco{
+	width: 10%;
+}
+.seis{
+	width: 15%;
+}
+.encabezado{
+	background-color: #C9D3D8;
+}
+
+#neto{
+	border: transparent;
+}
+
+.separador{
+	padding-top: 30px;
+}
+
+.firma{
+	margin-top: 120px;
+}
+.firma td{ 
+	width: 33.33%;
+	border: solid 1px #ccc;
+	padding: 8px 0;
+}

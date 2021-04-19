@@ -1,0 +1,514 @@
+html
+{ height: 100%;}
+
+*
+*
+{ margin: 0;
+  padding: 0;}
+
+body
+{ 
+	font: normal .90em arial, sans-serif;
+  	color: #1D1D1D;
+ 	/* background: #FFF url(../Imagenes/pattern.jpg) repeat;*/
+ 	background:#fff;
+  }
+
+
+#buscar
+{
+
+	font: normal .90em arial, sans-serif;
+  color: #1D1D1D;
+   cursor:pointer;
+    color:#FFF;
+    background-color: blue; 
+    height:25px;
+    border-radius: 10px; 
+    border:#fff 1px solid;
+	
+}
+
+#buscar:hover
+{
+	
+	background-color: #58ACFA;
+
+}
+
+#main, #header, #banner, #menubar, #site_content, #footer, #contact, #footer_content, #banner_image
+{ margin-left: auto; 
+  margin-right: auto;}
+ 
+#site_content
+{ width: 1250px;
+  overflow: hidden;
+  margin-top: 20px;
+  padding: 20px 0 0 20px;
+  background: #FFF;
+}  
+
+
+
+
+
+
+
+#informe_despacho th
+{
+	background-color:#FC0;
+	color:black;
+}
+
+#informe_produccion th
+{
+	color:#FFF;
+}
+
+
+
+#informe_instalacion th
+{
+	background-color:#B10F0F;
+	color:#FFF;
+}
+
+
+#informe_servicio th
+{
+	background-color:#886A08;
+	color:#FFF;
+}
+
+
+#informe_sillas th
+{
+	background-color:#0080FF;
+	color:#FFF;
+}
+#informe_fi th
+{
+	background-color:#F7BE81;
+	color:#FFF;
+}
+#informe_pr th
+{
+	background-color:#BCA9F5;
+	color:#FFF;
+}
+#informe_mantencion th
+{
+	background-color:#909;
+	color:#FFF;
+}
+#informe_bodega th
+{
+	background-color:#96F;
+	color:#FFF;
+}
+#informe_Desarrollo th
+{
+	background-color:#F63;
+	color:#FFF;
+	height: 20px;
+}
+#informe_abastecimiento th
+{
+	background-color:#090;
+	color:#FFF;
+}
+
+
+#informe_tomainfo th
+{
+	background-color:#FA9600;
+	color:#000;  
+	 
+}
+
+#informe_tomainfo 
+{
+font-family: "arial", serif;
+font-size:12px;
+
+}
+
+#txt_desde
+{
+	width:100px;
+}
+#txt_hasta
+{
+	width:100px;
+}
+
+#buscar
+{
+	width:100px;
+}
+
+#cod_ser
+{
+	text-decoration:none;
+}
+#tit_ins
+{ 
+color:#900;
+font-size:20px;
+}
+#tit_pro
+{ 
+color:#003;
+font-size:20px;
+}
+#tit_des
+{ 
+color:orange;
+font-size:20px;
+}
+#tit_ser
+{ 
+color:#960;
+font-size:20px;
+}
+#tit_sil
+{ 
+color:#06C;
+font-size:20px;
+}
+#tit_fi
+{ 
+color:#F7BE81;
+font-size:20px;
+}
+#tit_pr
+{ 
+color:#BCA9F5;
+font-size:20px;
+}
+#tit_man
+{ 
+color:#936;
+font-size:20px;
+}
+
+#tit_abs
+{
+	color:#060;
+	font-size:20px;
+}
+
+#tit_bod
+{
+	color:#939;
+font-size:20px;
+}
+
+
+#tit_tomainfo
+{ 
+color:#FA9600;
+font-size:20px;
+}
+
+#tabla th
+{
+	background-color:#FC0;
+	color:black;
+}
+
+.nueva_tabla_bodega
+{
+	 height: 20px;
+	}
+	
+	
+
+	
+	.boton_produccion {
+	-moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5) );
+	background:-moz-linear-gradient( center top, #79bbff 5%, #378de5 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5');
+	-webkit-border-top-left-radius:20px;
+	-moz-border-radius-topleft:20px;
+	border-top-left-radius:20px;
+	-webkit-border-top-right-radius:20px;
+	-moz-border-radius-topright:20px;
+	border-top-right-radius:20px;
+	-webkit-border-bottom-right-radius:20px;
+	-moz-border-radius-bottomright:20px;
+	border-bottom-right-radius:20px;
+	-webkit-border-bottom-left-radius:20px;
+	-moz-border-radius-bottomleft:20px;
+	border-bottom-left-radius:20px;
+	text-indent:0px;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:italic;
+	height:45px;
+	width:131px;
+	border:#FAFAFA 1px solid;
+	text-align:center;
+	
+}
+
+#ranking th
+{
+	background:#099;
+	color:#FFF;
+
+}
+
+#LINEA td
+{
+	border:#E4E4E7 1px solid;
+}
+#LINEA th
+{
+	background:blue;
+	color:#fff;
+	border:#E4E4E7 1px solid;
+}
+#EJECUTIVO td
+{
+	border:#E4E4E7 1px solid;
+}
+#EJECUTIVO th
+{
+	background:blue;
+	color:#fff;
+	border:#E4E4E7 1px solid;
+}
+.textbox
+	  {
+	  border: 1px solid #DBE1EB;
+	  width: 100px;
+	   box-sizing: border-box;
+	  font-size: 11px;
+	  font-family: Arial, Verdana;
+	  padding-left: 10px;
+	  padding-right: 10px;
+	  padding-top: 5px;
+	  padding-bottom: 5px;
+	  border-radius: 4px;
+	  -moz-border-radius: 4px;
+	  -webkit-border-radius: 4px;
+	  -o-border-radius: 4px;
+	  background: #FFFFFF;
+	  background: linear-gradient(left, #FFFFFF, #F7F9FA);
+	  background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+	  background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+	  background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+	  color: #2E3133;
+	  }
+	   
+	   .textboxs
+	  {
+	  border: 1px solid #DBE1EB;
+	  width: 123px;
+	  font-size: 11px;
+	  font-family: Arial, Verdana;
+	  padding-left: 10px;
+	  padding-right: 10px;
+	  padding-top: 5px;
+	  padding-bottom: 5px;
+	  border-radius: 4px;
+	  -moz-border-radius: 4px;
+	  -webkit-border-radius: 4px;
+	  -o-border-radius: 4px;
+	  background: #FFFFFF;
+	  background: linear-gradient(left, #FFFFFF, #F7F9FA);
+	  background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+	  background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+	  background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+	  color: #2E3133;
+	  }
+	  .textbox:focus
+	  {
+	  color: #2E3133;
+	  border-color: #FBFFAD;
+	  }
+	  #tabla-infos td
+	  {
+	  font-size: 13px;
+	  font-family: Arial, Verdana;
+	  }
+
+	  #buscars
+	  {
+	  	background: #939;
+	  	color: #fff;
+	  		font: normal .90em arial, sans-serif;
+  
+   cursor:pointer;
+ 
+    height:25px;
+    border-radius: 10px; 
+    border:#fff 1px solid;
+	  }
+
+	   #buscars:hover
+	  {
+	  	background: #919;
+	  }
+
+
+	  #botondesarrollo
+	  {
+	  	background: orange;
+	  	color: #fff;
+	  		font: normal .90em arial, sans-serif;
+  
+   cursor:pointer;
+ 
+    height:25px;
+    border-radius: 10px; 
+    border:#fff 1px solid;
+	  }
+
+	   #botondesarrollo:hover
+	  {
+	  	background: red;
+	  }
+	  .des_bus
+	  {
+	  	 color:#000;
+	  	 background-color: #FC0;
+	  	 height:25px;
+	  	 border-radius: 4px;
+	  	 width:110px; 
+	  	 border:#fff 1px solid;
+	  }
+
+	    .des_bus:hover
+	  {
+	  	 	 background-color: orange;
+	  }
+
+	  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#tit_visita
+{
+	color:#C93;
+font-size:20px;
+}
+#informe_visita th
+{
+	background-color:#C93;
+	color:white;
+}
+
+
+
+
+#tit_reunion
+{
+	color:#906;
+font-size:20px;
+}
+#informe_reunion th
+{
+	background-color:#906;
+	color:white;
+}
+
+
+
+#tit_planimetria
+{
+	color:#C9CEB3;
+font-size:20px;
+}
+#informe_planimetria th
+{
+	background-color:#C9CEB3;
+	color:black;
+}
+
+
+
+
+#tit_cotizacion
+{
+	color:#060;
+font-size:20px;
+}
+#informe_cotizacion th
+{
+	background-color:#060;
+	color:white;
+}
+
+
+
+
+#tit_presentacion
+{
+	color:#39F;
+font-size:20px;
+}
+#informe_presentacion th
+{
+	background-color:#39F;
+	color:black;
+}
+
+
+#header-proyecto-rocha
+{
+	width: 100%;
+	height: 150px;
+	position: fixed;	
+	z-index: 300;
+	background:white;
+
+}
+
+
+#listaradicados
+{
+position:absolute; 
+ width:10px;
+}
+
+
+.radicadosbutton
+{
+text-align: left;
+float:left;  
+color: #000; 
+cursor: pointer; 
+background:#fff; 
+height:25px; 
+width: 150px;
+border: #fff solid 1px ;
+}
+.radicadosbutton:hover
+{
+border: #000 solid 1px ;
+}
+
+
+
+

@@ -1,0 +1,1654 @@
+*
+{
+margin: 0;
+padding: 0;
+}
+
+
+h1{
+	font-family: arial;
+	font-weight: normal;
+	font-size: 21px;
+	margin: 10px;
+}
+.boton{
+border: 1px solid #DBE1EB;
+width: 150px;
+box-sizing: border-box;
+font-size: 11px;
+font-family: Arial, Verdana;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 5px;
+padding-bottom: 5px;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+-o-border-radius: 4px;
+background: #40403E;
+color: #F2F2F2;
+}
+.boton:hover{	
+background-color: #737273;
+cursor: pointer;
+}
+.desbutton{
+	float: right;
+	margin-bottom: 20px;
+}
+
+.textbox{
+border: 1px solid #DBE1EB;
+width: 150px;
+box-sizing: border-box;
+font-size: 11px;
+font-family: Arial, Verdana;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 5px;
+padding-bottom: 5px;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+-o-border-radius: 4px;
+background: #FFFFFF;
+background: linear-gradient(left, #FFFFFF, #F7F9FA);
+background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+color: #2E3133;
+}
+.textbox:focus
+{
+color: #2E3133;
+border-color: #FBFFAD;
+}
+table{
+width: 100%;
+border-collapse: collapse;
+font-family: arial;
+font-size: 12px; 
+}	  
+
+#contenedor-ins
+{
+ width: 960px;
+ margin: 0 auto;
+ text-align: center;
+
+}
+
+
+.ingreso-cliente{
+	display: block;
+	border: 1px solid #DBE1EB;
+	width: 150px;
+	box-sizing: border-box;
+	font-size: 11px;
+	font-family: Arial, Verdana;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-o-border-radius: 4px;
+	background: #40403E;
+	text-decoration:none;
+	color:#fff;
+	margin-left: 40px;
+}
+
+.ingreso-cliente:hover{
+	background-color: #737273;
+	cursor: pointer;
+}
+
+
+.ins th
+{
+	background: #BF212E;
+	color: #fff;
+	font-weight: normal;
+	border-color: #C4A7A1;
+	padding: 8px;
+	font-size:11px;
+}
+
+.ins th a
+{
+	color: #fff;
+	text-decoration: none;
+}
+.ins th a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+
+.ins td a
+{
+	color: #8C6249;
+	text-decoration: none;
+
+}
+.ins td a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+.ins td
+{
+	border-color: #C4A7A1;
+	padding: 3px;
+	font-size:10px;
+}
+#contenedor-des
+{
+ width: 960px;
+ margin: 0 auto;
+ text-align: center;
+}
+
+
+.des th
+{
+	background: #F2B950;
+	color: #fff;
+	font-weight: normal;
+	border-color: #F2D98E;
+	padding: 8px;
+	font-size:11px;
+}
+
+.des th a
+{
+	color: #fff;
+	text-decoration: none;
+}
+.des th a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+
+.des td a
+{
+	color: #8C6249;
+	text-decoration: none;
+
+}
+.des td a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+.des td
+{
+	border-color: #F2D98E;
+	padding: 3px;
+	font-size:10px;
+
+}
+#contenedor-des
+{
+ width: 960px;
+ margin: 0 auto;
+ text-align: center;
+}
+
+
+.rad th
+{
+	background: #023859;
+	color: #fff;
+	font-weight: normal;
+	border-color: #03658C;
+	padding: 8px;
+	font-size:11px;
+}
+
+.rad th:hover
+{
+	color: orange;
+	cursor: pointer;
+}
+
+.fix-head .rad th
+{
+	background: #185E89;
+	color: #fff;
+	font-weight: normal;
+	border-color: #03658C;
+	padding: 8px;
+	font-size:11px;
+}
+.fix-head .rad th:hover
+{
+	color: #fff;
+	cursor: inherit;
+}
+
+.rad th a
+{
+	color: #fff;
+	text-decoration: none;
+}
+.rad th a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+
+.rad td a
+{
+	color: #8C6249;
+	text-decoration: none;
+
+}
+.rad td a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+.rad td
+{
+	border-color: #BDEBD5;
+	padding: 3px;
+	font-size:10px;
+}
+/* */
+.vale th
+{
+	background: #037E8C;
+	color: #fff;
+	font-weight: normal;
+	border-color: #FFFFFA;
+	padding: 8px;
+	font-size:11px;
+}
+
+.vale th a
+{
+	color: #fff;
+	text-decoration: none;
+}
+.vale th a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+
+.vale td a
+{
+	color: #8C6249;
+	text-decoration: none;
+
+}
+.vale td a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+.vale td
+{
+	border-color: #BDEBD5;
+	padding: 3px;
+	font-size:10px;
+}
+#header-radicado-rocha
+{
+	width: 100%;
+	height: 150px;
+	position: fixed;	
+	top:0;
+	z-index: 300;
+	background: white;
+	text-align: center;
+}
+#contenedor-rad
+{
+ width: 960px;
+ margin: 0 auto;
+ text-align: center;
+}
+
+
+.prod th
+{
+	background: #020927;
+	color: #fff;
+	font-weight: normal;
+	border-color: #ccc;
+	padding: 8px;
+	ufont-size:11px;
+}
+
+.prod th a
+{
+	color: #fff;
+	text-decoration: none;
+}
+.prod th a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+
+.prod td a
+{
+	color: #8C6249;
+	text-decoration: none;
+
+}
+.prod td a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+.prod td
+{
+	border-color: #ccc;
+	padding: 7px;
+	font-size:10px;
+}
+
+/*Sistema*/
+#header-sistema
+{
+	width: 60%;
+	margin: auto;
+}
+
+.sistema th
+{
+	background: #100F11;
+	color: #fff;
+	font-weight: normal;
+	border-color: #CAC9BA;
+	padding: 8px;
+	font-size:11px;
+}
+
+.sistema th a
+{
+	color: #fff;
+	text-decoration: none;
+}
+.sistema th a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+
+.sistema td a
+{
+	color: #8C6249;
+	text-decoration: none;
+
+}
+.sistema td a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+.sistema td
+{
+	border-color: #CAC9BA;
+	padding: 7px;
+	font-size:10px;
+}
+/*adqui*/
+
+.adquisi th
+{
+	background: #1F8C00;
+	color: #fff;
+	font-weight: normal;
+	border-color: #CAC9BA;
+	padding: 8px;
+	font-size:11px;
+}
+
+.adquisi th a
+{
+	color: #fff;
+	text-decoration: none;
+}
+.adquisi th a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+
+.adquisi td a
+{
+	color: #8C6249;
+	text-decoration: none;
+
+}
+.adquisi td a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+.adquisi td
+{
+	border-color: #CAC9BA;
+	padding: 7px;
+	font-size:10px;
+}
+
+/*sil*/
+
+.silla th
+{
+	background: #049DBF;
+	color: #fff;
+	font-weight: normal;
+	border-color: #CAC9BA;
+	padding: 8px;
+	font-size:11px;
+}
+
+.silla th a
+{
+	color: #fff;
+	text-decoration: none;
+}
+.silla th a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+
+.silla td a
+{
+	color: #8C6249;
+	text-decoration: none;
+
+}
+.silla td a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+.silla td
+{
+	border-color: #CAC9BA;
+	padding: 7px;
+	font-size:10px;
+}
+
+/* proyecto rocha */
+#header-proyecto-rocha
+{
+	width: 100%;
+	height: 150px;
+	position: fixed;	
+	z-index: 300;
+	background:white;
+	text-align: center;
+}
+
+
+#verde
+{
+	background: #80DB88;
+}
+#azul
+{
+	background: #678894;
+}
+#rojo
+{
+	background: #DD7E75;
+}
+
+#alerta
+{
+	background: #8A0808;
+}
+#alerta a
+{
+	color:#fff;
+}
+#alerta a:hover
+{
+	color:orange;
+}
+
+#amarillo
+{
+	background: #FDF590;
+}
+
+#hoy
+{
+	background: #A6DCF0;
+}
+#aceptado
+{
+	background: #AFE872;
+}
+
+.ruta{
+	background: #E5DDC6;
+}
+
+.ruta-m3{
+	background: #F5BCA9;
+}
+/* info oc especial*/
+#info_oc_especial
+{
+	width: 100%;
+	height: 150px;
+	position: fixed;	
+	top:0;
+	z-index: 300;
+	background: white;
+}
+.contenedor_especial
+{
+	width: 960px;
+	margin: auto;
+	 text-align: center;
+}
+
+
+.oc_especial th
+{
+	background: #F4A444;
+	color: #fff;
+	font-weight: normal;
+	border-color: #C4A7A1;
+	padding: 8px;
+	font-size:11px;
+}
+
+.oc_especial th a
+{
+	color: #fff;
+	text-decoration: none;
+}
+.oc_especial th a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+
+.oc_especial td a
+{
+	color: #8C6249;
+	text-decoration: none;
+
+}
+.oc_especial td a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+.oc_especial td
+{
+	border-color: #C4A7A1;
+	padding: 3px;
+	font-size:10px;
+	padding: 7px;
+}
+
+.recl th
+{
+	background: #A134BF;
+	color: #fff;
+	font-weight: normal;
+	border-color: #FFA2FF;
+	padding: 8px;
+	font-size:11px;
+}
+
+.recl th a
+{
+	color: #fff;
+	text-decoration: none;
+}
+.recl th a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+
+.recl td a
+{
+	color: #8C6249;
+	text-decoration: none;
+
+}
+.recl td a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+.recl td
+{
+	border-color: #FFDBFF;
+	padding: 7px;
+	font-size:10px;
+}
+.h-oc-transito{
+	text-align: center;
+	background: red;
+}
+
+/*oc inf*/
+
+.oc-inf{
+	padding:0 0 20px 0;
+}
+
+
+.oc-inf input[type="text"],.oc-inf select{
+	color: #848484;
+	font-size: 11px;
+	font-family: arial;
+}
+.oc-inf input[type="submit"]{
+	color: #fff;
+	font-family: arial;
+}
+
+.table-oc-inf{
+	font-size: 11px;
+}
+
+.table-oc-inf th{
+	background: #16BD5C;
+	color: #ffffff;
+	padding: 10px;
+	border:solid 1px #ccc;
+}
+
+.table-oc-inf td{
+	padding: 8px;
+	border:solid 1px #ccc;
+}
+
+.table-oc-inf a{
+	text-decoration: none;
+	color:#298A08;
+}
+.table-oc-inf a:hover{
+	color:#31B404;
+}
+/*producto especial*/
+
+.table-especial{
+	font-size: 11px;
+}
+
+.table-especial th{
+	background: #EE665A;
+	color: #ffffff;
+	padding: 10px;
+	border:solid 1px #ccc;
+}
+
+.table-especial th:hover{
+	color:#000;
+	cursor: pointer;
+}
+
+
+.table-especial td{
+	padding: 10px;
+	border:solid 1px #ccc;
+}
+
+.table-especial a{
+	text-decoration: none;
+	color:#D63222;
+}
+.table-especial a:hover{
+	color:#EE665A;
+}
+
+.fix-head .table-especial th
+{
+	background: #CF7A5B;
+}
+.fix-head .table-especial th:hover
+{
+	color: #fff;
+	cursor: inherit;
+}
+
+
+
+/* -- */
+.factura-table{
+	font-size: 11px;
+}
+
+.factura-table th{
+	background: #466C75;
+	color: #ffffff;
+	padding: 10px;
+	border:solid 1px #ccc;
+}
+
+.factura-table th:hover{
+	color:#000;
+	cursor: pointer;
+}
+
+
+.factura-table td{
+	padding: 10px;
+	border:solid 1px #ccc;
+}
+
+.factura-table a{
+	text-decoration: none;
+	color:#000;
+}
+.factura-table a:hover{
+	color:#ccc;
+}
+
+.fix-head .factura-table th
+{
+	background: #084B8A;
+}
+.fix-head .factura-table th:hover
+{
+	color: #fff;
+	cursor: inherit;
+}
+
+/* -- */
+/* -- */
+.nota-table{
+	font-size: 11px;
+}
+
+.nota-table th{
+	background: #199551;
+	color: #ffffff;
+	padding: 10px;
+	border:solid 1px #ccc;
+}
+
+.nota-table th:hover{
+	color:#000;
+	cursor: pointer;
+}
+
+
+.nota-table td{
+	padding: 10px;
+	border:solid 1px #ccc;
+}
+
+.nota-table a{
+	text-decoration: none;
+	color:#000;
+}
+.nota-table a:hover{
+	color:#ccc;
+}
+
+.fix-head .nota-table th
+{
+	background: #33AB69;
+}
+.fix-head .nota-table th:hover
+{
+	color: #fff;
+	cursor: inherit;
+}
+
+/* -- */
+/*tabla Cliente*/
+
+.tabla-cliente th
+{
+	background: #B27C7C;
+	color: #fff;
+	font-weight: normal;
+	border:1px #ccc solid;
+	padding: 8px;
+	font-size:11px;
+}
+
+.tabla-cliente th:hover
+{
+	color: #000;
+	cursor: pointer;
+}
+
+.tabla-cliente .rad th
+{
+	background: #185E89;
+	color: #fff;
+	font-weight: normal;
+	border-color: #03658C;
+	padding: 8px;
+	font-size:11px;
+}
+.tabla-cliente .rad th:hover
+{
+	color: #fff;
+	cursor: inherit;
+}
+
+.tabla-cliente th a
+{
+	color: #fff;
+	text-decoration: none;
+}
+.tabla-cliente th a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+
+.tabla-cliente td a
+{
+	color: #8C6249;
+	text-decoration: none;
+}
+
+.tabla-cliente td a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+.tabla-cliente td
+{
+	padding: 10px;
+	border:solid 1px #ccc;
+	font-size:10px;
+}
+
+.fix-head .tabla-cliente th
+{
+	background: #956767;
+	color: #fff;
+	font-weight: normal;
+	padding: 8px;
+	font-size:11px;
+}
+.fix-head .tabla-cliente th:hover
+{
+	color: #fff;
+	cursor: inherit;
+}
+
+/*tabla Tiempo especial*/
+
+.tabla-tiempo th
+{
+	background: #F28F6B;
+	color: #fff;
+	font-weight: normal;
+	border:1px #ccc solid;
+	padding: 8px;
+	font-size:11px;
+}
+
+.tabla-tiempo th:hover
+{
+	color: #000;
+	cursor: pointer;
+}
+
+.tabla-tiempo .rad th
+{
+	background: #BD7053;
+	color: #fff;
+	font-weight: normal;
+	border-color: #03658C;
+	padding: 8px;
+	font-size:11px;
+}
+.tabla-tiempo .rad th:hover
+{
+	color: #fff;
+	cursor: inherit;
+}
+
+.tabla-tiempo th a
+{
+	color: #fff;
+	text-decoration: none;
+}
+.tabla-tiempo th a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+
+.tabla-tiempo td a
+{
+	color: #8C6249;
+	text-decoration: none;
+}
+
+.tabla-tiempo td a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+.tabla-tiempo td
+{
+	padding: 10px;
+	border:solid 1px #ccc;
+	font-size:10px;
+}
+
+.fix-head .tabla-tiempo th
+{
+	background: #CF7A5B;
+	color: #fff;
+	font-weight: normal;
+	padding: 8px;
+	font-size:11px;
+}
+.fix-head .tabla-tiempo th:hover
+{
+	color: #fff;
+	cursor: inherit;
+}
+
+/*tabla Visita*/
+
+.tabla-visita th
+{
+	background: #C93;
+	color: #fff;
+	font-weight: normal;
+	border:1px #ccc solid;
+	padding: 8px;
+	font-size:11px;
+}
+
+.tabla-visita th:hover
+{
+	color: #000;
+	cursor: pointer;
+}
+
+.tabla-visita .rad th
+{
+	background: #BD7053;
+	color: #fff;
+	font-weight: normal;
+	border-color: #03658C;
+	padding: 8px;
+	font-size:11px;
+}
+.tabla-visita .rad th:hover
+{
+	color: #fff;
+	cursor: inherit;
+}
+
+.tabla-visita th a
+{
+	color: #fff;
+	text-decoration: none;
+}
+.tabla-visita th a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+
+.tabla-visita td a
+{
+	color: #8C6249;
+	text-decoration: none;
+}
+
+.tabla-visita td a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+.tabla-visita td
+{
+	padding: 10px;
+	border:solid 1px #ccc;
+	font-size:10px;
+}
+
+.fix-head .tabla-visita th
+{
+	background: #DBA901;
+	color: #fff;
+	font-weight: normal;
+	padding: 8px;
+	font-size:11px;
+}
+.fix-head .tabla-visita th:hover
+{
+	color: #fff;
+	cursor: inherit;
+}
+
+/*tabla reunion*/
+
+.tabla-reunion th
+{
+	background: #906;
+	color: #fff;
+	font-weight: normal;
+	border:1px #ccc solid;
+	padding: 8px;
+	font-size:11px;
+}
+
+.tabla-reunion th:hover
+{
+	color: #000;
+	cursor: pointer;
+}
+
+.tabla-reunion .rad th
+{
+	background: #BD7053;
+	color: #fff;
+	font-weight: normal;
+	border-color: #03658C;
+	padding: 8px;
+	font-size:11px;
+}
+.tabla-reunion .rad th:hover
+{
+	color: #fff;
+	cursor: inherit;
+}
+
+.tabla-reunion th a
+{
+	color: #fff;
+	text-decoration: none;
+}
+.tabla-reunion th a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+
+.tabla-reunion td a
+{
+	color: #8C6249;
+	text-decoration: none;
+}
+
+.tabla-reunion td a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+.tabla-reunion td
+{
+	padding: 10px;
+	border:solid 1px #ccc;
+	font-size:10px;
+}
+
+.fix-head .tabla-reunion th
+{
+	background: #4B088A;
+	color: #fff;
+	font-weight: normal;
+	padding: 8px;
+	font-size:11px;
+}
+.fix-head .tabla-reunion th:hover
+{
+	color: #fff;
+	cursor: inherit;
+}
+
+/*tabla Planimetria*/
+
+.tabla-planimetria th
+{
+	background: #C9CEB3;
+	color: #000;
+	font-weight: normal;
+	border:1px #ccc solid;
+	padding: 8px;
+	font-size:11px;
+}
+
+.tabla-planimetria th:hover
+{
+	color: orange;
+	cursor: pointer;
+}
+
+.tabla-planimetria .rad th
+{
+	background: #BD7053;
+	color: #fff;
+	font-weight: normal;
+	border-color: #03658C;
+	padding: 8px;
+	font-size:11px;
+}
+.tabla-planimetria .rad th:hover
+{
+	color: #fff;
+	cursor: inherit;
+}
+
+.tabla-planimetria th a
+{
+	color: #fff;
+	text-decoration: none;
+}
+.tabla-planimetria th a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+
+.tabla-planimetria td a
+{
+	color: #8C6249;
+	text-decoration: none;
+}
+
+.tabla-planimetria td a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+.tabla-planimetria td
+{
+	padding: 10px;
+	border:solid 1px #ccc;
+	font-size:10px;
+}
+
+.fix-head .tabla-planimetria th
+{
+	background: #D3D7C0;
+	color: #000;
+	font-weight: normal;
+	padding: 8px;
+	font-size:11px;
+}
+.fix-head .tabla-planimetria th:hover
+{
+	color: #fff;
+	cursor: inherit;
+}
+
+/*tabla Cotizacion*/
+
+.tabla-cotizacion th
+{
+	background: #060;
+	color: #fff;
+	font-weight: normal;
+	border:1px #ccc solid;
+	padding: 8px;
+	font-size:11px;
+}
+
+.tabla-cotizacion th:hover
+{
+	color: #000;
+	cursor: pointer;
+}
+
+.tabla-cotizacion .rad th
+{
+	background: #BD7053;
+	color: #fff;
+	font-weight: normal;
+	border-color: #03658C;
+	padding: 8px;
+	font-size:11px;
+}
+.tabla-cotizacion .rad th:hover
+{
+	color: #fff;
+	cursor: inherit;
+}
+
+.tabla-cotizacion th a
+{
+	color: #fff;
+	text-decoration: none;
+}
+.tabla-cotizacion th a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+
+.tabla-cotizacion td a
+{
+	color: #8C6249;
+	text-decoration: none;
+}
+
+.tabla-cotizacion td a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+.tabla-cotizacion td
+{
+	padding: 10px;
+	border:solid 1px #ccc;
+	font-size:10px;
+}
+
+.fix-head .tabla-cotizacion th
+{
+	background: #088A08;
+	color: #fff;
+	font-weight: normal;
+	padding: 8px;
+	font-size:11px;
+}
+.fix-head .tabla-cotizacion th:hover
+{
+	color: #fff;
+	cursor: inherit;
+}
+
+
+/*tabla Presetacion*/
+
+.tabla-presentacion th
+{
+	background: #39F;
+	color: #fff;
+	font-weight: normal;
+	border:1px #ccc solid;
+	padding: 8px;
+	font-size:11px;
+}
+
+.tabla-presentacion th:hover
+{
+	color: #000;
+	cursor: pointer;
+}
+
+.tabla-presentacion .rad th
+{
+	background: #BD7053;
+	color: #fff;
+	font-weight: normal;
+	border-color: #03658C;
+	padding: 8px;
+	font-size:11px;
+}
+.tabla-presentacion.rad th:hover
+{
+	color: #fff;
+	cursor: inherit;
+}
+
+.tabla-presentacion th a
+{
+	color: #fff;
+	text-decoration: none;
+}
+.tabla-presentacion th a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+
+.tabla-presentacion td a
+{
+	color: #8C6249;
+	text-decoration: none;
+}
+
+.tabla-presentacion td a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+.tabla-presentacion td
+{
+	padding: 10px;
+	border:solid 1px #ccc;
+	font-size:10px;
+}
+
+.fix-head .tabla-presentacion th
+{
+	background: #0174DF;
+	color: #fff;
+	font-weight: normal;
+	padding: 8px;
+	font-size:11px;
+}
+.fix-head .tabla-presentacion th:hover
+{
+	color: #fff;
+	cursor: inherit;
+}
+
+
+/*tabla TI*/
+
+.tabla-TI th
+{
+	background: #F79F81;
+	color: #fff;
+	font-weight: normal;
+	border:1px #ccc solid;
+	padding: 8px;
+	font-size:11px;
+}
+
+.tabla-TI th:hover
+{
+	color: #000;
+	cursor: pointer;
+}
+
+.tabla-TI .rad th
+{
+	background: #BD7053;
+	color: #fff;
+	font-weight: normal;
+	border-color: #03658C;
+	padding: 8px;
+	font-size:11px;
+}
+.tabla-TI .rad th:hover
+{
+	color: #fff;
+	cursor: inherit;
+}
+
+.tabla-TI th a
+{
+	color: #fff;
+	text-decoration: none;
+}
+.tabla-TI th a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+
+.tabla-TI td a
+{
+	color: #8C6249;
+	text-decoration: none;
+}
+
+.tabla-TI td a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+.tabla-TI td
+{
+	padding: 10px;
+	border:solid 1px #ccc;
+	font-size:10px;
+}
+
+.fix-head .tabla-TI th
+{
+	background: #F97549;
+	color: #fff;
+	font-weight: normal;
+	padding: 8px;
+	font-size:11px;
+}
+.fix-head .tabla-TI th:hover
+{
+	color: #fff;
+	cursor: inherit;
+}
+
+
+/*tabla rocha*/
+
+.tabla-rocha th
+{
+	background: #00445E;
+	color: #fff;
+	font-weight: normal;
+	border:1px #ccc solid;
+	padding: 8px;
+	font-size:11px;
+}
+
+.tabla-rocha th:hover
+{
+	color: #000;
+	cursor: pointer;
+}
+
+.tabla-rocha .rad th
+{
+	background: #BD7053;
+	color: #fff;
+	font-weight: normal;
+	border-color: #03658C;
+	padding: 8px;
+	font-size:11px;
+}
+.tabla-rocha .rad th:hover
+{
+	color: #fff;
+	cursor: inherit;
+}
+
+.tabla-rocha th a
+{
+	color: #fff;
+	text-decoration: none;
+}
+.tabla-rocha th a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+
+.tabla-rocha td a
+{
+	color: #8C6249;
+	text-decoration: none;
+}
+
+.tabla-rocha td a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+.tabla-rocha td
+{
+	padding: 10px;
+	border:solid 1px #ccc;
+	font-size:10px;
+}
+
+.fix-head .tabla-rocha th
+{
+	background: #003448;
+	color: #fff;
+	font-weight: normal;
+	padding: 8px;
+	font-size:11px;
+}
+.fix-head .tabla-rocha th:hover
+{
+	color: #fff;
+	cursor: inherit;
+}
+
+/*tabla radicado*/
+
+.tabla-radicado th
+{
+	background: #63B2C1;
+	color: #fff;
+	font-weight: normal;
+	border:1px #ccc solid;
+	padding: 8px;
+	font-size:11px;
+}
+
+.tabla-radicado th:hover
+{
+	color: #000;
+	cursor: pointer;
+}
+
+.tabla-radicado .rad th:hover
+{
+	color: #fff;
+	cursor: inherit;
+}
+
+.tabla-radicado th a
+{
+	color: #fff;
+	text-decoration: none;
+}
+.tabla-radicado th a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+
+.tabla-radicado td a
+{
+	color: #8C6249;
+	text-decoration: none;
+}
+
+.tabla-radicado td a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+.tabla-radicado td
+{
+	padding: 10px;
+	border:solid 1px #ccc;
+	font-size:10px;
+}
+
+.fix-head .tabla-radicado th
+{
+	background: #51929E;
+	color: #fff;
+	font-weight: normal;
+	padding: 8px;
+	font-size:11px;
+}
+.fix-head .tabla-radicado th:hover
+{
+	color: #fff;
+	cursor: inherit;
+}
+
+/**/
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+.clearfix { display: inline-table; }
+
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+/*tabla radicado*/
+
+.tabla-fi th
+{
+	background: #F7BE81;
+	color: #fff;
+	font-weight: normal;
+	border:1px #ccc solid;
+	padding: 8px;
+	font-size:11px;
+}
+
+.tabla-fi th:hover
+{
+	color: #000;
+	cursor: pointer;
+}
+
+.tabla-fi .rad th:hover
+{
+	color: #fff;
+	cursor: inherit;
+}
+
+.tabla-fi th a
+{
+	color: #fff;
+	text-decoration: none;
+}
+.tabla-fi th a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+
+.tabla-fi td a
+{
+	color: #8C6249;
+	text-decoration: none;
+}
+
+.tabla-fi td a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+.tabla-fi td
+{
+	padding: 10px;
+	border:solid 1px #ccc;
+	font-size:10px;
+}
+
+.fix-head .tabla-fi th
+{
+	background: #E9A255;
+	color: #fff;
+	font-weight: normal;
+	padding: 8px;
+	font-size:11px;
+}
+.fix-head .tabla-fi th:hover
+{
+	color: #fff;
+	cursor: inherit;
+}
+
+#facturita-tabla{
+	width: 60%;
+	margin: auto;
+}
+
+.h-facturita{
+	text-align: center;
+}

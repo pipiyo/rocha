@@ -1,0 +1,69 @@
+h1{
+	text-align: center;
+	font-family: "arial";
+	margin-top:20px;
+	margin-bottom: 20px;
+	font-size: 21px;
+}
+
+.contenido{
+	width: 100%;
+	border-collapse: collapse;
+	margin: auto;
+	font-family: "arial";
+	font-size: 13px;
+}
+
+.contenido th, .contenido td{
+	border: solid 1px #ccc;
+	padding: 10px;
+}
+
+#neto{
+	border: transparent;
+}
+
+.productito{
+	background: #425C9C;
+	color: #fff;
+}
+
+.encabezado{
+	background: #0B243B;
+	color:#fff;
+}
+
+.form{
+	border:transparent;
+	width: 100%;
+	height: 100%;
+}
+
+.uno{
+	width: 7%;
+}
+.dos{
+	width: 30%;
+}
+.tres{
+	width: 8%;
+}
+.cuatro{
+	width: 5%;
+}
+.seis, .siete, .ocho, .nueve{
+	width: 10%;
+}
+
+.btn-ingreso{
+	float: right;
+	border: transparent;
+	background: #A02C2C;
+	color: #fff;
+	padding: 10px 100px;
+	margin: 40px 10px 0 0;
+}
+.btn-ingreso:hover{
+	background:orange;
+	cursor:pointer;
+}

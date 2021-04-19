@@ -1,0 +1,11 @@
+#BACK {
+width : 256px;
+height : 256px;
+background:url(../Imagenes/stop.png)
+}
+
+h1{
+font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:25px;
+	color:#3D3838;
+}
