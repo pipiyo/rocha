@@ -213,6 +213,9 @@ $.ajax({
 <option>MUEBLES Y DISEÑOS</option>
 <option>SILLAS Y SILLAS</option>
 <option>TRANSPORTE JJ </option>
+<option>WELLPLACE</option>
+<option>ZILLA.CL</option>
+<option>GR ASESORIAS Y CONSULTORIAS SPA</option>
 </select>
 </td>
 <td> 

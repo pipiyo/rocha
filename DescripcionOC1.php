@@ -111,6 +111,27 @@ else if ($EMPRESA == 'SILLAS Y SILLAS')
 	$nombre_f = 'Sillas y Sillas S.A.';
 	
 }
+else if ($EMPRESA == 'WELLPLACE')
+{
+	$empresa_e = 'Inversiones JJ Gomez SPA';
+	$rut_e = '76.122.585-3';
+	$nombre_f = 'Wellplace';
+	
+}
+else if ($EMPRESA == 'ZILLA.CL')
+{
+	$empresa_e = 'Inversiones JJ Gomez SPA';
+	$rut_e = '76.122.585-3';
+	$nombre_f = 'Zilla.cl';
+	
+}
+else if ($EMPRESA == 'GR ASESORIAS Y CONSU')
+{
+	$empresa_e = 'Gr asesorias y consultorias SPA';
+	$rut_e = '77.125.379-2';
+	$nombre_f = 'Gr asesorias y consultorias spa';
+	
+}
 else
 {
 	$empresa_e = 'Rocha S.A.';

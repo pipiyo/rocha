@@ -615,7 +615,7 @@ if($contador_oficial <= 15 )
   </tr>
   
   <tr>
-    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN N° 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
+    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN Nï¿½ 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
     <td>Neto</td>
     <td style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.number_format($NETO,0, ",", ".").'</td>
   </tr>
@@ -644,7 +644,7 @@ else
     <td></td>
   </tr>
   <tr>
-    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN N° 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
+    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN Nï¿½ 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
     <td></td>
     <td></td>
   </tr>
@@ -689,7 +689,7 @@ if($contador_oficial <= 30 )
     <td width="50" style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.$DESCUENTO_2.'</td>
   </tr>
   <tr>
-    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN N° 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
+    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN Nï¿½ 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
     <td>Neto</td>
     <td style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.number_format($NETO,0, ",", ".").'</td>
   </tr>
@@ -718,7 +718,7 @@ else
     <td></td>
   </tr>
   <tr>
-    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN N° 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
+    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN Nï¿½ 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
     <td></td>
     <td></td>
   </tr>
@@ -763,7 +763,7 @@ if($contador_oficial <= 45 )
     <td width="50" style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.$DESCUENTO_2.'</td>
   </tr>
   <tr>
-    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN N° 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
+    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN Nï¿½ 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
     <td>Neto</td>
     <td style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.number_format($NETO,0, ",", ".").'</td>
   </tr>
@@ -792,7 +792,7 @@ else
     <td></td>
   </tr>
   <tr>
-    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN N° 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
+    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN Nï¿½ 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
     <td></td>
     <td></td>
   </tr>
@@ -837,7 +837,7 @@ if($contador_oficial <= 60 )
     <td width="50" style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.$DESCUENTO_2.'</td>
   </tr>
   <tr>
-    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN N° 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
+    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN Nï¿½ 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
     <td>Neto</td>
     <td style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.number_format($NETO,0, ",", ".").'</td>
   </tr>
@@ -866,7 +866,7 @@ else
     <td></td>
   </tr>
   <tr>
-    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN N° 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
+    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN Nï¿½ 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
     <td></td>
     <td></td>
   </tr>
@@ -911,7 +911,7 @@ if($contador_oficial <= 75 )
     <td width="50" style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.$DESCUENTO_2.'</td>
   </tr>
   <tr>
-    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN N° 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
+    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN Nï¿½ 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
     <td>Neto</td>
     <td style="border-right:inset #000 1px; border-left:inset #000 1px;" align="right">'.number_format($NETO,0, ",", ".").'</td>
   </tr>
@@ -940,7 +940,7 @@ else
     <td></td>
   </tr>
   <tr>
-    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN N° 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
+    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN Nï¿½ 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
     <td></td>
     <td></td>
   </tr>
@@ -981,9 +981,9 @@ if($contador_oficial <= 15 )
   $tablapiea.='
   <table cellspacing="0" cellpadding="0">
   <tr>
-    <td colspan="3" align="center" style="border-right:inset #000 1px; border-left:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;" ><b>FECHA DE RECEPCIÓN    </b></td>
-  <td align="center" style="border-right:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;width:247px;" ><b>N° GUIA DESPACHO</b></td>
-    <td align="center" style="border-right:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;width:247px;" ><b>N° FACTURA</b></td>
+    <td colspan="3" align="center" style="border-right:inset #000 1px; border-left:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;" ><b>FECHA DE RECEPCIï¿½N    </b></td>
+  <td align="center" style="border-right:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;width:247px;" ><b>Nï¿½ GUIA DESPACHO</b></td>
+    <td align="center" style="border-right:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;width:247px;" ><b>Nï¿½ FACTURA</b></td>
     </tr>
     <tr>
     <td align="center" style="border-right:inset #000 1px; border-left:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;width:84px;">&nbsp;<br />&nbsp;</td>
@@ -1011,9 +1011,9 @@ if($contador_oficial <= 30 )
   $tablapieb.='
   <table cellspacing="0" cellpadding="0">
   <tr>
-    <td colspan="3" align="center" style="border-right:inset #000 1px; border-left:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;" ><b>FECHA DE RECEPCIÓN    </b></td>
-  <td align="center" style="border-right:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;width:247px;" ><b>N° GUIA DESPACHO</b></td>
-    <td align="center" style="border-right:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;width:247px;" ><b>N° FACTURA</b></td>
+    <td colspan="3" align="center" style="border-right:inset #000 1px; border-left:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;" ><b>FECHA DE RECEPCIï¿½N    </b></td>
+  <td align="center" style="border-right:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;width:247px;" ><b>Nï¿½ GUIA DESPACHO</b></td>
+    <td align="center" style="border-right:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;width:247px;" ><b>Nï¿½ FACTURA</b></td>
     </tr>
     <tr>
     <td align="center" style="border-right:inset #000 1px; border-left:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;width:84px;">&nbsp;<br />&nbsp;</td>
@@ -1042,9 +1042,9 @@ if($contador_oficial <= 45 )
   $tablapiec.='
   <table cellspacing="0" cellpadding="0">
   <tr>
-    <td colspan="3" align="center" style="border-right:inset #000 1px; border-left:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;" ><b>FECHA DE RECEPCIÓN    </b></td>
-  <td align="center" style="border-right:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;width:247px;" ><b>N° GUIA DESPACHO</b></td>
-    <td align="center" style="border-right:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;width:247px;" ><b>N° FACTURA</b></td>
+    <td colspan="3" align="center" style="border-right:inset #000 1px; border-left:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;" ><b>FECHA DE RECEPCIï¿½N    </b></td>
+  <td align="center" style="border-right:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;width:247px;" ><b>Nï¿½ GUIA DESPACHO</b></td>
+    <td align="center" style="border-right:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;width:247px;" ><b>Nï¿½ FACTURA</b></td>
     </tr>
     <tr>
     <td align="center" style="border-right:inset #000 1px; border-left:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;width:84px;">&nbsp;<br />&nbsp;</td>
@@ -1072,9 +1072,9 @@ if($contador_oficial <= 60 )
   $tablapied.=
   '<table cellspacing="0" cellpadding="0">
   <tr>
-    <td colspan="3" align="center" style="border-right:inset #000 1px; border-left:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;" ><b>FECHA DE RECEPCIÓN    </b></td>
-  <td align="center" style="border-right:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;width:247px;" ><b>N° GUIA DESPACHO</b></td>
-    <td align="center" style="border-right:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;width:247px;" ><b>N° FACTURA</b></td>
+    <td colspan="3" align="center" style="border-right:inset #000 1px; border-left:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;" ><b>FECHA DE RECEPCIï¿½N    </b></td>
+  <td align="center" style="border-right:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;width:247px;" ><b>Nï¿½ GUIA DESPACHO</b></td>
+    <td align="center" style="border-right:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;width:247px;" ><b>Nï¿½ FACTURA</b></td>
     </tr>
     <tr>
     <td align="center" style="border-right:inset #000 1px; border-left:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;width:84px;">&nbsp;<br />&nbsp;</td>
@@ -1103,9 +1103,9 @@ if($contador_oficial <= 75 )
   $tablapiee.='
   <table cellspacing="0" cellpadding="0">
   <tr>
-    <td colspan="3" align="center" style="border-right:inset #000 1px; border-left:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;" ><b>FECHA DE RECEPCIÓN    </b></td>
-  <td align="center" style="border-right:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;width:247px;" ><b>N° GUIA DESPACHO</b></td>
-    <td align="center" style="border-right:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;width:247px;" ><b>N° FACTURA</b></td>
+    <td colspan="3" align="center" style="border-right:inset #000 1px; border-left:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;" ><b>FECHA DE RECEPCIï¿½N    </b></td>
+  <td align="center" style="border-right:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;width:247px;" ><b>Nï¿½ GUIA DESPACHO</b></td>
+    <td align="center" style="border-right:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;width:247px;" ><b>Nï¿½ FACTURA</b></td>
     </tr>
     <tr>
     <td align="center" style="border-right:inset #000 1px; border-left:inset #000 1px;border-bottom:inset #000 1px;border-top:inset #000 1px;width:84px;">&nbsp;<br />&nbsp;</td>
@@ -1145,7 +1145,7 @@ if(substr($EMPRESA, 0, 7) == 'MUEBLES')
   $tablaheader.='
     <tr>
     <td width="100" rowspan="5"><img src="Imagenes/LogoMD.jpg" style = "border:0px;width:140px;"></td>
-    <td width="270"><h3>'.utf8_encode("Muebles y Diseños S.A.").'</h3></td>
+    <td width="270"><h3>'.utf8_encode("Muebles y Diseï¿½os S.A.").'</h3></td>
     <td colspan="4"><h3>Orden de Compra</h3>  Pag 1 </td>
   </tr>
   <tr>
@@ -1174,7 +1174,7 @@ if(substr($EMPRESA, 0, 7) == 'MUEBLES')
     
   </tr>
   <tr>
-    <td>Nombre: Muebles y Diseños</td>
+    <td>Nombre: Muebles y Diseï¿½os</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
@@ -1188,7 +1188,7 @@ if(substr($EMPRESA, 0, 7) == 'MUEBLES')
 {
   $tablaheader.='
     <tr>
-    <td width="100" rowspan="5"><img src="Imagenes/LogoTransportesJJ.jpg" style = "border:0px;width:140px;"></td>
+    <td width="100" rowspan="5"><img src="Imagenes/LogoTransportesJJ.png" style = "border:0px;width:140px;"></td>
     <td width="270"><h3> Transportes JJ</h3></td>
     <td colspan="4"><h3>Orden de Compra</h3>  Pag 1 </td>
   </tr>
@@ -1275,6 +1275,142 @@ else if ($EMPRESA == 'SILLAS Y SILLAS')
 
 
   ';
+}else if ($EMPRESA == 'WELLPLACE')
+{
+  $tablaheader.='
+    <tr>
+    <td width="100" rowspan="5"><img src="Imagenes/LogoWe.png" style = "border:0px;width:140px;"></td>
+    <td width="270"><h3>Inversiones JJ Gomez SPA</h3></td>
+    <td colspan="4"><h3>Orden de Compra</h3>  Pag 1 </td>
+  </tr>
+
+  <tr>
+    <td>Rut: 77.122.585-3</td>
+    <td>Numero:</td>
+    <td style="font-size:15px;">'.($CODIGO_OC).'</td>
+    <td>'.$anula.'</td>
+    <td style="font-size:15px;">'.($VERSION).'</td>
+  </tr>
+
+
+  <tr>
+    <td>Direccion: Av. San JosemarÃ­a EscrivÃ¡ de Balaguer 13105, Of. 915, Lo Barnechea</td>
+    <td>Fecha Emision</td>
+    <td>'.($FECHA_REALIZACION).'</td>
+    <td>Fecha Entrega:</td>
+    <td>'.($FECHA_ENTREGA).'</td>
+    
+  </tr>
+
+  <tr>
+    <td>Fono: 56 2 29207175 / 56 2 29207176</td>
+    <td>Forma de pago</td>
+    <td>'.(substr($CONDICION_PAGO,0,25)).'</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    
+  </tr>
+  <tr>
+    <td>Nombre: Inversiones JJ Gomez SPA</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>'.(substr($CONDICION_PAGO,25)).'</td>
+    
+  </tr>
+
+
+  ';
+}
+else if ($EMPRESA == 'ZILLA.CL')
+{
+  $tablaheader.='
+    <tr>
+    <td width="100" rowspan="5"><img src="Imagenes/LogoZi.jpg" style = "border:0px;width:140px;"></td>
+    <td width="270"><h3>Inversiones JJ Gomez SPA</h3></td>
+    <td colspan="4"><h3>Orden de Compra</h3>  Pag 1 </td>
+  </tr>
+
+  <tr>
+    <td>Rut: 77.122.585-3</td>
+    <td>Numero:</td>
+    <td style="font-size:15px;">'.($CODIGO_OC).'</td>
+    <td>'.$anula.'</td>
+    <td style="font-size:15px;">'.($VERSION).'</td>
+  </tr>
+
+
+  <tr>
+    <td>Direccion: Av. San JosemarÃ­a EscrivÃ¡ de Balaguer 13105, Of. 915, Lo Barnechea</td>
+    <td>Fecha Emision</td>
+    <td>'.($FECHA_REALIZACION).'</td>
+    <td>Fecha Entrega:</td>
+    <td>'.($FECHA_ENTREGA).'</td>
+    
+  </tr>
+
+  <tr>
+    <td>Fono: 56 2 29207175 / 56 2 29207176</td>
+    <td>Forma de pago</td>
+    <td>'.(substr($CONDICION_PAGO,0,25)).'</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    
+  </tr>
+  <tr>
+    <td>Nombre: Inversiones JJ Gomez SPA</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>'.(substr($CONDICION_PAGO,25)).'</td>
+    
+  </tr>
+  ';
+}
+else if ($EMPRESA == 'GR ASESORIAS Y CONSU')
+{
+  $tablaheader.='
+    <tr>
+    <td width="100" rowspan="5"><img src="Imagenes/LogoCon.png" style = "border:0px;width:140px;"></td>
+    <td width="270"><h3>GR Asesorias y consultorias SPA</h3></td>
+    <td colspan="4"><h3>Orden de Compra</h3>  Pag 1 </td>
+  </tr>
+
+  <tr>
+    <td>Rut: 77.125.379-2</td>
+    <td>Numero:</td>
+    <td style="font-size:15px;">'.($CODIGO_OC).'</td>
+    <td>'.$anula.'</td>
+    <td style="font-size:15px;">'.($VERSION).'</td>
+  </tr>
+
+
+  <tr>
+   <td>Direccion: Av. San JosemarÃ­a EscrivÃ¡ de Balaguer 13105, Of. 915, Lo Barnecheaa</td>
+    <td>Fecha Emision</td>
+    <td>'.($FECHA_REALIZACION).'</td>
+    <td>Fecha Entrega:</td>
+    <td>'.($FECHA_ENTREGA).'</td>
+    
+  </tr>
+
+  <tr>
+    <td>Fono: 56 2 29207175 / 56 2 29207176</td>
+    <td>Forma de pago</td>
+    <td>'.(substr($CONDICION_PAGO,0,25)).'</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    
+  </tr>
+  <tr>
+    <td>Nombre: GR Asesorias y consultorias SPA</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>'.(substr($CONDICION_PAGO,25)).'</td>
+    
+  </tr>
+  ';
 }
 else
 {
@@ -1328,7 +1464,7 @@ if(substr($EMPRESA, 0, 7) == 'MUEBLES')
   $tablaheader1.='
     <tr>
     <td width="100" rowspan="5"><img src="Imagenes/LogoMD.jpg" style = "border:0px;width:140px;"></td>
-    <td width="270"><h3>'.utf8_encode("Muebles y Diseños S.A.").'</h3></td>
+    <td width="270"><h3>'.utf8_encode("Muebles y Diseï¿½os S.A.").'</h3></td>
     <td colspan="4"><h3>Packing List</h3>  Pag 1 </td>
   </tr>
    <tr>
@@ -1357,7 +1493,7 @@ if(substr($EMPRESA, 0, 7) == 'MUEBLES')
     
   </tr>
   <tr>
-    <td>Nombre: Muebles y Diseños</td>
+    <td>Nombre: Muebles y Diseï¿½os</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
@@ -1371,7 +1507,7 @@ if(substr($EMPRESA, 0, 7) == 'MUEBLES')
 {
   $tablaheader1.='
     <tr>
-    <td width="100" rowspan="5"><img src="Imagenes/LogoTransportesJJ.jpg" style = "border:0px;width:140px;"></td>
+    <td width="100" rowspan="5"><img src="Imagenes/LogoTransportesJJ.png" style = "border:0px;width:140px;"></td>
     <td width="270"><h3> Transportes JJ</h3></td>
     <td colspan="4"><h3>Packing List</h3>  Pag 1 </td>
   </tr>
@@ -1458,6 +1594,142 @@ else if ($EMPRESA == 'SILLAS Y SILLAS')
 
   ';
 }
+else if ($EMPRESA == 'WELLPLACE')
+{
+  $tablaheader1.='
+    <tr>
+    <td width="100" rowspan="5"><img src="Imagenes/LogoWe.png" style = "border:0px;width:140px;"></td>
+    <td width="270"><h3> Inversiones JJ Gomez SPA</h3></td>
+    <td colspan="4"><h3>Packing List</h3> Pag 1 </td>
+  </tr>
+   <tr>
+    <td>Rut: 77.122.585-3</td>
+    <td>Numero:</td>
+    <td style="font-size:15px;">'.($CODIGO_OC).'</td>
+    <td>'.$anula.'</td>
+    <td style="font-size:15px;">'.($VERSION).'</td>
+  </tr>
+
+
+  <tr>
+    <td>Direccion: Av. San JosemarÃ­a EscrivÃ¡ de Balaguer 13105, Of. 915, Lo Barnechea</td>
+    <td>Fecha Emision</td>
+    <td>'.($FECHA_REALIZACION).'</td>
+    <td>Fecha Entrega:</td>
+    <td>'.($FECHA_ENTREGA).'</td>
+    
+  </tr>
+
+  <tr>
+    <td>Fono: 56 2 29207175 / 56 2 29207176</td>
+    <td>Forma de pago</td>
+    <td>'.(substr($CONDICION_PAGO,0,25)).'</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    
+  </tr>
+  <tr>
+    <td>Nombre:  Inversiones JJ Gomez SPA</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>'.(substr($CONDICION_PAGO,25)).'</td>
+    
+  </tr>
+
+
+  ';
+}
+else if ($EMPRESA == 'ZILLA.CL')
+{
+  $tablaheader1.='
+    <tr>
+    <td width="100" rowspan="5"><img src="Imagenes/LogoZi.jpg" style = "border:0px;width:140px;"></td>
+    <td width="270"><h3> Inversiones JJ Gomez SPA</h3></td>
+    <td colspan="4"><h3>Packing List</h3> Pag 1 </td>
+  </tr>
+   <tr>
+    <td>Rut: 77.122.585-3</td>
+    <td>Numero:</td>
+    <td style="font-size:15px;">'.($CODIGO_OC).'</td>
+    <td>'.$anula.'</td>
+    <td style="font-size:15px;">'.($VERSION).'</td>
+  </tr>
+
+
+  <tr>
+    <td>Direccion: Av. San JosemarÃ­a EscrivÃ¡ de Balaguer 13105, Of. 915, Lo Barnecheaa</td>
+    <td>Fecha Emision</td>
+    <td>'.($FECHA_REALIZACION).'</td>
+    <td>Fecha Entrega:</td>
+    <td>'.($FECHA_ENTREGA).'</td>
+    
+  </tr>
+
+  <tr>
+    <td>Fono: 56 2 29207175 / 56 2 29207176</td>
+    <td>Forma de pago</td>
+    <td>'.(substr($CONDICION_PAGO,0,25)).'</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    
+  </tr>
+  <tr>
+    <td>Nombre:  Inversiones JJ Gomez SPA</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>'.(substr($CONDICION_PAGO,25)).'</td>
+    
+  </tr>
+
+
+  ';
+}
+else if ($EMPRESA == 'GR ASESORIAS Y CONSU')
+{
+  $tablaheader1.='
+    <tr>
+    <td width="100" rowspan="5"><img src="Imagenes/LogoCon.png" style = "border:0px;width:140px;"></td>
+    <td width="270"><h3>GR Asesorias y consultorias SPA</h3</td>
+    <td colspan="4"><h3>Packing List</h3> Pag 1 </td>
+  </tr>
+   <tr>
+    <td>Rut: 77.122.585-3</td>
+    <td>Numero:</td>
+    <td style="font-size:15px;">'.($CODIGO_OC).'</td>
+    <td>'.$anula.'</td>
+    <td style="font-size:15px;">'.($VERSION).'</td>
+  </tr>
+
+
+  <tr>
+    <td>Direccion: Av. San JosemarÃ­a EscrivÃ¡ de Balaguer 13105, Of. 915, Lo Barnecheaa</td>
+    <td>Fecha Emision</td>
+    <td>'.($FECHA_REALIZACION).'</td>
+    <td>Fecha Entrega:</td>
+    <td>'.($FECHA_ENTREGA).'</td>
+    
+  </tr>
+
+  <tr>
+    <td>Fono: 56 2 29207175 / 56 2 29207176</td>
+    <td>Forma de pago</td>
+    <td>'.(substr($CONDICION_PAGO,0,25)).'</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    
+  </tr>
+  <tr>
+    <td>Nombre:  Inversiones JJ Gomez SPA</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>'.(substr($CONDICION_PAGO,25)).'</td>
+    
+  </tr>
+  ';
+}
 else
 {
     $tablaheader1.='
@@ -1510,7 +1782,7 @@ else
 
 
 
-//Aquí pondriamos por ejemplo la consulta
+//Aquï¿½ pondriamos por ejemplo la consulta
 $html='
 
 <table width="806" border="0" >
@@ -1528,7 +1800,7 @@ $html='
 <tr>
 <td width="320">'.($NOMBRE_FANTASIA).'</td>
 <td width="30"> </td>
-<td width="408">'.utf8_encode("Muebles y Diseños S.A.").'</td>
+<td width="408">'.utf8_encode("Muebles y Diseï¿½os S.A.").'</td>
 </tr>
 <tr>
 <td>Rut:'.($RUT_PROVEEDOR).'</td>
@@ -1607,7 +1879,7 @@ $html2='
 <tr>
 <td width="320">'.($NOMBRE_FANTASIA).'</td>
 <td width="30"> </td>
-<td width="408">'.utf8_encode("Muebles y Diseños S.A.").'</td>
+<td width="408">'.utf8_encode("Muebles y Diseï¿½os S.A.").'</td>
 </tr>
 <tr>
 <td>Rut:'.($RUT_PROVEEDOR).'</td>
@@ -1676,7 +1948,7 @@ $html2='
     <td></td>
   </tr>
   <tr>
-    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN N° 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
+    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN Nï¿½ 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl </td>
     <td></td>
     <td></td>
   </tr>
@@ -1721,7 +1993,7 @@ $html1='
 <tr>
 <td width="320">'.($NOMBRE_FANTASIA).'</td>
 <td width="30"> </td>
-<td width="408">'.utf8_encode("Muebles y Diseños S.A.").'</td>
+<td width="408">'.utf8_encode("Muebles y Diseï¿½os S.A.").'</td>
 </tr>
 <tr>
 <td>Rut:'.$RUT_PROVEEDOR.'</td>
@@ -1800,7 +2072,7 @@ $html3='
 <tr>
 <td width="320">'.($NOMBRE_FANTASIA).'</td>
 <td width="30"> </td>
-<td width="408">'.utf8_encode("Muebles y Diseños S.A.").'</td>
+<td width="408">'.utf8_encode("Muebles y Diseï¿½os S.A.").'</td>
 </tr>
 <tr>
 <td>Rut:'.($RUT_PROVEEDOR).'</td>
@@ -1869,7 +2141,7 @@ $html3='
     <td></td>
   </tr>
   <tr>
-    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN N° 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl</td>
+    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN Nï¿½ 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl</td>
     <td></td>
     <td></td>
   </tr>
@@ -1921,7 +2193,7 @@ $htmla='
 <tr>
 <td width="320">'.($NOMBRE_FANTASIA).'</td>
 <td width="30"> </td>
-<td width="408">'.utf8_encode("Muebles y Diseños S.A.").'</td>
+<td width="408">'.utf8_encode("Muebles y Diseï¿½os S.A.").'</td>
 </tr>
 <tr>
 <td>Rut:'.$RUT_PROVEEDOR.'</td>
@@ -1998,7 +2270,7 @@ $htmlaa='
 <tr>
 <td width="320">'.($NOMBRE_FANTASIA).'</td>
 <td width="30"> </td>
-<td width="408">'.utf8_encode("Muebles y Diseños S.A.").'</td>
+<td width="408">'.utf8_encode("Muebles y Diseï¿½os S.A.").'</td>
 </tr>
 <tr>
 <td>Rut:'.($RUT_PROVEEDOR).'</td>
@@ -2067,7 +2339,7 @@ $htmlaa='
     <td></td>
   </tr>
   <tr>
-    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN N° 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl</td>
+    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN Nï¿½ 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl</td>
     <td></td>
     <td></td>
   </tr>
@@ -2118,7 +2390,7 @@ $htmlb='
 <tr>
 <td width="320">'.($NOMBRE_FANTASIA).'</td>
 <td width="30"> </td>
-<td width="408">'.utf8_encode("Muebles y Diseños S.A.").'</td>
+<td width="408">'.utf8_encode("Muebles y Diseï¿½os S.A.").'</td>
 </tr>
 <tr>
 <td>Rut:'.$RUT_PROVEEDOR.'</td>
@@ -2195,7 +2467,7 @@ $htmlbb='
 <tr>
 <td width="320">'.($NOMBRE_FANTASIA).'</td>
 <td width="30"> </td>
-<td width="408">'.utf8_encode("Muebles y Diseños S.A.").'</td>
+<td width="408">'.utf8_encode("Muebles y Diseï¿½os S.A.").'</td>
 </tr>
 <tr>
 <td>Rut:'.($RUT_PROVEEDOR).'</td>
@@ -2264,7 +2536,7 @@ $htmlbb='
     <td></td>
   </tr>
   <tr>
-    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN N° 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl</td>
+    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN Nï¿½ 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl</td>
     <td></td>
     <td></td>
   </tr>
@@ -2315,7 +2587,7 @@ $htmlc='
 <tr>
 <td width="320">'.($NOMBRE_FANTASIA).'</td>
 <td width="30"> </td>
-<td width="408">'.utf8_encode("Muebles y Diseños S.A.").'</td>
+<td width="408">'.utf8_encode("Muebles y Diseï¿½os S.A.").'</td>
 </tr>
 <tr>
 <td>Rut:'.$RUT_PROVEEDOR.'</td>
@@ -2392,7 +2664,7 @@ $htmlcc='
 <tr>
 <td width="320">'.($NOMBRE_FANTASIA).'</td>
 <td width="30"> </td>
-<td width="408">'.utf8_encode("Muebles y Diseños S.A.").'</td>
+<td width="408">'.utf8_encode("Muebles y Diseï¿½os S.A.").'</td>
 </tr>
 <tr>
 <td>Rut:'.($RUT_PROVEEDOR).'</td>
@@ -2461,7 +2733,7 @@ $htmlcc='
     <td></td>
   </tr>
   <tr>
-    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN N° 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl</td>
+    <td>ENTREGAR FACTURAS EN CAMINO LONQUEN Nï¿½ 10765, MAIPU O FACTURA ELECTRONICA A pbeltran@multioficina.cl</td>
     <td></td>
     <td></td>
   </tr>

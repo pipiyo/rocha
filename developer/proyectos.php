@@ -335,6 +335,7 @@ else
  
  <?php
  $buscarcod = "";
+ $buscarmad = "";
  $buscarcli = "";
  $buscareje = "";
  $positivo = "";
@@ -356,6 +357,7 @@ $suma1 = $_GET["rangopositivo"];
 $suma2 = $_GET['rangonegativo'];
 $estado = $_GET['estado'];
 $buscarcod  = $_GET['buscarcod'];
+$buscarmad  = $_GET['buscarmad'];
 $buscarcli  = $_GET['buscarcli'];
 
 if (isset($_GET["buscareje"]))
@@ -365,7 +367,7 @@ $buscareje  = $_GET['buscareje'];
 }
 
 $buscarcli  = $_GET['buscarcli'];
-
+$buscarmad  = $_GET['buscarmad'];
 $buscarcod  = $_GET['buscarcod'];
 ?>
 </head>
@@ -380,10 +382,12 @@ $buscarcod  = $_GET['buscarcod'];
   <tr>
   <td  width="50">Rango- </td>
   <td width="142"> <input type="text" style="border:grey 1px solid;border-radius: 8px;" autocomplete="off" id="rangonegativo" name="rangonegativo" value='<?php echo $suma2 ?>' /> </td>
-   <td width="52">Rango+ </td>
+  <td width="52">Rango+ </td>
   <td width="146"> <input type="text" style="border:grey 1px solid;border-radius: 8px;" autocomplete="off" id="rangopositivo" name="rangopositivo" value='<?php echo $suma1 ?>' /> </td>
   <td width="28">Cod </td>
   <td width="146"><input type="text" style="border:grey 1px solid;border-radius: 8px;" autocomplete="off" id="buscarcod" name="buscarcod" value='<?php echo urldecode($buscarcod) ?>' /></td>
+  <td width="28">Madre </td>
+  <td width="146"><input type="text" style="border:grey 1px solid;border-radius: 8px;" autocomplete="off" id="buscarmad" name="buscarmad" value='<?php echo urldecode($buscarmad) ?>' /></td>
   <td width="28">Clien </td>
   <td width="146"><input type="text" style="border:grey 1px solid;border-radius: 8px;"  name="buscarcli" id="buscarcli" value='<?php echo urldecode($buscarcli) ?>' /></td>
  <?php if($GRP == "VEN" || $GRP1 == "VEN" || $GRP2 == "VEN" || $GRP3 == "VEN")
@@ -460,19 +464,20 @@ $fecha7 = dameFecha3(date('d/m/Y'),7);
 $linkEntrega = 'entrega';
 $linkIngreso = 'ingreso';
 $linkConfirmacion = 'confirmacion';
+$linkMadre = 'madre';
 $fin=0;
 echo "<table class='datagrid' border='1' cellspacing='0' cellpadding='0'>
 <thead>
  <tr>
-      <th width='100' id='rocha' rowspan='3'><center>Código Madre</center></th>
+      <th width='100'rowspan='3'><center><a id='linkMadre' href=proyectos.php?linkMadre=".$linkMadre."&rangonegativo=".$suma2."&rangopositivo=".$suma1."&buscarcli=".urlencode($buscarcli)."&buscarcod=".urlencode($buscarcod)."&buscareje=".urlencode($buscareje)."&buscarmad=".urlencode($buscarmad)."&estado=".$estado.">Código Madre </a></center></th>
       <th width='100' id='rocha' rowspan='3'><center>Rocha</center></th>
       <th width='200'id='cliente'rowspan='3'><center>Cliente</center></th>
       <th width='150' rowspan='3'><center>Obra</center></th>
       <th width='100'rowspan='3'><center>Neto</center></th>
       <th width='150' rowspan='3'><center>Ejecutivo</center></th>
-      <th width='100'rowspan='3'><center><a id='linkIngreso' href=proyectos.php?linkIngreso=".$linkIngreso."&rangonegativo=".$suma2."&rangopositivo=".$suma1."&buscarcli=".urlencode($buscarcli)."&buscarcod=".urlencode($buscarcod)."&buscareje=".urlencode($buscareje)."&estado=".$estado.">Fecha Ingreso </a></center></th>
-      <th width='100' rowspan='3'><center><a id='linkEntrega' href=proyectos.php?linkEntrega=".$linkEntrega."&rangonegativo=".$suma2."&rangopositivo=".$suma1."&buscarcli=".urlencode($buscarcli)."&buscarcod=".urlencode($buscarcod)."&buscareje=".urlencode($buscareje)."&estado=".$estado.">Fecha de Entrega Solicitada </a></center></th>
-      <th width='100' rowspan='3'><center><a id='linkConfirmacion' href=proyectos.php?linkConfirmacion=".$linkConfirmacion."&rangonegativo=".$suma2."&rangopositivo=".$suma1."&buscarcli=".urlencode($buscarcli)."&buscarcod=".urlencode($buscarcod)."&buscareje=".urlencode($buscareje)."&estado=".$estado.">Fecha de Entrega Real </a></center></th>
+      <th width='100'rowspan='3'><center><a id='linkIngreso' href=proyectos.php?linkIngreso=".$linkIngreso."&rangonegativo=".$suma2."&rangopositivo=".$suma1."&buscarcli=".urlencode($buscarcli)."&buscarcod=".urlencode($buscarcod)."&buscareje=".urlencode($buscareje)."&buscarmad=".urlencode($buscarmad)."&estado=".$estado.">Fecha Ingreso </a></center></th>
+      <th width='100' rowspan='3'><center><a id='linkEntrega' href=proyectos.php?linkEntrega=".$linkEntrega."&rangonegativo=".$suma2."&rangopositivo=".$suma1."&buscarcli=".urlencode($buscarcli)."&buscarcod=".urlencode($buscarcod)."&buscareje=".urlencode($buscareje)."&buscarmad=".urlencode($buscarmad)."&estado=".$estado.">Fecha de Entrega Solicitada </a></center></th>
+      <th width='100' rowspan='3'><center><a id='linkConfirmacion' href=proyectos.php?linkConfirmacion=".$linkConfirmacion."&rangonegativo=".$suma2."&rangopositivo=".$suma1."&buscarcli=".urlencode($buscarcli)."&buscarcod=".urlencode($buscarcod)."&buscareje=".urlencode($buscareje)."&buscarmad=".urlencode($buscarmad)."&estado=".$estado.">Fecha de Entrega Real </a></center></th>
       <th width='100'rowspan='3 align='center'> <center>Fecha Acta </center></th>
       <th width='50' rowspan='3'><center>Dias</center></th>";
 
@@ -631,6 +636,11 @@ if($buscarcod != '')
 { 
 $query_registro = "SELECT * from proyecto WHERE CODIGO_PROYECTO = '".$buscarcod."'";
 }
+if($buscarmad != '') 
+{ 
+$query_registro = "SELECT * from proyecto WHERE CODIGO_MADRE = '".$buscarmad."'";
+}
+
 if($GRP == "VEN" || $GRP1 == "VEN" || $GRP2 == "VEN" || $GRP3 == "VEN")
 {
 
@@ -653,6 +663,10 @@ if(isset($_GET["linkEntrega"]))
 else if(isset($_GET["linkIngreso"]))
 {
   $query_registro .= " ORDER BY FECHA_INGRESO ASC ";
+}
+else if(isset($_GET["linkMadre"]))
+{
+  $query_registro .= " ORDER BY CODIGO_MADRE DESC ";
 }
 else
 {
@@ -804,16 +818,16 @@ foreach ($LISTA as $key => $value)
 
  echo "<thead>
  <tr>
-      <th width='100' id='rocha' rowspan='3'><center>Código Madre</center></th>
+      <th width='100'rowspan='3'><center><a id='linkMadre' href=proyectos.php?linkMadre=".$linkMadre."&rangonegativo=".$suma2."&rangopositivo=".$suma1."&buscarcli=".urlencode($buscarcli)."&buscarcod=".urlencode($buscarcod)."&buscareje=".urlencode($buscareje)."&buscarmad=".urlencode($buscarmad)."&estado=".$estado.">Código Madre </a></center></th>
       <th id='rocha' rowspan='3'><center>Rocha</center></th>
       <th id='cliente'rowspan='3'><center>Cliente</center></th>
       <th rowspan='3'><center>Obra</center></th>
       <th rowspan='3'><center>Neto</center></th>
       <th rowspan='3'><center>Ejecutivo</center></th>
-           <th width='100'rowspan='3'><center><a id='linkIngreso' href=proyectos.php?linkIngreso=".$linkIngreso."&rangonegativo=".$suma2."&rangopositivo=".$suma1."&buscarcli=".urlencode($buscarcli)."&buscarcod=".urlencode($buscarcod)."&buscareje=".urlencode($buscareje)."&estado=".$estado.">Fecha Ingreso </a></center></th>
-         <th width='100' rowspan='3'><center><a id='linkEntrega' href=proyectos.php?linkEntrega=".$linkEntrega."&rangonegativo=".$suma2."&rangopositivo=".$suma1."&buscarcli=".urlencode($buscarcli)."&buscarcod=".urlencode($buscarcod)."&buscareje=".urlencode($buscareje)."&estado=".$estado.">Fecha de Entrega Solicitada </a></center></th>
-        <th width='100' rowspan='3'><center><a id='linkConfirmacion' href=proyectos.php?linkConfirmacion=".$linkConfirmacion."&rangonegativo=".$suma2."&rangopositivo=".$suma1."&buscarcli=".urlencode($buscarcli)."&buscarcod=".urlencode($buscarcod)."&buscareje=".urlencode($buscareje)."&estado=".$estado.">Fecha de Entrega Real </a></center></th>
-    <th rowspan='3' align='center'> Fecha Acta </th>
+      <th width='100'rowspan='3'><center><a id='linkIngreso' href=proyectos.php?linkIngreso=".$linkIngreso."&rangonegativo=".$suma2."&rangopositivo=".$suma1."&buscarcli=".urlencode($buscarcli)."&buscarcod=".urlencode($buscarcod)."&buscareje=".urlencode($buscareje)."&buscarmad=".urlencode($buscarmad)."&estado=".$estado.">Fecha Ingreso </a></center></th>
+      <th width='100' rowspan='3'><center><a id='linkEntrega' href=proyectos.php?linkEntrega=".$linkEntrega."&rangonegativo=".$suma2."&rangopositivo=".$suma1."&buscarcli=".urlencode($buscarcli)."&buscarcod=".urlencode($buscarcod)."&buscareje=".urlencode($buscareje)."&buscarmad=".urlencode($buscarmad)."&estado=".$estado.">Fecha de Entrega Solicitada </a></center></th>
+      <th width='100' rowspan='3'><center><a id='linkConfirmacion' href=proyectos.php?linkConfirmacion=".$linkConfirmacion."&rangonegativo=".$suma2."&rangopositivo=".$suma1."&buscarcli=".urlencode($buscarcli)."&buscarcod=".urlencode($buscarcod)."&buscareje=".urlencode($buscareje)."&buscarmad=".urlencode($buscarmad)."&estado=".$estado.">Fecha de Entrega Real </a></center></th>
+      <th rowspan='3' align='center'> Fecha Acta </th>
       <th rowspan='3'><center>Dias</center></th>";
  if($positivo == "")
  {    

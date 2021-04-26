@@ -1386,7 +1386,7 @@ else if ($EMPRESA == 'GR ASESORIAS Y CONSU')
 
 
   <tr>
-    <td>Direccion: Av. Los conquistadores 2635, Providencia</td>
+   <td>Direccion: Av. San Josemaría Escrivá de Balaguer 13105, Of. 915, Lo Barnecheaa</td>
     <td>Fecha Emision</td>
     <td>'.($FECHA_REALIZACION).'</td>
     <td>Fecha Entrega:</td>
