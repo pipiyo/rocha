@@ -367,7 +367,6 @@ $buscareje  = $_GET['buscareje'];
 }
 
 $buscarcli  = $_GET['buscarcli'];
-$buscarmad  = $_GET['buscarmad'];
 $buscarcod  = $_GET['buscarcod'];
 ?>
 </head>
